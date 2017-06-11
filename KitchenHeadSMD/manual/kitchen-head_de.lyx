@@ -738,7 +738,7 @@ backgroundcolor "none"
 status open
 
 \begin_layout Plain Layout
-\align center
+\align right
 \begin_inset Graphics
 	filename images/modified/DSC04829.jpg
 	lyxscale 10
@@ -836,7 +836,7 @@ backgroundcolor "none"
 status open
 
 \begin_layout Plain Layout
-\align center
+\align right
 \begin_inset Graphics
 	filename images/modified/DSC04831.jpg
 	lyxscale 10
@@ -924,7 +924,7 @@ backgroundcolor "none"
 status open
 
 \begin_layout Plain Layout
-\align center
+\align right
 \begin_inset Graphics
 	filename images/modified/DSC04832.jpg
 	lyxscale 10
@@ -999,7 +999,7 @@ backgroundcolor "none"
 status open
 
 \begin_layout Plain Layout
-\align center
+\align right
 \begin_inset Graphics
 	filename images/modified/DSC04833.jpg
 	lyxscale 10
@@ -1082,7 +1082,7 @@ backgroundcolor "none"
 status open
 
 \begin_layout Plain Layout
-\align center
+\align right
 \begin_inset Graphics
 	filename images/modified/DSC04834.jpg
 	lyxscale 10
@@ -1163,7 +1163,7 @@ backgroundcolor "none"
 status open
 
 \begin_layout Plain Layout
-\align center
+\align right
 \begin_inset Graphics
 	filename images/modified/DSC04835.jpg
 	lyxscale 10
@@ -1255,7 +1255,7 @@ backgroundcolor "none"
 status open
 
 \begin_layout Plain Layout
-\align center
+\align right
 \begin_inset Graphics
 	filename images/modified/DSC04836.jpg
 	lyxscale 10
