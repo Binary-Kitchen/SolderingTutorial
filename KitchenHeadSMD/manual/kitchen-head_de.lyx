@@ -518,6 +518,10 @@ Platine
 
 \begin_layout Standard
 \align center
+\begin_inset VSpace 10mm
+\end_inset
+
+
 \begin_inset Box Frameless
 position "t"
 hor_pos "c"
@@ -562,57 +566,9 @@ backgroundcolor "none"
 status open
 
 \begin_layout Plain Layout
-\begin_inset Graphics
-	filename images/difficulty_blue.svg
-	width 4mm
 
-\end_inset
-
-
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset Graphics
-	filename images/difficulty_blue.svg
-	width 4mm
-
-\end_inset
-
-
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset Graphics
-	filename images/difficulty_blue.svg
-	width 4mm
-
-\end_inset
-
-
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset Graphics
-	filename images/difficulty_blue.svg
-	width 4mm
-
-\end_inset
-
-
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset Graphics
-	filename images/difficulty_grey.svg
-	width 4mm
-
-\end_inset
-
-
+\size larger
+●●●●○
 \end_layout
 
 \end_inset
@@ -621,7 +577,7 @@ status open
 \end_layout
 
 \begin_layout Standard
-\begin_inset VSpace 25mm
+\begin_inset VSpace 10mm
 \end_inset
 
 
@@ -690,6 +646,19 @@ v1.1 - CC-BY-SA 4.0 Binary Kitchen e.V.
 
 \begin_layout Standard
 \align center
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0.5ex"
+width "90col%"
+height "1pt"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
 \begin_inset Box Frameless
 position "t"
 hor_pos "c"
@@ -716,6 +685,11 @@ Vollständigkeit der Bauteile überprüfen
 Platine mit Klebestreifen auf der Unterlage befestigen
 \end_layout
 
+\end_inset
+
+
+\begin_inset space \hspace{}
+\length 5mm
 \end_inset
 
 
@@ -756,6 +730,10 @@ status open
 
 \begin_layout Standard
 \align center
+\begin_inset VSpace 5mm
+\end_inset
+
+
 \begin_inset CommandInset line
 LatexCommand rule
 offset "0.5ex"
@@ -817,6 +795,11 @@ Anschließend kann Klebeband entfernt werden und die andere Seite befestigt
 \end_inset
 
 
+\begin_inset space \hspace{}
+\length 5mm
+\end_inset
+
+
 \begin_inset Box Frameless
 position "t"
 hor_pos "c"
@@ -854,6 +837,10 @@ status open
 
 \begin_layout Standard
 \align center
+\begin_inset VSpace 5mm
+\end_inset
+
+
 \begin_inset CommandInset line
 LatexCommand rule
 offset "0.5ex"
@@ -905,6 +892,11 @@ Danach zweite Seite festlöten
 \end_inset
 
 
+\begin_inset space \hspace{}
+\length 5mm
+\end_inset
+
+
 \begin_inset Box Frameless
 position "t"
 hor_pos "c"
@@ -942,6 +934,14 @@ status open
 
 \begin_layout Standard
 \align center
+\begin_inset VSpace 5mm
+\end_inset
+
+
+\begin_inset Newpage pagebreak
+\end_inset
+
+
 \begin_inset CommandInset line
 LatexCommand rule
 offset "0.5ex"
@@ -980,6 +980,11 @@ Kondensator C2 mit der zuvor vorgestellten Technik auflöten
 \end_inset
 
 
+\begin_inset space \hspace{}
+\length 5mm
+\end_inset
+
+
 \begin_inset Box Frameless
 position "t"
 hor_pos "c"
@@ -1013,6 +1018,23 @@ status open
 \end_inset
 
 
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset VSpace 5mm
+\end_inset
+
+
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0.5ex"
+width "90col%"
+height "1pt"
+
+\end_inset
+
+ 
 \end_layout
 
 \begin_layout Standard
@@ -1063,6 +1085,11 @@ Ausrichtung wichtig: Auf der Platine sind Pfeile aufgedruckt.
 \end_inset
 
 
+\begin_inset space \hspace{}
+\length 5mm
+\end_inset
+
+
 \begin_inset Box Frameless
 position "t"
 hor_pos "c"
@@ -1100,6 +1127,10 @@ status open
 
 \begin_layout Standard
 \align center
+\begin_inset VSpace 5mm
+\end_inset
+
+
 \begin_inset CommandInset line
 LatexCommand rule
 offset "0.5ex"
@@ -1144,6 +1175,11 @@ Tipp: Beinchen haben unterschiedliche Abstände.
 \end_inset
 
 
+\begin_inset space \hspace{}
+\length 5mm
+\end_inset
+
+
 \begin_inset Box Frameless
 position "t"
 hor_pos "c"
@@ -1181,6 +1217,14 @@ status open
 
 \begin_layout Standard
 \align center
+\begin_inset VSpace 5mm
+\end_inset
+
+
+\begin_inset Newpage pagebreak
+\end_inset
+
+
 \begin_inset CommandInset line
 LatexCommand rule
 offset "0.5ex"
@@ -1236,6 +1280,11 @@ Zuletzt Batterie einsetzen und Schalter betätigen
 \end_inset
 
 
+\begin_inset space \hspace{}
+\length 5mm
+\end_inset
+
+
 \begin_inset Box Frameless
 position "t"
 hor_pos "c"
@@ -1273,6 +1322,10 @@ status open
 
 \begin_layout Standard
 \align center
+\begin_inset VSpace 5mm
+\end_inset
+
+
 \begin_inset CommandInset line
 LatexCommand rule
 offset "0.5ex"
@@ -1321,6 +1374,11 @@ status open
 \end_inset
 
 
+\begin_inset space \hspace{}
+\length 5mm
+\end_inset
+
+
 \begin_inset Box Frameless
 position "t"
 hor_pos "c"
@@ -1337,7 +1395,7 @@ separation "3pt"
 shadowsize "4pt"
 framecolor "black"
 backgroundcolor "none"
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
