@@ -1,23 +1,25 @@
-"picture","description"
-,"- Platine mit Klebestreifen auf der Unterlage befestigen"
-"Images/modified/DSC04831.jpg","- Lötpads mit Flussmittelgel aus Spritze bestreichen
-- IC1 mit einem Klebeband aufnehmen. Klebeband sollte dabei nur die Hälfte vom IC bedecken
-- Anschließend kann der IC mit Klebeband ausgerichtet und fixiert werden
-- Ausrichtung wichtig: Kleiner Punkt auf IC muss mit Punkt auf der Platine links oben übereinstimmen
-- Alle Beinchen mit Lötzinn auf der Platine auflöten
-- Anschließend kann Klebeband entfernt werden und die andere Seite befestigt werden"
-"Images/modified/DSC04832.jpg","- Widerstände R2 bis R8 auflöten
-- Dazu ein Pad verzinnen
-- Anschließend Zinn aufheizen und den Widerstand seitlich mit der Pinzette zuführen
-- Danach zweite Seite festlöten"
-"Images/modified/DSC04833.jpg","- Kondensator C2 mit der zuvor vorgestellten Technik auflöten"
-"Images/modified/DSC04834.jpg","- LEDs mit der zuvor vorgestellten Technik auflöten
-- Dazu Platine umdrehen
-- Ausrichtung wichtig!
-- Auf der Platine sind Pfeile aufgedruckt. Auf der LED ein T. Der Vertikale Strich des T muss auf die Seite der Pfeilspitze zeigen"
-"Images/modified/DSC04835.jpg","- Schalter S1 auflöten
-- Tipp: Beinchen haben unterschiedliche Abstände. Es muss nichts verbogen werden. Schalter passt exakt"
-"Images/modified/DSC04836.jpg","- Batteriehalter auflöten
-- Dazu Platine umdrehen
-- Batteriehalter und Platine haben aufgedrucktes Plus und Minus Symbol. Dieses muss übereinstimmen
-- Tipp: Beim Pluspol anfangen"
+picture,description
+images/modified/DSC04829.jpg,[Platine mit Klebestreifen auf der Unterlage befestigen]
+Images/modified/DSC04831.jpg,"[Lötpads mit Flussmittelgel aus Spritze bestreichen]
+[IC1 mit einem Klebeband aufnehmen. Klebeband sollte dabei nur die Hälfte vom IC bedecken]
+[Anschließend kann der IC mit Klebeband ausgerichtet und fixiert werden]
+[Ausrichtung wichtig: Kleiner Punkt auf IC muss mit Punkt auf der Platine links oben übereinstimmen]
+[Alle Beinchen mit Lötzinn auf der Platine auflöten]
+[Anschließend kann Klebeband entfernt werden und die andere Seite befestigt werden]"
+Images/modified/DSC04832.jpg,"[Widerstände R2 bis R8 auflöten]
+[Dazu ein Pad verzinnen]
+[Anschließend Zinn aufheizen und den Widerstand seitlich mit der Pinzette zuführen]
+[Danach zweite Seite festlöten]"
+Images/modified/DSC04833.jpg,[Kondensator C2 mit der zuvor vorgestellten Technik auflöten]
+Images/modified/DSC04834.jpg,"[LEDs mit der zuvor vorgestellten Technik auflöten]
+[Dazu Platine umdrehen]
+[Ausrichtung wichtig!]
+[Auf der Platine sind Pfeile aufgedruckt. Auf der LED ein T. Der Vertikale Strich des T muss auf die Seite der Pfeilspitze zeigen]
+[\bild{images/smd_led.pdf}]"
+Images/modified/DSC04835.jpg,"[Schalter S1 auflöten]
+[Tipp: Beinchen haben unterschiedliche Abstände. Es muss nichts verbogen werden. Schalter passt exakt]"
+Images/modified/DSC04836.jpg,"[Batteriehalter auflöten]
+[Dazu Platine umdrehen]
+[Batteriehalter und Platine haben aufgedrucktes Plus und Minus Symbol. Dieses muss übereinstimmen]
+[Tipp: Beim Pluspol anfangen]
+[Zuletzt Batterie einsetzen und Schalter betätigen]"
