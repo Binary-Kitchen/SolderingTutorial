@@ -7,6 +7,7 @@
 \usepackage[a4paper]{geometry}
 \geometry{verbose,tmargin=2cm,bmargin=2.5cm,lmargin=1cm,rmargin=1cm,headsep=1cm}
 \usepackage{graphicx}
+\usepackage{wasysym}
 
 \makeatletter
 
@@ -52,15 +53,16 @@ Menge & Bezeichnung & Beschreibung & Beschriftung\tabularnewline
 \par\end{center}
 
 \begin{center}
+\vspace{10mm}
 \begin{minipage}[t][1\totalheight][b]{22mm}%
 Schwierigkeit:%
 \end{minipage}%
 \begin{minipage}[t][1\totalheight][b]{25mm}%
-\includegraphics[width=4mm]{images/difficulty_blue}~\includegraphics[width=4mm]{images/difficulty_blue}~\includegraphics[width=4mm]{images/difficulty_blue}~\includegraphics[width=4mm]{images/difficulty_blue}~\includegraphics[width=4mm]{images/difficulty_grey}%
+{\Large{}\CIRCLE \CIRCLE \CIRCLE \CIRCLE \Circle{}}%
 \end{minipage}
 \par\end{center}
 
-\vspace{25mm}
+\vspace{10mm}
 \begin{center}
 \begin{tabular}{ll}
 Anleitung: & v1.0 - CC-BY-SA 4.0 Binary Kitchen e.V.\tabularnewline
@@ -70,13 +72,17 @@ Platine: & v1.1 - CC-BY-SA 4.0 Binary Kitchen e.V.\tabularnewline
 
 \newpage{}
 \begin{center}
+\rule[0.5ex]{0.9\columnwidth}{1pt}
+\par\end{center}
+
+\begin{center}
 \begin{minipage}[t][1\totalheight][b]{0.59\columnwidth}%
 \begin{enumerate}
 \item Vollständigkeit der Bauteile überprüfen
 \item Platine mit Klebestreifen auf der Unterlage befestigen
 \end{enumerate}
 %
-\end{minipage}%
+\end{minipage}\hspace{5mm}%
 \begin{minipage}[t][1\totalheight][b]{0.3\columnwidth}%
 \begin{flushright}
 \includegraphics[width=0.95\columnwidth]{images/modified/DSC04829}
@@ -85,6 +91,7 @@ Platine: & v1.1 - CC-BY-SA 4.0 Binary Kitchen e.V.\tabularnewline
 \par\end{center}
 
 \begin{center}
+\vspace{5mm}
 \rule[0.5ex]{0.9\columnwidth}{1pt}
 \par\end{center}
 
@@ -102,7 +109,7 @@ links oben übereinstimmen
 werden
 \end{enumerate}
 %
-\end{minipage}%
+\end{minipage}\hspace{5mm}%
 \begin{minipage}[t][1\totalheight][b]{0.3\columnwidth}%
 \begin{flushright}
 \includegraphics[width=0.95\columnwidth]{images/modified/DSC04831}
@@ -111,6 +118,7 @@ werden
 \par\end{center}
 
 \begin{center}
+\vspace{5mm}
 \rule[0.5ex]{0.9\columnwidth}{1pt}
 \par\end{center}
 
@@ -124,7 +132,7 @@ zuführen
 \item Danach zweite Seite festlöten
 \end{enumerate}
 %
-\end{minipage}%
+\end{minipage}\hspace{5mm}%
 \begin{minipage}[t][1\totalheight][b]{0.3\columnwidth}%
 \begin{flushright}
 \includegraphics[width=0.95\columnwidth]{images/modified/DSC04832}
@@ -133,7 +141,8 @@ zuführen
 \par\end{center}
 
 \begin{center}
-\rule[0.5ex]{0.9\columnwidth}{1pt}
+\vspace{5mm}
+\pagebreak{}\rule[0.5ex]{0.9\columnwidth}{1pt}
 \par\end{center}
 
 \begin{center}
@@ -142,12 +151,17 @@ zuführen
 \item Kondensator C2 mit der zuvor vorgestellten Technik auflöten
 \end{enumerate}
 %
-\end{minipage}%
+\end{minipage}\hspace{5mm}%
 \begin{minipage}[t][1\totalheight][b]{0.3\columnwidth}%
 \begin{flushright}
 \includegraphics[width=0.95\columnwidth]{images/modified/DSC04833}
 \par\end{flushright}%
 \end{minipage}
+\par\end{center}
+
+\begin{center}
+\vspace{5mm}
+\rule[0.5ex]{0.9\columnwidth}{1pt} 
 \par\end{center}
 
 \begin{center}
@@ -162,7 +176,7 @@ zeigen
 \begin{center}
 \includegraphics[height=7mm]{images/smd_led}
 \par\end{center}%
-\end{minipage}%
+\end{minipage}\hspace{5mm}%
 \begin{minipage}[t][1\totalheight][b]{0.3\columnwidth}%
 \begin{flushright}
 \includegraphics[width=0.95\columnwidth]{images/modified/DSC04834}
@@ -171,6 +185,7 @@ zeigen
 \par\end{center}
 
 \begin{center}
+\vspace{5mm}
 \rule[0.5ex]{0.9\columnwidth}{1pt}
 \par\end{center}
 
@@ -182,7 +197,7 @@ zeigen
 werden. Schalter passt exakt
 \end{enumerate}
 %
-\end{minipage}%
+\end{minipage}\hspace{5mm}%
 \begin{minipage}[t][1\totalheight][b]{0.3\columnwidth}%
 \begin{flushright}
 \includegraphics[width=0.95\columnwidth]{images/modified/DSC04835}
@@ -191,7 +206,8 @@ werden. Schalter passt exakt
 \par\end{center}
 
 \begin{center}
-\rule[0.5ex]{0.9\columnwidth}{1pt}
+\vspace{5mm}
+\pagebreak{}\rule[0.5ex]{0.9\columnwidth}{1pt}
 \par\end{center}
 
 \begin{center}
@@ -205,7 +221,7 @@ Dieses muss übereinstimmen
 \item Zuletzt Batterie einsetzen und Schalter betätigen
 \end{enumerate}
 %
-\end{minipage}%
+\end{minipage}\hspace{5mm}%
 \begin{minipage}[t][1\totalheight][b]{0.3\columnwidth}%
 \begin{flushright}
 \includegraphics[width=0.95\columnwidth]{images/modified/DSC04836}
@@ -214,6 +230,7 @@ Dieses muss übereinstimmen
 \par\end{center}
 
 \begin{center}
+\vspace{5mm}
 \rule[0.5ex]{0.9\columnwidth}{1pt}
 \par\end{center}
 
@@ -222,7 +239,7 @@ Dieses muss übereinstimmen
 \begin{center}
 \includegraphics[bb=230bp 95bp 680bp 550bp,clip,width=0.95\columnwidth]{\string"images/Kitchenkopf-v1.1 - Top\string".pdf}
 \par\end{center}%
-\end{minipage}%
+\end{minipage}\hspace{5mm}%
 \begin{minipage}[t][1\totalheight][b]{0.3\columnwidth}%
 \begin{center}
 \includegraphics[bb=200bp 100bp 650bp 550bp,clip,width=0.95\columnwidth]{\string"images/Kitchenkopf-v1.1 - Bottom\string".pdf}
