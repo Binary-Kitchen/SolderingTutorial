@@ -19,3 +19,6 @@
 *.synctex.gz
 *.synctex.gz(busy)
 *.pdfsync
+
+## Eagle temporary files
+*.lck
