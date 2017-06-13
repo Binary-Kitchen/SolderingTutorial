@@ -1,0 +1,173 @@
+\documentclass[ngerman,parskip=half*,DIV=25]{scrartcl}
+\renewcommand{\familydefault}{\sfdefault}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{graphicx}
+\usepackage{wasysym}
+
+\usepackage{booktabs}
+\usepackage{expl3}
+
+\newcommand*{\stepName}{Schritt}
+
+\makeatletter
+\ExplSyntaxOn
+
+\tl_new:N \l_BK@soldering@config_tl
+%de_config.csv
+
+\ior_new:N \BK_soldering_ior
+
+\ior_open:Nn \BK_soldering_ior {configuration/de_config.csv}
+
+
+\cs_set:Nn \BK_setupSkillLevel:n {
+	\seq_set_split:Nnn \l_tmpa_seq {/} {#1}
+	\seq_get_left:NN \l_tmpa_seq \l_tmpa_tl
+	\seq_get_right:NN \l_tmpa_seq \l_tmpb_tl
+	\tl_clear:N \l_BK@soldering@config_tl
+	\int_step_inline:nnnn {1} {1} {\l_tmpa_tl} {\CIRCLE}%{\tl_put_right:Nn \l_BK@soldering@config_tl {\circle*{20}}}
+	\int_step_inline:nnnn {\int_eval:n {\l_tmpa_tl+1}} {1} {\l_tmpb_tl} {\Circle}%{\tl_put_right:Nn \l_BK@soldering@config_tl {\circle{20}}}
+%	\def\@skillLevel{\tl_use:N \l_BK@soldering@config_tl}
+}
+
+
+
+
+\keys_define:nn {BinaryKitchen} {
+	title .code:n= \cs_set:Npn \@title {#1},
+	titlePicture .code:n = \cs_set:Npn \@titlePicture {#1},
+	skillTitle .code:n = \cs_set:Npn \@skillTitle {#1},
+%	skillLevel .code:n = \BK_setupSkillLevel:n{#1},
+	skillLevel .tl_gset:N = \g_BK@skillLevel_tl, 
+	descriptionTitle .code:n = \cs_set:Npn \@descriptionTitle {#1},
+	descriptionVersion .code:n = \cs_set:Npn \@descriptionVersion {#1},
+	descriptionLicense .code:n = \cs_set:Npn \@descriptionLicense {#1},
+	boardTitle .code:n = \cs_set:Npn \@boardTitle  {#1},
+	boardVersion .code:n = \cs_set:Npn \@boardVersion {#1},
+	boardLicense .code:n = \cs_set:Npn \@boardLicense {#1},
+	appendix .code:n = \cs_set:Npn \@appendix {#1}
+}
+
+\newcommand*{\@skillLevel}{
+		\exp_args:NV \BK_setupSkillLevel:n \g_BK@skillLevel_tl
+}
+
+\newcommand{\BK@setkeys}{\ior_map_inline:Nn \BK_soldering_ior {\keys_set:nn {BinaryKitchen} {##1}}}
+\ExplSyntaxOff
+\BK@setkeys
+\ExplSyntaxOn
+
+\ior_close:N \BK_soldering_ior
+
+\clist_new:N \BK_soldering@parts_clist
+
+\tl_new:N \BK_soldering@parts_header 
+
+
+\tl_new:N \l_BK_soldering@parts_coldef
+
+\newcommand*{\@parts}{
+\ior_open:Nn \BK_soldering_ior {configuration/de_parts.csv}
+\ior_get:NN \BK_soldering_ior \BK_soldering@parts_header
+\tl_clear:N \l_BK_soldering@parts_coldef
+\int_step_inline:nnnn {\exp_args:NV \clist_count:n \BK_soldering@parts_header} {-1} {1}  {\tl_put_right:Nn \l_BK_soldering@parts_coldef {l}}
+\clist_clear:N \l_tmpa_clist
+
+\ior_map_inline:Nn \BK_soldering_ior {
+\exp_args:NV \tl_if_eq:nnF \BK_soldering@parts_header {##1} {
+\clist_set:Nn \BK_soldering@parts_clist {##1}
+\clist_put_right:Nx \l_tmpa_clist{ \clist_use:Nn \BK_soldering@parts_clist {\exp_not:n {&}}}
+
+}}
+
+\clist_reverse:N \l_tmpa_clist
+\clist_pop:NN \l_tmpa_clist \l_tmpa_tl
+\clist_reverse:N \l_tmpa_clist
+
+\begin{tabular}{@{}\tl_use:N \l_BK_soldering@parts_coldef @{}}
+	\toprule
+	\clist_set:NV \BK_soldering@parts_clist \BK_soldering@parts_header
+	\clist_use:Nn \BK_soldering@parts_clist {&}\\\midrule
+\clist_use:Nn \l_tmpa_clist {\\}\\
+\tl_use:N \l_tmpa_tl \\\bottomrule
+\end{tabular}
+\ior_close:N \BK_soldering_ior
+}
+
+
+
+
+\seq_new:N \l_BK_soldering@step_seq
+
+\def\bild{}
+\newcounter{steps}
+\renewcommand*{\theenumi}{\alph{enumi}}
+\renewcommand*{\labelenumi}{\theenumi)}
+
+\newcommand{\Printsteps}{
+	\par
+	\renewcommand*{\bild}[1]{\includegraphics[width=\linewidth]{##1}}
+	\ior_open:Nn \BK_soldering_ior {configuration/de_steps.csv}
+	\ior_map_inline:Nn \BK_soldering_ior {
+%	\clist_show:n {##1}
+	\exp_args:NNnx \seq_set_split:Nnn \l_BK_soldering@step_seq {;} {\clist_item:nn {##1} {2}}
+	\rule{\linewidth}{.4pt}\\
+	\begin{minipage}[t]{.7\linewidth}
+	\refstepcounter{steps}
+	{\usekomafont{subsubsection}\stepName\ ~\thesteps}
+	\begin{enumerate}
+	\seq_map_inline:Nn \l_BK_soldering@step_seq {\tl_if_empty:nF {####1} {\item ####1}}
+	\end{enumerate}
+	\clist_item:nn {##1} {3}
+	\end{minipage}\hspace*{2\tabcolsep}%
+	\begin{minipage}[t]{\dimexpr.3\linewidth-2\tabcolsep\relax}
+	\strut\\[-.7\baselineskip]
+%	\exp_args:NNox \includegraphics \use:n {[width=\linewidth]} {\clist_item:nn {##1} {1}}
+	\exp_args:Nx \tl_if_empty:nF {\clist_item:nn {##1} {1}} {\includegraphics[width=\linewidth]{\clist_item:nn {##1} {1}}}
+	\end{minipage}\par
+	}
+\ior_close:N \BK_soldering_ior
+}
+
+
+
+\ExplSyntaxOff
+\newcommand{\BK@maketitle}{
+	\begin{titlepage}
+	\centering
+	
+	{\Huge\@title}
+	\vspace{1cm}
+
+	\includegraphics[width=.5\linewidth]{\@titlePicture}
+	\vfill
+	
+	\@parts
+	\vfill
+	\@skillTitle: \@skillLevel\par
+	\bigskip
+
+	\begin{tabular}{lcc}
+	\@descriptionTitle&\@descriptionVersion& \@descriptionLicense\\
+	\@boardTitle&\@boardVersion&\@boardLicense
+	\end{tabular}
+	\end{titlepage}
+}
+
+\AtBeginDocument{\let\maketitle\BK@maketitle}
+
+
+
+\makeatother
+\usepackage{babel}
+\begin{document}
+
+	
+\maketitle
+	
+	
+\Printsteps
+
+\csname @appendix\endcsname
+\end{document}
