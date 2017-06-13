@@ -8,4 +8,4 @@ descriptionLicense=CC-BY-SA 4.0 Binary Kitchen e.V.
 boardTitle=Platine
 boardVersion=V1.1
 boardLicense=CC-BY-SA 4.0 Binary Kitchen e.V.
-appendix=\includegraphics{images/KitchenHeadBottom}%\image{images/KitchenHeadTop.pdf}
+appendix={\includegraphics[width=.5\linewidth]{images/KitchenHeadBottom}\includegraphics[width=.5\linewidth]{images/KitchenHeadTop.pdf}}
