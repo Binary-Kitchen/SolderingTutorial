@@ -1,9 +1,9 @@
-"Menge","Name","Beschreibung","Beschriftung / Farbcode"
-1,"C2","Keramik Kondensator 100nF",
-1,"IC1","Mikrocontroller Atmel ATTiny 2313A",
-21,"LED1 - LED21","LED SMD 0805",
-7,"R2 - R8","Widerstand 47 Ohm",470
-1,"SW1","Taster",
-1,"BAT1","Batteriehalter",
-1,"               ","Batterie CR2032",
-1,"               ","Platine",
+Menge,Name,Beschreibung,Beschriftung/Farbcode
+1,C2,Keramik Kondensator 100nF,
+1,IC1,Mikrocontroller Atmel ATTiny 2313A,
+21,LED1 - LED21,LED SMD 0805,
+7,R2 - R8,Widerstand 47 Ohm,470
+1,SW1,Taster,
+1,BAT1,Batteriehalter,
+1,               ,Batterie CR2032,
+1,               ,Platine,

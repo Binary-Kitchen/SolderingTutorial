@@ -1,249 +1,173 @@
-%% LyX 2.2.3 created this file.  For more info, see http://www.lyx.org/.
-%% Do not edit unless you really know what you are doing.
-\documentclass[english]{article}
+\documentclass[ngerman,parskip=half*,DIV=15]{scrartcl}
 \renewcommand{\familydefault}{\sfdefault}
+\usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
-\usepackage[latin9]{inputenc}
-\usepackage[a4paper]{geometry}
-\geometry{verbose,tmargin=2cm,bmargin=2.5cm,lmargin=1cm,rmargin=1cm,headsep=1cm}
 \usepackage{graphicx}
 \usepackage{wasysym}
 
-\makeatletter
+\usepackage{booktabs}
+\usepackage{expl3}
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% LyX specific LaTeX commands.
-%% Because html converters don't know tabularnewline
-\providecommand{\tabularnewline}{\\}
-%% A simple dot to overcome graphicx limitations
-\newcommand{\lyxdot}{.}
+\newcommand*{\stepName}{Schritt}
+
+\makeatletter
+\ExplSyntaxOn
+
+\tl_new:N \l_BK@soldering@config_tl
+%de_config.csv
+
+\ior_new:N \BK_soldering_ior
+
+\ior_open:Nn \BK_soldering_ior {configuration/de_config.csv}
+
+
+\cs_set:Nn \BK_setupSkillLevel:n {
+	\seq_set_split:Nnn \l_tmpa_seq {/} {#1}
+	\seq_get_left:NN \l_tmpa_seq \l_tmpa_tl
+	\seq_get_right:NN \l_tmpa_seq \l_tmpb_tl
+	\tl_clear:N \l_BK@soldering@config_tl
+	\int_step_inline:nnnn {1} {1} {\l_tmpa_tl} {\CIRCLE}%{\tl_put_right:Nn \l_BK@soldering@config_tl {\circle*{20}}}
+	\int_step_inline:nnnn {\int_eval:n {\l_tmpa_tl+1}} {1} {\l_tmpb_tl} {\Circle}%{\tl_put_right:Nn \l_BK@soldering@config_tl {\circle{20}}}
+%	\def\@skillLevel{\tl_use:N \l_BK@soldering@config_tl}
+}
+
+
+
+
+\keys_define:nn {BinaryKitchen} {
+	title .code:n= \cs_set:Npn \@title {#1},
+	titlePicture .code:n = \cs_set:Npn \@titlePicture {#1},
+	skillTitle .code:n = \cs_set:Npn \@skillTitle {#1},
+%	skillLevel .code:n = \BK_setupSkillLevel:n{#1},
+	skillLevel .tl_gset:N = \g_BK@skillLevel_tl, 
+	descriptionTitle .code:n = \cs_set:Npn \@descriptionTitle {#1},
+	descriptionVersion .code:n = \cs_set:Npn \@descriptionVersion {#1},
+	descriptionLicense .code:n = \cs_set:Npn \@descriptionLicense {#1},
+	boardTitle .code:n = \cs_set:Npn \@boardTitle  {#1},
+	boardVersion .code:n = \cs_set:Npn \@boardVersion {#1},
+	boardLicense .code:n = \cs_set:Npn \@boardLicense {#1},
+	appendix .code:n = \cs_set:Npn \@appendix {#1}
+}
+
+\newcommand*{\@skillLevel}{
+		\exp_args:NV \BK_setupSkillLevel:n \g_BK@skillLevel_tl
+}
+
+\newcommand{\BK@setkeys}{\ior_map_inline:Nn \BK_soldering_ior {\keys_set:nn {BinaryKitchen} {##1}}}
+\ExplSyntaxOff
+\BK@setkeys
+\ExplSyntaxOn
+
+\ior_close:N \BK_soldering_ior
+
+\clist_new:N \BK_soldering@parts_clist
+
+\tl_new:N \BK_soldering@parts_header 
+
+
+\tl_new:N \l_BK_soldering@parts_coldef
+
+\newcommand*{\@parts}{
+\ior_open:Nn \BK_soldering_ior {configuration/de_parts.csv}
+\ior_get:NN \BK_soldering_ior \BK_soldering@parts_header
+\tl_clear:N \l_BK_soldering@parts_coldef
+\int_step_inline:nnnn {\exp_args:NV \clist_count:n \BK_soldering@parts_header} {-1} {1}  {\tl_put_right:Nn \l_BK_soldering@parts_coldef {l}}
+\clist_clear:N \l_tmpa_clist
+
+\ior_map_inline:Nn \BK_soldering_ior {
+\exp_args:NV \tl_if_eq:nnF \BK_soldering@parts_header {##1} {
+\clist_set:Nn \BK_soldering@parts_clist {##1}
+\clist_put_right:Nx \l_tmpa_clist{ \clist_use:Nn \BK_soldering@parts_clist {\exp_not:n {&}}}
+
+}}
+
+\clist_reverse:N \l_tmpa_clist
+\clist_pop:NN \l_tmpa_clist \l_tmpa_tl
+\clist_reverse:N \l_tmpa_clist
+
+\begin{tabular}{@{}\tl_use:N \l_BK_soldering@parts_coldef @{}}
+	\toprule
+	\clist_set:NV \BK_soldering@parts_clist \BK_soldering@parts_header
+	\clist_use:Nn \BK_soldering@parts_clist {&}\\\midrule
+\clist_use:Nn \l_tmpa_clist {\\}\\
+\tl_use:N \l_tmpa_tl \\\bottomrule
+\end{tabular}
+\ior_close:N \BK_soldering_ior
+}
+
+
+
+
+\seq_new:N \l_BK_soldering@step_seq
+
+\def\bild{}
+\newcounter{steps}
+\renewcommand*{\theenumi}{\alph{enumi}}
+\renewcommand*{\labelenumi}{\theenumi)}
+
+\newcommand{\Printsteps}{
+	\par
+	\renewcommand*{\bild}[1]{\includegraphics[width=\linewidth]{##1}}
+	\ior_open:Nn \BK_soldering_ior {configuration/de_steps.csv}
+	\ior_map_inline:Nn \BK_soldering_ior {
+%	\clist_show:n {##1}
+	\exp_args:NNnx \seq_set_split:Nnn \l_BK_soldering@step_seq {;} {\clist_item:nn {##1} {2}}
+	\rule{\linewidth}{.4pt}\\
+	\begin{minipage}[t]{.7\linewidth}
+	\refstepcounter{steps}
+	{\usekomafont{subsubsection}\stepName\ ~\thesteps}
+	\begin{enumerate}
+	\seq_map_inline:Nn \l_BK_soldering@step_seq {\tl_if_empty:nF {####1} {\item ####1}}
+	\end{enumerate}
+	\clist_item:nn {##1} {3}
+	\end{minipage}\hspace*{2\tabcolsep}%
+	\begin{minipage}[t]{\dimexpr.3\linewidth-2\tabcolsep\relax}
+	\strut\\[-.7\baselineskip]
+%	\exp_args:NNox \includegraphics \use:n {[width=\linewidth]} {\clist_item:nn {##1} {1}}
+	\exp_args:Nx \tl_if_empty:nF {\clist_item:nn {##1} {1}} {\includegraphics[width=\linewidth]{\clist_item:nn {##1} {1}}}
+	\end{minipage}\par
+	}
+\ior_close:N \BK_soldering_ior
+}
+
+
+
+\ExplSyntaxOff
+\newcommand{\BK@maketitle}{
+	\begin{titlepage}
+	\centering
+	
+	{\Huge\@title}
+	\vspace{1cm}
+
+	\includegraphics[width=.5\linewidth]{\@titlePicture}
+	\vfill
+	
+	\@parts
+	\vfill
+	\@skillTitle: \@skillLevel\par
+	\bigskip
+
+	\begin{tabular}{lcc}
+	\@descriptionTitle&\@descriptionVersion& \@descriptionLicense\\
+	\@boardTitle&\@boardVersion&\@boardLicense
+	\end{tabular}
+	\end{titlepage}
+}
+
+\AtBeginDocument{\let\maketitle\BK@maketitle}
+
 
 
 \makeatother
-
 \usepackage{babel}
 \begin{document}
-\date{}
 
-\title{\textbf{\Huge{}Kitchen Kopf (SMD)}}
-
+	
 \maketitle
-\maketitle \thispagestyle{empty}
-\begin{center}
-\includegraphics[width=10cm]{images/modified/DSC04829}
-\par\end{center}
+	
+	
+\Printsteps
 
-\vspace{10mm}
-
-\renewcommand{\arraystretch}{1.3}
-\begin{center}
-\begin{tabular}{llll}
-\hline 
-Menge & Bezeichnung & Beschreibung & Beschriftung\tabularnewline
-\hline 
-1 & C2 & Kondensator 100 nF & \tabularnewline
-1 & IC2 & Atmel ATTiny 2313A & \tabularnewline
-21 & LED1 - LED21 & LED SMD 0805 & \tabularnewline
-7 & R2 - R8 & Wiederstand 47 $\Omega$ & 470\tabularnewline
-1 & SW1 & Taster & \tabularnewline
-1 & BAT1 & Batteriehalter & \tabularnewline
-1 &  & Batterie CR2032 & \tabularnewline
-1 &  & Platine & \tabularnewline
-\hline 
-\end{tabular}
-\par\end{center}
-
-\begin{center}
-\vspace{10mm}
-\begin{minipage}[t][1\totalheight][b]{22mm}%
-Schwierigkeit:%
-\end{minipage}%
-\begin{minipage}[t][1\totalheight][b]{25mm}%
-{\Large{}\CIRCLE \CIRCLE \CIRCLE \CIRCLE \Circle{}}%
-\end{minipage}
-\par\end{center}
-
-\vspace{10mm}
-\begin{center}
-\begin{tabular}{ll}
-Anleitung: & v1.0 - CC-BY-SA 4.0 Binary Kitchen e.V.\tabularnewline
-Platine: & v1.1 - CC-BY-SA 4.0 Binary Kitchen e.V.\tabularnewline
-\end{tabular}
-\par\end{center}
-
-\newpage{}
-\begin{center}
-\rule[0.5ex]{0.9\columnwidth}{1pt}
-\par\end{center}
-
-\begin{center}
-\begin{minipage}[t][1\totalheight][b]{0.59\columnwidth}%
-\begin{enumerate}
-\item Vollständigkeit der Bauteile überprüfen
-\item Platine mit Klebestreifen auf der Unterlage befestigen
-\end{enumerate}
-%
-\end{minipage}\hspace{5mm}%
-\begin{minipage}[t][1\totalheight][b]{0.3\columnwidth}%
-\begin{flushright}
-\includegraphics[width=0.95\columnwidth]{images/modified/DSC04829}
-\par\end{flushright}%
-\end{minipage}
-\par\end{center}
-
-\begin{center}
-\vspace{5mm}
-\rule[0.5ex]{0.9\columnwidth}{1pt}
-\par\end{center}
-
-\begin{center}
-\begin{minipage}[t][1\totalheight][b]{0.59\columnwidth}%
-\begin{enumerate}
-\item Lötpads des IC1 mit Flussmittelgel aus Spritze bestreichen 
-\item IC1 mit einem Klebeband aufnehmen. Klebeband sollte dabei nur die
-Hälfte vom IC bedecken
-\item Anschließend kann der IC mit Klebeband ausgerichtet und fixiert werden
-\item Ausrichtung wichtig: Kleiner Punkt auf IC muss mit Punkt auf der Platine
-links oben übereinstimmen
-\item Alle Beinchen mit Lötzinn auf der Platine auflöten
-\item Anschließend kann Klebeband entfernt werden und die andere Seite befestigt
-werden
-\end{enumerate}
-%
-\end{minipage}\hspace{5mm}%
-\begin{minipage}[t][1\totalheight][b]{0.3\columnwidth}%
-\begin{flushright}
-\includegraphics[width=0.95\columnwidth]{images/modified/DSC04831}
-\par\end{flushright}%
-\end{minipage}
-\par\end{center}
-
-\begin{center}
-\vspace{5mm}
-\rule[0.5ex]{0.9\columnwidth}{1pt}
-\par\end{center}
-
-\begin{center}
-\begin{minipage}[t][1\totalheight][b]{0.59\columnwidth}%
-\begin{enumerate}
-\item Widerstände R2 bis R8 auflöten 
-\item Dazu ein Pad verzinnen 
-\item Anschließend Zinn aufheizen und den Widerstand seitlich mit der Pinzette
-zuführen
-\item Danach zweite Seite festlöten
-\end{enumerate}
-%
-\end{minipage}\hspace{5mm}%
-\begin{minipage}[t][1\totalheight][b]{0.3\columnwidth}%
-\begin{flushright}
-\includegraphics[width=0.95\columnwidth]{images/modified/DSC04832}
-\par\end{flushright}%
-\end{minipage}
-\par\end{center}
-
-\begin{center}
-\vspace{5mm}
-\pagebreak{}\rule[0.5ex]{0.9\columnwidth}{1pt}
-\par\end{center}
-
-\begin{center}
-\begin{minipage}[t][1\totalheight][b]{0.59\columnwidth}%
-\begin{enumerate}
-\item Kondensator C2 mit der zuvor vorgestellten Technik auflöten
-\end{enumerate}
-%
-\end{minipage}\hspace{5mm}%
-\begin{minipage}[t][1\totalheight][b]{0.3\columnwidth}%
-\begin{flushright}
-\includegraphics[width=0.95\columnwidth]{images/modified/DSC04833}
-\par\end{flushright}%
-\end{minipage}
-\par\end{center}
-
-\begin{center}
-\vspace{5mm}
-\rule[0.5ex]{0.9\columnwidth}{1pt} 
-\par\end{center}
-
-\begin{center}
-\begin{minipage}[t][1\totalheight][b]{0.59\columnwidth}%
-\begin{enumerate}
-\item LEDs mit der zuvor vorgestellten Technik auflöten 
-\item Dazu Platine umdrehen 
-\item Ausrichtung wichtig: Auf der Platine sind Pfeile aufgedruckt. Auf
-der LED ein T. Der Vertikale Strich des T muss auf die Seite der Pfeilspitze
-zeigen
-\end{enumerate}
-\begin{center}
-\includegraphics[height=7mm]{images/smd_led}
-\par\end{center}%
-\end{minipage}\hspace{5mm}%
-\begin{minipage}[t][1\totalheight][b]{0.3\columnwidth}%
-\begin{flushright}
-\includegraphics[width=0.95\columnwidth]{images/modified/DSC04834}
-\par\end{flushright}%
-\end{minipage}
-\par\end{center}
-
-\begin{center}
-\vspace{5mm}
-\rule[0.5ex]{0.9\columnwidth}{1pt}
-\par\end{center}
-
-\begin{center}
-\begin{minipage}[t][1\totalheight][b]{0.59\columnwidth}%
-\begin{enumerate}
-\item Schalter S1 auflöten 
-\item Tipp: Beinchen haben unterschiedliche Abstände. Es muss nichts verbogen
-werden. Schalter passt exakt
-\end{enumerate}
-%
-\end{minipage}\hspace{5mm}%
-\begin{minipage}[t][1\totalheight][b]{0.3\columnwidth}%
-\begin{flushright}
-\includegraphics[width=0.95\columnwidth]{images/modified/DSC04835}
-\par\end{flushright}%
-\end{minipage}
-\par\end{center}
-
-\begin{center}
-\vspace{5mm}
-\pagebreak{}\rule[0.5ex]{0.9\columnwidth}{1pt}
-\par\end{center}
-
-\begin{center}
-\begin{minipage}[t][1\totalheight][b]{0.59\columnwidth}%
-\begin{enumerate}
-\item Batteriehalter auflöten
-\item Dazu Platine umdrehen
-\item Batteriehalter und Platine haben aufgedrucktes Plus und Minus Symbol.
-Dieses muss übereinstimmen
-\item Tipp: Beim Pluspol anfangen
-\item Zuletzt Batterie einsetzen und Schalter betätigen
-\end{enumerate}
-%
-\end{minipage}\hspace{5mm}%
-\begin{minipage}[t][1\totalheight][b]{0.3\columnwidth}%
-\begin{flushright}
-\includegraphics[width=0.95\columnwidth]{images/modified/DSC04836}
-\par\end{flushright}%
-\end{minipage}
-\par\end{center}
-
-\begin{center}
-\vspace{5mm}
-\rule[0.5ex]{0.9\columnwidth}{1pt}
-\par\end{center}
-
-\begin{center}
-\begin{minipage}[t][1\totalheight][b]{0.3\columnwidth}%
-\begin{center}
-\includegraphics[bb=230bp 95bp 680bp 550bp,clip,width=0.95\columnwidth]{\string"images/Kitchenkopf-v1.1 - Top\string".pdf}
-\par\end{center}%
-\end{minipage}\hspace{5mm}%
-\begin{minipage}[t][1\totalheight][b]{0.3\columnwidth}%
-\begin{center}
-\includegraphics[bb=200bp 100bp 650bp 550bp,clip,width=0.95\columnwidth]{\string"images/Kitchenkopf-v1.1 - Bottom\string".pdf}
-\par\end{center}%
-\end{minipage}
-\par\end{center}
+\csname @appendix\endcsname
 \end{document}
