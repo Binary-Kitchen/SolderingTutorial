@@ -1,0 +1,17 @@
+#!/bin/bash
+for d in */ ; do
+    echo "$d"
+    DIRECTORY=$d"manual/"
+	echo "$DIRECTORY"
+    if [ -d "$DIRECTORY" ]; then
+		# echo "true"
+        cd $DIRECTORY
+		 # echo ${D%$E}
+		if [ -e configuration/de_config.csv ] && [ -e configuration/de_parts.csv ] && [ -e configuration/de_steps.csv ]; then
+		 FILENAME=${d%/}"_de"
+         pdflatex --jobname=$FILENAME ../../LaTeX_config/solderingTut
+		fi
+		cd ../..
+		
+    fi
+done
