@@ -1,0 +1,11 @@
+title=Herz (DIP)
+titlePicture=images/modified/DSC04800
+skillTitle=Schwierigkeit
+skillLevel=2/5
+descriptionTitle=Anleitung
+descriptionVersion=V2.2
+descriptionLicense=CC-BY-SA 4.0 Binary Kitchen e.V.
+boardTitle=Platine
+boardVersion=V2.2
+boardLicense=CC-BY-NC-SA Arne Rossius
+appendix={\centering\includegraphics[width=.5\linewidth]{images/heartDIP}}
