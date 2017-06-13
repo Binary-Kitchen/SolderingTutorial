@@ -1,8 +1,7 @@
 *.lyx~
-KitchenHeadSMD/manual/images/.DS_Store
-KitchenHeadSMD/.DS_Store
-.DS_Store
-
+*.DS_Store
+*.swp
+*.csv#
 
 ## Core latex/pdflatex auxiliary files:
 *.aux
