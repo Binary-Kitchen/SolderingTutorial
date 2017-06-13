@@ -1,0 +1,11 @@
+title=Pfeil (SMD)
+titlePicture=images/modified/DSC04802
+skillTitle=Schwierigkeit
+skillLevel=4/5
+descriptionTitle=Anleitung
+descriptionVersion=V1.4
+descriptionLicense=CC-BY-SA 4.0 Binary Kitchen e.V.
+boardTitle=Platine
+boardVersion=V1.4
+boardLicense=CC-BY-NC-SA Arne Rossius
+appendix={\centering\includegraphics[width=.4\linewidth]{images/arrowSMD_bottom}~\includegraphics[width=.4\linewidth]{images/arrowSMD_top}}
