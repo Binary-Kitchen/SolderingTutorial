@@ -29,7 +29,7 @@ Small soldering kit with an heart on it from http://wiki.blinkenarea.org/index.p
 Status: **Complete**
 Difficulty: **4/5**
 
-##[I Can Solder DIP](ICanSolderDIP/)
+## [I Can Solder DIP](ICanSolderDIP/)
 Very easy soldering kit for using it as pin.
 Status: **Manual and pictures missing**
 Difficulty: **1/5**
