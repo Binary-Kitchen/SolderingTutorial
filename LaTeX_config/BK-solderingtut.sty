@@ -5,6 +5,7 @@
 \newcommand*{\stepName}{Schritt}
 
 \RequirePackage{booktabs}
+\RequirePackage{tabularx}
 
 \makeatletter
 \ExplSyntaxOn
@@ -44,8 +45,11 @@
 	\seq_get_left:NN \l_tmpa_seq \l_tmpa_tl
 	\seq_get_right:NN \l_tmpa_seq \l_tmpb_tl
 	\tl_clear:N \l_BK@soldering@config_tl
-	\int_step_inline:nnnn {1} {1} {\l_tmpa_tl} {\CIRCLE}%{\tl_put_right:Nn \l_BK@soldering@config_tl {\circle*{20}}}
-	\int_step_inline:nnnn {\int_eval:n {\l_tmpa_tl+1}} {1} {\l_tmpb_tl} {\Circle}%{\tl_put_right:Nn \l_BK@soldering@config_tl {\circle{20}}}
+	\begingroup
+	\csname SymbolFont\endcsname
+	\int_step_inline:nnnn {1} {1} {\l_tmpa_tl} {●}
+	\int_step_inline:nnnn {\int_eval:n {\l_tmpa_tl+1}} {1} {\l_tmpb_tl} {○}
+	\endgroup
 }
 
 
@@ -97,19 +101,34 @@
 			\clist_put_right:Nx \l_tmpa_clist{ \clist_use:Nn \BK_soldering@parts_clist {\exp_not:n {&}}}
 			
 	}}
-	
+	\ior_close:N \BK_soldering_ior
 	\clist_reverse:N \l_tmpa_clist
 	\clist_pop:NN \l_tmpa_clist \l_tmpa_tl
 	\clist_reverse:N \l_tmpa_clist
-	
-	\begin{tabular}{@{}\tl_use:N \l_BK_soldering@parts_coldef @{}}
+	\box_new:N \BK_soldering@parts_box
+	\hbox_set:Nn \BK_soldering@parts_box {%
+	\exp_args:Nnx \begin{tabular}{@{}\tl_use:N \l_BK_soldering@parts_coldef @{}}
 		\toprule
 		\clist_set:NV \BK_soldering@parts_clist \BK_soldering@parts_header
 		\clist_use:Nn \BK_soldering@parts_clist {&}\\\midrule
 		\clist_use:Nn \l_tmpa_clist {\\}\\
 		\tl_use:N \l_tmpa_tl \\\bottomrule
-	\end{tabular}
-	\ior_close:N \BK_soldering_ior
+	\end{tabular}}
+
+	\dim_compare:nTF {\box_wd:N \BK_soldering@parts_box < \dim_eval:n {\linewidth-1.5cm}} {
+		\box_use:N \BK_soldering@parts_box
+	}{
+		\tl_remove_once:Nn \l_BK_soldering@parts_coldef {l}
+		\tl_put_right:Nn \l_BK_soldering@parts_coldef {X}
+		\exp_args:Nnnx \begin{tabularx}{\linewidth}{@{}\tl_use:N \l_BK_soldering@parts_coldef @{}}
+			\toprule
+			\clist_set:NV \BK_soldering@parts_clist \BK_soldering@parts_header
+			\clist_use:Nn \BK_soldering@parts_clist {&}\\\midrule
+			\clist_use:Nn \l_tmpa_clist {\\}\\
+			\tl_use:N \l_tmpa_tl \\\bottomrule
+		\end{tabularx}
+	}
+%	
 }
 
 
