@@ -1,0 +1,12 @@
+silber,silver,SI,{204,204,204}
+gold,gold,GO,{255,204,0}
+schwarz,black,BL,{0,0,0},white
+braun,brown,BR,{204,102,51}
+rot,red,RE,{255,0,0}
+orange,orange,OR,{255,153,51}
+gelb,yellow,YE,{255,255,0}
+grün,green,GR,{0,128,0}
+blau,blue,BL,{0,0,255}
+violett,violett,VI,{204,0,204}
+grau,grey,GR,{153,153,153}
+weiß,white,WH,{255,255,255}
