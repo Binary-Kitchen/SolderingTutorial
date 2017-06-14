@@ -55,4 +55,4 @@ Copyright (c) Binary Kitchen e.V., 2017
 
 Authors:
 Arne Rossius <Arnes Email>
-Thomas Basler <thomas@familie-basler.net>
+Thomas Basler <noby@binary-kitchen.de>
