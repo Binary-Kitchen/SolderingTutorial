@@ -1,5 +1,5 @@
 images/modified/DSC04775,Tipps:;Widerstandsgröße kann über Farbkodierung ermittelt werden;Ausrichtung der Platine so{;} dass Binary Kitchen e.V. normal gelesen werden kann (siehe Bild);Ausrichtung bei Widerständen ist egal;LEDs haben eine Flache Seite und ein kürzeres Beinchen. Beides zeigt die negative Seite an
-images/modified/DSC04776,Beide ICs mit der Nase nach oben auf die Platine löten;Pinanzahl beachten: IC1 mit 14 Beinchen links{;} IC2 mit 16 Beinchen rechts
+images/modified/DSC04776,Beide IC Sockel mit der Nase nach oben auf die Platine löten;Achtung: Nicht den IC sondern nur den IC-Sockel;Pinanzahl beachten: IC1 mit 14 Beinchen links{;} IC2 mit 16 Beinchen rechts
 images/modified/DSC04779,Widerstände R1 (2{;}2 kOhm) und R2 (1 MOhm) einlöten;Ausrichtung ist egal
 images/modified/DSC04780,Widerstäne R3 (2{;}2 kOhm) und R4 (2{;}2 MOhm) einlöten;Ausrichtung ist egal
 images/modified/DSC04781,Wiederstände R5 (120 kOhm){;} R6 (1{;}5 kOhm){;} R7 (1{;}8 kOhm){;} R8 (1{;}5 kOhm) und R9 (3{;}3 kOhm) einlöten;Ausrichtung ist egal
