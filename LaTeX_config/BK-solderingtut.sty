@@ -46,8 +46,10 @@
 \box_new:c {l_BK@\clist_item:nn {#1} {2}_resistor_box}
 
 \hbox_set:cn {l_BK@\clist_item:nn {#1} {2}_resistor_box} {
+	\mbox{%
 	\exp_args:Nx \tl_if_empty:nF {\clist_item:nn {#1} {5}}{ \color{\clist_item:nn {#1} {5}}}
 	\footnotesize\tikz[baseline=0]\node[minimum~ width=2.3em,anchor=base,rectangle,fill=BK@\clist_item:nn {#1} {2}]{\clist_item:nn {#1} {3}};
+	}%
 }
 
 \clist_gput_right:Nn \g_BK@resistorColorLegend_clist {\clist_item:nn {#1} {3}${}={}$\clist_item:nn {#1} {1}}
@@ -180,7 +182,10 @@
 	\end{tabular}}
 
 	\dim_compare:nTF {\box_wd:N \BK_soldering@parts_box < \dim_eval:n {\linewidth-1.5cm}} {
+		\parbox{\linewidth}{%
+		\centering
 		\box_use:N \BK_soldering@parts_box
+		}
 	}{
 		\tl_remove_once:Nn \l_BK_soldering@parts_coldef_tl {l}
 		\tl_put_right:Nn \l_BK_soldering@parts_coldef_tl {X}
@@ -238,14 +243,16 @@
 	\begin{titlepage}
 %		\thispagestyle{scrplain}
 		\centering
+		\vspace*{\fill}
 		
 		{\Huge\@title}
-		\vspace{1cm}
+		\vfill
 		
 		\includegraphics[width=.5\linewidth]{\@titlePicture}
 		\vfill
 		
 		\@parts
+		
 		\vfill
 		\@skillTitle: \@skillLevel\par
 		\bigskip
@@ -262,7 +269,7 @@
 
 \usepackage{scrlayer-scrpage}
 \DeclareNewLayer[rightmargin,%align=br,area={\dimexpr\paperwidth-1cm\relax}{\dimexpr\paperheight-1cm\relax}{1cm}{1cm},
-contents={\parbox[t][\layerheight]{\layerwidth}{\rule{0pt}{\dimexpr\paperheight-1\linewidth\relax}\\\includegraphics[width=.8\linewidth]{../../LaTeX_config/BinaryKitchen_logo}}\hspace*{.2\linewidth}}
+contents={\parbox[t][\layerheight]{\layerwidth}{\rule{0pt}{\dimexpr\paperheight-1\linewidth\relax}\\\includegraphics[width=.8\linewidth]{../../LaTeX_config/BinaryKitchen_logoBW}}\hspace*{.2\linewidth}}
 ]{BinaryKitchenMark}
 
 \DeclareNewLayer[foot,
