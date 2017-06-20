@@ -1,4 +1,4 @@
-Failure,Possible Solution
+%Failure,Possible Solution
 Keine LED leuchtet,Batteriekabel nicht abisoliert oder festgeschraubt;Batterie verkehrt eingelegt;µController nicht ganz im Sockel;
 Eine LED leuchtet nicht,LED verkehrt herum -> andere LED zum Test an die Pins auf der Rückseite halten
-Einige LEDs leuchten nicht oder immer,"es wurde nicht beachtet, dass LEDs eine Richtung haben -> Orientierung überprüfen"
+Einige LEDs leuchten nicht oder immer, es wurde nicht beachtet{,} dass LEDs eine Richtung haben -> Orientierung überprüfen

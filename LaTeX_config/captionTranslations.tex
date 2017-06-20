@@ -1,0 +1,16 @@
+\makeatletter
+\providecaptionname{ngerman}{\soldering@failureLabel}{Fehlerbeschreibung}
+\providecaptionname{english}{\soldering@failureLabel}{Failure}
+\providecaptionname{ngerman}{\soldering@solutionLabel}{Lösungsvorschlag}
+\providecaptionname{english}{\soldering@solutionLabel}{Possible Solution}
+
+\newcommand*{\commonFailure@de}[1]{Typische Fehler \& Lösungsvorschläge bei #1-Bausätzen}
+\newcommand*{\commonFailure@en}[1]{}%TODO
+
+\providecaptionname{ngerman}{\soldering@commonsmdfailures}{\commonFailure@de{SMD}}
+\providecaptionname{english}{\soldering@commonsmdfailures}{\commonFailure@en{SMD}}
+
+\providecaptionname{ngerman}{\soldering@commondipfailures}{\commonFailure@de{DIP}}
+\providecaptionname{english}{\soldering@commondipfailures}{\commonFailure@en{DIP}}
+
+\makeatother

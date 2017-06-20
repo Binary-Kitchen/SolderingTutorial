@@ -1,5 +1,5 @@
-Failure,Possible Solution
+%Failure,Possible Solution
 Keine LED leuchtet,Knopf drücken;Batterie verkehrt eingelegt oder der Halter ist verbogen -> eine Klammer muss von oben auf die Knopfzelle drücken;µController hat einen Kurzschluss oder offenen Pin
-Eine LED leuchtet nicht,"LED verkehrt herum -> genau hinschauen, da ist eine grüne Linie zu sehen"
+Eine LED leuchtet nicht,LED verkehrt herum -> genau hinschauen{,} da ist eine grüne Linie zu sehen
 Drei (oder sechs) LEDs leuchten nicht,Ein Widerstand ist nicht angelötet;Ein Pin vom µController ist nicht angelötet;Kapazität mit Widerstand verwechselt
 Die Hälfte der LEDs leutet immer,LEDs haben eine Richtung -> Orientierung überprüfen

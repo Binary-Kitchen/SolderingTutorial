@@ -1,0 +1,147 @@
+% !TeX program=lualatex
+\documentclass[parskip=half*,DIV=16,fontsize =10pt]{scrartcl}
+\usepackage{fontspec}
+\setmainfont{FreeSans}
+\newfontface\SymbolFont{Linux Libertine O}
+
+\usepackage{microtype}
+\usepackage{graphicx}
+
+\RequirePackage{expl3}
+
+\RequirePackage{booktabs}
+\RequirePackage{tabularx}
+\usepackage{longtable}
+
+\input{../LaTeX_config/captionTranslations}
+
+\makeatletter
+
+
+
+\ExplSyntaxOn
+\ior_new:N \BK_soldering_ior
+
+
+\keys_define:nn {BinaryKitchen} {
+	language .choice:,
+}
+
+\ior_open:Nn \BK_soldering_ior {../LaTeX_config/languages.csv}
+
+\ior_map_inline:Nn \BK_soldering_ior {\exp_args:Nnx \keys_define:nn {BinaryKitchen} {language / \clist_item:nn {#1} {1} .code:n = \PassOptionsToPackage{\clist_item:nn {#1} {2}}{babel}}}
+
+\ior_close:N \BK_soldering_ior
+
+\exp_args:NNV \seq_set_split:NnV  \l_tmpa_seq \c_underscore_str \c_sys_jobname_str
+\seq_get_right:NN \l_tmpa_seq \l_tmpa_tl
+
+
+\exp_args:Nnx \keys_set:nn {BinaryKitchen} {
+	language = \tl_use:N \l_tmpa_tl
+}
+
+\RequirePackage{xcolor}
+\RequirePackage{tikz}
+
+\keys_define:nn {BinaryKitchen} {
+	title .code:n= \cs_set:Npn \@title {#1},
+	titlePicture .code:n = \cs_set:Npn \@titlePicture {#1},
+	skillTitle .code:n = \cs_set:Npn \@skillTitle {#1},
+	%	skillLevel .code:n = \BK_setupSkillLevel:n{#1},
+	skillLevel .tl_gset:N = \g_BK@skillLevel_tl, 
+	descriptionTitle .code:n = \cs_set:Npn \@descriptionTitle {#1},
+	descriptionVersion .code:n = \cs_set:Npn \@descriptionVersion {#1},
+	descriptionLicense .code:n = \cs_set:Npn \@descriptionLicense {#1},
+	boardTitle .code:n = \cs_set:Npn \@boardTitle  {#1},
+	boardVersion .code:n = \cs_set:Npn \@boardVersion {#1},
+	boardLicense .code:n = \cs_set:Npn \@boardLicense {#1},
+	appendix .code:n = \cs_set:Npn \@appendix {#1},
+	additionalSettings .code:n = \AtBeginDocument{#1}
+}
+
+\msg_new:nnn {BinaryKitchen} {TooManyCols} {
+	The~ file~ #1~ has~ more~ than~ #2~ columns.\\\\
+	You~ possibly~ forgot~ to group~ a~ comma~ inside~ the~ text.
+}
+
+\cs_new:Nn 	\tableitemize_from_list:nn {
+	\seq_set_split:Nnn \l_tmpa_seq {#2} {#1}
+	\begin{tableitemize}
+		\seq_map_inline:Nn \l_tmpa_seq {\item ##1}
+	\end{tableitemize}
+}
+
+%\cs_generate_variant:Nn \tableitemize_from_list:nn {Vn}
+
+\cs_new:Nn \table_from_sequences:nn {
+	\midrule
+	#1 & #2 \\
+}
+
+
+\seq_new:N \l_BK_soldering@failures_seq
+\seq_new:N \l_BK_soldering@solutions_seq
+
+\newcommand*{\PrintCSVTable}[1]{
+\ior_open:Nn \BK_soldering_ior {#1}
+
+
+\ior_map_inline:Nn \BK_soldering_ior {
+	\int_compare:nF {\clist_count:n {##1} <= 2} {\msg_error:nnnn {BinaryKitchen} {TooManyCols} {#1} {2}}
+	
+	\tl_if_empty:nF {##1} {
+	
+	\clist_set:Nn \l_tmpa_clist {##1}
+	
+	\seq_put_right:Nx \l_BK_soldering@failures_seq {
+		\clist_item:Nn \l_tmpa_clist {1}
+	}
+%		\exp_not:n {&}
+
+	\tl_set:Nx \l_tmpa_tl {\clist_item:Nn \l_tmpa_clist {2}}
+	\tl_replace_all:Nnn \l_tmpa_tl {->} {$\to$}
+
+	\tl_if_in:NnTF \l_tmpa_tl {;} {
+		\seq_put_right:Nx \l_BK_soldering@solutions_seq {
+			\exp_not:N \tableitemize_from_list:nn {\l_tmpa_tl} {;}
+		}
+	} {
+		\seq_put_right:NV \l_BK_soldering@solutions_seq \l_tmpa_tl
+	}
+}
+}
+
+\ior_close:N \BK_soldering_ior
+
+\begin{longtable}{@{}*2{p{\dimexpr.5\linewidth-\tabcolsep}}@{}}
+\toprule
+\soldering@failureLabel & \soldering@solutionLabel\tabularnewline
+\seq_mapthread_function:NNN	\l_BK_soldering@failures_seq \l_BK_soldering@solutions_seq \table_from_sequences:nn
+\bottomrule
+\end{longtable}
+
+}
+
+\ExplSyntaxOff
+
+\usepackage{babel}
+
+\usepackage{enumitem}
+
+\newlist{tableitemize}{itemize}{1}
+\setlist[tableitemize]{nosep,label={--},before*=%
+	\begin{minipage}[t]{\linewidth}\setlength{\parskip}{0pt},after=\end{minipage}%
+	,leftmargin=*}
+
+
+\begin{document}
+
+\addsec{\soldering@commonsmdfailures}
+\PrintCSVTable{common-failure-smd_de.csv}
+
+\addsec{\soldering@commondipfailures}
+\PrintCSVTable{common-failure-dip_de.csv}
+
+
+\end{document}
