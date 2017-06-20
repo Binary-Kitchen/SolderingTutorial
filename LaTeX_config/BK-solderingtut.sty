@@ -18,7 +18,9 @@
 
 \ior_open:Nn \BK_soldering_ior {../../LaTeX_config/languages.csv}
 
-\ior_map_inline:Nn \BK_soldering_ior {\exp_args:Nnx \keys_define:nn {BinaryKitchen} {language / \clist_item:nn {#1} {1} .code:n = \PassOptionsToPackage{\clist_item:nn {#1} {2}}{babel}}}
+\ior_map_inline:Nn \BK_soldering_ior {\exp_args:Nnx \keys_define:nn {BinaryKitchen} {language / \clist_item:nn {#1} {1} .code:n = \PassOptionsToPackage{\clist_item:nn {#1} {2}}{babel}}
+\PassOptionsToPackage{locale=\clist_item:nn {#1} {3}}{siunitx}
+}
 	
 \ior_close:N \BK_soldering_ior
 
@@ -28,6 +30,8 @@
 \exp_args:Nnx \keys_set:nn {BinaryKitchen} {
 	language = \l_tmpa_tl
 }
+
+\RequirePackage{siunitx}
 
 \RequirePackage{xcolor}
 \RequirePackage{tikz}
