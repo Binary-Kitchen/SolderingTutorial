@@ -9,9 +9,14 @@ for d in */ ; do
 		 # echo ${D%$E}
 		if [ -e configuration/de_config.csv ] && [ -e configuration/de_parts.csv ] && [ -e configuration/de_steps.csv ]; then
 		 FILENAME=${d%/}"_de"
-         lualatex --jobname=$FILENAME ../../LaTeX_config/solderingTut
+         latexmk --lualatex --jobname=$FILENAME ../../LaTeX_config/solderingTut
 		fi
 		cd ../..
 		
     fi
+	
+	cd misc
+	latexmk -lualatex --jobname="commonFailures_de" ../LaTeX_config/commonFailures
+	cd ..
+	
 done

@@ -85,7 +85,7 @@
 	\seq_get_right:NN \l_tmpa_seq \l_tmpb_tl
 	\tl_clear:N \l_BK@soldering@config_tl
 	\begingroup
-	\csname SymbolFont\endcsname
+	\SymbolFont
 	\int_step_inline:nnnn {1} {1} {\l_tmpa_tl} {●}
 	\int_step_inline:nnnn {\int_eval:n {\l_tmpa_tl+1}} {1} {\l_tmpb_tl} {○}
 	\endgroup
@@ -217,7 +217,7 @@
 	\renewcommand*{\bild}[1]{\includegraphics[width=\linewidth]{##1}}
 	\ior_open:Nn \BK_soldering_ior {configuration/de_steps.csv}
 	\ior_map_inline:Nn \BK_soldering_ior {
-		%	\clist_show:n {##1}
+%			\clist_show:n {##1}
 		\exp_args:NNnx \seq_set_split:Nnn \l_BK_soldering@step_seq {;} {\clist_item:nn {##1} {2}}
 		\rule{\linewidth}{.4pt}\\
 		\begin{minipage}[t]{\dimexpr\linewidth-\ImageColWidth-2\tabcolsep\relax}
@@ -263,6 +263,7 @@
 			\@descriptionTitle&\@descriptionVersion& \@descriptionLicense\\
 			\@boardTitle&\@boardVersion&\@boardLicense
 		\end{tabular}
+
 	\end{titlepage}
 }
 

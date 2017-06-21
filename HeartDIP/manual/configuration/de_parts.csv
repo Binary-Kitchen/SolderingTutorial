@@ -1,8 +1,8 @@
 Menge,Name,Beschreibung,Beschriftung/Farbcode
-1,C1,Keramik Kondensator 100nF,104
+1,C1,Keramik Kondensator \SI{100}{\nano\farad},104
 1,IC1,Mikrocontroller Atmel ATTiny 2313A,
-18,LED1 - LED18,LED 5mm,
-6,R1 - R6,Widerstand 47 Ohm,Gelb - Violett - Schwarz - Gold - Braun
+18,LED1--LED18,LED \SI{5}{\mm},
+6,R1--R6,Widerstand \SI{47}{\ohm},Gelb - Violett - Schwarz - Gold - Braun
 1,S1,Taster,
 1,X1,Klemme 2-polig,
 1,,IC-Sockel 20-polig,
