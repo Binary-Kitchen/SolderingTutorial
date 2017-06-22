@@ -24,7 +24,7 @@ Small soldering kit with an heart on from https://wiki.blinkenarea.org/index.php
 ### Manual
 You can find the manual and pictures of every step in the manual folder.
 
-###Copyright
+### Copyright
 The project is based on http://wiki.blinkenarea.org/index.php/AntiKippenLights-Mini
 
-CC-BY-NC-SA - Arne Roussius
+CC-BY-NC-SA - Arne Rossius

@@ -22,8 +22,8 @@ Small soldering kit using SMD components with the kitchen head on it.
 ### Manual
 You can find the manual and pictures of every step in the manual folder.
 
-###Copyright
+### Copyright
 The project is based on http://wiki.blinkenarea.org/index.php/AntiKippenLights-Mini
 
-Board: CC-BY-NC-SA - Arne Roussius, Thomas Basler
-Manual: CC-BY-SA - Binary Kitchen e.V.
+- Board: CC-BY-NC-SA - Arne Rossius, Thomas Basler
+- Manual: CC-BY-SA - Binary Kitchen e.V.

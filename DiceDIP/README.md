@@ -35,5 +35,5 @@ Electronic dice which uses button bouncing and timing for randomness.
 ### Manual
 You can find the manual and pictures of every step in the manual folder.
 
-###Copyright
+### Copyright
 The project is based on https://www.ei.rub.de/media/ei/attachments/files/2009/12/Dokumentation_elektronischer_Wuerfel.pdf
