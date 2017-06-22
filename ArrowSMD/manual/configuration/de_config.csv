@@ -8,4 +8,4 @@ descriptionLicense=CC-BY-SA 4.0 Binary Kitchen e.V.
 boardTitle=Platine
 boardVersion=V1.4
 boardLicense=CC-BY-NC-SA Arne Rossius
-appendix={\centering\includegraphics[width=.4\linewidth]{images/arrowSMD_bottom}~\includegraphics[width=.4\linewidth]{images/arrowSMD_top}}
+appendix={\centering\includegraphics[width=.35\linewidth]{images/arrowSMD_bottom}~\includegraphics[width=.35\linewidth]{images/arrowSMD_top}}
