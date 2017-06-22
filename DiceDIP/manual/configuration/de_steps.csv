@@ -1,13 +1,13 @@
 images/modified/DSC04775,Tipps:;Widerstandsgröße kann über Farbkodierung ermittelt werden;Ausrichtung der Platine so{,} dass Binary Kitchen e.V. normal gelesen werden kann (siehe Bild);Ausrichtung bei Widerständen ist egal;LEDs haben eine Flache Seite und ein kürzeres Beinchen. Beides zeigt die negative Seite an
-images/modified/DSC04776,Beide IC Sockel (Nur den Sockel, nicht der eigentliche IC-Baustein) mit der Nase nach oben auf die Platine löten;Achtung: Nicht den IC sondern nur den IC-Sockel;Pinanzahl beachten: IC1 mit 14 Beinchen links{;} IC2 mit 16 Beinchen rechts
-images/modified/DSC04779,Widerstände R1 (2{;}2 kOhm) und R2 (1 MOhm) einlöten;Ausrichtung ist egal
-images/modified/DSC04780,Widerstäne R3 (2{;}2 kOhm) und R4 (2{;}2 MOhm) einlöten;Ausrichtung ist egal
-images/modified/DSC04781,Wiederstände R5 (120 kOhm){;} R6 (1{;}5 kOhm){;} R7 (1{;}8 kOhm){;} R8 (1{;}5 kOhm) und R9 (3{;}3 kOhm) einlöten;Ausrichtung ist egal
+images/modified/DSC04776,Beide IC Sockel (Nur den Sockel{,} nicht der eigentliche IC-Baustein) mit der Nase nach oben auf die Platine löten;Achtung: Nicht den IC sondern nur den IC-Sockel;Pinanzahl beachten: IC1 mit 14 Beinchen links{,} IC2 mit 16 Beinchen rechts
+images/modified/DSC04779,Widerstände R1 (\SI{2,2}{\kilo\ohm}) und R2 (\SI{1}{\mega\ohm}) einlöten;Ausrichtung ist egal
+images/modified/DSC04780,Widerstäne R3 (\SI{2,2}{\kilo\ohm}) und R4 (\SI{2,2}{\mega\ohm}) einlöten;Ausrichtung ist egal
+images/modified/DSC04781,Wiederstände R5 (\SI{120}{\kilo\ohm}){,} R6 (\SI{1,5}{\kilo\ohm}){,} R7 (\SI{1,8}{\kilo\ohm}){,} R8 (\SI{1,5}{\kilo\ohm}) und R9 (\SI{3,3}{\kilo\ohm}) einlöten;Ausrichtung ist egal
 images/modified/DSC04782,Achtung! Ausrichtung bei Dioden entscheidend;Dioden D1 bis D3 (BAW76) mit schwarzer Seite in Richtung weißer Markierung auf der Platine einlöten;Diode D10 (1N4007) mit weißer Seite in Richtung weißer Markierung auf der Platine einlöten
 images/modified/DSC04783,Kondensatoren C1 (104) und C2 (104) einlöten;Ausrichtung ist egal
 images/modified/DSC04784,Achtung! Ausrichtung des Transistors wichtig;Transistor T1 (BC547) gemäß Markierung einlöten;Ausrichtung: Flache Seite nach unten
-images/modified/DSC04785,Achtung! Ausrichtung des Kondensators wichtig;Kondensator C3 (47 uF) mit langem Beinchen (+) nach unten auflöten;Tipp: Auf der Platine ist ein Pluszeichen aufgedruckt
+images/modified/DSC04785,Achtung! Ausrichtung des Kondensators wichtig;Kondensator C3 (\SI{47}{\micro\farad}) mit langem Beinchen (+) nach unten auflöten;Tipp: Auf der Platine ist ein Pluszeichen aufgedruckt
 images/modified/DSC04786,Schalter S1 auflöten;Tipp: Beinchen haben unterschiedliche Abstände. Es muss nichts verbogen werden. Schalter passt exakt; Eventuell etwas Druck erforderlich
 images/modified/DSC04787,Achtung! Ausrichtung der LED entscheidend;LED 1-7 auflöten. Ausrichtung wichtig! Kurzes Beinchen nach oben
 images/modified/DSC04788,Stromanschluss X1 mit Öffnung nach oben einlöten
-images/modified/DSC04789,Batteriehalter anklemmen (VCC rot, GND schwarz);Beide ICs in die Sockel stecken (Anzahl der Beinchen zählen! Hier gibt es Unterschiede);Batterien einlegen;Taster betätigen. Fertig.;Würfel geht von selbst wieder aus
+images/modified/DSC04789,Batteriehalter anklemmen (VCC rot{,} GND schwarz);Beide ICs in die Sockel stecken (Anzahl der Beinchen zählen! Hier gibt es Unterschiede);Batterien einlegen;Taster betätigen. Fertig.;Würfel geht von selbst wieder aus
