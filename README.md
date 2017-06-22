@@ -5,7 +5,7 @@ We've tried to collect and create tutorials with different difficulties and are 
 
 ## Soldering Kits
 
-### [Arrow SMD](ArrowDIP/) 
+### [Arrow SMD](ArrowSMD/) 
 Small soldering kit with an arrow on it from https://wiki.blinkenarea.org/index.php/AntiKippenLights-Mini.
 
 <img src="ArrowSMD/manual/images/modified/DSC04802.jpg" width=400px alt="Arrow SMD">
