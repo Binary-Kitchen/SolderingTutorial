@@ -37,3 +37,6 @@ You can find the manual and pictures of every step in the manual folder.
 
 ### Copyright
 The project is based on https://www.ei.rub.de/media/ei/attachments/files/2009/12/Dokumentation_elektronischer_Wuerfel.pdf
+
+- Board: CC-BY-SA - Thomas Basler, 2017
+- Manual: CC-BY-SA - Binary Kitchen e.V., 2017
