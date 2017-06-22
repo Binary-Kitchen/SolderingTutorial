@@ -29,7 +29,7 @@ Small soldering kit with an heart on from https://wiki.blinkenarea.org/index.php
 - Status: **Complete**
 - Difficulty: **2/5**
 
-## [Heart SMD](HeartSMD/) 
+### [Heart SMD](HeartSMD/) 
 Small soldering kit with an heart on it from http://wiki.blinkenarea.org/index.php/AKL-Mini
 
 <img src="HeartSMD/manual/images/modified/DSC04825.jpg" width=400px alt="Heart SMD">
@@ -37,19 +37,19 @@ Small soldering kit with an heart on it from http://wiki.blinkenarea.org/index.p
 - Status: **Complete**
 - Difficulty: **4/5**
 
-## [I Can Solder DIP](ICanSolderDIP/)
+### [I Can Solder DIP](ICanSolderDIP/)
 Very easy soldering kit for using it as pin.
 
 - Status: **Manual and pictures missing**
 - Difficulty: **1/5**
 
-## [Kitchen Head DIP](KitchenHeadDIP/)
+### [Kitchen Head DIP](KitchenHeadDIP/)
 Small soldering kit with the kitchen head on it.
 
 - Status: **In development**
 - Difficulty: **3/5**
 
-## [Kiten Head SMD](KitchenHeadSMD/) 
+### [Kiten Head SMD](KitchenHeadSMD/) 
 Small soldering kit using SMD components with the kitchen head on it.
 
 <img src="KitchenHeadSMD/manual/images/modified/DSC04829.jpg" width=400px alt="Heart SMD">
