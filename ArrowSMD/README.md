@@ -1,4 +1,4 @@
-#Arrow - SMD
+# Arrow - SMD
 Small soldering kit with an arrow on it from https://wiki.blinkenarea.org/index.php/AntiKippenLights-Mini.
 
 <img src="manual/images/modified/DSC04802.jpg" width=400px alt="Arrow SMD">
