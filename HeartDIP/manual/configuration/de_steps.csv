@@ -1,8 +1,8 @@
-images/modified/DSC04791,"Tipps:;Widerstandsgröße kann über Farbkodierung ermittelt werden;Ausrichtung der Platine so{,} dass LED-Bezeichnung normal gelesen werden kann (siehe Bild);Ausrichtung bei Widerständen ist egal;LEDs haben eine Flache Seite und ein kürzeres Beinchen. Beides zeigt die negative Seite an"
+images/modified/DSC04791,Tipps:;Widerstandsgröße kann über Farbkodierung ermittelt werden;Ausrichtung der Platine so{,} dass LED-Bezeichnung normal gelesen werden kann (siehe Bild);Ausrichtung bei Widerständen ist egal;LEDs haben eine Flache Seite und ein kürzeres Beinchen. Beides zeigt die negative Seite an
 images/modified/DSC04793,IC1-Fassung mit der Nase nach links auf die Platine löten
 images/modified/DSC04795,Widerstände R1 bis R6 (\SI{47}{\ohm}) einlöten;Ausrichtung ist egal
 images/modified/DSC04796,Kondensator C1 (104) auflöten;Ausrichtung ist egal
 images/modified/DSC04797,LED1 bis LED18 auflöten;Achtung! Ausrichtung wichtig. Ausrichtung wechselt auf der Platine;LEDs haben eine Flache Seite und ein kürzeres Beinchen. Beides zeigt die negative Seite an;Auf der Platine wird die negative Seite durch eine Abflachung dargestellt
 images/modified/DSC04798,Schalter S1 auflöten;Tipp: Beinchen haben unterschiedliche Abstände. Es muss nichts verbogen werden. Schalter passt exakt
 images/modified/DSC04799,Stromanschluss X1 mit Öffnung nach unten
-images/modified/DSC04800,"IC1 mit der Nase nach links in Fassung einstecken;Tipp: Die Beinchen des ICs müssen leicht zurechtgebogen werden{,} um in die Fassung zu passen;Batterie anschrauben;Batterien einlegen;Fertig!"
+images/modified/DSC04800,IC1 mit der Nase nach links in Fassung einstecken;Tipp: Die Beinchen des ICs müssen leicht zurechtgebogen werden{,} um in die Fassung zu passen;Eventuell Isolierung an den Spitzen der Anschlusskabel der Batterie entfernen und verzinnen;Batterie anschrauben (+ rot{,} - schwarz);Batterien einlegen;Fertig!
