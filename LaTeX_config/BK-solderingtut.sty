@@ -48,12 +48,14 @@
 
 
 \box_new:c {l_BK@\clist_item:nn {#1} {2}_resistor_box}
+
 \hbox_set:cn {l_BK@\clist_item:nn {#1} {2}_resistor_box} {
 	\mbox{%
 	\exp_args:Nx \tl_if_empty:nF {\clist_item:nn {#1} {5}}{ \color{\clist_item:nn {#1} {5}}}
 	\footnotesize\tikz[baseline=0]\node[minimum~ width=2.3em,anchor=base,rectangle,fill=BK@\clist_item:nn {#1} {2}]{\clist_item:nn {#1} {3}};
 	}%
 }
+
 \clist_gput_right:Nn \g_BK@resistorColorLegend_clist {\clist_item:nn {#1} {3}${}={}$\clist_item:nn {#1} {1}}
 
 }
