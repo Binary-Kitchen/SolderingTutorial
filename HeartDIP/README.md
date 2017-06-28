@@ -1,7 +1,7 @@
 # Heart - DIP
 Small soldering kit with an heart on from https://wiki.blinkenarea.org/index.php/AntiKippenLights-Atmel
 
-<img src="manual/images/modified/DSC04800.jpg" width=400px alt="Heart DIP">
+<img src="manual/images/DSC04800.jpg" width=400px alt="Heart DIP">
 
 - Status: **Complete**
 - Difficulty: **2/5**

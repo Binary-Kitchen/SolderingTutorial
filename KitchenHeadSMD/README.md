@@ -1,7 +1,7 @@
 # KitchenHead - SMD
 Small soldering kit using SMD components with the kitchen head on it.
 
-<img src="manual/images/modified/DSC04829.jpg" width=400px alt="Heart SMD">
+<img src="manual/images/DSC04829.jpg" width=400px alt="Heart SMD">
 
 - Status: **Complete**
 - Difficulty: **4/5**

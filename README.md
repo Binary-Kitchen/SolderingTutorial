@@ -8,7 +8,7 @@ We've tried to collect and create tutorials with different difficulties and are 
 ### [Arrow SMD](ArrowSMD/) 
 Small soldering kit with an arrow on it from https://wiki.blinkenarea.org/index.php/AntiKippenLights-Mini.
 
-<img src="ArrowSMD/manual/images/modified/DSC04802.jpg" width=400px alt="Arrow SMD">
+<img src="ArrowSMD/manual/images/DSC04802.jpg" width=400px alt="Arrow SMD">
 
 - Status: **Complete**
 - Difficulty: **4/5**
@@ -16,7 +16,7 @@ Small soldering kit with an arrow on it from https://wiki.blinkenarea.org/index.
 ### [Dice DIP](DiceDIP/) 
 Electronic dice which uses button bouncing and timing for randomness.
 
-<img src="DiceDIP/manual/images/modified/DSC04788.jpg" width=400px alt="Dice DIP">
+<img src="DiceDIP/manual/images/DSC04788.jpg" width=400px alt="Dice DIP">
 
 - Status: **Complete**
 - Difficulty: **3/5**
@@ -24,7 +24,7 @@ Electronic dice which uses button bouncing and timing for randomness.
 ### [Heart DIP](HeartDIP/) 
 Small soldering kit with an heart on from https://wiki.blinkenarea.org/index.php/AntiKippenLights-Atmel
 
-<img src="HeartDIP/manual/images/modified/DSC04800.jpg" width=400px alt="Heart DIP">
+<img src="HeartDIP/manual/images/DSC04800.jpg" width=400px alt="Heart DIP">
 
 - Status: **Complete**
 - Difficulty: **2/5**
@@ -32,7 +32,7 @@ Small soldering kit with an heart on from https://wiki.blinkenarea.org/index.php
 ### [Heart SMD](HeartSMD/) 
 Small soldering kit with an heart on it from http://wiki.blinkenarea.org/index.php/AKL-Mini
 
-<img src="HeartSMD/manual/images/modified/DSC04825.jpg" width=400px alt="Heart SMD">
+<img src="HeartSMD/manual/images/DSC04825.jpg" width=400px alt="Heart SMD">
 
 - Status: **Complete**
 - Difficulty: **4/5**
@@ -52,7 +52,7 @@ Small soldering kit with the kitchen head on it.
 ### [Kiten Head SMD](KitchenHeadSMD/) 
 Small soldering kit using SMD components with the kitchen head on it.
 
-<img src="KitchenHeadSMD/manual/images/modified/DSC04829.jpg" width=400px alt="Heart SMD">
+<img src="KitchenHeadSMD/manual/images/DSC04829.jpg" width=400px alt="Heart SMD">
 
 - Status: **Complete**
 - Difficulty: **4/5**

@@ -1,7 +1,7 @@
 # Heart - SMD
 Small soldering kit with an heart on it from http://wiki.blinkenarea.org/index.php/AKL-Mini
 
-<img src="manual/images/modified/DSC04825.jpg" width=400px alt="Heart SMD">
+<img src="manual/images/DSC04825.jpg" width=400px alt="Heart SMD">
 
 - Status: **Complete**
 - Difficulty: **4/5**

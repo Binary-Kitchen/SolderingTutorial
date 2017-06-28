@@ -1,7 +1,7 @@
 # Dice DIP
 Electronic dice which uses button bouncing and timing for randomness.
 
-<img src="manual/images/modified/DSC04788.jpg" width=400px alt="Dice DIP">
+<img src="manual/images/DSC04788.jpg" width=400px alt="Dice DIP">
 
 - Status: **Complete**
 - Difficulty: **4/5**
