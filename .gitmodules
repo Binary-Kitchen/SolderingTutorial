@@ -1,4 +1,4 @@
 [submodule "resources"]
 	path = resources
-	url = git@github.com:Binary-Kitchen/SolderingTutorial-resources.git
+	url = https://github.com/Binary-Kitchen/SolderingTutorial-resources.git
 	branch = master
