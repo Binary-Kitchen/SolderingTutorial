@@ -11,10 +11,27 @@
 
 \usepackage{babel}
 
+
+\ExplSyntaxOn
+%\str_if_eq_p:NN
+
+\exp_args:Nx \str_if_eq:nnTF {\jobname} {ICanSolderDIP_de} {\let\solderingTutDocumentContent\relax}  {
+
+	\newcommand{\solderingTutDocumentContent}{	
+			
+		\csname BK@maketitle\endcsname
+		\par
+		
+		\Printsteps
+		\par
+		\csname @appendix\endcsname
+		
+	}
+
+}
+
+\ExplSyntaxOff
+
 \begin{document}
-\csname BK@maketitle\endcsname
-
-\Printsteps
-
-\csname @appendix\endcsname
+\solderingTutDocumentContent
 \end{document}

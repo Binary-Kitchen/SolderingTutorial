@@ -19,6 +19,8 @@ for target in */manual ; do
 	pushd $target
 	latexmk --lualatex --jobname=${project}_${MAN_LANG} ../../LaTeX_config/solderingTut || \
 	       	die "Latexmk failed for $target"
+	latexmk --lualatex --jobname=misc/${project}_label_${MAN_LANG} ../../LaTeX_config/solderingLabels.tex || \
+	       	die "Latexmk failed for $target label"
 	popd
 done
 

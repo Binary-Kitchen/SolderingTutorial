@@ -3,9 +3,9 @@ titlePicture=images/DSC04820
 skillTitle=Schwierigkeit
 skillLevel=4/5
 descriptionTitle=Anleitung
-descriptionVersion=V1.4
+descriptionVersion=v1.4
 descriptionLicense=CC-BY-SA 4.0 Binary Kitchen e.V.
 boardTitle=Platine
-boardVersion=V1.4
+boardVersion=v1.4
 boardLicense=CC-BY-NC-SA Arne Rossius
 appendix={\centering\includegraphics[width=.3\linewidth]{images/heartSMD-bottom}~\includegraphics[width=.3\linewidth]{images/heartSMD-top}}

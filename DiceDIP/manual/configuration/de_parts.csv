@@ -6,7 +6,7 @@ Menge,Name,Beschreibung,Beschriftung/Farbcode
 1,IC1,CMOS-IC 4029,
 1,IC2,CMOS-IC 4093,
 7,LED1 -- LED7,LED \SI{5}{\mm},
-2,R1{,} R3,Widerstand \SI{2}{\ohm}{,}\SI{2}{\kilo\ohm},Rot - Rot - Schwarz - Braun - Braun
+2,R1{,} R3,Widerstand \SI{2,2}{\kilo\ohm},Rot - Rot - Schwarz - Braun - Braun
 1,R2,Widerstand \SI{1}{\mega\ohm},Braun - Schwarz - Schwarz - Gelb - Braun
 1,R4,Widerstand \SI{2,2}{\mega\ohm},Rot - Rot - Schwarz - Gelb - Braun
 1,R5,Widerstand \SI{120}{\kilo\ohm},Braun - Rot - Schwarz - Orange - Braun

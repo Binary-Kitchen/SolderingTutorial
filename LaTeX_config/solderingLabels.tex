@@ -1,0 +1,39 @@
+% !TeX program=lualatex
+\documentclass[parskip=half*,DIV=16,fontsize =10pt]{scrartcl}
+\usepackage{fontspec}
+\setmainfont{FreeSans}
+\newfontface\SymbolFont{Linux Libertine O}
+
+\usepackage{microtype}
+\usepackage{graphicx}
+
+\usepackage{../../LaTeX_config/BK-solderingtut}
+
+\usepackage{babel}
+
+\usepackage[hmargin=0pt,vmargin=1cm]{geometry}
+%
+\usepackage{pgfpages}
+\pgfpagesuselayout{16 on 1}[a4paper,border shrink=2mm]
+
+\usepackage{qrcode}
+\usepackage{url}
+\makeatletter
+\pagestyle{empty}
+\begin{document}
+\ExplSyntaxOn
+\int_step_inline:nnnn {0} {1} {15} {
+	\centering
+	%\frame{\parbox{\dimexpr\linewidth-2\fboxrule\relax}{test}}
+	\fontsize{50pt}{60pt}\selectfont\textbf{\@title}\strut\\[7pt]
+	\fontsize{36pt}{40pt}\selectfont\@descriptionTitle\ \@descriptionVersion\\
+		\@boardTitle\ \@boardVersion\\
+		\@skillTitle\ \@skillLevel\\
+		\vfill
+		\qrcode[height=.9\linewidth]{https://github.com/Binary-Kitchen/SolderingTutorial}\\[5pt]
+		\url{https://git.io/vHD14}
+	
+	\clearpage}
+\ExplSyntaxOff
+
+\end{document}
