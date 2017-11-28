@@ -27,5 +27,6 @@ for target in */manual ; do
 done
 
 pushd misc
-latexmk -lualatex --jobname="commonFailures_de" ../LaTeX_config/commonFailures
+latexmk --lualatex --jobname="commonFailures_de" ../LaTeX_config/commonFailures
+latexmk --lualatex --jobname "preisliste_de" ../LaTeX_config/Preisliste
 popd
