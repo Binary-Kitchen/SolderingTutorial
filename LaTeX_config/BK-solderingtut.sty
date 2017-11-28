@@ -297,3 +297,72 @@ contents={\BKcolorLegend}
 
 \usepackage{enumitem}
 \setlist[enumerate]{leftmargin=*,parsep=0pt}
+
+\newcommand{\PrintNumberTable}{
+\begin{center}
+
+{\Huge\csname @title\endcsname}
+\vspace{5mm}
+
+
+\expandafter\ifx\csname @titlePicture\endcsname\relax
+\else
+\includegraphics[width=.5\linewidth]{\csname @titlePicture\endcsname}
+\fi
+\end{center}
+\vfill
+
+
+\Large
+\newlength{\setslength}
+\newlength{\anleitungslength}
+\settowidth{\setslength}{Sets}
+\settowidth{\anleitungslength}{Anleitungen}
+
+\fbox{\parbox{\dimexpr.5\linewidth-2\tabcolsep-2\fboxsep-2\fboxrule\relax}{%
+\begin{tabular}{@{}p{\dimexpr\linewidth-\setslength-\anleitungslength-4\tabcolsep}<{\hfill\tikz[baseline=0]\draw(0,0)rectangle(1ex,1ex);}p{\setslength}p{\anleitungslength}@{}}
+	\multicolumn{1}{@{}l}{Datum\hfill $\ast$}&Sets&Anleitungen\\\midrule
+	\rule{0pt}{.7cm}\\\midrule
+	\rule{0pt}{.7cm}\\\midrule
+	\rule{0pt}{.7cm}\\\midrule
+	\rule{0pt}{.7cm}\\\midrule
+	\rule{0pt}{.7cm}\\\midrule
+	\rule{0pt}{.7cm}\\\midrule
+	\rule{0pt}{.7cm}\\\midrule
+	\rule{0pt}{.7cm}\\\midrule
+	\rule{0pt}{.7cm}\\\midrule
+	\rule{0pt}{.7cm}\\\midrule
+	\rule{0pt}{.7cm}\\\midrule
+%	\rule{0pt}{.7cm}\\\midrule
+	\rule{0pt}{.7cm}\\
+\end{tabular}
+}}%
+\hfill%
+\fbox{\parbox{\dimexpr.5\linewidth-2\tabcolsep-2\fboxsep-2\fboxrule\relax}{%
+		\begin{tabular}{@{}p{\dimexpr\linewidth-\setslength-\anleitungslength-4\tabcolsep}<{\hfill\tikz[baseline=0]\draw(0,0)rectangle(1ex,1ex);}p{\setslength}p{\anleitungslength}@{}}
+			\multicolumn{1}{@{}l}{Datum\hfill $\ast$}&Sets&Anleitungen\\\midrule
+			\rule{0pt}{.7cm}\\\midrule
+			\rule{0pt}{.7cm}\\\midrule
+			\rule{0pt}{.7cm}\\\midrule
+			\rule{0pt}{.7cm}\\\midrule
+			\rule{0pt}{.7cm}\\\midrule
+			\rule{0pt}{.7cm}\\\midrule
+			\rule{0pt}{.7cm}\\\midrule
+			\rule{0pt}{.7cm}\\\midrule
+			\rule{0pt}{.7cm}\\\midrule
+			\rule{0pt}{.7cm}\\\midrule
+			\rule{0pt}{.7cm}\\\midrule
+%			\rule{0pt}{.7cm}\\\midrule
+			\rule{0pt}{.7cm}\\
+		\end{tabular}
+}}%
+\\
+
+%\rule{\linewidth}{2pt}
+
+\fbox{\parbox{\dimexpr\linewidth-2\fboxsep-2\fboxrule\relax}{
+$\ast$ Anmerkungen:\\
+\rule{0pt}{2cm}
+}}
+
+}

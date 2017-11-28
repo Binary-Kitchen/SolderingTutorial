@@ -21,6 +21,8 @@ for target in */manual ; do
 	       	die "Latexmk failed for $target"
 	latexmk --lualatex --jobname=misc/${project}_label_${MAN_LANG} ../../LaTeX_config/solderingLabels.tex || \
 	       	die "Latexmk failed for $target label"
+	latexmk --lualatex --jobname=misc/${project}_Boxlabel_${MAN_LANG} ../../LaTeX_config/solderingBoxLabels.tex || \
+	       	die "Latexmk failed for $target label"
 	popd
 done
 
