@@ -43,19 +43,28 @@ Very easy soldering kit for using it as pin.
 - Status: **Manual and pictures missing**
 - Difficulty: **1/5**
 
+<!--
 ### [Kitchen Head DIP](KitchenHeadDIP/)
 Small soldering kit with the kitchen head on it.
 
 - Status: **In development**
 - Difficulty: **3/5**
-
-### [Kiten Head SMD](KitchenHeadSMD/) 
+-->
+### [Kitchen Head SMD](KitchenHeadSMD/) 
 Small soldering kit using SMD components with the kitchen head on it.
 
-<img src="KitchenHeadSMD/manual/images/DSC04829.jpg" width=400px alt="Heart SMD">
+<img src="KitchenHeadSMD/manual/images/DSC04829.jpg" width=400px alt="Kitchen Head SMD">
 
 - Status: **Complete**
 - Difficulty: **4/5**
+
+### [Nibble Peg SMD](NibblePegDIP/)
+Very easy soldering Kit using simple Tools and nearly no soldering knowledge is needed.
+
+<img src="NibblePegDIP/manual/images/IMG_5910.JPG" width=400px alt="Nibble Peg DIP">
+
+- Status: **Complete**
+- Difficulty: **1/5**
 
 ## License
 This work is licensed under different licenses. Please see subfolders for details and COPYING file in the top level directory for all used license files.
