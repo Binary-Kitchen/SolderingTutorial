@@ -1,7 +1,7 @@
 # Nibble Peg - DIP
 A very easy blinking peg with 4 LEDs. A Nibble (4) (https://en.wikipedia.org/wiki/Nibble) is half a byte (8) and makes a pun in the German Language: Nibble Klammer (Nibble Peg) sounds like Nippelklammer (Nipple Peg).
 
-<img src="manual/images/DSC04802.jpg" width=400px alt="Arrow SMD">
+<img src="manual/images/IMG_5910.JPG" width=400px alt="Nibble Peg DIP">
 
 - Status: **Complete**
 - Difficulty: **1/5**
