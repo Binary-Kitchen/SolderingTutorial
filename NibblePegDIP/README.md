@@ -1,5 +1,6 @@
 # Nibble Peg - DIP
-A very easy blinking peg with 4 LEDs. A Nibble (4) (https://en.wikipedia.org/wiki/Nibble) is half a byte (8) and makes a pun in the German Language: Nibble Klammer (Nibble Peg) sounds like Nippelklammer (Nipple Peg).
+A very easy blinking peg with 4 LEDs.
+A Nibble ist a unit for the amount of 4 Bits (https://en.wikipedia.org/wiki/Nibble).
 
 <img src="manual/images/IMG_5910.JPG" width=400px alt="Nibble Peg DIP">
 
