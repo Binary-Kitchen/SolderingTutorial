@@ -113,7 +113,9 @@
 	descriptionLicense  .initial:n = {\relax},
 	boardTitle  .initial:n = {\relax},
 	boardVersion  .initial:n = {\relax},
-	boardLicense  .initial:n = {\relax}
+	boardLicense  .initial:n = {\relax},
+	partAlias .bool_gset:N = \g_BK@partAlias_bool,
+	partAlias .initial:n = false
 }
 
 \newcommand*{\@skillLevel}{
@@ -140,15 +142,36 @@
 	\tl_clear:N \l_BK_soldering@parts_coldef_tl
 	%\int_step_inline:nnnn {\exp_args:NV \clist_count:n \BK_soldering@parts_header} {-1} {1}  {
 	\clist_map_inline:Nn \BK_soldering@parts_header	{\tl_put_right:Nn \l_BK_soldering@parts_coldef_tl {l}}
-	
 	\clist_clear:N \l_tmpa_clist
 	
 	\ior_map_inline:Nn \BK_soldering_ior {
 %		\exp_args:NV \tl_if_eq:nnF \BK_soldering@parts_header {##1} {
 			\clist_set:Nn \BK_soldering@parts_clist {##1}
 			
-			\int_compare:nT {\clist_count:N \BK_soldering@parts_header = \clist_count:N \BK_soldering@parts_clist} {
-			\clist_reverse:N \BK_soldering@parts_clist
+			
+			\int_compare:nT {\clist_count:N \BK_soldering@parts_header <= \clist_count:N \BK_soldering@parts_clist} {
+				
+				%			\tl_show:N \BK_soldering@parts_header
+				%			\int_show:n {\exp_args:NV \clist_count:n \BK_soldering@parts_header +1}
+				\bool_if:NT \g_BK@partAlias_bool {
+					\int_compare:nNnT {\clist_count:N \BK_soldering@parts_clist} = {\clist_count:N \BK_soldering@parts_header +1}
+					{
+						\clist_set_eq:NN \l_tmpb_list \BK_soldering@parts_clist
+						\clist_clear:N \l_tmpb_clist
+						\int_step_inline:nnnTF {1} {1} {\clist_count:N \BK_soldering@parts_clist -2} {
+							\clist_push:Nn \l_tmpb_clist {###1}
+						}
+						
+						\exp_args:Nno \cs_new:cn {BK@partReference_\clist_item:Nn \BK_soldering@parts_clist {\clist_count:N \BK_soldering@parts_clist}}
+						{\clist_item:Nn \l_tmpb_clist {\clist_count:N \l_tmpb_clist}}
+					
+						%				\clist_map_inline:N \BK_soldering@parts_clist 
+						%				\clist_item:Nn \BK_soldering@parts_clist {\clist_count:N \BK_soldering@parts_clist}
+					}
+				}
+			
+			\clist_set_eq:NN \BK_soldering@parts_clist \l_tmpb_clist
+			\clist_
 			\clist_pop:NN \BK_soldering@parts_clist \l_tmpa_tl
 			
 %			\tl_show:N \l_tmpa_tl
