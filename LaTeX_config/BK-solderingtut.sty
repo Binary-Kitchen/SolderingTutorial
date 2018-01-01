@@ -10,6 +10,8 @@
 \makeatletter
 \ExplSyntaxOn
 \tl_new:N \g_BK@languageKey_tl
+\seq_new:N \g_BK@projectPath_seq
+\tl_new:N \g_BK@projectPath_tl
 \ior_new:N \BK_soldering_ior
 
 
@@ -17,7 +19,7 @@
 	language .choice:,
 }
 
-\ior_open:Nn \BK_soldering_ior {../../LaTeX_config/languages.csv}
+\ior_open:Nn \BK_soldering_ior {LaTeX_config/languages.csv}
 
 
 \ior_map_inline:Nn \BK_soldering_ior {\exp_args:Nnx \keys_define:nn {BinaryKitchen} {language / \clist_item:nn {#1} {1} .code:n = 		
@@ -31,6 +33,15 @@
 \exp_args:NNV \seq_set_split:NnV  \l_tmpa_seq \c_underscore_str \c_sys_jobname_str
 \seq_get_right:NN \l_tmpa_seq \g_BK@languageKey_tl
 
+\seq_set_split:NnV \l_tmpb_seq {/} \c_sys_jobname_str
+\int_step_inline:nnnn {1} {1} {\seq_count:N \l_tmpb_seq -1 } {
+	\seq_put_right:Nx \g_BK@projectPath_seq {\seq_item:Nn \l_tmpb_seq {#1}}
+}
+
+\tl_set:Nx \g_BK@projectPath_tl {\seq_use:Nn \g_BK@projectPath_seq {/}}
+
+\graphicspath{{}{\g_BK@projectPath_tl/}}
+
 
 \exp_args:Nnx \keys_set:nn {BinaryKitchen} {
 	language = \g_BK@languageKey_tl
@@ -43,7 +54,7 @@
 
 \clist_new:N \g_BK@resistorColorLegend_clist
 
-\ior_open:Nn \BK_soldering_ior {../../LaTeX_config/resistor_colors.csv}
+\ior_open:Nn \BK_soldering_ior {LaTeX_config/resistor_colors.csv}
 
 \ior_map_inline:Nn \BK_soldering_ior {
 \definecolor{BK@\clist_item:nn {#1} {2}}{RGB}{\clist_item:nn {#1} {4}}
@@ -83,7 +94,7 @@
 \tl_new:N \l_BK@soldering@config_tl
 
 
-\ior_open:Nn \BK_soldering_ior {configuration/\g_BK@languageKey_tl _config.csv}
+\ior_open:Nn \BK_soldering_ior {\g_BK@projectPath_tl/configuration/\g_BK@languageKey_tl _config.csv}
 
 
 \cs_set:Nn \BK_setupSkillLevel:n {
@@ -140,7 +151,7 @@
 \tl_new:N \l_BK_soldering@parts_coldef_tl
 
 \newcommand*{\@parts}{
-	\ior_open:Nn \BK_soldering_ior {configuration/\g_BK@languageKey_tl _parts.csv}
+	\ior_open:Nn \BK_soldering_ior {\g_BK@projectPath_tl/configuration/\g_BK@languageKey_tl _parts.csv}
 	\ior_get:NN \BK_soldering_ior \BK_soldering@parts_header
 	\tl_clear:N \l_BK_soldering@parts_coldef_tl
 	%\int_step_inline:nnnn {\exp_args:NV \clist_count:n \BK_soldering@parts_header} {-1} {1}  {
@@ -228,7 +239,7 @@
 \newcommand{\Printsteps}{
 	\par
 	\renewcommand*{\bild}[1]{\includegraphics[width=\linewidth]{##1}}
-	\ior_open:Nn \BK_soldering_ior {configuration/\g_BK@languageKey_tl _steps.csv}
+	\ior_open:Nn \BK_soldering_ior {\g_BK@projectPath_tl/configuration/\g_BK@languageKey_tl _steps.csv}
 	\ior_map_inline:Nn \BK_soldering_ior {
 %			\clist_show:n {##1}
 		\exp_args:NNnx \seq_set_split:Nnn \l_BK_soldering@step_seq {;} {\clist_item:nn {##1} {2}}
@@ -288,7 +299,7 @@
 
 \usepackage{scrlayer-scrpage}
 \DeclareNewLayer[rightmargin,%align=br,area={\dimexpr\paperwidth-1cm\relax}{\dimexpr\paperheight-1cm\relax}{1cm}{1cm},
-contents={\parbox[t][\layerheight]{\layerwidth}{\rule{0pt}{\dimexpr\paperheight-1\linewidth\relax}\\\includegraphics[width=.8\linewidth]{../../LaTeX_config/BinaryKitchen_logoBW}}\hspace*{.2\linewidth}}
+contents={\parbox[t][\layerheight]{\layerwidth}{\rule{0pt}{\dimexpr\paperheight-1\linewidth\relax}\\\includegraphics[width=.8\linewidth]{LaTeX_config/BinaryKitchen_logoBW}}\hspace*{.2\linewidth}}
 ]{BinaryKitchenMark}
 
 \DeclareNewLayer[foot,
