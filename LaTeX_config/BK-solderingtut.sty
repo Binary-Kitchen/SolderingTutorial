@@ -18,8 +18,11 @@
 
 \ior_open:Nn \BK_soldering_ior {../../LaTeX_config/languages.csv}
 
-\ior_map_inline:Nn \BK_soldering_ior {\exp_args:Nnx \keys_define:nn {BinaryKitchen} {language / \clist_item:nn {#1} {1} .code:n = \PassOptionsToPackage{\clist_item:nn {#1} {2}}{babel}}
-\PassOptionsToPackage{locale=\clist_item:nn {#1} {3}}{siunitx}
+\ior_map_inline:Nn \BK_soldering_ior {\exp_args:Nnx \keys_define:nn {BinaryKitchen} {language / \clist_item:nn {#1} {1} .code:n = 		
+		\PassOptionsToPackage{\clist_item:nn {#1} {2}}{babel}
+	
+	}
+		\PassOptionsToPackage{locale=\clist_item:nn {#1} {3}}{siunitx}
 }
 	
 \ior_close:N \BK_soldering_ior
@@ -41,6 +44,7 @@
 \ior_open:Nn \BK_soldering_ior {../../LaTeX_config/resistor_colors.csv}
 
 \ior_map_inline:Nn \BK_soldering_ior {
+%	\tl_show:n {#1}
 \definecolor{BK@\clist_item:nn {#1} {2}}{RGB}{\clist_item:nn {#1} {4}}
 \tl_new:c {g_BK@\clist_item:nn {#1} {1}_color_tl}
 \tl_set:cx {g_BK@\clist_item:nn {#1} {1}_color_tl} {\clist_item:nn {#1} {2}}
@@ -114,8 +118,8 @@
 	boardTitle  .initial:n = {\relax},
 	boardVersion  .initial:n = {\relax},
 	boardLicense  .initial:n = {\relax},
-	partAlias .bool_gset:N = \g_BK@partAlias_bool,
-	partAlias .initial:n = false
+	partLabel .bool_gset:N = \g_BK@partLabel_bool,
+	partLabel .initial:n = false
 }
 
 \newcommand*{\@skillLevel}{
@@ -136,6 +140,38 @@
 
 \tl_new:N \l_BK_soldering@parts_coldef_tl
 
+\tl_new:N \l_BK_soldering@partLabel_tl
+\box_new:N \l_BK_soldering@partRef_box
+\box_new:N \l_BK_soldering@tmp_box
+\tl_new:N \l_BK_soldering@partComment_tl
+\clist_new:N \g_BK_soldering@partTableContent_clist
+\bool_new:N \g_BK@ColorLegend_bool
+
+%:NN \tokenliste mit ggf. -
+%\BK_soldering@setupResistors  \l_BK_soldering@partLabel_tl \l_tmpa_tl \l_BK_soldering@partComment_tl
+%label - list to get - list to save to
+\cs_new:Nn \BK_soldering@setupResistors:NNN  {
+\tl_if_in:NnTF #2 {|} {
+	\seq_set_split:NnV \l_tmpa_seq {|} #2
+
+	
+%	\seq_show:N \l_tmpa_seq
+%\exp_args:Nx 	\tl_show:n {g_BK@partReference_#1_box}
+	\tl_clear:N #3
+		\box_new:c {g_BK@partReference_#1_box}
+		\hbox_gset:cn {g_BK@partReference_#1_box}
+			{	
+				\seq_map_inline:Nn \l_tmpa_seq {
+					\tl_if_exist:cT {g_BK@\str_lower_case:n {##1}_color_tl}
+					{\box_use:c  {l_BK@\use:c {g_BK@\str_lower_case:n {##1}_color_tl}_resistor_box}}
+				}
+			}
+		\tl_gput_right:Nx #3 {\exp_not:N \box_use:c {g_BK@partReference_#1_box}}
+		\bool_gset_true:N \g_BK@ColorLegend_bool
+	}{\tl_set_eq:NN #3 #2}
+
+}
+
 \newcommand*{\@parts}{
 	\ior_open:Nn \BK_soldering_ior {configuration/de_parts.csv}
 	\ior_get:NN \BK_soldering_ior \BK_soldering@parts_header
@@ -144,75 +180,72 @@
 	\clist_map_inline:Nn \BK_soldering@parts_header	{\tl_put_right:Nn \l_BK_soldering@parts_coldef_tl {l}}
 	\clist_clear:N \l_tmpa_clist
 	
+	\clist_clear:N \g_BK_soldering@partTableContent_clist
+	
 	\ior_map_inline:Nn \BK_soldering_ior {
 %		\exp_args:NV \tl_if_eq:nnF \BK_soldering@parts_header {##1} {
 			\clist_set:Nn \BK_soldering@parts_clist {##1}
 			
+%			\tl_show:n {##1}
 			
-			\int_compare:nT {\clist_count:N \BK_soldering@parts_header <= \clist_count:N \BK_soldering@parts_clist} {
+			\tl_clear:N \l_BK_soldering@partComment_tl 
+			\tl_clear:N \l_BK_soldering@partLabel_tl
+			\int_compare:nTF {\clist_count:N \BK_soldering@parts_header <= \clist_count:N \BK_soldering@parts_clist} {
 				
-				%			\tl_show:N \BK_soldering@parts_header
-				%			\int_show:n {\exp_args:NV \clist_count:n \BK_soldering@parts_header +1}
-				\bool_if:NT \g_BK@partAlias_bool {
-					\int_compare:nNnT {\clist_count:N \BK_soldering@parts_clist} = {\clist_count:N \BK_soldering@parts_header +1}
-					{
-						\clist_set_eq:NN \l_tmpb_list \BK_soldering@parts_clist
-						\clist_clear:N \l_tmpb_clist
-						\int_step_inline:nnnTF {1} {1} {\clist_count:N \BK_soldering@parts_clist -2} {
-							\clist_push:Nn \l_tmpb_clist {###1}
-						}
+				\clist_set_eq:NN \l_tmpb_clist \BK_soldering@parts_clist
+				\clist_reverse:N \l_tmpb_clist
+				
+				
+				\int_compare:nNnT {\clist_count:N \BK_soldering@parts_clist} = {\clist_count:N \BK_soldering@parts_header +1}
+					{	
+						\bool_if:NTF \g_BK@partLabel_bool 
+							{\clist_pop:NN \l_tmpb_clist \l_BK_soldering@partLabel_tl}
+							{\PackageError{BK-solderingtut}{Too many entries in column}}
+					}	
+					\clist_pop:NN \l_tmpb_clist \l_tmpa_tl
 						
-						\exp_args:Nno \cs_new:cn {BK@partReference_\clist_item:Nn \BK_soldering@parts_clist {\clist_count:N \BK_soldering@parts_clist}}
-						{\clist_item:Nn \l_tmpb_clist {\clist_count:N \l_tmpb_clist}}
-					
-						%				\clist_map_inline:N \BK_soldering@parts_clist 
-						%				\clist_item:Nn \BK_soldering@parts_clist {\clist_count:N \BK_soldering@parts_clist}
-					}
-				}
+						
+						\BK_soldering@setupResistors:NNN \l_BK_soldering@partLabel_tl \l_tmpa_tl \l_BK_soldering@partComment_tl
+						
+						
+						\tl_if_empty:NF \l_BK_soldering@partLabel_tl {
+							\tl_new:c {BK@partReference_\l_BK_soldering@partLabel_tl} 
+%							\exp_args:Nx \tl_show:n {BK@partReference_\l_BK_soldering@partLabel_tl}
+							\tl_gset_eq:cN {BK@partReference_\l_BK_soldering@partLabel_tl} \l_BK_soldering@partComment_tl
+							\tl_gput_left:cx {BK@partReference_\l_BK_soldering@partLabel_tl} {\clist_item:Nn \l_tmpb_clist {2}~ }
+						}
+						\clist_reverse:N \l_tmpb_clist
+						
+
+			} {\clist_set_eq:NN \l_tmpb_clist \BK_soldering@parts_clist}
+			\tl_set:Nx \l_tmpa_tl {\clist_use:Nn \l_tmpb_clist {\exp_not:n {&}}}
 			
-			\clist_set_eq:NN \BK_soldering@parts_clist \l_tmpb_clist
-			\clist_
-			\clist_pop:NN \BK_soldering@parts_clist \l_tmpa_tl
-			
-%			\tl_show:N \l_tmpa_tl
-			\tl_if_in:NnTF \l_tmpa_tl {-} {
-				\seq_set_split:NnV \l_tmpa_seq {-} \l_tmpa_tl
-			
-			
-			
-			\tl_clear:N \l_tmpb_tl	
-			
-			\seq_map_inline:Nn \l_tmpa_seq {
-				\tl_if_exist:cTF {g_BK@\str_lower_case:n {####1}_color_tl}%{l_BK@\tl_to_lowercase:n {#1}_resistor_box} 
-						{\tl_put_right:Nn \l_tmpb_tl { \box_use:c  {l_BK@\use:c {g_BK@\str_lower_case:n {####1}_color_tl}_resistor_box}}\thispagestyle{ColorLegend}}
-						{\tl_set_eq:NN \l_tmpb_tl \l_tmpa_tl \seq_map_break:}
-			}
-			}{\tl_set_eq:NN \l_tmpb_tl \l_tmpa_tl}
-			
-			\clist_reverse:N \BK_soldering@parts_clist
-			\clist_put_right:NV  \BK_soldering@parts_clist \l_tmpb_tl
-			}
-			
-			\clist_put_right:Nx \l_tmpa_clist { \clist_use:Nn \BK_soldering@parts_clist {\exp_not:n {&}}}
+			\tl_if_empty:NF \l_BK_soldering@partComment_tl 
+%				{\tl_put_right:Nn \l_tmpa_tl {\exp_not:n {&} \tl_use:N \l_BK_soldering@partComment_tl}}
+				{	
+					\tl_put_right:Nn \l_tmpa_tl {\exp_not:n {&}}
+					\tl_put_right:NV \l_tmpa_tl \l_BK_soldering@partComment_tl
+				 }
+				
+			\clist_put_right:NV \g_BK_soldering@partTableContent_clist  \l_tmpa_tl
 	}
 
-%	\clist_show:N \l_tmpa_clist
+%\tl_show:n {mark1}
+
 	\ior_close:N \BK_soldering_ior
 	
 	
-	\clist_reverse:N \l_tmpa_clist
-	\clist_pop:NN \l_tmpa_clist \l_tmpa_tl
-	\clist_reverse:N \l_tmpa_clist
 	
 	\box_new:N \BK_soldering@parts_box
 	\hbox_set:Nn \BK_soldering@parts_box {%
 	\exp_args:Nnx \begin{tabular}{@{}\tl_use:N \l_BK_soldering@parts_coldef_tl @{}}
 		\toprule
-		\clist_set:NV \BK_soldering@parts_clist \BK_soldering@parts_header
-		\clist_use:Nn \BK_soldering@parts_clist {&}\\\midrule
-		\clist_use:Nn \l_tmpa_clist {\\}\\
-		\tl_use:N \l_tmpa_tl \\\bottomrule
+		\clist_use:Nn  \BK_soldering@parts_header {&}\\\midrule
+		\clist_use:Nn \g_BK_soldering@partTableContent_clist {\\}\\
+%		\tl_use:N \l_tmpa_tl \\\bottomrule
 	\end{tabular}}
+
+	\bool_if:NT	\g_BK@ColorLegend_bool {\thispagestyle{ColorLegend}}
 
 	\dim_compare:nTF {\box_wd:N \BK_soldering@parts_box < \dim_eval:n {\linewidth-1.5cm}} {
 		\parbox{\linewidth}{%
@@ -224,9 +257,9 @@
 		\tl_put_right:Nn \l_BK_soldering@parts_coldef_tl {X}
 		\exp_args:Nnnx \begin{tabularx}{\linewidth}{@{}\tl_use:N \l_BK_soldering@parts_coldef_tl @{}}
 			\toprule
-			\clist_set:NV \BK_soldering@parts_clist \BK_soldering@parts_header
-			\clist_use:Nn \BK_soldering@parts_clist {&}\\\midrule
-			\clist_use:Nn \l_tmpa_clist {\\}\\
+%			\clist_set:NV \BK_soldering@parts_clist \BK_soldering@parts_header
+			\clist_use:Nn \BK_soldering@parts_header {&}\\\midrule
+			\clist_use:Nn \g_BK_soldering@partTableContent_clist {\\}\\
 			\tl_use:N \l_tmpa_tl \\\bottomrule
 		\end{tabularx}
 	}
@@ -268,6 +301,9 @@
 	\ior_close:N \BK_soldering_ior
 }
 
+\newcommand*\usePart[1]{
+	\tl_use:c {BK@partReference_R}
+}
 
 
 \ExplSyntaxOff
@@ -389,3 +425,5 @@ $\ast$ Anmerkungen:\\
 }}
 
 }
+
+
