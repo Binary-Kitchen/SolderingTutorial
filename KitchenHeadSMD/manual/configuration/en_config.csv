@@ -1,0 +1,11 @@
+title=Kitchen Head (SMD)
+titlePicture=images/DSC04829
+skillTitle=Difficutly
+skillLevel=4/5
+descriptionTitle=Manual
+descriptionVersion=v1.0
+descriptionLicense=CC-BY-SA 4.0 Binary Kitchen e.V.
+boardTitle=Board
+boardVersion=v1.1
+boardLicense=CC-BY-SA 4.0 Binary Kitchen e.V.
+appendix={\centering\includegraphics[width=.5\linewidth]{images/KitchenHeadBottom}~\includegraphics[width=.5\linewidth]{images/KitchenHeadTop.pdf}}

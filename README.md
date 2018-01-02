@@ -43,13 +43,6 @@ Very easy soldering kit for using it as pin.
 - Status: **Manual and pictures missing**
 - Difficulty: **1/5**
 
-<!--
-### [Kitchen Head DIP](KitchenHeadDIP/)
-Small soldering kit with the kitchen head on it.
-
-- Status: **In development**
-- Difficulty: **3/5**
--->
 ### [Kitchen Head SMD](KitchenHeadSMD/) 
 Small soldering kit using SMD components with the kitchen head on it.
 
