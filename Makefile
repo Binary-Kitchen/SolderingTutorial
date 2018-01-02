@@ -8,33 +8,28 @@ MAN_LANGS=de en
 LANG=de
 PROJECTS= $(foreach MAN_LANG,$(MAN_LANGS), $(wildcard */manual/configuration/$(MAN_LANG)_config.csv))
 
+
+TEMP_FILES=*.aux *.bbl *.bbl *.bcf *.blg *.ilg *.ind *.idx *.log *.out *.run.xml *.toc *.xmpdata pdfa.xmpi
+
 projectname = $(subst /manual/configuration/, ,$(dir $(PROJECT)))
 projectfolder = $(join $(projectname), /manual/)
 projectlanguage = $(join _, $(patsubst %_config.csv, %, $(notdir $(PROJECT))))
 
 MANUALS=$(foreach PROJECT,$(PROJECTS), \
 		$(join $(projectfolder),$(join $(projectname), $(projectlanguage))))
-		source = "LaTeX_config/solderingTut"
+		#source = "LaTeX_config/solderingTut"
 		
 LABELS=$(foreach PROJECT,$(PROJECTS), \
        	$(join $(projectfolder),$(join $(projectname), _label)))
-		source = "LaTeX_config/solderingLabels"
+		#source = "LaTeX_config/solderingLabels"
 BOXLABELS=$(foreach PROJECT,$(PROJECTS), \
        	$(join $(projectfolder),$(join $(projectname), _boxlabel)))
-		source = "LaTeX_config/solderingBoxLabels"
+		#source = "LaTeX_config/solderingBoxLabels"
 		
 JOBS=$(MANUALS) $(LABELS) $(BOXLABELS)
 
-CLEANUP=$(MANUALS) $(LABELS) $(BOXLABELS)
-
 all: $(JOBS)
 
-clean: $(CLEANUP)
-
-
 $(JOBS):
-	latexmk -cd -lualatex -recorder -outdir="../" --jobname=$@ $(source)
+	latexmk -cd  -lualatex -recorder -outdir="../" --jobname=$@ "LaTeX_config/solderingTut"
 	
-$(CLEANUP):
-	latexmk  -c -cd -lualatex -recorder -outdir="../" --jobname=$@ $(source)
-
