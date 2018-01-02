@@ -5,11 +5,10 @@
 # file in the top-level directory.
 
 MAN_LANGS=de en
-LANG=de
 PROJECTS= $(foreach MAN_LANG,$(MAN_LANGS), $(wildcard */manual/configuration/$(MAN_LANG)_config.csv))
+PROJECTLABELS= $(wildcard */manual/configuration/de_config.csv)
 
-
-TEMP_FILES=*.aux *.bbl *.bbl *.bcf *.blg *.ilg *.ind *.idx *.log *.out *.run.xml *.toc *.xmpdata pdfa.xmpi
+TEMP_FILES=*.aux *.fdb_latexmk *.fls *.log
 
 projectname = $(subst /manual/configuration/, ,$(dir $(PROJECT)))
 projectfolder = $(join $(projectname), /manual/)
@@ -19,17 +18,32 @@ MANUALS=$(foreach PROJECT,$(PROJECTS), \
 		$(join $(projectfolder),$(join $(projectname), $(projectlanguage))))
 		#source = "LaTeX_config/solderingTut"
 		
-LABELS=$(foreach PROJECT,$(PROJECTS), \
-       	$(join $(projectfolder),$(join $(projectname), _label)))
+LABELS=$(foreach PROJECT,$(PROJECTLABELS), \
+       	$(join $(projectfolder),$(join misc/, $(join $(projectname), _label))))
 		#source = "LaTeX_config/solderingLabels"
-BOXLABELS=$(foreach PROJECT,$(PROJECTS), \
-       	$(join $(projectfolder),$(join $(projectname), _boxlabel)))
+BOXLABELS=$(foreach PROJECT,$(PROJECTLABELS), \
+       	$(join $(projectfolder),$(join misc/, $(join $(projectname), _boxlabel))))
 		#source = "LaTeX_config/solderingBoxLabels"
 		
-JOBS=$(MANUALS) $(LABELS) $(BOXLABELS)
 
-all: $(JOBS)
+all: $(MANUALS) $(LABELS) $(BOXLABELS)
 
-$(JOBS):
-	latexmk -cd  -lualatex -recorder -outdir="../" --jobname=$@ "LaTeX_config/solderingTut"
+manuals: $(MANUALS)
+
+labels: $(LABELS) $(BOXLABELS)
+
+clean:
+	rm $(foreach TEMP, $(TEMP_FILES), \
+		$(wildcard */*/$(TEMP)))
+	rm  $(foreach TEMP, $(TEMP_FILES), \
+		$(wildcard */$(TEMP)))
+
+$(MANUALS):
+	latexmk  -lualatex --jobname=$@ "LaTeX_config/solderingTut"
+	
+$(LABELS):
+	latexmk   -lualatex --jobname=$@ "LaTeX_config/solderingLabels"
+
+$(BOXLABELS):
+	latexmk -lualatex --jobname=$@ "LaTeX_config/solderingBoxLabels"
 	
