@@ -4,20 +4,31 @@
 # This work is licensed under the terms of CC-BY-SA, version 4. See the COPYING
 # file in the top-level directory.
 
-MAN_LANG=_de _en
-PROJECTS=$(shell find . -name manual -type d | \
-	 xargs -n 1 dirname | xargs -n 1 basename)
+MAN_LANGS=de en
+LANG=de
+PROJECTS= $(foreach MAN_LANG,$(MAN_LANGS), $(wildcard */manual/configuration/$(MAN_LANG)_config.csv))
+
+projectname = $(subst /manual/configuration/, ,$(dir $(PROJECT)))
+projectfolder = $(join $(projectname), /manual/)
+projectlanguage = $(join _, $(patsubst %_config.csv, %, $(notdir $(PROJECT))))
 
 MANUALS=$(foreach PROJECT,$(PROJECTS), \
-       	$(addprefix $(PROJECT)/manual/, $(addprefix $(PROJECT), $(MAN_LANG))))
+		$(join $(projectfolder),$(join $(projectname), $(projectlanguage))))
+		source = "LaTeX_config/solderingTut"
+		
 LABELS=$(foreach PROJECT,$(PROJECTS), \
-       	$(addprefix $(PROJECT)/manual/misc/, $(addprefix $(PROJECT), _label)))
+       	$(join $(projectfolder),$(join $(projectname), _label)))
+		source = "LaTeX_config/solderingLabels"
 BOXLABELS=$(foreach PROJECT,$(PROJECTS), \
-       	$(addprefix $(PROJECT)/manual/misc/, $(addprefix $(PROJECT), _boxlabel)))
-
+       	$(join $(projectfolder),$(join $(projectname), _label)))
+		source = "LaTeX_config/solderingBoxLabels"
+		
 JOBS=$(MANUALS) $(LABELS) $(BOXLABELS)
 
 all: $(JOBS)
 
+labels: $(LABELS)
+
 $(JOBS):
-	latexmk --lualatex --jobname=$@ ./LaTeX_config/solderingTut
+	latexmk -cd -lualatex -recorder -outdir="../" --jobname=$@ $(source)
+
