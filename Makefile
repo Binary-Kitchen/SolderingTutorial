@@ -20,15 +20,21 @@ LABELS=$(foreach PROJECT,$(PROJECTS), \
        	$(join $(projectfolder),$(join $(projectname), _label)))
 		source = "LaTeX_config/solderingLabels"
 BOXLABELS=$(foreach PROJECT,$(PROJECTS), \
-       	$(join $(projectfolder),$(join $(projectname), _label)))
+       	$(join $(projectfolder),$(join $(projectname), _boxlabel)))
 		source = "LaTeX_config/solderingBoxLabels"
 		
 JOBS=$(MANUALS) $(LABELS) $(BOXLABELS)
 
+CLEANUP=$(MANUALS) $(LABELS) $(BOXLABELS)
+
 all: $(JOBS)
 
-labels: $(LABELS)
+clean: $(CLEANUP)
+
 
 $(JOBS):
 	latexmk -cd -lualatex -recorder -outdir="../" --jobname=$@ $(source)
+	
+$(CLEANUP):
+	latexmk  -c -cd -lualatex -recorder -outdir="../" --jobname=$@ $(source)
 
