@@ -35,4 +35,4 @@ For everybody who wants to build them at home. Here are the sources for the impo
   - aliexpress.com (Search for "rgb led flash 3mm", take the ones with only two legs and 3V)
 
 ### Copyright
-CC-BY-SA 4.0 - Timo Schindler
+CC-BY-SA 4.0 - Binary Kitchen
