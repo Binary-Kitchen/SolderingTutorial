@@ -79,6 +79,5 @@ Comic:
 - Andie Nordgren <andie.nordgren@gmail.com>
 
 Manuals:
-- Marei Peischl <kontakt@peitex.de>
 - Michael Pajewski
 - Timo Schindler <https://www.timoschindler.de>
