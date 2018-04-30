@@ -59,6 +59,14 @@ Very easy soldering Kit using simple Tools and nearly no soldering knowledge is 
 - Status: **Complete**
 - Difficulty: **1/5**
 
+### [Nibble Peg with On/Off Switch](NibblePegDIPSwitch/)
+Easy soldering Kit using simple Tools and nearly no soldering knowledge is needed.
+
+<img src="NibblePegDIPSwitch/manual/images/01-DSC06774.jpg" width=400px alt="Nibble Peg DIP with On/Off Switch">
+
+- Status: **Complete**
+- Difficulty: **2/5**
+
 ## License
 This work is licensed under different licenses. Please see subfolders for details and COPYING file in the top level directory for all used license files.
 
@@ -81,3 +89,4 @@ Comic:
 Manuals:
 - Michael Pajewski
 - Timo Schindler <https://www.timoschindler.de>
+- https://github.com/misamura
