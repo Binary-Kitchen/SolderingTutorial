@@ -4,7 +4,7 @@ An easy blinking peg with 4 LEDs and an on/off switch.
 
 A Nibble ist a unit for the amount of 4 Bits (https://en.wikipedia.org/wiki/Nibble).
 
-<img src="manual/images/06-DSC06776.JPG" width=400px alt="Nibble Peg with on/off switch">
+<img src="manual/images/01-DSC06774.JPG" width=400px alt="Nibble Peg with on/off switch">
 
 - Status: **Complete**
 - Difficulty: **2/5**
