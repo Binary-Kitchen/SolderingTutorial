@@ -51,7 +51,9 @@ Small soldering kit using SMD components with the kitchen head on it.
 - Status: **Complete**
 - Difficulty: **4/5**
 
-### [Nibble Peg SMD](NibblePegDIP/)
+### Nibble Peg DIP
+
+#### [Nibble Peg DIP](NibblePegDIP/)
 Very easy soldering Kit using simple Tools and nearly no soldering knowledge is needed.
 
 <img src="NibblePegDIP/manual/images/IMG_5910.JPG" width=400px alt="Nibble Peg DIP">
@@ -59,7 +61,7 @@ Very easy soldering Kit using simple Tools and nearly no soldering knowledge is 
 - Status: **Complete**
 - Difficulty: **1/5**
 
-### [Nibble Peg with On/Off Switch](NibblePegDIPSwitch/)
+#### [Nibble Peg DIP with On/Off Switch](NibblePegDIPSwitch/)
 Easy soldering Kit using simple Tools and nearly no soldering knowledge is needed.
 
 <img src="NibblePegDIPSwitch/manual/images/01-DSC06774.JPG" width=400px alt="Nibble Peg DIP with On/Off Switch">
