@@ -1,7 +1,7 @@
 # Dice Microcontroller - DIP
 Electronic dice with Microcontroller and less parts.
 
-<img src="manual/images/IMG__20180630_210727.jpg" width=400px alt="DiceMC DIP">
+<img src="manual/images/IMG_20180630_210727.jpg" width=400px alt="DiceMC DIP">
 
 - Status: **Complete**
 - Difficulty: **2/5**
