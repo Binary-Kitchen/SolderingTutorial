@@ -1,0 +1,11 @@
+Menge,Name,Beschreibung,Beschriftung/Farbcode
+1,C1,Keramik Kondensator \SI{100}{\nano\farad},104
+1,IC1,Mikrocontroller Atmel ATTiny 2313A,
+7,LED1--LED7,LED \SI{5}{\mm},
+7,R1--R7,Widerstand \SI{82}{\ohm},Grau - Rot - Schwarz - Gold
+1,S1,Taster,
+1,X1,Klemme 2-polig,
+1,,IC-Sockel 20-polig,
+1,,Batteriehalter,
+2,,Batterie Mignon (AA),
+1,,Platine,
