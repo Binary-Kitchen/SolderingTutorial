@@ -21,6 +21,14 @@ Electronic dice which uses button bouncing and timing for randomness.
 - Status: **Complete**
 - Difficulty: **3/5**
 
+### [Dice Micro Controller DIP](DiceDIP/) 
+Dice with micro controller. Electronic dice which uses C random generator.
+
+<img src="DiceMcDIP/manual/images/IMG_20180630_210727.jpg" width=400px alt="Dice DIP">
+
+- Status: **Complete**
+- Difficulty: **2/5**
+
 ### [Heart DIP](HeartDIP/) 
 Small soldering kit with an heart on from https://wiki.blinkenarea.org/index.php/AntiKippenLights-Atmel
 
