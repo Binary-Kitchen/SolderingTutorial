@@ -1,5 +1,5 @@
-title=Würfel MikroController (DIP)
-titlePicture=images/IMG_6939
+title=Würfel MC (DIP)
+titlePicture=images/IMG_20180630_210727
 skillTitle=Schwierigkeit
 skillLevel=2/5
 descriptionTitle=Anleitung
@@ -8,5 +8,5 @@ descriptionLicense=CC-BY-SA 4.0 Binary Kitchen e.V.
 boardTitle=Platine
 boardVersion=v1.0
 boardLicense=CC-BY-SA 4.0 Binary Kitchen e.V.
-appendix={\centering\includegraphics[width=1\linewidth]{images/diceMcDIP}}
+appendix={\centering\includegraphics[width=.5\linewidth]{images/diceMcDIP}}
 additionalSettings=\setlength{\ImageColWidth}{\dimexpr.5\linewidth-\tabcolsep\relax}%Adjust Colunm width for landscape Images
