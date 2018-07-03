@@ -124,7 +124,7 @@
 	skillTitle .code:n = \cs_set:Npn \@skillTitle {#1},
 	%	skillLevel .code:n = \BK_setupSkillLevel:n{#1},
 	skillLevel .tl_gset:N = \g_BK@skillLevel_tl,
-	stepName .code:n= \cs_set:Npn \@stepName {#1},
+	stepTitle .code:n= \cs_set:Npn \@stepTitle {#1},
 	descriptionTitle .code:n = \cs_set:Npn \@descriptionTitle {#1},
 	descriptionVersion .code:n = \cs_set:Npn \@descriptionVersion {#1},
 	descriptionLicense .code:n = \cs_set:Npn \@descriptionLicense {#1},
@@ -255,7 +255,7 @@
 		\rule{\linewidth}{.4pt}\\
 		\begin{minipage}[t]{\dimexpr\linewidth-\ImageColWidth-2\tabcolsep\relax}
 			\refstepcounter{steps}
-			{\usekomafont{subsubsection}\@stepName\ ~\thesteps}
+			{\usekomafont{subsubsection}\@stepTitle\ ~\thesteps}
 			\begin{enumerate}
 				\seq_map_inline:Nn \l_BK_soldering@step_seq {\tl_if_empty:nF {####1} {\item ####1}}
 			\end{enumerate}
