@@ -1,0 +1,14 @@
+images/IMG_20180630_225522,Hint: Resistors (white package) have printed numbers on it and can be found in the overview (direction does not matter); Capacitors are marked with colours (direction does not matter); LEDs are in the black packes (DIRECTION IMPORTANT) 
+images/IMG_20180630_232055,Carefull: Check printed numbers on the resistors with the overview; Solder Resistors R1 - R19 to the board front and back; Direction of the resistors not important; R9{,} R13 and R18 are not needed
+images/IMG_20180630_234207,Solder capacitor C1 - C3 on the board; Direction of the capacitor is not important
+images/IMG_20180630_235003,Carefull: LEDs do have a direction! Solder LED 1 - 7 to the board; LED2 is the green LED (single black package); A dot is printed on the board. The horizontal line on the backside of the LED needs to show in the direction of the dot.,\centering\includegraphics[width=.6\linewidth]{images/smd_led.pdf}
+images/IMG_20180630_235504,Solder fuse F1 - F4 to the board; Direction of the fuse is not important
+images/IMG_20180630_235606,Carefull: Direction important! Solder TPS2513 (6 pins) to the board; A vertical line is printed on the board and the chip. Both lines are marking the direction and need to match
+images/IMG_20180630_235823,Solder LM-317 to the board; Hint: Bend the legs befor soldering
+images/IMG_20180701_000355,Solder USB connector X1 and X2 to the board; Hint: It is possible that some holder-noses needs to be clipped
+images/IMG_20180701_001109,Solder the pin header JP1 - JP6 with the short side to the board; JP7 is optional and is only needed if you want a V-Meter
+images/IMG_20180701_001733,Solder switch SW1 to the board; Direction not important
+images/IMG_20180701_001909,Solder potentiometer VR1 to the board
+images/IMG_20180701_002328,Solder ATX connector J1 to the board
+images/IMG_20180701_002328,Screw black (GND) and red binding posts to the board;
+images/IMG_20180701_002328,Optional: If you have nylon legs{,} push them into the holes in the corner; Optional: To prevent shortages put some hot glue on the back of the ATX connectors;
