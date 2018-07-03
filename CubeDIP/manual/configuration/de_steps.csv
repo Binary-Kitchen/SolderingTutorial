@@ -1,0 +1,7 @@
+images/DSC04775,Allgemeine Info:;LEDs haben eine Richtung;Langes Beinchen ist der positive Pol;Kurzes Beinchen ist der negative Pol; Die Beinchen dürfen sich nicht berühren, da es sonst zu einem Kurzschluss kommt und die LEDs nicht leuchten;
+images/DSC04776,Box Boden verwenden und die LEDs in der aufgezeigten Richtung einstecken; Die kurzen Beinchen in richtung der Pfeile biegen, sodass diese sich gegenseitig berühren und eine Ebene bilden; Lange Beinchen sollten am Ende alle senkrecht aus der Ebene zeigen; negative Beinchen verlöten; LED-Ebene danach aus der Schablone entnehmen
+images/DSC04779,Eine weite LED-Ebene nach den gleichen Schritten wie ein Schritt zuvor erstellen; Zweite LED-Ebene nicht aus der Schablone entnehmen
+images/DSC04780,Die erste LED-Ebene in die zweite einfädeln, sodass die beiden Ebenen etwa \SI{10}{\mm} voneinander entfernt sind; Die langen Beinchen der beiden ebenen verbinden; Info: Es kann nötig sein, dass einzelne Beichnen leicht verbogen werden müssen; Die verbundenen LED-Ebenen danach wieder aus der Schablone entnehmen
+images/DSC04781,Eine weitere LED-Ebene nach den gleichen Schritten erstellen; Dritte LED-Ebene nicht aus der Schablone entnehmen
+images/DSC04782,Verbundene LED-Ebene in die dritte LED-Ebene einfädeln, sodass die dritte Ebene etwa \SI{10}{\mm} entfernt ist; Lange Beinchen verbinden; Info: Es kann nötig sein, einzelne Beinchen leicht zu verbiegen
+images/DSC04783,Die negativen Pole der Ebenen jeweils miteinander mit einem Draht verbinden
