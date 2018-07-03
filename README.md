@@ -59,6 +59,14 @@ Small soldering kit using SMD components with the kitchen head on it.
 - Status: **Complete**
 - Difficulty: **4/5**
 
+### [ATX Breakout Board](ATXBreakoutBoardSMD/) 
+Handy Breakout Board to get all the important voltages from an standard ATX power supply.
+
+<img src="ATXBreakoutBoardSMD/manual/images/IMG_20180701_002328.jpg" width=400px alt="ATX Breakout Board">
+
+- Status: **Complete**
+- Difficulty: **4/5**
+
 ### Nibble Peg DIP
 
 #### [Nibble Peg DIP](NibblePegDIP/)
