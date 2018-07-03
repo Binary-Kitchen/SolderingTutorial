@@ -46,5 +46,5 @@ The board has beend designed by Francesco Truzzi:
 - https://github.com/ftruzzi/ATX-Breakout-Mini
 
 ### Copyright
-- Board: Open-Source-Hardware License Francesco Truzzi - www.truzzi.me
+- Board: Open-Source-Hardware License Francesco Truzzi - <http://www.truzzi.me>
 - Manual: CC-BY-SA - Binary Kitchen e.V.

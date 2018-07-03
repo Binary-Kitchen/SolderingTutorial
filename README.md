@@ -98,6 +98,7 @@ Copyright (c) Binary Kitchen e.V., 2017
 Boards:
 - Arne Rossius <arne@blinkenarea.org>
 - Thomas Basler <noby@binary-kitchen.de>
+- Francesco Truzzi <http://www.truzzi.me>
 
 Comic:
 - Mitch Altmann <http://cornfieldelectronics.com>
