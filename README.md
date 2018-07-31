@@ -86,12 +86,11 @@ Easy soldering Kit using simple Tools and nearly no soldering knowledge is neede
 - Difficulty: **2/5**
 
 ## License
-This work is licensed under different licenses. Please see subfolders for details and COPYING file in the top level directory for all used license files.
+This work is licensed under different licenses. Please see subfolders for details and LICENSE.md file in the top level directory for all used license files.
 
-## Copyright
+## Copyright and Authorship
 
-Copyright (c) Arne Rossius, 2009
-Copyright (c) Binary Kitchen e.V., 2017
+Please consider README.md in sub-folders for the Copyright and Authorship of the specific project.
 
 ## Authors
 
@@ -99,6 +98,10 @@ Boards:
 - Arne Rossius <arne@blinkenarea.org>
 - Thomas Basler <noby@binary-kitchen.de>
 - Francesco Truzzi <http://www.truzzi.me>
+- Timo Schindler <htts://www.timoschindler.de>
+
+TeX-Code:
+- Marei Peischl <https://peitex.de>
 
 Comic:
 - Mitch Altmann <http://cornfieldelectronics.com>
@@ -107,5 +110,8 @@ Comic:
 
 Manuals:
 - Michael Pajewski
+- Marei Peischl <https://peitex.de>
 - Timo Schindler <https://www.timoschindler.de>
-- https://github.com/misamura
+- Hannes <https://github.com/misamura>
+
+Note: This list of authors can be uncomplete. Please also consider the README.md in the sub-folders for authorship.
