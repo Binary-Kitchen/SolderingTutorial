@@ -1,0 +1,26 @@
+Menge,Name,Beschreibung,Beschriftung/Farbcode
+,,,
+3,R1{,} R3{,} R7,\SI{3.3}{\kilo\ohm} 0805 Widerstand,332
+1,R2,\SI{330}{\ohm} 0805 Widerstand,331
+3,R4{,} R5{,} R6,\SI{1.2}{\kilo\ohm} 0805 Widerstand,122
+1,R8,\SI{10}{\kilo\ohm} 0805 Widerstand,103
+1,R9,\SI{9}{\ohm} \SI{10}{\W} Power Widerstand (optional),
+2,R10{,} R15,\SI{43}{\kilo\ohm} 0805 Widerstand,433
+4,R12{,} R14{,} R17{,} R19,\SI{51}{\kilo\ohm} 0805 Widerstand,5102 or 513
+2,R11{,} R16,\SI{75}{\kilo\ohm} 0805 Widerstand,753
+2,C1{,}C3,\SI{0.1}{\mu\farad} 0805 SMD Kondensator,roter Streifen
+1,C2,\SI{1}{\mu\farad} 0805 SMD Kondensator,blauer Streifen
+6,LED1{,} LED3--LED7,0805 SMD LED rot,
+1,LED2,0805 SMD LED grün,
+4,F1{,}--F4,1812 SMD PTC Sicherung \SI{3}{\ampere},T300
+1,U2,TPS2513,
+1,IC1,LM-317 (through hole),
+2,X1{,} X2,USB Buchse (through hole),
+6,JP1--JP6,5-pin Header,
+1,JP7,3-pin Header (optional),
+1,SW1,\SI{8}{\mm} x \SI{8}{\mm} Druckknopf,
+1,VR1,\SI{2}{\kilo\ohm} PCB mount Potentiometer \SI{9}{\mm},
+1,J1,24-pin ATX Anschluss,
+5,T1--T3{,} T5{,} T6{,},Rote/Schwarze \SI{4}{\mm} Bananenbuchse,
+1,T4,Rote/Schwarze \SI{4}{\mm} Bananenbuchsen,
+1,,Board,
