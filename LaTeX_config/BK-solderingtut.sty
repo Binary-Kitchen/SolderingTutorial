@@ -151,6 +151,9 @@
 	boardTitle .code:n = \cs_set:Npn \@boardTitle  {#1},
 	boardVersion .code:n = \cs_set:Npn \@boardVersion {#1},
 	boardLicense .code:n = \cs_set:Npn \@boardLicense {#1},
+	texTitle .code:n = \cs_set:Npn \@texTitle {#1},
+	texVersion .code:n = \cs_set:Npn \@texVersion {#1},
+	texLicense .code:n = \cs_set:Npn \@texLicense {#1},
 	appendix .code:n = \cs_set:Npn \@appendix {#1},
 	additionalSettings .code:n = \AtBeginDocument{#1},
 	descriptionTitle .initial:n = {\relax},
@@ -158,7 +161,10 @@
 	descriptionLicense  .initial:n = {\relax},
 	boardTitle  .initial:n = {\relax},
 	boardVersion  .initial:n = {\relax},
-	boardLicense  .initial:n = {\relax}
+	boardLicense  .initial:n = {\relax},
+	texTitle  .initial:n = {\relax},
+	texVersion  .initial:n = {\relax},
+	texLicense  .initial:n = {\relax}
 }
 
 \newcommand*{\@skillLevel}{
@@ -315,8 +321,9 @@
 		\@skillTitle: \@skillLevel\par
 		\bigskip
 		
-		\begin{tabular}{lcc}
+		\begin{tabular}{lcl}
 			\@descriptionTitle&\@descriptionVersion& \@descriptionLicense\\
+			\@texTitle&\@texVersion&\@texLicense\\
 			\@boardTitle&\@boardVersion&\@boardLicense
 		\end{tabular}
 
