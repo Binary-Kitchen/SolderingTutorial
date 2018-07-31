@@ -19,10 +19,11 @@ MANUALS=$(foreach PROJECT,$(PROJECTS), \
 		#source = "LaTeX_config/solderingTut"
 		
 LABELS=$(foreach PROJECT,$(PROJECTLABELS), \
-       	$(join $(projectfolder),$(join misc/, $(join $(projectname), _label))))
+       		$(join $(projectfolder),$(join misc/, $(join $(projectname), _label))))
 		#source = "LaTeX_config/solderingLabels"
+
 BOXLABELS=$(foreach PROJECT,$(PROJECTLABELS), \
-       	$(join $(projectfolder),$(join misc/, $(join $(projectname), _boxlabel))))
+       		$(join $(projectfolder),$(join misc/, $(join $(projectname), _boxlabel))))
 		#source = "LaTeX_config/solderingBoxLabels"
 		
 
@@ -39,10 +40,10 @@ clean:
 		$(wildcard */$(TEMP)))
 
 $(MANUALS):
-	latexmk  -lualatex --jobname=$@ "LaTeX_config/solderingTut"
+	latexmk -lualatex --jobname=$@ "LaTeX_config/solderingTut"
 	
 $(LABELS):
-	latexmk   -lualatex --jobname=$@ "LaTeX_config/solderingLabels"
+	latexmk -lualatex --jobname=$@ "LaTeX_config/solderingLabels"
 
 $(BOXLABELS):
 	latexmk -lualatex --jobname=$@ "LaTeX_config/solderingBoxLabels"
