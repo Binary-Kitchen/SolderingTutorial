@@ -1,4 +1,4 @@
-# Copyright (c) Binary Kitchen e.V., 2017
+# Copyright (c) Binary Kitchen e.V., 2017-2018
 #   Author: Ralf Ramsauer <ralf@binary-kitchen.de>
 #
 # This work is licensed under the terms of CC-BY-SA, version 4. See the COPYING

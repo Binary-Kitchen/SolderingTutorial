@@ -34,5 +34,8 @@ For everybody who wants to build them at home. Here are the sources for the impo
   - ebay.de (Search for "RGB LED 3mm blinken", take the ones with only two legs and 3V)
   - aliexpress.com (Search for "rgb led flash 3mm", take the ones with only two legs and 3V)
 
-### Copyright
-CC-BY-SA 4.0 - Binary Kitchen
+### Copyright and Authorship
+- Hardware / Idea: [CC-BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/) - [Binary Kitchen e.V.](https://www.binary-kitchen.de)
+- Manual (TeX): [LPPL](https://www.latex-project.org/lppl.txt) - [Marei Peischl](https://peitex.de)
+- Manual (pdf): [CC-BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/) - [Binary Kitchen e.V.](https://www.binary-kitchen.de)
+

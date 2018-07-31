@@ -24,6 +24,7 @@ Electronic dice with Microcontroller and less parts.
 ### Manual
 You can find the manual and pictures of every step in the manual folder.
 
-### Copyright
-- Board: CC-BY-NC-SA - Thomas Basler
-- Manual: CC-BY-SA - Binary Kitchen e.V.
+### Copyright and Authorship
+- Board: [CC-BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/) - Thomas Basler
+- Manual (TeX): [LPPL](https://www.latex-project.org/lppl.txt) - [Marei Peischl](https://peitex.de)
+- Manual (pdf): [CC-BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/) - [Binary Kitchen e.V.](https://www.binary-kitchen.de)

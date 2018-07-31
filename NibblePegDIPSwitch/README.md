@@ -13,8 +13,8 @@ A Nibble ist a unit for the amount of 4 Bits (https://en.wikipedia.org/wiki/Nibb
 
 | Amount| Name            | Description                        | Colour code           |
 |-------|-----------------|------------------------------------|-----------------------|
-| 1     | Peg             | Wooden Peg		                     |                       |
-| 1     | Battery Holder  | CR2032 Battery Holder	             |                       |
+| 1     | Peg             | Wooden Peg		               |                       |
+| 1     | Battery Holder  | CR2032 Battery Holder	       |                       |
 | 1     | Battery CR2032  |                                    |                       |
 | 4     | LED             | 3mm RGB flashing LED               |                       |
 | 1     | Switch          | on/off switch 3 pins               |                       |
@@ -42,6 +42,7 @@ For everybody who wants to build them at home. Here are the sources for the impo
   - ebay.de (Search for "Schiebeschalter SS 1xUM (RM2,5)")
   - http://www.segor.de/#Q=SS1xUM(RM2%252C5)%252F-5x&M=1
 
-### Copyright
-
-CC-BY-SA 4.0 - Binary Kitchen and https://github.com/misamura
+### Copyright and Authorship
+- Hardware / Idea: [CC-BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/) - [Binary Kitchen e.V.](https://www.binary-kitchen.de) and [Hannes](https://github.com/misamura)
+- Manual (TeX): [LPPL](https://www.latex-project.org/lppl.txt) - [Marei Peischl](https://peitex.de)
+- Manual (pdf): [CC-BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/) - [Binary Kitchen e.V.](https://www.binary-kitchen.de)
