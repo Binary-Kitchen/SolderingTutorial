@@ -101,7 +101,7 @@ Boards:
 - Timo Schindler <htts://www.timoschindler.de>
 
 TeX-Code:
-- Marei Peischl <https://peitex.de>
+- Marei Peischl <marei@binary-kitchen.de> <https://github.com/TeXhackse>
 
 Comic:
 - Mitch Altmann <http://cornfieldelectronics.com>
@@ -110,7 +110,7 @@ Comic:
 
 Manuals:
 - Michael Pajewski
-- Marei Peischl <https://peitex.de>
+- Marei Peischl <marei@binary-kitchen.de> <https://github.com/TeXhackse>
 - Timo Schindler <https://www.timoschindler.de>
 - Hannes <https://github.com/misamura>
 

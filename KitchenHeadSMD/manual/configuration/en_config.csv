@@ -9,7 +9,4 @@ descriptionLicense=CC-BY-SA 4.0 Binary Kitchen e.V.
 boardTitle=Board
 boardVersion=v1.1
 boardLicense=CC-BY-SA 4.0 Binary Kitchen e.V.
-texTitle=\TeX
-texVersion=v1.0
-texLicense=The \LaTeX-Project Public License{,} Author: Marei Peischl - peitex.de
 appendix={\centering\includegraphics[width=.5\linewidth]{images/KitchenHeadBottom}~\includegraphics[width=.5\linewidth]{images/KitchenHeadTop.pdf}}

@@ -9,7 +9,4 @@ descriptionLicense=CC-BY-SA 4.0 Binary Kitchen e.V.
 boardTitle=Platine
 boardVersion=v1.4
 boardLicense=CC-BY-NC-SA Arne Rossius
-texTitle=\TeX
-texVersion=v1.0
-texLicense=The \LaTeX-Project Public License{,} Author: Marei Peischl - peitex.de
 appendix={\centering\includegraphics[width=.3\linewidth]{images/heartSMD-bottom}~\includegraphics[width=.3\linewidth]{images/heartSMD-top}}
