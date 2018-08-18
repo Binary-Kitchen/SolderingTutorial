@@ -35,8 +35,9 @@ Electronic dice which uses button bouncing and timing for randomness.
 ### Manual
 You can find the manual and pictures of every step in the manual folder.
 
-### Copyright
+### Copyright and Authorship
 The project is based on https://www.ei.rub.de/media/ei/attachments/files/2009/12/Dokumentation_elektronischer_Wuerfel.pdf
 
-- Board: CC-BY-SA - Thomas Basler, 2017
-- Manual: CC-BY-SA - Binary Kitchen e.V., 2017
+- Board: [CC-BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/) - Thomas Basler
+- Manual (TeX): [LPPL](https://www.latex-project.org/lppl.txt) - [Marei Peischl](https://peitex.de)
+- Manual (pdf): [CC-BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/) - [Binary Kitchen e.V.](https://www.binary-kitchen.de)

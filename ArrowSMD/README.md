@@ -22,7 +22,9 @@ Small soldering kit with an arrow on it from https://wiki.blinkenarea.org/index.
 ### Manual
 You can find the manual and pictures of every step in the manual folder.
 
-### Copyright
+### Copyright and Authorship
 The project is based on http://wiki.blinkenarea.org/index.php/AntiKippenLights-Mini
 
-CC-BY-NC-SA - Arne Rossius
+- Board: [CC-BY-NC-SA](https://creativecommons.org/licenses/by-nc-sa/4.0/) - Arne Rossius
+- Manual (TeX): [LPPL](https://www.latex-project.org/lppl.txt) - [Marei Peischl](https://peitex.de)
+- Manual (pdf): [CC-BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/) - [Binary Kitchen e.V.](https://www.binary-kitchen.de)

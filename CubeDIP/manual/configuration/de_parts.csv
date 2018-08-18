@@ -1,8 +1,0 @@
-Menge,Name,Beschreibung,Beschriftung/Farbcode
-27,LED,Leuchtdioden \SI{3}{\mm},
-4,Außenwand,Box Außenwand,
-1,Deckel,Box Deckel (mit kleinen Löchern),
-1,Boden,Box Boden (große Löcher),
-1, Schalter, Kippschalter,
-1, Batteriehalter, Batteriehalter für 2 AA Batterien,
-2, Batterie, \SI{1,5}{\volt} Mignon Batterie,
