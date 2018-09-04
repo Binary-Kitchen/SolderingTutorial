@@ -1,0 +1,43 @@
+\documentclass{scrartcl}
+\usepackage{tikz}
+\usetikzlibrary{arrows}
+
+
+\newcommand{\LEDcircle}{
+\begin{tikzpicture}
+\node[circle,draw,minimum size=1cm] (currentcircle) at (0,0) {};
+\node at ([xshift=1.5mm]0,0) {$+$};
+\node at ([xshift=-1.5mm]0,0) {$-$};
+\draw[<-]([xshift=-1.5mm]currentcircle.west)++(0,-.2)--++(0,.4);
+\end{tikzpicture}
+}
+\newcommand{\LEDcircleS}{
+	\begin{tikzpicture}
+	\node[circle,draw,minimum size=1cm] (currentcircle) at (0,0) {};
+	\node at ([xshift=1.5mm]0,0) {$+$};
+	\node at ([xshift=-1.5mm]0,0) {$-$};
+	\draw[->]([xshift=1.5mm]currentcircle.north)++(-.4,.2)--++(-.4,-.4);
+%\draw (currentcircle.north) circle (1mm);
+	\end{tikzpicture}
+}
+\pagenumbering{gobble}
+\usepackage{expl3}
+\ExplSyntaxOn
+\fp_set:Nn \l_tmpa_fp {sqrt(1.5*1.5+1.5*1.5)}
+\edef\kante{\fp_to_decimal:N \l_tmpa_fp}
+\show\kante
+\ExplSyntaxOff
+
+\begin{document}
+
+\begin{tikzpicture}[scale=1.3]
+%\coordinate (origin) at (0,0);
+\draw(-2.5,-2.5)rectangle(2.5,2.5);
+\foreach \d in {0,90,...,270}
+	\node[rotate around={\d:(0,0)}] at (\d:1.5) {\LEDcircle};	
+\foreach \d in {45,135,...,335}
+	\node[rotate around={\d:(0,0)}] at (\d:\kante) {\LEDcircleS};		
+%\node[rotate around={45:(0,0)}] at (45:1.5) {\LEDcircle};	
+\node[rotate=180] at (0,0) {\LEDcircle};	
+\end{tikzpicture}
+\end{document}
