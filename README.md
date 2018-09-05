@@ -13,6 +13,14 @@ Small soldering kit with an arrow on it from https://wiki.blinkenarea.org/index.
 - Status: **Complete**
 - Difficulty: **4/5**
 
+### [Cube DIP](CubeDIP/) 
+Simple LED cube consiting of 27 RGB LEDs in a 3x3x3 configuration. No programming needed.
+
+<img src="CubeDIP/manual/images/IMG_20180903_225030.jpg" width=400px alt="Cube DIP">
+
+- Status: **Complete**
+- Difficulty: **3/5**
+
 ### [Dice DIP](DiceDIP/) 
 Electronic dice which uses button bouncing and timing for randomness.
 
