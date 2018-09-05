@@ -4,6 +4,13 @@ This repository contains all files for our soldering kits and courses. Please fe
 We've tried to collect and create tutorials with different difficulties and are offering SMD and DIP soldering kits.
 
 ## Soldering Kits
+### [ATX Breakout Board](ATXBreakoutBoardSMD/) 
+Handy Breakout Board to get all the important voltages from an standard ATX power supply.
+
+<img src="ATXBreakoutBoardSMD/manual/images/IMG_20180701_002328.jpg" width=400px alt="ATX Breakout Board">
+
+- Status: **Complete**
+- Difficulty: **4/5**
 
 ### [Arrow SMD](ArrowSMD/) 
 Small soldering kit with an arrow on it from https://wiki.blinkenarea.org/index.php/AntiKippenLights-Mini.
@@ -63,14 +70,6 @@ Very easy soldering kit for using it as pin.
 Small soldering kit using SMD components with the kitchen head on it.
 
 <img src="KitchenHeadSMD/manual/images/DSC04829.jpg" width=400px alt="Kitchen Head SMD">
-
-- Status: **Complete**
-- Difficulty: **4/5**
-
-### [ATX Breakout Board](ATXBreakoutBoardSMD/) 
-Handy Breakout Board to get all the important voltages from an standard ATX power supply.
-
-<img src="ATXBreakoutBoardSMD/manual/images/IMG_20180701_002328.jpg" width=400px alt="ATX Breakout Board">
 
 - Status: **Complete**
 - Difficulty: **4/5**
