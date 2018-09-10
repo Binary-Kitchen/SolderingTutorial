@@ -105,7 +105,7 @@ Boards:
 - Arne Rossius <arne@blinkenarea.org>
 - Thomas Basler <noby@binary-kitchen.de>
 - Francesco Truzzi <http://www.truzzi.me>
-- Timo Schindler <htts://www.timoschindler.de>
+- Timo Schindler <https://www.timoschindler.de>
 
 TeX-Code:
 - Marei Peischl <marei@binary-kitchen.de> <https://github.com/TeXhackse>
