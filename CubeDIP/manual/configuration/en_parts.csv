@@ -6,4 +6,5 @@ Quantity,Name
 1,Battery holder for Mignon (AA)
 1,Wire{,} stiff
 1,Cable{,} flexible
+1,\SI{0,9}{\V} -- \SI{3,3}{\V} to \SI{3,3}{\V} step-up
 2,Mignon Batteries (AA{,} not included)

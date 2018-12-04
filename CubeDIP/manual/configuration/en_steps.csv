@@ -10,7 +10,7 @@ images/IMG_20180903_221855,Put back the already soldered two layers from before 
 images/IMG_20180903_221855,You are finished with all three layers; Push the positive Pins through the small holes in the other plate
 images/IMG_20180903_222033,Remove the insulation of the stiff wire completely; Push it through the last hole and connect alle negativ pins of the three layers; Cut the rest of wire and leave a rest of \SI{5}{\mm} on the other side of the plate
 images/IMG_20180903_222738,Solder the inner side of the positive pins as shown in the picture
-images/IMG_20180903_223809,Sodler the red wire of the battery holder to the midde pin of the switch; Solder the other wire to one of the other pins
-images/IMG_20180903_223902,Solder the black wire of the battery holder to the negative pin of your cube; Solder the other open wire to the positive pins
+images/IMG_20180903_223809,Sodler the red wire of the battery holder to the midde pin of the switch; Solder a wire to one of the other pins and to the voltage-in (Vi) pin of the step-up
+images/IMG_20181203_191431,Solder the voltage-out (Vo) to the postive pin of the LEDs; Connect the black wire of the battery holder to the ground (G) pin of the step-up and the negative pin of the LEDs 
 images/IMG_20180903_224135,Screw the switch into the hole in one of the side-elements; Put batteriesPut the battery holder into the box
 images/IMG_20180903_225030,Close the box; You are finished!; To change the batteries{,} the side-element with the switch can be opened more easily
