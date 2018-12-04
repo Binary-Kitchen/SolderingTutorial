@@ -9,3 +9,4 @@ descriptionLicense=CC-BY-SA 4.0 Binary Kitchen e.V.
 boardTitle=Board
 boardVersion=v1.2
 boardLicense=Open-Source-Hardware License Francesco Truzzi - \url{www.truzzi.me}
+appendix={\centering\includegraphics[width=.5\linewidth]{images/ATX_Mini_Front}~\includegraphics[width=.5\linewidth]{images/ATX_Mini_Bottom}}
