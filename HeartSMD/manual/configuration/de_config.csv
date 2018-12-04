@@ -9,4 +9,4 @@ descriptionLicense=CC-BY-SA 4.0 Binary Kitchen e.V.
 boardTitle=Platine
 boardVersion=v1.4
 boardLicense=CC-BY-NC-SA Arne Rossius
-appendix={\centering\includegraphics[width=.3\linewidth]{images/heartSMD-bottom}~\includegraphics[width=.3\linewidth]{images/heartSMD-top}}
+appendix={\centering\includegraphics[width=.9\linewidth]{images/heartSMD-bottom}~\\\includegraphics[width=.9\linewidth]{images/heartSMD-top}}
