@@ -49,10 +49,11 @@
 	%\frame{\parbox{\dimexpr\linewidth-2\fboxrule\relax}{test}}
 	\fontsize{50pt}{60pt}\selectfont\textbf{\@title}\strut\\[7pt]
 	\fontsize{36pt}{40pt}\selectfont
-		\expandafter\ifx\csname @boardTitle\endcsname\relax
-		\else
+		%\expandafter\ifx\csname @boardTitle\endcsname\relax
+		%\else
+		%\@buildTitle\ \@buildTime\\
+		%\fi
 		\@buildTitle\ \@buildTime\\
-		\fi
 		\@skillTitle\ \@skillLevel\\
 		\vfill
 		\qrcode[height=.8\linewidth]{https://github.com/Binary-Kitchen/SolderingTutorial}\\[5pt]
