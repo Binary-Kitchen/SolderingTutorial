@@ -146,6 +146,8 @@
 	skillTitle .code:n = \cs_set:Npn \@skillTitle {#1},
 	%	skillLevel .code:n = \BK_setupSkillLevel:n{#1},
 	skillLevel .tl_gset:N = \g_BK@skillLevel_tl,
+        buildTitle .code:n = \cs_set:Npn \@buildTitle {#1},
+        buildTime .code:n = \cs_set:Npn \@buildTime {#1},
 	stepTitle .code:n= \cs_set:Npn \@stepTitle {#1},
 	descriptionTitle .code:n = \cs_set:Npn \@descriptionTitle {#1},
 	descriptionVersion .code:n = \cs_set:Npn \@descriptionVersion {#1},
@@ -347,7 +349,7 @@
 		\@parts
 		
 		\vfill
-		\@skillTitle: \@skillLevel\par
+		\@skillTitle: \@skillLevel \qquad \@buildTitle: \@buildTime\par
 		\bigskip
 		
 		\begin{tabular}{lc>{\def\\{\tabularnewline&&}}l}
