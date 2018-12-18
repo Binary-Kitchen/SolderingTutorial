@@ -4,13 +4,13 @@ images/IMG_20180903_213744,Bend all negative pins in the direction of the arrows
 images/IMG_20180903_213838,Bend \SI{2}{\mm} of the tip of all positive pins with an \SI{90}{\degree} angel towards the negative pin
 images/IMG_20180903_214347,Carefully push out the first layer of the LED cube
 images/IMG_20180903_213744,Repeat the steps for the second layer
-images/IMG_20180903_215407,Keep the second layer in the hole matrix; Put the first layer of LEDs onto the second layer so that all lines match each other; The bended tips of the positive pins should now touch the positive pins of the second layer; Solder all positive pins of both layers; Carefully push out the soldered layers
-images/IMG_20180903_213744,Repeat the steps for soldering the third layer{,} exept do not bend the tips of the positive pins in the third Layer!; Push out the third layer
-images/IMG_20180903_221855,Put back the already soldered two layers from before in the hole matrix; Match now the third layer onto the other two; Solder the third layer; Push out the finished cube
-images/IMG_20180903_221855,You are finished with all three layers; Push the positive Pins through the small holes in the other plate
-images/IMG_20180903_222033,Remove the insulation of the stiff wire completely; Push it through the last hole and connect alle negativ pins of the three layers; Cut the rest of wire and leave a rest of \SI{5}{\mm} on the other side of the plate
+images/IMG_20180903_215407,Keep the second layer in the hole matrix; Put the first layer of LEDs onto the second layer so that all lines match each other; The bent tips of the positive pins should now touch the positive pins of the second layer; Solder all positive pins of both layers; Carefully push out the soldered layers
+images/IMG_20180903_213744,Repeat the steps for soldering the third layer{,} except for bending the tips of the positive pins in the third layer!; Push out the third layer
+images/IMG_20180903_221855,Put the two already soldered layers from before back in the hole matrix; Now position the third layer on top of the other two; Solder the third layer; Push out the finished cube
+images/IMG_20180903_221855,You are finished with all three layers; Push the positive pins through the small holes in the other plate
+images/IMG_20180903_222033,Remove the insulation of the stiff wire completely; Push it through the last hole and connect all negative pins of the three layers; Cut the rest of the wire and down to \SI{5}{\mm} on the other side of the plate
 images/IMG_20180903_222738,Solder the inner side of the positive pins as shown in the picture
-images/IMG_20180903_223809,Sodler the red wire of the battery holder to the midde pin of the switch; Solder a wire to one of the other pins and to the voltage-in (Vi) pin of the step-up
+images/IMG_20180903_223809,Solder the red wire of the battery holder to the midde pin of the switch; Solder a wire to one of the other pins and to the voltage-in (Vi) pin of the step-up
 images/IMG_20181203_191431,Solder the voltage-out (Vo) to the postive pin of the LEDs; Connect the black wire of the battery holder to the ground (G) pin of the step-up and the negative pin of the LEDs 
 images/IMG_20180903_224135,Screw the switch into the hole in one of the side-elements; Put batteries in; Put the battery holder into the box
 images/IMG_20180903_225030,Close the box; You are finished!; To change the batteries{,} open the box on the side or on the top
