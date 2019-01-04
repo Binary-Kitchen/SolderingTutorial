@@ -4,7 +4,7 @@
 # This work is licensed under the terms of CC-BY-SA, version 4. See the COPYING
 # file in the top-level directory.
 
-MAN_LANGS=de en
+MAN_LANGS=de en fr
 PROJECTS= $(foreach MAN_LANG,$(MAN_LANGS), $(wildcard */manual/configuration/$(MAN_LANG)_config.csv))
 PROJECTLABELS= $(wildcard */manual/configuration/de_config.csv)
 
