@@ -1,0 +1,11 @@
+images/2, Démonter la pince à linge; Attention aux cheveux{,} la perceuse en est très friande!;Percer huit trous dans une moitié de la pince à linge; Percer trois trous dans la deuxième moitié, pour l'interrupteur;
+images/3, Les DELs sont orientées (patte longue = positive et fil rouge{,} patte courte = négative et fil noir);Insérer les diodes dans les trous afin que toutes les pattes longues soient du même côté
+images/4, Plier toutes les pattes longues pour qu'elles soient les unes sur les autres. Faire la même chose avec les pattes courtes. Attention{,} les pattes longues et courtes ne doivent pas se toucher~!;Souder toutes les pattes longues les unes aux autres;Souder toutes les pattes courtes les unes aux autres;
+images/5, Préparer 2 fils rouges et un fil noir: Enlever environ \SI{10}{mm} d'isolant à chaque bout des fils;
+images/5, Souder un fil rouge aux pattes positives; Souder un fil noir aux pattes négatives; Couper les bouts des pattes qui dépassent;
+images/7, Uniquement pour tester~: Pas de soudure à cette étape~!;Insérer une pile dans le porte-pile; Faire contact entre les fils et le porte-pile et vérifier que les DELs clignotent;Enlever la pile;
+images/11-IMG_8376, Insérer l'interrupteur dans l'autre moitié de la pince\dots
+images/12-IMG_8377, \dots{}et plier les pattes pour qu'il tienne en place;
+images/04-DSC06772, Souder le bout restant du fil rouge des diodes à la patte du milieu de l'interrupteur;Souder le deuxième fil rouge à une patte extérieure de l'interrupteur{,} et à la patte positive du porte-pile;
+images/05-DSC06773, Souder le bout restant du fil noir des diodes à la patte négative du porte-pile;
+images/06-DSC06776, Réassembler la pince; Coller le porte-pile à la pince{,} et y remettre la pile;
