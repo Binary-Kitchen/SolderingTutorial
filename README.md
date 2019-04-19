@@ -4,6 +4,15 @@ This repository contains all files for our soldering kits and courses. Please fe
 We've tried to collect and create tutorials with different difficulties and are offering SMD and DIP soldering kits.
 
 ## Soldering Kits
+
+### [Nibble++](NibblePlusPlusSMD/) 
+A simple PCB to test your SMD hand-soldering skills. Going down to sand grain sized 01005 SMD parts, this button is a challenge for experienced "soldiers" and those who want to become one.
+
+<img src="/NibblePlusPlusSMD/manual/images/front-generated.png" width=400px alt="Nibble++">
+
+- Status: **Complete**
+- Difficulty: **6/5**
+
 ### [ATX Breakout Board](ATXBreakoutBoardSMD/) 
 Handy Breakout Board to get all the important voltages from an standard ATX power supply.
 
