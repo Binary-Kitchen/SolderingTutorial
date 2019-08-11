@@ -8,11 +8,11 @@ Quantity,Name,Description,Signing/Value
 1,D3,0402 SMD LED,yellow
 1,D4,0201 SMD LED,green
 1,D5,0201 SMD LED,blue
-1,R1,0805 SMD resistor,\SI{100}{\ohm}
-1,R2,0603 SMD resistor,\SI{100}{\ohm}
-1,R3,0402 SMD resistor,\SI{100}{\ohm}
-1,R4,0201 SMD resistor,\SI{150}{\ohm}
-1,R5,01005 SMD resistor,\SI{100}{\ohm}
+1,R1,0805 SMD resistor,\SI{82}{\ohm}
+1,R2,0603 SMD resistor,\SI{82}{\ohm}
+1,R3,0402 SMD resistor,\SI{62}{\ohm}
+1,R4,0201 SMD resistor,\SI{330}{\ohm}
+1,R5,01005 SMD resistor,\SI{33}{\ohm}
 2,R6{,} R7,0805 SMD resistor,\SI{100}{\kilo\ohm}
 1,SW1,SMD Switch,
 1,U1,SOIC-8 Timer,NE555

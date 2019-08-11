@@ -19,11 +19,11 @@ A simple PCB to test your SMD hand-soldering skills. Going down to sand grain si
 | D3         | 0402 SMD LED       | 1        | LED Yellow      |
 | D4         | 0201 SMD LED       | 1        | LED Green       |
 | D5         | 0201 SMD LED       | 1        | LED Blue        |
-| R1         | 0805 SMD Resistor  | 1        | 82 Ohm          |
-| R2         | 0603 SMD Resistor  | 1        | 82 Ohm          |
-| R3         | 0402  SMD Resistor | 1        | 100 Ohm         |
-| R4         | 0201 SMD Resistor  | 1        | 150 Ohm         |
-| R5         | 01005 SMD Resistor | 1        | 200 Ohm         |
+| R1         | 0805 SMD Resistor  | 1        |  82 Ohm         |
+| R2         | 0603 SMD Resistor  | 1        |  82 Ohm         |
+| R3         | 0402  SMD Resistor | 1        |  62 Ohm         |
+| R4         | 0201 SMD Resistor  | 1        | 330 Ohm         |
+| R5         | 01005 SMD Resistor | 1        |  33 Ohm         |
 | R6,R7      | 0805 SMD Resistor  | 2        | 100k Ohm        |
 | SW1        | SMD Switch         | 1        |                 |
 | U1         | SOIC-8 NE555       | 1        |                 |
