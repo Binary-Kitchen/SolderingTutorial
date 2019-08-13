@@ -1,10 +1,9 @@
 Quantity,Name
-,
-6,Wooden box element
+7,Wooden box element
 27,\SI{5}{\mm} RGB LED
 1,Switch
 1,Battery holder for Mignon (AA)
 1,Wire{,} stiff
 1,Cable{,} flexible
-1,\SI{0,9}{\V} -- \SI{3,3}{\V} to \SI{3,3}{\V} step-up
+1,\SI{0,8}{\V} -- \SI{3,3}{\V} to \SI{3,3}{\V} step-up module
 2,Mignon Batteries (AA{,} not included)
