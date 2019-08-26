@@ -43,7 +43,7 @@ void SerialProtocolClass::beginHandshake()
 void SerialProtocolClass::flushBuffer()
 {
 	while(Serial.available()) {
-    	char t = Serial.read();
+		Serial.read();
 	}
 }
 
@@ -89,7 +89,7 @@ IGameEngine::Parameter SerialProtocolClass::receiveChoice()
 		}
 	}
 
-	return choice;
+	return (IGameEngine::Parameter)choice;
 }
 
 void SerialProtocolClass::sendChoice(IGameEngine::Parameter choice)

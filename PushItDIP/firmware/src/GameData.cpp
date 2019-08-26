@@ -139,4 +139,7 @@ uint16_t GameDataClass::getAudioSequenceLength()
 	else if (gameRound - 1 >= 13) {
 		return 220;
 	}
+	else {
+		return 0;
+	}
 }
