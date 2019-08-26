@@ -1,5 +1,5 @@
 /*
- * PushIt-1.0.ino
+ * main.cpp
  *
  * Copyright (c) Thomas Basler, 2018
  *

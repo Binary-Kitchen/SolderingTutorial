@@ -253,14 +253,14 @@ void AudioEngine::playNote(byte note, unsigned long duration)
 
 void AudioEngine::playMelody(const __FlashStringHelper* playString)
 {
-    melodyCommandPtr = (unsigned int)playString;
+	melodyCommandPtr = (unsigned int)playString;
 	melodyStringType = STRINGTYPE_FLASH;
 	melodyPlaying = true;
 }
 
 void AudioEngine::playMelody(const char* playString)
 {
-    melodyCommandPtr = (unsigned int)playString;
+	melodyCommandPtr = (unsigned int)playString;
 	melodyStringType = STRINGTYPE_RAM;
 	melodyPlaying = true;
 }
@@ -281,16 +281,16 @@ void AudioEngine::playWorker()
 	dotVal = 0; // Start out with no dotted value.
 
 	// * GET NEXT COMMAND - RETURN VALUE IN ACCA
-    commandChar = getNextCommand(&melodyCommandPtr, melodyStringType);
+	commandChar = getNextCommand(&melodyCommandPtr, melodyStringType);
 
 	switch (commandChar) {
 	case '\"': // ignore quotes for testing.
-        break;
+		break;
 
 	case '\0':
-        value = 1; // no error
-        melodyPlaying = false;
-        break;
+		value = 1; // no error
+		melodyPlaying = false;
+		break;
 
 	case ';': // SUB COMMAND TERMINATED
 		// IGNORE SEMICOLONS
@@ -523,12 +523,12 @@ void AudioEngine::playWorker()
 
 char AudioEngine::getNextCommand(unsigned int* ptr, byte stringType)
 {
-    char commandChar;
+	char commandChar;
 
-    if (ptr == 0) {
+	if (ptr == 0) {
 		// Return nil character, and leave pointer alone.
 		commandChar = '\0'; // NIL character
-    }
+	}
 	else {
 		// Return next character, skipping spaces.
 		while (1) {
@@ -542,83 +542,83 @@ char AudioEngine::getNextCommand(unsigned int* ptr, byte stringType)
 				commandChar = pgm_read_byte_near(*ptr);
 			}
 
-            if (commandChar == '\0') {
+			if (commandChar == '\0') {
 				break;
 			}
 
-            // Increment pointer.
-            (*ptr)++;
+			// Increment pointer.
+			(*ptr)++;
 
-            if (commandChar != ' ') {
+			if (commandChar != ' ') {
 				break;
 			}
-        }
-    }
-    return commandChar;
+		}
+	}
+	return commandChar;
 }
 
 byte AudioEngine::checkModifier(unsigned int* ptr, byte stringType, byte value)
 {
-    char commandChar;
+	char commandChar;
 
-    if (ptr != 0) {
-        commandChar = getNextCommand(ptr, stringType);
+	if (ptr != 0) {
+		commandChar = getNextCommand(ptr, stringType);
 
-        switch (commandChar) {
-        case '\0':
-            break;
+		switch (commandChar) {
+		case '\0':
+			break;
 
-        // ADD ONE?
-        case '+':
-            if (value < 255) {
-                value++;
-            }
+		// ADD ONE?
+		case '+':
+			if (value < 255) {
+				value++;
+			}
 			else {
-                value = 0; // ?FC ERROR
-            }
-            break;
+				value = 0; // ?FC ERROR
+			}
+			break;
 
-        // SUBTRACT ONE?
-        case '-':
-            if (value > 0) {
-                value--;
-            }
+		// SUBTRACT ONE?
+		case '-':
+			if (value > 0) {
+				value--;
+			}
 			else {
-                value = 0; // ?FC ERROR
-            }
-            break;
+				value = 0; // ?FC ERROR
+			}
+			break;
 
-        // MULTIPLY BY TWO?
-        case '>':
-            if (value <= 127) {
-                value = value * 2;
-            }
+		// MULTIPLY BY TWO?
+		case '>':
+			if (value <= 127) {
+				value = value * 2;
+			}
 			else {
-                value = 0; // ?FC ERROR
-            }
-            break;
+				value = 0; // ?FC ERROR
+			}
+			break;
 
-        // DIVIDE BY TWO?
-        case '<':
-            if (value > 1) {
-                value = value / 2;
-            }
+		// DIVIDE BY TWO?
+		case '<':
+			if (value > 1) {
+				value = value / 2;
+			}
 			else {
-                value = 0; // ?FC ERROR
-            }
-            break;
+				value = 0; // ?FC ERROR
+			}
+			break;
 
-        // Could be = or number, so we call a separate function since we
-        // need this in the note routine as well.
-        default:
-            value = checkForVariableOrNumeric(ptr, stringType, commandChar, value);
-            break;
+		// Could be = or number, so we call a separate function since we
+		// need this in the note routine as well.
+		default:
+			value = checkForVariableOrNumeric(ptr, stringType, commandChar, value);
+			break;
 
-        } // end of switch( commandChar )
+		} // end of switch( commandChar )
 
-    } // end of NULL check
+	} // end of NULL check
 
-    return value;
+	return value;
 }
 
 byte AudioEngine::checkForVariableOrNumeric(unsigned int* ptr, byte stringType, char commandChar, byte value)
@@ -667,15 +667,15 @@ byte AudioEngine::checkForVariableOrNumeric(unsigned int* ptr, byte stringType, 
             if (temp > 255) {
                 temp = 0; // ?FC ERROR
                 break;
-            }
+			}
 
-            // Get another command byte.
-            commandChar = getNextCommand(ptr, stringType);
+			// Get another command byte.
+			commandChar = getNextCommand(ptr, stringType);
 
-        } while (commandChar != '\0');
+		} while (commandChar != '\0');
 
-        value = temp;
-        break;
+		value = temp;
+		break;
 	} // end of switch( commandChar )
 
 	return value;

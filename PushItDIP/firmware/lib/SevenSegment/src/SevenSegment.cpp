@@ -48,16 +48,16 @@
 SevenSegmentClass SevenSegment;
 
 static const byte digitCodeMap[] = {
-   (SEG_A | SEG_B | SEG_C | SEG_D | SEG_E | SEG_F),  // 0
-   (SEG_B | SEG_C),  // 1
-   (SEG_A | SEG_B | SEG_G | SEG_E | SEG_D),  // 2
-   (SEG_A | SEG_B | SEG_G | SEG_C | SEG_D),  // 3
-   (SEG_F | SEG_G | SEG_B | SEG_C),  // 4
-   (SEG_A | SEG_F | SEG_G | SEG_C | SEG_D),  // 5
-   (SEG_A | SEG_F | SEG_G | SEG_C | SEG_D | SEG_E),  // 6
-   (SEG_A | SEG_B | SEG_C),  // 7
-   (SEG_A | SEG_B | SEG_C | SEG_D | SEG_E | SEG_F | SEG_G),  // 8
-   (SEG_A | SEG_B | SEG_C | SEG_D | SEG_F | SEG_G)  // 9
+	(SEG_A | SEG_B | SEG_C | SEG_D | SEG_E | SEG_F),  // 0
+	(SEG_B | SEG_C),  // 1
+	(SEG_A | SEG_B | SEG_G | SEG_E | SEG_D),  // 2
+	(SEG_A | SEG_B | SEG_G | SEG_C | SEG_D),  // 3
+	(SEG_F | SEG_G | SEG_B | SEG_C),  // 4
+	(SEG_A | SEG_F | SEG_G | SEG_C | SEG_D),  // 5
+	(SEG_A | SEG_F | SEG_G | SEG_C | SEG_D | SEG_E),  // 6
+	(SEG_A | SEG_B | SEG_C),  // 7
+	(SEG_A | SEG_B | SEG_C | SEG_D | SEG_E | SEG_F | SEG_G),  // 8
+	(SEG_A | SEG_B | SEG_C | SEG_D | SEG_F | SEG_G)  // 9
 };
 
 static const byte idleMap[] = {
@@ -87,7 +87,7 @@ void SevenSegmentClass::begin(uint8_t clkPin, uint8_t dataPin, uint8_t stoPin)
 void SevenSegmentClass::setNumber(uint8_t numToShow)
 {
 	//ground latchPin and hold low for as long as you are transmitting
-    digitalWrite(stoPin, LOW);
+	digitalWrite(stoPin, LOW);
 	if (numToShow <= 19) {
 		shiftOut(dataPin, clkPin, MSBFIRST, ~(digitCodeMap[numToShow % 10] | (numToShow > 9 ? SEG_DP : 0)));
 	}
@@ -96,8 +96,8 @@ void SevenSegmentClass::setNumber(uint8_t numToShow)
 	}
 
 	//return the latch pin high to signal chip that it
-    //no longer needs to listen for information
-    digitalWrite(stoPin, HIGH);
+	//no longer needs to listen for information
+	digitalWrite(stoPin, HIGH);
 }
 
 void SevenSegmentClass::setChar(char charToShow)
@@ -117,18 +117,18 @@ void SevenSegmentClass::setChar(char charToShow)
 	}
 
 	//return the latch pin high to signal chip that it
-    //no longer needs to listen for information
-    digitalWrite(stoPin, HIGH);
+	//no longer needs to listen for information
+	digitalWrite(stoPin, HIGH);
 }
 
 void SevenSegmentClass::blank()
 {
 	//ground latchPin and hold low for as long as you are transmitting
-    digitalWrite(stoPin, LOW);
+	digitalWrite(stoPin, LOW);
 	shiftOut(dataPin, clkPin, MSBFIRST, ~0);
 	//return the latch pin high to signal chip that it
-    //no longer needs to listen for information
-    digitalWrite(stoPin, HIGH);
+	//no longer needs to listen for information
+	digitalWrite(stoPin, HIGH);
 }
 
 void SevenSegmentClass::playIdle()
@@ -143,8 +143,8 @@ void SevenSegmentClass::playIdle()
 		shiftOut(dataPin, clkPin, MSBFIRST, ~(idleMap[currentIdle]));
 
 		//return the latch pin high to signal chip that it
-    	//no longer needs to listen for information
-    	digitalWrite(stoPin, HIGH);
+		//no longer needs to listen for information
+		digitalWrite(stoPin, HIGH);
 
 		lastRunIdle = 0;
 	}

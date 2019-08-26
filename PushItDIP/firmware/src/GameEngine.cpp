@@ -32,7 +32,7 @@ bool GameEngine::update()
 		return false;
 	}
 	Event e = evQueue[evQueueHead];
-  	evQueueHead = (evQueueHead + 1) & (evQueueSize - 1);
+	evQueueHead = (evQueueHead + 1) & (evQueueSize - 1);
 
 	for (uint8_t i = 0; i < sizeof(fsmApp) / sizeof(Transition); i++) {
 		if (!(
