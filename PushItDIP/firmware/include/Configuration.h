@@ -21,7 +21,7 @@
 #include "GameData.h"
 
 struct CONFIG_T {
-	uint8_t Cfg_Id[4];
+	char Cfg_Id[4];
 	uint8_t Cfg_Version;
 	uint8_t Play_MaxMode;
 	uint8_t Play_MaxLevel;
