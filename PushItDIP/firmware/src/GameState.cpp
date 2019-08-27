@@ -207,6 +207,8 @@ void StatePressButton::entryAction(IGameEngine* gameEngine, IGameEngine::Paramet
 		GameData.playColor(GameData.Colors::Green);
 		GameData.addKeyPress(GameData.Colors::Green);
 		break;
+	default:
+		break;
 	}
 
 }
@@ -407,6 +409,8 @@ void StateShowCharacter::entryAction(IGameEngine* gameEngine, IGameEngine::Param
 	case IGameEngine::Parameter::CharP:
 		SevenSegment.setChar('P');
 		break;
+	default:
+		break;
 	}
 }
 
@@ -510,6 +514,8 @@ void StateChoiceButton::entryAction(IGameEngine* gameEngine, IGameEngine::Parame
 		GameData.addMove(GameData.Colors::Green);
 		GameData.playColor(GameData.Colors::Green);
 		SerialProtocol.sendChoice(IGameEngine::Parameter::Green);
+		break;
+	default:
 		break;
 	}
 }
