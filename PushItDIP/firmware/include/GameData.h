@@ -30,6 +30,7 @@ public:
 		Red = 1,
 		Green = 2,
 		Blue = 3,
+		last
 	};
 
 	void begin();
@@ -48,8 +49,8 @@ public:
 private:
 	uint8_t gameRound = 0;
 	uint8_t playRound = 0;
-	uint8_t gameBoard[MAX_ROUNDS_TO_WIN];
-	uint8_t playBoard[MAX_ROUNDS_TO_WIN];
+	Colors gameBoard[MAX_ROUNDS_TO_WIN];
+	Colors playBoard[MAX_ROUNDS_TO_WIN];
 
 	uint16_t getAudioSequenceLength();
 };

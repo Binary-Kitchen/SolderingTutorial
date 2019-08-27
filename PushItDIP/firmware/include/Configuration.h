@@ -25,7 +25,7 @@ struct CONFIG_T {
 	uint8_t Cfg_Version;
 	uint8_t Play_MaxMode;
 	uint8_t Play_MaxLevel;
-	uint8_t Play_MaxGameBoard[MAX_ROUNDS_TO_WIN];
+	GameDataClass::Colors Play_MaxGameBoard[MAX_ROUNDS_TO_WIN];
 };
 
 class ConfigurationClass

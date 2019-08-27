@@ -31,9 +31,7 @@ void GameDataClass::init()
 
 void GameDataClass::addRandomMove()
 {
-	uint8_t newMove = random(0, 4); // min (included), max (exluded)
-	gameBoard[gameRound++] = newMove;
-	playRound = 0;
+	addMove(static_cast<Colors>(rand() % Colors::last));
 }
 
 void GameDataClass::addMove(Colors color)
@@ -84,6 +82,8 @@ void GameDataClass::playColor(Colors color)
 	case Red:
 		Led.set(LedEngine::LedColor::Red);
 		Audio.playTone(TONE_CS6, getAudioSequenceLength());
+		break;
+	default:
 		break;
 	}
 }
