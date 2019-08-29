@@ -41,10 +41,14 @@ void StateStartup::tickAction(IGameEngine* gameEngine)
 	if (lastRun > 500) {
 		switch (ledColor) {
 		case 0:
-			Led.set(LedEngine::LedColor::Green | LedEngine::LedColor::Blue);
+			Led.set(
+				static_cast<LedEngine::LedColor>(LedEngine::LedColor::Green | LedEngine::LedColor::Blue)
+			);
 			break;
 		case 1:
-			Led.set(LedEngine::LedColor::Red | LedEngine::LedColor::Yellow);
+			Led.set(
+				static_cast<LedEngine::LedColor>(LedEngine::LedColor::Red | LedEngine::LedColor::Yellow)
+			);
 			break;
 		}
 		// Toggle color
@@ -265,7 +269,9 @@ void StateVerifyButton::entryAction(IGameEngine* gameEngine, IGameEngine::Parame
 void StateLostGame::entryAction(IGameEngine* gameEngine, IGameEngine::Parameter param)
 {
 	currentState = 0;
-	Led.set(LedEngine::LedColor::Red | LedEngine::LedColor::Green);
+	Led.set(
+		static_cast<LedEngine::LedColor>(LedEngine::LedColor::Red | LedEngine::LedColor::Green)
+	);
 	Audio.playTone(TONE_G4, 750);
 }
 
@@ -279,19 +285,25 @@ void StateLostGame::tickAction(IGameEngine* gameEngine)
 {
 	if (!Audio.isBusy() && currentState == 0) {
 		Audio.cancel();
-		Led.set(LedEngine::LedColor::Blue | LedEngine::LedColor::Yellow);
+		Led.set(
+			static_cast<LedEngine::LedColor>(LedEngine::LedColor::Blue | LedEngine::LedColor::Yellow)
+		);
 		Audio.playTone(TONE_E4, 750);
 		currentState = 1;
 	}
 	else if (!Audio.isBusy() && currentState == 1) {
 		Audio.cancel();
-		Led.set(LedEngine::LedColor::Red | LedEngine::LedColor::Green);
+		Led.set(
+			static_cast<LedEngine::LedColor>(LedEngine::LedColor::Red | LedEngine::LedColor::Green)
+		);
 		Audio.playTone(TONE_D4, 750);
 		currentState = 2;
 	}
 	else if (!Audio.isBusy() && currentState == 2) {
 		Audio.cancel();
-		Led.set(LedEngine::LedColor::Blue | LedEngine::LedColor::Yellow);
+		Led.set(
+			static_cast<LedEngine::LedColor>(LedEngine::LedColor::Blue | LedEngine::LedColor::Yellow)
+		);
 		Audio.playTone(TONE_C4, 750);
 		currentState = 3;
 	}
@@ -322,10 +334,14 @@ void StateWonGame::tickAction(IGameEngine* gameEngine)
 	if (lastRun > 500) {
 		switch (ledColor) {
 		case 0:
-			Led.set(LedEngine::LedColor::Red | LedEngine::LedColor::Yellow);
+			Led.set(
+				static_cast<LedEngine::LedColor>(LedEngine::LedColor::Red | LedEngine::LedColor::Yellow)
+			);
 			break;
 		case 1:
-			Led.set(LedEngine::LedColor::Green | LedEngine::LedColor::Blue);
+			Led.set(
+				static_cast<LedEngine::LedColor>(LedEngine::LedColor::Green | LedEngine::LedColor::Blue)
+			);
 			break;
 		}
 		// Toggle color
