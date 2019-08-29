@@ -107,7 +107,7 @@ void SevenSegmentClass::setChar(char charToShow)
 
 	switch (charToShow) {
 	case 'C':
-		shiftOut(dataPin, clkPin, MSBFIRST, ~(SEG_A | SEG_F | SEG_E | SEG_D));
+		shiftOut(dataPin, clkPin, MSBFIRST, (uint8_t)~((SEG_A | SEG_F | SEG_E | SEG_D)));
 		break;
 	case 'P':
 		shiftOut(dataPin, clkPin, MSBFIRST, ~(SEG_A | SEG_B | SEG_G | SEG_F | SEG_E));
