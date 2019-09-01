@@ -26,7 +26,7 @@ void GameDataClass::init()
 {
 	gameRound = 0;
 	playRound = 0;
-	randomSeed(millis());
+	srand(millis());
 }
 
 void GameDataClass::addRandomMove()
