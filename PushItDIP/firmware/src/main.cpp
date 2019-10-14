@@ -10,6 +10,7 @@
  * the LICENSE file in the top-level directory.
  */
 
+#include <avr/wdt.h>
 #include "SevenSegment.h"
 #include "ModeHandler.h"
 #include "AudioEngine.h"
@@ -21,10 +22,10 @@
 #include "SerialProtocol.h"
 
 // Pin definitions
-#define SEVEN_SEGMENT_CLK_PIN  A1
-#define SEVEN_SEGMENT_DATA_PIN A0
-#define SEVEN_SEGMENT_STO_PIN  A2
-#define BUZZER_PIN             SS
+#define SEVEN_SEGMENT_CLK_PIN  15
+#define SEVEN_SEGMENT_DATA_PIN 14
+#define SEVEN_SEGMENT_STO_PIN  16
+#define BUZZER_PIN             10
 #define LED_YELLOW_PIN         2
 #define LED_RED_PIN            3
 #define LED_GREEN_PIN          4
@@ -33,9 +34,9 @@
 #define BTN_RED_PIN            7
 #define BTN_GREEN_PIN          8
 #define BTN_BLUE_PIN           9
-#define BTN_MODE_PIN           A5
-#define BTN_START_PIN          A3
-#define BTN_REPEAT_PIN         A4
+#define BTN_MODE_PIN           19
+#define BTN_START_PIN          17
+#define BTN_REPEAT_PIN         18
 
 // Button position in BTN_PINS array
 #define BTN_YELLOW 0
@@ -87,9 +88,14 @@ void setup() {
 
 	// Initialize game engine
 	game.begin();
+
+	wdt_enable(WDTO_60MS);
 }
 
 void loop() {
+
+	wdt_reset();
+
 	// Update button state
 	// Handles debouncing and send button event to game engine
 	for (uint8_t btn = 0; btn < sizeof(btnPins); btn++) {
