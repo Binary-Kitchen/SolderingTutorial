@@ -10,6 +10,8 @@
  * the LICENSE file in the top-level directory.
  */
 
+#include <avr/wdt.h>
+#include <avr/sleep.h>
 #include "GameState.h"
 #include "LedEngine.h"
 #include "ModeHandler.h"
@@ -549,4 +551,27 @@ void StateChoiceButton::tickAction(IGameEngine* gameEngine)
 	if (!Audio.isBusy()) {
 		gameEngine->sendEvent(IGameEngine::Event::Finished);
 	}
+}
+
+/*****************************************************************************/
+/* Standby                                                                   */
+/*****************************************************************************/
+void StateStandby::entryAction(IGameEngine* gameEngine, IGameEngine::Parameter param)
+{
+	// Disable Watchdog
+	wdt_reset();
+	wdt_disable();
+
+	// Disable all outputs
+	Audio.cancel();
+	Led.set(LedEngine::LedColor::None);
+	SevenSegment.blank();
+
+	// Goto sleep
+	set_sleep_mode(SLEEP_MODE_PWR_DOWN);
+	sleep_mode();
+
+	// Perform reset
+	wdt_enable(WDTO_60MS);
+	for(;;);
 }

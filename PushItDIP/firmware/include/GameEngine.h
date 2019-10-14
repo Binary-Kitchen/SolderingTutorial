@@ -53,6 +53,7 @@ private:
 
 	// Independent States
 	StateAttract			attract;
+	StateStandby			standby;
 	StateMode				mode;
 	StateRepeat				repeat;
 	StateStartup			startup;
@@ -88,7 +89,7 @@ private:
 		{Independent,		&startup,			BtnRed,		0,		&attract,			NoParam},	// Allow skipping the startup sound by pressing the red key
 		{Independent,		&startup,			Finished,	0,		&attract,			NoParam},	// Move forward to attract mode
 
-		{Independent,		&attract,			Tick,		0,		&attract,			NoParam},	// Play attract animation
+		{Independent,		&attract,			Tick,		30000,	&standby,			NoParam},	// Play attract animation & goto standby after 10 seconds
 		{Independent,		&attract,			BtnMode,	0,		&mode,				NoParam},	// Handle press of Mode button
 		{Independent,		&attract,			BtnRepeat,	0,		&repeat,			NoParam},	// Handle press of Repeat button
 		{Independent,		&attract,			BtnStart,	0,		&initGame,			NoParam},	// Handle press of Start button

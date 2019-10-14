@@ -61,6 +61,10 @@ GameEngine game;
 Bounce *buttons = new Bounce[sizeof(btnPins)];
 
 void setup() {
+	// Reset watchdog (must happen within the first few ticks)
+	MCUSR = 0;
+	wdt_disable();
+
 	// Initialize 7 segment display
 	SevenSegment.begin(
 		SEVEN_SEGMENT_CLK_PIN, SEVEN_SEGMENT_DATA_PIN, SEVEN_SEGMENT_STO_PIN);
@@ -89,6 +93,11 @@ void setup() {
 	// Initialize game engine
 	game.begin();
 
+	// Enable Pin change interrupt (required to wakeup after sleep)
+	*digitalPinToPCMSK(BTN_START_PIN) |= _BV(digitalPinToPCMSKbit(BTN_START_PIN));
+	PCICR |= _BV(digitalPinToPCICRbit(BTN_START_PIN));
+
+	// Enable the watchdog
 	wdt_enable(WDTO_60MS);
 }
 
@@ -120,4 +129,8 @@ void loop() {
 	// Update GameEngine
 	game.sendEvent(GameEngine::Event::Tick);
 	game.update();
+}
+
+ISR(PCINT1_vect)
+{
 }

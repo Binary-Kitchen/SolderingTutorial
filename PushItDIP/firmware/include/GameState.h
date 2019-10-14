@@ -161,3 +161,8 @@ public:
 	void exitAction(IGameEngine* gameEngine);
 	void tickAction(IGameEngine* gameEngine);
 };
+
+class StateStandby : public IState {
+public:
+	void entryAction(IGameEngine* gameEngine, IGameEngine::Parameter param);
+};
