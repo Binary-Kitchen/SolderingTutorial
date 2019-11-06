@@ -62,7 +62,9 @@ Small soldering kit with an heart on it from http://wiki.blinkenarea.org/index.p
 - Difficulty: **4/5**
 
 ### [I Can Solder DIP](ICanSolderDIP/)
-Very easy soldering kit for using it as pin.
+Very easy soldering kit with three LEDs. Can be used as pin button.
+
+<img src="ICanSolderDIP/manual/images/IMG_20191023_174300.jpg" width=400px alt="I Can Solder DIP">
 
 - Status: **Manual and pictures missing**
 - Difficulty: **1/5**
