@@ -5,14 +5,6 @@ We've tried to collect and create tutorials with different difficulties and are 
 
 ## Soldering Kits
 
-### [Nibble++](NibblePlusPlusSMD/) 
-A simple PCB to test your SMD hand-soldering skills. Going down to sand grain sized 01005 SMD parts, this button is a challenge for experienced "soldiers" and those who want to become one.
-
-<img src="/NibblePlusPlusSMD/manual/images/front-generated.png" width=400px alt="Nibble++">
-
-- Status: **Complete**
-- Difficulty: **6/5**
-
 ### [ATX Breakout Board](ATXBreakoutBoardSMD/) 
 Handy Breakout Board to get all the important voltages from an standard ATX power supply.
 
@@ -82,6 +74,14 @@ Small soldering kit using SMD components with the kitchen head on it.
 
 - Status: **Complete**
 - Difficulty: **4/5**
+
+### [Nibble++](NibblePlusPlusSMD/)
+A simple PCB to test your SMD hand-soldering skills. Going down to sand grain sized 01005 SMD parts, this button is a challenge for experienced "soldiers" and those who want to become one.
+
+<img src="/NibblePlusPlusSMD/manual/images/front-generated.png" width=400px alt="Nibble++">
+
+- Status: **Complete**
+- Difficulty: **6/5**
 
 ### Nibble Peg DIP
 
