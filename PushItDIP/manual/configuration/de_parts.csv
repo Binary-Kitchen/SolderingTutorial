@@ -3,7 +3,7 @@ Menge,Name,Beschreibung,Beschriftung/Farbcode
 2,R5{,} R6,Widerstand \SI{1}{\kilo\ohm},Braun - Schwarz - Rot - Gold
 1,R7,Widerstand \SI{10}{\kilo\ohm},Braun - Schwarz - Orange - Gold
 7,S1--S7,Taster,
-1,SP1,Lautsprecher,
+1,SG1,Lautsprecher,
 1,JP1,Pinheader 3x1,
 1,LED1,LED 10mm Gelb,
 1,LED2,LED 10mm Rot,

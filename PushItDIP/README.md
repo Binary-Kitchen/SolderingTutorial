@@ -14,7 +14,7 @@ Simon Says clone with (optional) multiplayer mode
 | 2        | R5, R6  | Resistor 1 Kilo Ohm                | brown - black - red - gold    |
 | 1        | R7      | Resistor 10 Kilo Ohm               | brown - black - orange - gold |
 | 7        | S1 - S7 | Button                             |                               |
-| 1        | SP1     | Speaker                            |                               |
+| 1        | SG1     | Speaker                            |                               |
 | 1        | JP1     | Pinheader 3x1                      |                               |
 | 1        | LED1    | LED 10mm Yellow                    |                               |
 | 1        | LED2    | LED 10mm Red                       |                               |
