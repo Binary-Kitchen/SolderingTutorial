@@ -1,8 +1,9 @@
 # I Can Solder - DIP
 Very easy soldering kit for kids and beginners.
 
+<img src="manual/images/IMG_20191023_174300.jpg" width=400px alt="I Can Solder DIP">
 
-- Status: **Description Missing**
+- Status: **Complete**
 - Difficulty: **1/5**
 
 ### Parts List
