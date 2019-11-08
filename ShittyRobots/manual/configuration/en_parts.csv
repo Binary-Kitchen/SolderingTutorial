@@ -1,0 +1,6 @@
+Quantity,Name,Description
+1,Vibration motor,\SI{3}{\V} \SI{12}{\milli\A}
+1,CR2032 \SI{3}{\V} Battery,
+1,Battery holder,
+1,Switch button,2 pins
+2,Wires,5-10cm long
