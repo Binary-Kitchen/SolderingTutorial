@@ -20,7 +20,7 @@ Simon Says clone with (optional) multiplayer mode
 | 1        | LED2    | LED 10mm Red                       |                               |
 | 1        | LED3    | LED 10mm Green                     |                               |
 | 1        | LED4    | LED 10mm Blue                      |                               |
-| 1        | LED5    | 7-Segment Display (SA39-11SRWA)    |                               |
+| 1        | LED7    | 7-Segment Display (SA39-11SRWA)    |                               |
 | 2        | C1, C2  | Ceramic capacitor 100 nF           | 104                           |
 | 2        | C3, C4  | Ceramic capacitor 22 pF            | 22                            |
 | 1        | IC1     | 74HC 595                           |                               |
