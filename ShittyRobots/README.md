@@ -1,7 +1,7 @@
 # Shitty Robot
 A very easy circuit to power a little robot with a vibration motor.
 
-<img src="manual/images/Einzelpanels_engl03.jpg" width=400px alt="Shitty Robots cicuit">
+<img src="manual/images/shitty-robot.jpg" width=300px alt="Shitty Robot"> <img src="manual/images/03_en.jpg" width=300px alt="Shitty Robots cicuit">
 
 - Status: **Complete**
 - Difficulty: **1/5**
