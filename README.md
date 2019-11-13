@@ -103,6 +103,14 @@ Easy soldering Kit using simple Tools and nearly no soldering knowledge is neede
 - Status: **Complete**
 - Difficulty: **2/5**
 
+### [Shitty Robot](ShittyRobots/)
+A very easy circuit to power a little robot with a vibration motor.
+
+<img src="/ShittyRobots/manual/images/shitty-robot.jpg" width=400px alt="Shitty Robot">
+
+- Status: **Complete**
+- Difficulty: **1/5**
+
 ## License
 This work is licensed under different licenses. Please see subfolders for details and LICENSE.md file in the top level directory for all used license files.
 
