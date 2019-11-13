@@ -163,6 +163,12 @@
 			\BK@parse_CClicense:n {#1}
 		}
 	},
+	imageTitle .code:n = \cs_set:Npn \@imageTitle {#1},
+	imageLicense .code:n = {
+		\newcommand*{\@imageLicense}{
+			\BK@parse_CClicense:n {#1}
+		}
+	},
 	licenseNoteTitle . code:n = \cs_set:Npn \@licenseNoteTitle {#1},
 	licenseNote .code:n =\cs_set:Npn \@licenseNote {#1},
 	appendix .code:n = \cs_set:Npn \@appendix {#1},
@@ -360,6 +366,10 @@
 			\expandafter\ifx\csname @boardLicense\endcsname\relax
 			\else
 			\@boardTitle&\@boardVersion&\@boardLicense\tabularnewline[5pt]
+			\fi
+			\expandafter\ifx\csname @imageLicense\endcsname\relax
+			\else
+			\@imageTitle&&\@imageLicense\tabularnewline[5pt]
 			\fi
 			\expandafter\ifx\csname @licenseNote\endcsname\relax
 			\else
