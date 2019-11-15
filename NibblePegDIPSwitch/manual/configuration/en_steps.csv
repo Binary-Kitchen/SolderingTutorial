@@ -1,11 +1,11 @@
-images/2, Disassemble the peg; Watch your hair! The drill eats it very fast!;Drill 8 holes in one half of the peg; Drill 3 holes in the second half of the peg for the slide switch;
-images/3, LEDs do have a direction (longer leg = pluspole and red wire{,} shorter leg = minuspole and black wire);Put the LEDs into the holes so that all long legs are on the same side
-images/4, Bend all legs of the LEDs so that all long legs are layered and touch each other. Do the same for the short legs. Long and short legs must not touch each other!;Solder all long legs together;Solder all short legs together;
-images/5, Prepare 2 red wires and 1 black wire: Remove about \SI{10}{mm} insulation of both sides of the wires;
-images/5, Solder a red wire to the plus-legs; Solder a black wire to the minus-legs; Clip protruding parts of the legs;
-images/7, For testing purposes only: No soldering in this step!;Insert a battery into the battery holder; Hold the wires to the battery holder and check if the LEDs blink;Remove the battery;
+images/2, Disassemble the peg; Watch your hair! The drill eats it very fast!;Drill 8 holes into one half of the peg for the LEDs.; Drill 3 holes in the second half of the peg for the slide switch.;
+images/3, LEDs do have a direction (longer leg = plus pole and red wire{,} shorter leg = minus pole and black wire).;Put the LEDs into the holes so that all long legs are on the same side.
+images/4, Bend all legs of the LEDs so that all long legs are layered and touch each other. Do the same for the short legs. Long and short legs must not touch each other!;Solder all long legs together.;Solder all short legs together.;
+images/5, Prepare 2 red wires and 1 black wire: Remove about \SI{10}{\mm} of insulation from both sides of the wires.;
+images/5, Solder a red wire to the plus-legs; Solder a black wire to the minus-legs; Clip protruding parts of the legs.;
+images/7, For testing purposes only: No soldering in this step!;Insert a battery into the battery holder.; Hold the wires to the battery holder and check if the LEDs blink.;Remove the battery.;
 images/11-IMG_8376, Insert slide switch into holes of second peg half...
-images/12-IMG_8377, ...and fold over legs to fixate the switch;
-images/04-DSC06772, Solder loose end of red LED wire to middle leg of slide switch;Solder second red wire to an outer leg of slide switch and to the pluspole of battery holder;
-images/05-DSC06773, Solder loose end of black LED wire to minuspole of battery holder;
-images/06-DSC06776, Reassemble the peg; Glue the battery holder to the peg and end put back in the battery;
+images/12-IMG_8377, ...and fold over legs to fixate the switch.;
+images/04-DSC06772, Solder loose end of red LED wire to middle leg of slide switch.;Solder second red wire to an outer leg of slide switch and to the plus pole of battery holder.;
+images/05-DSC06773, Solder loose end of black LED wire to minus pole of battery holder.;
+images/06-DSC06776, Reassemble the peg.; Glue the battery holder to the peg and reinsert the battery.;

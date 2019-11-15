@@ -1,6 +1,6 @@
-images/2, Klammer zerlegen; Eventuell Haare zurückbinden{,} damit diese nicht in den Bohrer gelangen;8 Löcher in eine Seite der Wäscheklamer bohren;
-images/3, LEDs haben eine Richtung (langes Beinchen = Pluspol{,} kurzes Beinchen = Minuspol);LEDs in die Löcher stecken{,} sodass alle langen Beine auf derselben Seite sind
-images/4, Alle Beine der LEDs so umbiegen{,} dass alle langen und alle kurzen Beine jeweils übereinander liegen; Darauf achten{,} dass sich niemals ein langes und ein kurzes Bein berühren.);Alle langen Beine zusammenlöten.; Alle kurzen Beine zusammenlöten; Überstehende Drähte entfernen;
+images/2, Klammer zerlegen; Eventuell Haare zurückbinden{,} damit diese nicht in den Bohrer gelangen;8 Löcher in eine Seite der Wäscheklammer bohren;
+images/3, LEDs haben eine Richtung (langes Beinchen = Pluspol{,} kurzes Beinchen = Minuspol).;LEDs in die Löcher stecken{,} sodass alle langen Beine auf derselben Seite sind
+images/4, Alle Beine der LEDs so umbiegen{,} dass alle langen und alle kurzen Beine jeweils übereinander liegen; Darauf achten{,} dass sich niemals ein langes und ein kurzes Bein berühren;Alle langen Beine zusammenlöten; Alle kurzen Beine zusammenlöten; Überstehende Drähte entfernen;
 images/5, Die beiden Kupferdrahtstücke an beiden Enden etwa \SI{10}{\mm} abisolieren und jeweils eines an die Beinchenbündel löten 
-images/7, Eine Batterie in den Batteriehalter einlegen (+ muss oben sein); Die Kabel an den Batteriehalter halten und schauen{,} wann die LEDs leuchten. Dies ist die richtige Richtung{,} in der der Batteriehalter angelötet werden muss.; Batterie vor dem Löten entfernen! Den Batteriehalter in der richtigen Richtung an die Kabel löten.
+images/7, Eine Batterie in den Batteriehalter einlegen ($+$ muss oben sein); Die Kabel an den Batteriehalter halten und prüfen{,} ob die LEDs leuchten und korrekte Position merken; Batterie vor dem Löten entfernen! Den Batteriehalter in der richtigen Richtung an die Kabel löten
 images/8, Klammer wieder zusammensetzen; Batteriehalter mit Heißkleber an die Klammer kleben;

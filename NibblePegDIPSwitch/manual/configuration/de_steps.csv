@@ -1,11 +1,11 @@
-images/2, Klammer zerlegen; Eventuell Haare zurückbinden{,} damit diese nicht in den Bohrer gelangen;Erste Klammerhälfte: 8 Löcher in eine Hälfte der Wäscheklamer bohren für die LEDs;Klammerhälfte 2: 3 Löcher bohren für die drei Beinchen des Schiebeschalters;
-images/3, LEDs haben eine Richtung (langes Beinchen = Pluspol und roter Draht{,} kurzes Beinchen = Minuspol und schwarzer Draht);LEDs in die Löcher stecken{,} so dass alle langen Beine auf derselben Seite sind
+images/2, Klammer zerlegen; Eventuell Haare zurückbinden{,} damit diese nicht in den Bohrer gelangen;Erste Klammerhälfte: 8 Löcher bohren für die LEDs;Zweite Klammerhälfte: 3 Löcher bohren für die drei Beinchen des Schiebeschalters;
+images/3, LEDs haben eine Richtung (langes Beinchen = Pluspol und roter Draht{,} kurzes Beinchen = Minuspol und schwarzer Draht);LEDs in die Löcher stecken{,} sodass alle langen Beine auf derselben Seite sind
 images/4, Alle Beine der LEDs so umbiegen{,} dass alle langen und alle kurzen Beine jeweils übereinander liegen; Darauf achten{,} dass sich niemals ein langes und ein kurzes Bein berühren;Alle langen Beine zusammenlöten;Alle kurzen Beine zusammenlöten;
-images/5, Etwa \SI{10}{\mm} von beiden Enden zweier Drahtstück abisolieren;
+images/5, Etwa \SI{10}{\mm} von beiden Enden zweier Drahtstücke abisolieren;
 images/5, Ein rotes Drahtstück an das Plus-Beinchenbündel und den schwarzen Draht an das Minus-Beinchenbündel der LEDs löten; Überstehende Drähte der zusammengelöteten Beinchen entfernen;
 images/7, Nur als Test: Hier wird noch nichts gelötet!;Eine Batterie in den Batteriehalter einlegen; Die Kabel an den Batteriehalter halten und schauen{,} ob die LEDs leuchten.;Batterie vor dem Löten wieder entfernen;
-images/11-IMG_8376, Schiebeschalter die zweite Klammerhälfte stecken...;
+images/11-IMG_8376, Schiebeschalter in die zweite Klammerhälfte stecken...;
 images/12-IMG_8377, ...und Beinchen des Schalters zur Befestigung umknicken;
-images/04-DSC06772, Loses Ende des roten LED-Drahts verlöten mit mittleren Beinchen des Schiebeschalters;Zweiten roten Draht verlöten mit einem Außen-Beinchen des Schiebeschalters und dem Plus-Pol des Batteriehalters;
+images/04-DSC06772, Loses Ende des roten LED-Drahts verlöten mit dem mittleren Beinchen des Schiebeschalters;Zweiten roten Draht verlöten mit einem Außen-Beinchen des Schiebeschalters und dem Plus-Pol des Batteriehalters;
 images/05-DSC06773, Loses Ende des schwarzen LED-Drahts verlöten mit Minus-Pol des Batteriehalters;
 images/06-DSC06776, Klammer wieder zusammensetzen; Batteriehalter mit starkem Kleber (ggf. Pritt-Stift) oder Heißkleber an die Klammer kleben;
