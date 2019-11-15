@@ -1,6 +1,6 @@
-images/2, Disassemble the peg; Watch your hair! The drill eats it very fast! Drill 8 holes in the peg;
-images/3, LEDs does have a direction (longer leg = pluspole{,} shorter leg = minuspole);Put the LEDs into the holes so that all long legs are on the same side
-images/4, Bend all Legs of the LEDs that all long and short legs touch. Long and short legs must not touch!; Solder all long and all short legs together.
-images/5, Remove about \SI{10}{mm} insulation of both sides of the wires.; Solder the wires to the legs.
-images/7, Insert a battery into the battery holder (the + on the top); Hold the wires to the battery holder and look when the LEDs blink. This is the direction you need to solder.; Take out the battery! Solder the battery to the wires.
-images/8, Reassemble the peg; Glue the battery holder to the peg end put back the battery.
+images/2, Disassemble the peg; Watch your hair! The drill eats it very fast! Drill 8 holes into the peg.;
+images/3, LEDs have a direction (longer leg = plus pole{,} shorter leg = minus pole).;Stick the LEDs through the holes so that all long legs are on the same side.
+images/4, Bend all legs of the LEDs so that legs of the same length touch. Long and short legs must not touch!; Solder all long and all short legs together.
+images/5, Remove about \SI{10}{mm} of insulation from both sides of the wires.; Solder the wires to the legs.
+images/7, Insert a battery into the battery holder (with $+$ on the top); Hold the wires to the battery holder and look when the LEDs blink. This is the direction you need to solder.; Take out the battery! Solder the battery to the wires.
+images/8, Reassemble the peg; Glue the battery holder to the peg and reinsert the battery.
