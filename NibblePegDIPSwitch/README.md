@@ -2,7 +2,7 @@
 
 An easy blinking peg with 4 LEDs and an on/off switch.
 
-A Nibble ist a unit for the amount of 4 Bits (https://en.wikipedia.org/wiki/Nibble).
+A [nibble](https://en.wikipedia.org/wiki/Nibble) is a unit that consists of 4 bits (half a byte).
 
 <img src="manual/images/01-DSC06774.JPG" width=400px alt="Nibble Peg with on/off switch">
 
@@ -31,18 +31,24 @@ For everybody who wants to build them at home. Here are the sources for the impo
 - **Peg**
   - Best found in EDEKA (1,99€ for 50 pcs)
 - **Battery Holder**
-  - ebay.de (Search for "CR2032 Batteriehalter")
-  - aliexpress.com (Serach for "CR2032 Battery Holder")
+  - [eBay.de][ebay-de] (Search for "CR2032 Batteriehalter")
+  - [AliExpress][aliexpress] (Serach for "CR2032 Battery Holder")
 - **Battery CR2032**
-  - Everywhere, cheapest ebay or alibaba.com
+  - Everywhere, cheapest [eBay][ebay] or [Alibaba.com][alibaba]
 - **LED**
-  - ebay.de (Search for "RGB LED 3mm blinken", take the ones with only two legs and 3V)
-  - aliexpress.com (Search for "rgb led flash 3mm", take the ones with only two legs and 3V)
+  - [eBay.de][ebay-de] (Search for "RGB LED 3mm blinken", take the ones with only two legs and 3V)
+  - [AliExpress][aliexpress] (Search for "rgb led flash 3mm", take the ones with only two legs and 3V)
 - **On/off Switch 3 legs**
-  - ebay.de (Search for "Schiebeschalter SS 1xUM (RM2,5)")
-  - http://www.segor.de/#Q=SS1xUM(RM2%252C5)%252F-5x&M=1
+  - [eBay.de][ebay-de] (Search for "Schiebeschalter SS 1xUM (RM2,5)")
+  - SEGOR-electronics: [SS 1xUM (RM2,5) /-5x](http://www.segor.de/#Q=SS1xUM(RM2%252C5)%252F-5x&M=1)
 
 ### Copyright and Authorship
 - Hardware / Idea: [CC-BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/) - [Binary Kitchen e.V.](https://www.binary-kitchen.de) and [Hannes](https://github.com/misamura)
 - Manual (TeX): [LPPL](https://www.latex-project.org/lppl.txt) - [Marei Peischl](https://peitex.de)
 - Manual (pdf): [CC-BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/) - [Binary Kitchen e.V.](https://www.binary-kitchen.de)
+
+
+[ebay-de]: https://www.ebay.de/
+[ebay]: https://www.ebay.com/
+[aliexpress]: https://www.aliexpress.com/
+[alibaba]: https://www.alibaba.com/
