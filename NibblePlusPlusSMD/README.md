@@ -14,7 +14,7 @@ A simple PCB to test your SMD hand-soldering skills. Going down to sand grain si
 | C1         | 0805 SMD Capacitor | 1        | 100n F          | red, white package         |
 | C2         | 0805 SMD Capacitor | 1        | 1µ F            | blue, transparent package  |
 | C3         | 0805 SMD Capacitor | 1        | 100n F          | red, white package         |
-| D1         | 0805 SMD LED       | 1        | LED Red         | -, black package           |
+| D1         | 0805 SMD LED       | 1        | LED Red         | none, black package        |
 | D2         | 0603 SMD LED       | 1        | LED Orange      | red, black package         |
 | D3         | 0402 SMD LED       | 1        | LED Yellow      | yellow, black package      |
 | D4         | 0201 SMD LED       | 1        | LED Green       | green, black package       |
