@@ -8,26 +8,26 @@ A simple PCB to test your SMD hand-soldering skills. Going down to sand grain si
 
 ### Parts List
 
-| Designator |       Package      | Quantity |   Designation   |
-|:----------:|:------------------:|----------|:---------------:|
-| BT1        | SMD Battery Holder | 1        | CR2023          |
-| C1         | 0805 SMD Capacitor | 1        | 100n F          |
-| C2         | 0805 SMD Capacitor | 1        | 1µ F            |
-| C3         | 0805 SMD Capacitor | 1        | 100n F          |
-| D1         | 0805 SMD LED       | 1        | LED Red         |
-| D2         | 0603 SMD LED       | 1        | LED Orange      |
-| D3         | 0402 SMD LED       | 1        | LED Yellow      |
-| D4         | 0201 SMD LED       | 1        | LED Green       |
-| D5         | 0201 SMD LED       | 1        | LED Blue        |
-| R1         | 0805 SMD Resistor  | 1        |  82 Ohm         |
-| R2         | 0603 SMD Resistor  | 1        |  82 Ohm         |
-| R3         | 0402  SMD Resistor | 1        |  62 Ohm         |
-| R4         | 0201 SMD Resistor  | 1        | 330 Ohm         |
-| R5         | 01005 SMD Resistor | 1        |  33 Ohm         |
-| R6,R7      | 0805 SMD Resistor  | 2        | 100k Ohm        |
-| SW1        | SMD Switch         | 1        |                 |
-| U1         | SOIC-8 NE555       | 1        |                 |
-| U2         | SOP-16 CD4017      | 1        |                 |
+| Designator |       Package      | Quantity |   Designation   |  (Color)-Code              |
+|:----------:|:------------------:|----------|:---------------:|:---------------------------:
+| BT1        | SMD Battery Holder | 1        | CR2023          |                            |
+| C1         | 0805 SMD Capacitor | 1        | 100n F          | red, white package         |
+| C2         | 0805 SMD Capacitor | 1        | 1µ F            | blue, transparent package  |
+| C3         | 0805 SMD Capacitor | 1        | 100n F          | red, white package         |
+| D1         | 0805 SMD LED       | 1        | LED Red         | -, black package           |
+| D2         | 0603 SMD LED       | 1        | LED Orange      | red, black package         |
+| D3         | 0402 SMD LED       | 1        | LED Yellow      | yellow, black package      |
+| D4         | 0201 SMD LED       | 1        | LED Green       | green, black package       |
+| D5         | 0201 SMD LED       | 1        | LED Blue        | blue, black package        |
+| R1         | 0805 SMD Resistor  | 1        |  82 Ohm         | 820                        |
+| R2         | 0603 SMD Resistor  | 1        |  82 Ohm         | red, white package         |
+| R3         | 0402  SMD Resistor | 1        |  62 Ohm         | yellow, white package      |
+| R4         | 0201 SMD Resistor  | 1        | 330 Ohm         | green, white package       |
+| R5         | 01005 SMD Resistor | 1        |  33 Ohm         | blue, white package        |
+| R6,R7      | 0805 SMD Resistor  | 2        | 100k Ohm        | 104                        |
+| SW1        | SMD Switch         | 1        |                 |                            |
+| U1         | SOIC-8 NE555       | 1        |                 |                            |
+| U2         | SOP-16 CD4017      | 1        |                 |                            |
 
 ### Manual
 You can find the manual and pictures of every step in the manual folder.
