@@ -10050,7 +10050,7 @@ Source: SA56-11EWA(Ver1189471036.pdf</description>
 <part name="P+3" library="supply1" deviceset="VCC" device=""/>
 <part name="R5" library="rcl" deviceset="R-EU_" device="0207/7" value="1k"/>
 <part name="GND7" library="supply1" deviceset="GND" device=""/>
-<part name="R6" library="rcl" deviceset="R-EU_" device="0207/7" value="1k"/>
+<part name="R6" library="rcl" deviceset="R-EU_" device="0207/7" value="220"/>
 <part name="ISP" library="avr-7" deviceset="AVR-ISP-6" device="VERT"/>
 <part name="IC2" library="avr-6" deviceset="MEGA48/88/168-PU" device="" value="ATMEGA328P-PU"/>
 <part name="P+4" library="supply1" deviceset="VCC" device=""/>

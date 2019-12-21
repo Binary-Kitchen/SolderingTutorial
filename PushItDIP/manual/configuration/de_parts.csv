@@ -1,6 +1,6 @@
 Menge,Name,Beschreibung,Beschriftung/Farbcode
-4,R1--R4,Widerstand \SI{220}{\ohm},Rot - Rot - Braun - Gold
-2,R5{,} R6,Widerstand \SI{1}{\kilo\ohm},Braun - Schwarz - Rot - Gold
+5,R1--R4{,} R6,Widerstand \SI{220}{\ohm},Rot - Rot - Braun - Gold
+1,R5,Widerstand \SI{1}{\kilo\ohm},Braun - Schwarz - Rot - Gold
 1,R7,Widerstand \SI{10}{\kilo\ohm},Braun - Schwarz - Orange - Gold
 7,S1--S7,Taster,
 1,SG1,Lautsprecher,

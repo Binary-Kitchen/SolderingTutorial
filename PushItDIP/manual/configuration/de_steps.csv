@@ -1,16 +1,16 @@
-images/dummy,Tipps:;Widerstandsgröße kann über Farbkodierung ermittelt werden;Ausrichtung der Platine so{,} dass LED-Bezeichnung normal gelesen werden kann (siehe Bild);Ausrichtung bei Widerständen ist egal;LEDs haben eine Flache Seite und ein kürzeres Beinchen. Beides zeigt die negative Seite an
-images/dummy,Stiftleiste JP1 einlöten
-images/dummy,Widerstände R1 bis R4 (\SI{220}{\ohm}) einlöten;Ausrichtung ist egal
-images/dummy,Widerstände R5 und R6 (\SI{1}{\kilo\ohm}) einlöten;Ausrichtung ist egal
-images/dummy,Widerstand R7 (\SI{10}{\kilo\ohm}) einlöten;Ausrichtung ist egal
-images/dummy,Quartz Q1 einlöten;Ausrichtung ist egal
-images/dummy,Kondensatoren C1 und C2 (104) einlöten;Ausrichtung ist egal
-images/dummy,Kondensatoren C3 und C4 (22) einlöten;Ausrichtung egal
-images/dummy,IC1-Fassung sowie IC2-Fassung mit der Nase nach rechts auf die Platine löten
-images/dummy,Schalter S1 bis S4 sowie MODE{,} START und REPEAT auflöten;Tipp: Beinchen haben unterschiedliche Abstände. Es muss nichts verbogen werden. Schalter passt exakt
-images/dummy,7-Segment Anzeige LED7 einlöten;Der Punkt muss sich unten rechts befinden
-images/dummy,Lautsprecher SG1 einlöten;Das abgedruckte Pluszeichen muss mit der Platine übereinstimmen
-images/dummy,LED1 bis LED4 einlöten. Farben gemäß Bild beachten;Achtung! Ausrichtung wichtig;LEDs haben eine Flache Seite und ein kürzeres Beinchen. Beides zeigt die negative Seite an;Auf der Platine wird die negative Seite durch eine Abflachung dargestellt
-images/dummy,Stromanschluss POWER mit der Öffnung nach unten einlöten
-images/dummy,IC1 und IC2 mit der Nase nach rechts in Fassung einstecken;Tipp: Die Beinchen der ICs müssen leicht zurechtgebogen werden{,} um in die Fassung zu passen;Eventuell Isolierung an den Spitzen der Anschlusskabel der Batterie entfernen und verzinnen;Batterie anschrauben (+ rot{,} - schwarz)
-images/dummy,Das Batteriefach mit doppelseitigen Klebeband an der Rückseite der Platine befestigen;Die beiden ICs mit etwas Klebeband abkleben (Schutz vor Berührung und Feuchtigkeit beim Spielen);Batterien einlegen;Fertig!
+images/IMG_8984,Tipps:;Widerstandsgröße kann über Farbkodierung ermittelt werden;Ausrichtung der Platine so{,} dass LED-Bezeichnung normal gelesen werden kann (siehe Bild);Ausrichtung bei Widerständen ist egal;LEDs haben eine Flache Seite und ein kürzeres Beinchen. Beides zeigt die negative Seite an
+images/IMG_8986,Stiftleiste JP1 einlöten
+images/IMG_8987,Widerstände R1 bis R4 sowie R6 (\SI{220}{\ohm}) einlöten;Ausrichtung ist egal
+images/IMG_8988,Widerstände R5 (\SI{1}{\kilo\ohm}) einlöten;Ausrichtung ist egal
+images/IMG_8989,Widerstand R7 (\SI{10}{\kilo\ohm}) einlöten;Ausrichtung ist egal
+images/IMG_8990,Quartz Q1 einlöten;Ausrichtung ist egal
+images/IMG_8991,Kondensatoren C1 und C2 (104) einlöten;Ausrichtung ist egal
+images/IMG_8992,Kondensatoren C3 und C4 (22) einlöten;Ausrichtung egal
+images/IMG_8994,IC1-Fassung sowie IC2-Fassung mit der Nase nach rechts auf die Platine löten
+images/IMG_8995,Schalter S1 bis S4 sowie MODE{,} START und REPEAT auflöten;Tipp: Beinchen haben unterschiedliche Abstände. Es muss nichts verbogen werden. Schalter passt exakt
+images/IMG_8996,7-Segment Anzeige LED7 einlöten;Der Punkt muss sich unten rechts befinden
+images/IMG_8997,Lautsprecher SG1 einlöten;Achtung! Ausrichtung wichtig;Das abgedruckte Pluszeichen muss mit der Platine übereinstimmen;Den ggf. vorhandenen Schutzaufkleber abziehen
+images/IMG_8999,LED1 bis LED4 einlöten. Farben gemäß Bild beachten;Achtung! Ausrichtung wichtig;LEDs haben eine Flache Seite und ein kürzeres Beinchen. Beides zeigt die negative Seite an;Auf der Platine wird die negative Seite durch eine Abflachung dargestellt
+images/IMG_9000,Stromanschluss POWER mit der Öffnung nach unten einlöten
+images/IMG_9004,IC1 und IC2 mit der Nase nach rechts in Fassung einstecken;Tipp: Die Beinchen der ICs müssen leicht zurechtgebogen werden{,} um in die Fassung zu passen;Eventuell Isolierung an den Spitzen der Anschlusskabel der Batterie entfernen und verzinnen;Batterie anschrauben (+ rot{,} - schwarz)
+images/IMG_9006,Das Batteriefach mit doppelseitigen Klebeband an der Rückseite der Platine befestigen;Die beiden ICs mit etwas Klebeband abkleben (Schutz vor Berührung und Feuchtigkeit beim Spielen);Batterien einlegen;Fertig!
