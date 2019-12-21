@@ -455,35 +455,48 @@ void StateError::exitAction(IGameEngine* gameEngine)
 /*****************************************************************************/
 void StateWaitForChoice::tickAction(IGameEngine* gameEngine)
 {
-	SevenSegment.playIdle();
-	uint8_t rec = SerialProtocol.receiveChoice();
+	if (choiceReceived) {
+		// Add some delay before playing the current gamedata
+		if (lastRun > 1000) {
+			choiceReceived = false;
+			gameEngine->sendEvent(IGameEngine::Event::Ok);
+		}
+	}
+	else {
+		SevenSegment.playIdle();
+		uint8_t rec = SerialProtocol.receiveChoice();
 
-	// Received new move
-	switch (rec) {
-	case IGameEngine::Parameter::Yellow:
-		GameData.addMove(GameData.Colors::Yellow);
-		gameEngine->sendEvent(IGameEngine::Event::Ok);
-		break;
-	case IGameEngine::Parameter::Red:
-		GameData.addMove(GameData.Colors::Red);
-		gameEngine->sendEvent(IGameEngine::Event::Ok);
-		break;
-	case IGameEngine::Parameter::Green:
-		GameData.addMove(GameData.Colors::Green);
-		gameEngine->sendEvent(IGameEngine::Event::Ok);
-		break;
-	case IGameEngine::Parameter::Blue:
-		GameData.addMove(GameData.Colors::Blue);
-		gameEngine->sendEvent(IGameEngine::Event::Ok);
-		break;
-	case IGameEngine::Parameter::Lost:
-		// Other player lost --> we won
-		gameEngine->sendEvent(IGameEngine::Event::Finished);
-		break;
-	case IGameEngine::Parameter::Won:
-		// Other player won --> we lost
-		gameEngine->sendEvent(IGameEngine::Event::NotOk);
-		break;
+		// Received new move
+		switch (rec) {
+		case IGameEngine::Parameter::Yellow:
+			GameData.addMove(GameData.Colors::Yellow);
+			lastRun = 0;
+			choiceReceived = true;
+			break;
+		case IGameEngine::Parameter::Red:
+			GameData.addMove(GameData.Colors::Red);
+			lastRun = 0;
+			choiceReceived = true;
+			break;
+		case IGameEngine::Parameter::Green:
+			GameData.addMove(GameData.Colors::Green);
+			lastRun = 0;
+			choiceReceived = true;
+			break;
+		case IGameEngine::Parameter::Blue:
+			GameData.addMove(GameData.Colors::Blue);
+			lastRun = 0;
+			choiceReceived = true;
+			break;
+		case IGameEngine::Parameter::Lost:
+			// Other player lost --> we won
+			gameEngine->sendEvent(IGameEngine::Event::Finished);
+			break;
+		case IGameEngine::Parameter::Won:
+			// Other player won --> we lost
+			gameEngine->sendEvent(IGameEngine::Event::NotOk);
+			break;
+		}
 	}
 }
 

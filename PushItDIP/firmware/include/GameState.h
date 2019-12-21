@@ -148,6 +148,9 @@ class StateWaitForChoice : public IState {
 public:
 	void exitAction(IGameEngine* gameEngine);
 	void tickAction(IGameEngine* gameEngine);
+private:
+	elapsedMillis lastRun = 0;
+	bool choiceReceived = false;
 };
 
 class StateNotify : public IState {
