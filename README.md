@@ -103,6 +103,14 @@ Easy soldering Kit using simple Tools and nearly no soldering knowledge is neede
 - Status: **Complete**
 - Difficulty: **2/5**
 
+### [Push-It DIP](PushItDIP/) 
+Simon Says clone with (optional) multiplayer mode
+
+<img src="PushItDIP/manual/images/PushItDIP-V1_1_Complete.jpg" width=400px alt="Push-It DIP">
+
+- Status: **Complete**
+- Difficulty: **2/5**
+
 ### [Shitty Robot](ShittyRobots/)
 A very easy circuit to power a little robot with a vibration motor.
 
