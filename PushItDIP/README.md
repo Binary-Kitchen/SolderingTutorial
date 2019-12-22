@@ -3,7 +3,7 @@ Simon Says clone with (optional) multiplayer mode
 
 <img src="manual/images/PushItDIP-V1_1_Complete.jpg" width=400px alt="Push-It DIP">
 
-- Status: **Development**
+- Status: **Complete**
 - Difficulty: **2/5**
 
 ### Parts List
