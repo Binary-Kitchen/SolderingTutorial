@@ -1,0 +1,14 @@
+title=Push-It (DIP)
+titlePicture=images/PushItDIP-V1_1_Complete.jpg
+skillTitle=Schwierigkeit
+skillLevel=2/5
+buildTitle=Bauzeit
+buildTime=1--2 Stunden
+stepTitle=Schritt
+descriptionTitle=Anleitung
+descriptionVersion=v1.0a
+descriptionLicense=CC-BY-SA 4.0 Binary Kitchen e.V.
+boardTitle=Platine
+boardVersion=v1.1
+boardLicense=CC-BY-SA Thomas Basler
+appendix={\centering\includegraphics[width=1\linewidth]{images/PushItDIP-V1_1_Schematic.png} \centering\includegraphics[width=.5\linewidth]{images/PushItDIP-V1_1_Top.png}~\includegraphics[width=.5\linewidth]{images/PushItDIP-V1_1_Bottom.png}}
