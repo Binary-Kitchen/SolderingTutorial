@@ -1,0 +1,13 @@
+images/DSC04775,konsiloj:;Valoro de rezistilo povas esti konstata per kolorkodo;Orientiĝo de la karto tiel{,} ke Binary Kitchen e.V. povas esti legata normale (vidu bildon);Orientiĝo ne gravas ĉe rezistiloj;LED-oj havas platan flankon kaj pli mallongan krureton. Ambaŭ indikas la negativan flankon
+images/DSC04776,Lotu ambaŭ ico-soklojn (Nur la soklon{,} ne la ico-komponanton mem) kun la nazo supre sur la karton;Atentu: Ne la icon{,} sed nur la ico-soklon;Atentu la nombron de kruretoj: IC1 kun 14 kruretoj maldekstre{,} IC2 kun 16 kruretoj dekstre
+images/DSC04779,Allutu rezistilojn R1 (\SI{2,2}{\kilo\ohm}) kaj R2 (\SI{1}{\mega\ohm});Orientiĝo ne gravas
+images/DSC04780,Allutu rezistilojn R3 (\SI{2,2}{\kilo\ohm}) kaj R4 (\SI{2,2}{\mega\ohm});Orientiĝo ne gravas
+images/DSC04781,Allutu rezistilojn R5 (\SI{120}{\kilo\ohm}){,} R6 (\SI{1,5}{\kilo\ohm}){,} R7 (\SI{1,8}{\kilo\ohm}){,} R8 (\SI{1,5}{\kilo\ohm}) kaj R9 (\SI{3,3}{\kilo\ohm});Orientiĝo ne gravas
+images/DSC04782,Atentu! Orientiĝo gravas ĉe diodoj;Allutu diodojn D1 ĝis D3 (BAW76) kun nigra flanko en la direkto de la blanka marko sur la karto;Allutu diodon D10 (1N4007) kun la blanka flanko en la direkto de la blanka marko sur la karto
+images/DSC04783,Allutu kondensilojn C1 (104) kaj C2 (104);Orientiĝo ne gravas
+images/DSC04784,Atentu! Orientiĝo de la transistoro gravas;Allutu transistoron T1 (BC547) laŭ marko;Orientiĝo: plata flanko suben
+images/DSC04785,Atentu! Orientiĝo de la kondensilo gravas;Allutu kondensilon C3 (\SI{47}{\micro\farad}) kun longa krureto (+) suben;Konsilo: Sur la karto plussigno estas presita
+images/DSC04786,Allutu ŝaltilon S1;Konsilo: La krukretoj havas diferencajn distancojn. Nenio devas esti deformata. Ŝaltilo ekzakte konformas; Eble iom da premo necesas
+images/DSC04787,Atentu! Orientiĝo de la LED-oj gravas;Allutu LED-ojn 1-7. Orientiĝo gravas! La mallongan krureton supren
+images/DSC04788,Allutu kurentkonektilon X1 kun malfermo supren
+images/DSC04789,Fiksu bateritenilon kleme (VCC ruĝa{,} GND nigra);Metu ambaŭ icojn en la soklojn (Nombru la kruretojn! Tie ĉi ekzistas diferencoj);Enmetu bateriojn;Premu ŝaltilon. Pretas.;Ĵetkubo malŝaltas mem
