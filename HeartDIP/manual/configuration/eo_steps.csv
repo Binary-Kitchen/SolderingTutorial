@@ -1,8 +1,8 @@
-images/DSC04791,Tipps:;Widerstandsgröße kann über Farbkodierung ermittelt werden;Ausrichtung der Platine so{,} dass LED-Bezeichnung normal gelesen werden kann (siehe Bild);Ausrichtung bei Widerständen ist egal;LEDs haben eine Flache Seite und ein kürzeres Beinchen. Beides zeigt die negative Seite an
-images/DSC04793,IC1-Fassung mit der Nase nach links auf die Platine löten
-images/DSC04795,Widerstände R1 bis R6 (\SI{47}{\ohm}) einlöten;Ausrichtung ist egal
-images/DSC04796,Kondensator C1 (104) auflöten;Ausrichtung ist egal
-images/DSC04797,LED1 bis LED18 auflöten;Achtung! Ausrichtung wichtig. Ausrichtung wechselt auf der Platine;LEDs haben eine Flache Seite und ein kürzeres Beinchen. Beides zeigt die negative Seite an;Auf der Platine wird die negative Seite durch eine Abflachung dargestellt
-images/DSC04798,Schalter S1 auflöten;Tipp: Beinchen haben unterschiedliche Abstände. Es muss nichts verbogen werden. Schalter passt exakt
-images/DSC04799,Stromanschluss X1 mit Öffnung nach unten
-images/DSC04800,IC1 mit der Nase nach links in Fassung einstecken;Tipp: Die Beinchen des ICs müssen leicht zurechtgebogen werden{,} um in die Fassung zu passen;Eventuell Isolierung an den Spitzen der Anschlusskabel der Batterie entfernen und verzinnen;Batterie anschrauben (+ rot{,} - schwarz);Batterien einlegen;Fertig!
+images/DSC04791,Konsiloj:;Valoro de rezistilo povas esti konstata per kolorkodo;Orientiĝo de la karto tiel{,} ke la LED-priskribo povas esti legata normale (vidu bildon);Orientiĝo ne gravas ĉe rezistiloj;LED-oj havas platan flankon kaj pli mallongan krureton. Ambaŭ indikas la negativan flankon
+images/DSC04793,Allutu IC1-ingon kun la nazo maldekstre sur la karto
+images/DSC04795,Allutu rezistilojn R1 ĝis R6 (\SI{47}{\ohm});Orientiĝo ne gravas
+images/DSC04796,Allutu kondensilon C1 (104);Orientiĝo ne gravas
+images/DSC04797,Allutu LED-ojn LED1 ĝis LED18;Atentu! Orientiĝo gravas. Orientiĝo ŝanĝiĝas sur la karto;LED-oj havas platan flankon kaj pli mallongan krureton. Ambaŭ indikas la negativan flankon;Sur la karto la negativa flanko montriĝas per plataĵo
+images/DSC04798,Allutu ŝaltilon S1;Konsilo: Kruretoj havas diferencajn distancojn. Nenio devas esti kurbigata. Ŝaltilo konformas ekzakte
+images/DSC04799,Kurentkonektilo X1 kun la malfermo suben
+images/DSC04800,Enmetu icon IC1 kun la nazo maldekstre en la ingon;Konsilo: La kruretoj de la ico devas esti adaptataj kurbigante ilin iomete por konformi kun la ingo;Eble forigu la izolaĵon ce la pintoj de la konektaj kabloj kaj stanu;Alŝraŭbu baterion (+ ruĝa{,} - nigra);Enmetu bateriojn;Pretas!
