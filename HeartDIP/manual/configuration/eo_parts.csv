@@ -1,0 +1,11 @@
+nombro,nomo,priskribo,surskribo/kolorkodo
+1,C1,ceramika kondensilo \SI{100}{\nano\farad},104
+1,IC1,mikroregilo Atmel ATTiny 2313A,
+18,LED1--LED18,LED \SI{5}{\mm},
+6,R1--R6,rezistilo \SI{47}{\ohm},flava - viola - nigra - ora - bruna
+1,S1,premŝaltilo,
+1,X1,klemo 2-polusa,
+1,,ico-soklo 20-polusa,
+1,,baterihaltilo,
+2,,baterio Mignon (AA),
+1,,cirkvitkarto,
