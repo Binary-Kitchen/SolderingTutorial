@@ -24,7 +24,7 @@ A simple PCB to test your SMD hand-soldering skills. Going down to sand grain si
 | R3         | 0402  SMD Resistor | 1        |  62 Ohm         | yellow, white package      |
 | R4         | 0201 SMD Resistor  | 1        | 330 Ohm         | green, white package       |
 | R5         | 01005 SMD Resistor | 1        |  33 Ohm         | blue, white package        |
-| R6,R7      | 0805 SMD Resistor  | 2        | 100k Ohm        | 104                        |
+| R6,R7      | 0805 SMD Resistor  | 2        | 100k Ohm        | 104 <- im Päckchen sind andere Widerstände                   |
 | SW1        | SMD Switch         | 1        |                 |                            |
 | U1         | SOIC-8 NE555       | 1        |                 |                            |
 | U2         | SOP-16 CD4017      | 1        |                 |                            |
