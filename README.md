@@ -114,7 +114,7 @@ Simon Says clone with (optional) multiplayer mode
 ### [Shitty Robot](ShittyRobots/)
 A very easy circuit to power a little robot with a vibration motor.
 
-<img src="/ShittyRobots/manual/images/shitty-robot.jpg" width=400px alt="Shitty Robot">
+<img src="/ShittyRobots/manual/images/shitty-robots.jpg" width=400px alt="Shitty Robot">
 
 - Status: **Complete**
 - Difficulty: **1/5**
