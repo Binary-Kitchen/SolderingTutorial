@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Binary Kitchen Solering Tutorials">
+    <meta name="author" content="Thomas Schmid">
+    <link rel="icon" href="/docs/4.0/assets/img/favicons/favicon.ico">
+
+    <title>Binary Kitchen Soldering Tutorials</title>
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+</head>
+
+<body>
+    <main role="main">
+        <div class="container">
+            <div class="row">
+                {% for (name, project) in projects.items() %}
+                <div class="col-md-6 col-lg-4 col-xl-3 py-2">
+                    <div class="card h-100">
+                        <img class="card-img-top img-fluid" src="{{ project["thumbnail"] }}" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">{{name}}</h5>
+                            <span class="font-weight-normal">Manuals: </span>
+                            {% if not project["manuals"] %}
+                            <span class="card-text"><small class="text-muted">No manuals yet</small></span>
+                            {% else %}
+                            <div class="btn-group" role="group" aria-label="Manuals">
+                                {% for language, link in project["manuals"].items() %}
+                                <a class="btn btn-light" href="{{ link }}" role="button">{{ language }}</a>
+                                {% endfor %}
+                            </div>
+                            {% endif %}
+                            {% if project["ibom"] is not none %}
+                            <a class="btn btn-info" href="{{ project["ibom"] }}" role="button">Interactive Board</a>
+                            {% endif %}
+                        </div>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+    </main>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
+    <script src="../../assets/js/vendor/popper.min.js"></script>
+    <script src="../../dist/js/bootstrap.min.js"></script>
+</body>
+
+</html>

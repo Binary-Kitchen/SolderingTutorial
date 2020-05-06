@@ -14,10 +14,13 @@ projectname = $(subst /manual/configuration/, ,$(dir $(PROJECT)))
 projectfolder = $(join $(projectname), /manual/)
 projectlanguage = $(join _, $(patsubst %_config.csv, %, $(notdir $(PROJECT))))
 
+FOLDERS=$(foreach PROJECT,$(PROJECTS), \
+		$(projectname))
+
 MANUALS=$(foreach PROJECT,$(PROJECTS), \
 		$(join $(projectfolder),$(join $(projectname), $(projectlanguage))))
 		#source = "LaTeX_config/solderingTut"
-		
+
 LABELS=$(foreach PROJECT,$(PROJECTLABELS), \
        		$(join $(projectfolder),$(join misc/, $(join $(projectname), _label))))
 		#source = "LaTeX_config/solderingLabels"
@@ -25,26 +28,33 @@ LABELS=$(foreach PROJECT,$(PROJECTLABELS), \
 BOXLABELS=$(foreach PROJECT,$(PROJECTLABELS), \
        		$(join $(projectfolder),$(join misc/, $(join $(projectname), _boxlabel))))
 		#source = "LaTeX_config/solderingBoxLabels"
-		
 
-all: $(MANUALS) $(LABELS) $(BOXLABELS)
+
+all: $(MANUALS) $(LABELS) $(BOXLABELS) index.html
 
 manuals: $(MANUALS)
 
 labels: $(LABELS) $(BOXLABELS)
+
+landing_page: index.html
+
 
 clean:
 	rm $(foreach TEMP, $(TEMP_FILES), \
 		$(wildcard */*/$(TEMP)))
 	rm  $(foreach TEMP, $(TEMP_FILES), \
 		$(wildcard */$(TEMP)))
+	rm index.html
 
 $(MANUALS):
 	latexmk -lualatex --jobname=$@ "LaTeX_config/solderingTut"
-	
+
 $(LABELS):
 	latexmk -lualatex --jobname=$@ "LaTeX_config/solderingLabels"
 
 $(BOXLABELS):
 	latexmk -lualatex --jobname=$@ "LaTeX_config/solderingBoxLabels"
-	
+
+index.html:
+	python build_landingpage.py "$(FOLDERS)"
+
