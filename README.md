@@ -3,9 +3,11 @@ This repository contains all files for our soldering kits and courses. Please fe
 
 We've tried to collect and create tutorials with different difficulties and are offering SMD and DIP soldering kits.
 
+For an overview of all kits with manuals and interactive pcb views got to: https://binary-kitchen.github.io/SolderingTutorial
+
 ## Soldering Kits
 
-### [ATX Breakout Board](ATXBreakoutBoardSMD/) 
+### [ATX Breakout Board](ATXBreakoutBoardSMD/)
 Handy Breakout Board to get all the important voltages from an standard ATX power supply.
 
 <img src="ATXBreakoutBoardSMD/manual/images/IMG_20180701_002328.jpg" width=400px alt="ATX Breakout Board">
@@ -13,7 +15,7 @@ Handy Breakout Board to get all the important voltages from an standard ATX powe
 - Status: **Complete**
 - Difficulty: **4/5**
 
-### [Arrow SMD](ArrowSMD/) 
+### [Arrow SMD](ArrowSMD/)
 Small soldering kit with an arrow on it from https://wiki.blinkenarea.org/index.php/AntiKippenLights-Mini.
 
 <img src="ArrowSMD/manual/images/DSC04802.jpg" width=400px alt="Arrow SMD">
@@ -21,7 +23,7 @@ Small soldering kit with an arrow on it from https://wiki.blinkenarea.org/index.
 - Status: **Complete**
 - Difficulty: **4/5**
 
-### [Cube DIP](CubeDIP/) 
+### [Cube DIP](CubeDIP/)
 Simple LED cube consiting of 27 RGB LEDs in a 3x3x3 configuration. No programming needed.
 
 <img src="CubeDIP/manual/images/IMG_20180903_225030.jpg" width=400px alt="Cube DIP">
@@ -29,7 +31,7 @@ Simple LED cube consiting of 27 RGB LEDs in a 3x3x3 configuration. No programmin
 - Status: **Complete**
 - Difficulty: **3/5**
 
-### [Dice DIP](DiceDIP/) 
+### [Dice DIP](DiceDIP/)
 Electronic dice which uses button bouncing and timing for randomness.
 
 <img src="DiceDIP/manual/images/DSC04788.jpg" width=400px alt="Dice DIP">
@@ -37,7 +39,7 @@ Electronic dice which uses button bouncing and timing for randomness.
 - Status: **Complete**
 - Difficulty: **3/5**
 
-### [Dice Micro Controller DIP](DiceMcDIP/) 
+### [Dice Micro Controller DIP](DiceMcDIP/)
 Dice with micro controller. Electronic dice which uses C random generator.
 
 <img src="DiceMcDIP/manual/images/IMG_20180630_210727.jpg" width=400px alt="Dice DIP">
@@ -45,7 +47,7 @@ Dice with micro controller. Electronic dice which uses C random generator.
 - Status: **Complete**
 - Difficulty: **2/5**
 
-### [Heart DIP](HeartDIP/) 
+### [Heart DIP](HeartDIP/)
 Small soldering kit with an heart on from https://wiki.blinkenarea.org/index.php/AntiKippenLights-Atmel
 
 <img src="HeartDIP/manual/images/DSC04800.jpg" width=400px alt="Heart DIP">
@@ -53,7 +55,7 @@ Small soldering kit with an heart on from https://wiki.blinkenarea.org/index.php
 - Status: **Complete**
 - Difficulty: **2/5**
 
-### [Heart SMD](HeartSMD/) 
+### [Heart SMD](HeartSMD/)
 Small soldering kit with an heart on it from http://wiki.blinkenarea.org/index.php/AKL-Mini
 
 <img src="HeartSMD/manual/images/DSC04825.jpg" width=400px alt="Heart SMD">
@@ -69,7 +71,7 @@ Very easy soldering kit with three LEDs. Can be used as pin button.
 - Status: **Manual and pictures missing**
 - Difficulty: **1/5**
 
-### [Kitchen Head SMD](KitchenHeadSMD/) 
+### [Kitchen Head SMD](KitchenHeadSMD/)
 Small soldering kit using SMD components with the kitchen head on it.
 
 <img src="KitchenHeadSMD/manual/images/DSC04829.jpg" width=400px alt="Kitchen Head SMD">
@@ -103,7 +105,7 @@ Easy soldering Kit using simple Tools and nearly no soldering knowledge is neede
 - Status: **Complete**
 - Difficulty: **2/5**
 
-### [Push-It DIP](PushItDIP/) 
+### [Push-It DIP](PushItDIP/)
 Simon Says clone with (optional) multiplayer mode
 
 <img src="PushItDIP/manual/images/PushItDIP-V1_1_Complete.jpg" width=400px alt="Push-It DIP">
