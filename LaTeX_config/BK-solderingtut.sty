@@ -58,15 +58,15 @@
 }
 
 \seq_pop_right:NN \g_BK@projectPath_seq  \l_tmpa_tl
-\str_if_eq_x:nnF {\l_tmpa_tl} {misc} {\seq_put_right:NV \g_BK@projectPath_seq  \l_tmpa_tl}
+\str_if_eq:eeF {\l_tmpa_tl} {misc} {\seq_put_right:NV \g_BK@projectPath_seq  \l_tmpa_tl}
 \tl_set:Nx \g_BK@projectPath_tl {\seq_use:Nn \g_BK@projectPath_seq {/}}
 
 
 \graphicspath{{}{\g_BK@projectPath_tl/}}
 
-\str_if_eq_x:nnT {\g_BK@languageKey_tl} {label}
+\str_if_eq:eeT {\g_BK@languageKey_tl} {label}
 	{\tl_gset:Nn \g_BK@languageKey_tl {de}}
-\str_if_eq_x:nnT {\g_BK@languageKey_tl} {boxlabel}
+\str_if_eq:eeT {\g_BK@languageKey_tl} {boxlabel}
 	{\tl_gset:Nn \g_BK@languageKey_tl {de}}
 
 
