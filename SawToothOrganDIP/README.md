@@ -33,6 +33,7 @@ Some Transistors creating a saw tooth wave enabling a very simple organ which yo
 | 1        |             | wire flexible         | ~30cm flexible wire             |
 | 1        |             | wire stiff            | ~3cm stiff wire                 |
 | 1        |             | PCB                   |                                 |
+
 \*You have to adjust R6 for the Speaker. 82 Ohm suits for 8 Ohm to 50 Ohm speaker. A 100 Ohm speaker needs 0 Ohm.
 
 ### Manual
