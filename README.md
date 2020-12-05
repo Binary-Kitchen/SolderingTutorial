@@ -12,7 +12,6 @@ Handy Breakout Board to get all the important voltages from an standard ATX powe
 
 <img src="ATXBreakoutBoardSMD/manual/images/IMG_20180701_002328.jpg" width=400px alt="ATX Breakout Board">
 
-- Status: **Complete**
 - Difficulty: **4/5**
 
 ### [Arrow SMD](ArrowSMD/)
@@ -20,7 +19,6 @@ Small soldering kit with an arrow on it from https://wiki.blinkenarea.org/index.
 
 <img src="ArrowSMD/manual/images/DSC04802.jpg" width=400px alt="Arrow SMD">
 
-- Status: **Complete**
 - Difficulty: **4/5**
 
 ### [Cube DIP](CubeDIP/)
@@ -28,7 +26,6 @@ Simple LED cube consiting of 27 RGB LEDs in a 3x3x3 configuration. No programmin
 
 <img src="CubeDIP/manual/images/IMG_20180903_225030.jpg" width=400px alt="Cube DIP">
 
-- Status: **Complete**
 - Difficulty: **3/5**
 
 ### [Dice DIP](DiceDIP/)
@@ -36,7 +33,6 @@ Electronic dice which uses button bouncing and timing for randomness.
 
 <img src="DiceDIP/manual/images/DSC04788.jpg" width=400px alt="Dice DIP">
 
-- Status: **Complete**
 - Difficulty: **3/5**
 
 ### [Dice Micro Controller DIP](DiceMcDIP/)
@@ -44,7 +40,6 @@ Dice with micro controller. Electronic dice which uses C random generator.
 
 <img src="DiceMcDIP/manual/images/IMG_20180630_210727.jpg" width=400px alt="Dice DIP">
 
-- Status: **Complete**
 - Difficulty: **2/5**
 
 ### [Heart DIP](HeartDIP/)
@@ -52,7 +47,6 @@ Small soldering kit with an heart on from https://wiki.blinkenarea.org/index.php
 
 <img src="HeartDIP/manual/images/DSC04800.jpg" width=400px alt="Heart DIP">
 
-- Status: **Complete**
 - Difficulty: **2/5**
 
 ### [Heart SMD](HeartSMD/)
@@ -60,7 +54,6 @@ Small soldering kit with an heart on it from http://wiki.blinkenarea.org/index.p
 
 <img src="HeartSMD/manual/images/DSC04825.jpg" width=400px alt="Heart SMD">
 
-- Status: **Complete**
 - Difficulty: **4/5**
 
 ### [I Can Solder DIP](ICanSolderDIP/)
@@ -68,7 +61,6 @@ Very easy soldering kit with three LEDs. Can be used as pin button.
 
 <img src="ICanSolderDIP/manual/images/IMG_20191023_174300.jpg" width=400px alt="I Can Solder DIP">
 
-- Status: **Manual and pictures missing**
 - Difficulty: **1/5**
 
 ### [Kitchen Head SMD](KitchenHeadSMD/)
@@ -76,7 +68,6 @@ Small soldering kit using SMD components with the kitchen head on it.
 
 <img src="KitchenHeadSMD/manual/images/DSC04829.jpg" width=400px alt="Kitchen Head SMD">
 
-- Status: **Complete**
 - Difficulty: **4/5**
 
 ### [Nibble++](NibblePlusPlusSMD/)
@@ -84,7 +75,6 @@ A simple PCB to test your SMD hand-soldering skills. Going down to sand grain si
 
 <img src="/NibblePlusPlusSMD/manual/images/front-generated.png" width=400px alt="Nibble++">
 
-- Status: **Complete**
 - Difficulty: **6/5**
 
 ### Nibble Peg DIP
@@ -94,7 +84,6 @@ Very easy soldering Kit using simple Tools and nearly no soldering knowledge is 
 
 <img src="NibblePegDIP/manual/images/IMG_5910.JPG" width=400px alt="Nibble Peg DIP">
 
-- Status: **Complete**
 - Difficulty: **1/5**
 
 #### [Nibble Peg DIP with On/Off Switch](NibblePegDIPSwitch/)
@@ -102,7 +91,6 @@ Easy soldering Kit using simple Tools and nearly no soldering knowledge is neede
 
 <img src="NibblePegDIPSwitch/manual/images/01-DSC06774.JPG" width=400px alt="Nibble Peg DIP with On/Off Switch">
 
-- Status: **Complete**
 - Difficulty: **2/5**
 
 ### [Push-It DIP](PushItDIP/)
@@ -110,7 +98,13 @@ Simon Says clone with (optional) multiplayer mode
 
 <img src="PushItDIP/manual/images/PushItDIP-V1_1_Complete.jpg" width=400px alt="Push-It DIP">
 
-- Status: **Complete**
+- Difficulty: **2/5**
+
+### [Saw-Tooth Organ DIP](SawToothOrganDIP/)
+Some Transistors creating a saw tooth wave enabling a very simple organ which you can play like a piano with a stylus.
+
+<img src="SawToothOrganDIP/manual/images/thumbnail.jpg" width=400px alt="Push-It DIP">
+
 - Difficulty: **2/5**
 
 ### [Shitty Robot](ShittyRobots/)
@@ -118,7 +112,6 @@ A very easy circuit to power a little robot with a vibration motor.
 
 <img src="/ShittyRobots/manual/images/shitty-robots.jpg" width=400px alt="Shitty Robot">
 
-- Status: **Complete**
 - Difficulty: **1/5**
 
 ## License
