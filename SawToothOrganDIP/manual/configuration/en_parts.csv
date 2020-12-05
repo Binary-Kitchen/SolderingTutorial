@@ -1,0 +1,24 @@
+Quantity,Name,Description,Signing/Colorcode
+,,,
+1,BT1,\SI{9}{\V} battery holder,
+1,C1,\SI{22}{\nano\farad} capacitor, 223
+1,D1,\SI{5}{\mm} green LED,
+1,LS1,\SI{8}{\ohm}--\SI{100}{\ohm} speaker,
+3,Q1--Q3,BC547C NPN transistor,
+1,Q4,BC557C PNP transistor,
+4,R1{,} RK1-RK3,\SI{3.3}{\kilo\ohm} resistor,Orange - Orange - Schwarz - Braun - Braun
+1,R2,\SI{100}{\ohm} resistor,Braun - Schwarz - Schwarz - Schwarz - Braun
+1,R3,\SI{22}{\kilo\ohm} resistor,Rot - Rot - Schwarz - Rot - Braun
+1,R4,\SI{220}{\kilo\ohm} resistor,Rot - Rot - Schwarz - Orange - Braun
+1,R5,\SI{470}{\kilo\ohm} resistor,Gelb - Violett - Schwarz - Orange - Braun
+1,R6,\SI{82}{\ohm} resistor,Grau - Rot - Schwarz - Gold - Braun
+1,RK4,\SI{3}{\kilo\ohm} resistor,Orange - Schwarz - Schwarz - Braun - Braun
+4,RK5--RK8,\SI{2.7}{\kilo\ohm} resistor,Rot - Violett - Schwarz - Braun - Braun
+1,RK9{,}RK10,\SI{2.2}{\kilo\ohm} resistor,Rot - Rot - Schwarz - Braun - Braun
+1,RK11,\SI{2}{\kilo\ohm} resistor,Rot - Schwarz - Schwarz - Braun - Braun
+1,RK12,\SI{1.2}{\kilo\ohm} resistor,Braun - Rot - Schwarz - Braun - Braun
+1,RV6,\SI{25}{\kilo\ohm} potentiometer,
+1,SW1,push button,
+1,,wire flexible \SI{30}{\centi\metre}
+1,,wire stiff \SI{3}{\centi\metre}
+1,,PCB,

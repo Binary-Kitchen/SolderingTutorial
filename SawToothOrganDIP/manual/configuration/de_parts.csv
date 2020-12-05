@@ -1,0 +1,24 @@
+Anzahl,Bezeichnung,Beschreibung,Beschriftung/Farbkodierung
+,,,
+1,BT1,\SI{9}{\V} Batteriehalter,
+1,C1,\SI{22}{\nano\farad} Kondensator, 223
+1,D1,Grüne \SI{5}{\mm} LED,
+1,LS1,\SI{8}{\ohm}--\SI{100}{\ohm} Lautsprecher,
+3,Q1--Q3,BC547C NPN Transistor,
+1,Q4,BC557C PNP Transistor,
+4,R1{,} RK1-RK3,\SI{3.3}{\kilo\ohm} Widerstand,Orange - Orange - Schwarz - Braun - Braun
+1,R2,\SI{100}{\ohm} Widerstand,Braun - Schwarz - Schwarz - Schwarz - Braun
+1,R3,\SI{22}{\kilo\ohm} Widerstand,Rot - Rot - Schwarz - Rot - Braun
+1,R4,\SI{220}{\kilo\ohm} Widerstand,Rot - Rot - Schwarz - Orange - Braun
+1,R5,\SI{470}{\kilo\ohm} Widerstand,Gelb - Violett - Schwarz - Orange - Braun
+1,R6,\SI{82}{\ohm} Widerstand,Grau - Rot - Schwarz - Gold - Braun
+1,RK4,\SI{3}{\kilo\ohm} Widerstand,Orange - Schwarz - Schwarz - Braun - Braun
+4,RK5--RK8,\SI{2.7}{\kilo\ohm} Widerstand,Rot - Violett - Schwarz - Braun - Braun
+1,RK9{,}RK10,\SI{2.2}{\kilo\ohm} Widerstand,Rot - Rot - Schwarz - Braun - Braun
+1,RK11,\SI{2}{\kilo\ohm} Widerstand,Rot - Schwarz - Schwarz - Braun - Braun
+1,RK12,\SI{1.2}{\kilo\ohm} Widerstand,Braun - Rot - Schwarz - Braun - Braun
+1,RV6,\SI{25}{\kilo\ohm} Potentiometer,
+1,SW1,Schalter,
+1,,\SI{30}{\centi\metre} flexibler Draht
+1,,\SI{3}{\centi\metre} starren Draht
+1,,PCB,

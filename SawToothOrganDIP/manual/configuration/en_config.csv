@@ -1,0 +1,14 @@
+title=Saw Tooth Organ
+titlePicture=images/PXL_20201205_114313310
+skillTitle=Difficulty
+skillLevel=2/5
+buildTitle=Build-Time
+buildTime=1--2 Hours
+stepTitle=Step
+descriptionTitle=Manual
+descriptionVersion=v1.0
+descriptionLicense=CC-BY-SA 4.0 Binary Kitchen e.V.
+boardTitle=Board
+boardVersion=v1.1
+boardLicense=CC-BY-SA 4.0 Elektronikmuseium Tettnang  \& Timo Schindler
+appendix={\centering\includegraphics[width=.5\linewidth]{images/BoardFront}~\includegraphics[width=.5\linewidth]{images/BoardBack}}

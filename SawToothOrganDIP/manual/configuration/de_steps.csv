@@ -1,0 +1,12 @@
+images/PXL_20201204_192258716,Tipps: Der Widerstandswert kann über die aufgedruckte Farbkodierung bestimmt werden;Die Orientierung für Widerstände ist nicht wichtig;LEDs haben eine flache Seite und einen kürzeren Schenkel. Beide zeigen die negative Seite an. Die Ausrichtung der LEDs ist auf der Platine aufgedruckt.
+images/PXL_20201204_192726029,Brich den Griffel mit einer Zange an den Sollbruchstellen ab.
+images/PXL_20201204_193939978,Löte alle Widerstände auf.;Achte auf den korrekten Wert{,} der auf dem Board aufgedruckt ist.
+images/PXL_20201204_194415170,Löte das Potentiometer auf.; Löte den Kondensator auf.; Löte die LED auf. Achte auf die korrekte Richtung (Siehe Tipps in Schritt 1)!
+images/PXL_20201204_194610956,Löte den PNP Transistor BC557C (Q4) auf. Achtung: Verwechslungsgefahr mit den NPN Transistoren.
+images/PXL_20201204_194852017,Löte die drei NPN Transistoren BC547C (Q1--Q3) auf.
+images/PXL_20201204_195312026,Drehe die Platine um.;Biege die Lötfähnchen zurecht und löte den Taster auf die Platine. Die Richtung ist egal.
+images/PXL_20201204_195506414,Löte den Lautsprecher auf.
+images/PXL_20201204_195759617,Fädle den roten und schwarzen Draht des Batteriehalters durch die Löcher über den Lötpunkten (ist nicht auf dem Bild abgebildet).;Stecke nun die Drähte in die Lötpunkte. Achtung: rot ist positiv{,}schwarz ist negativ.;Löte die Drähte fest.
+images/PXL_20201204_200426013,Nimm dir nun den Griffel zur Hand.;Verlöte den steifen Draht an der Spitze des Griffels im Lötpunkt.;Anschließend biege den Draht über die Spitze und verlöte ihn auf den langen Lötstellen (hinten und vorne) an der Spitze.
+images/PXL_20201204_200521315,Fädle das flexible Kable durch das Loch am Ende des Griffels.;Löte das Kabel in den daneben liegenden Lötpunkt.;Fädel die andere Seite des flexiblen Drahtes durch das Loch bei der Anschlussstelle auf dem Board (Nicht auf dem Bild).;Löte das Kabel an dem daneben liegenden Lötpunkt fest.
+images/PXL_20201204_200656995,Setze eine Batterie ein und schalte deine Orgel ein.;Du bist fertig. Viel Spaß beim Musizieren!
