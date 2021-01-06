@@ -56,6 +56,13 @@ Small soldering kit with an heart on it from http://wiki.blinkenarea.org/index.p
 
 - Difficulty: **4/5**
 
+### [Humo - Solder-Fume Exctractor](Humo/)
+This simple solder fume extractor just needs a PC fan and an solder fume filter. If you add some gogglie eyes the fume extractor has a pretty nice smiling face. It is optimised for laser cutted parts.
+
+<img src="Humo/manual/images/thumbnail.jpg" width=400px alt="Heart SMD">
+
+- Difficulty: **2/5**
+
 ### [I Can Solder DIP](ICanSolderDIP/)
 Very easy soldering kit with three LEDs. Can be used as pin button.
 
