@@ -56,6 +56,13 @@ Small soldering kit with an heart on it from http://wiki.blinkenarea.org/index.p
 
 - Difficulty: **4/5**
 
+### [Rainbow Unicorn 1](RainbowUnicorn01/)
+This unicorn will bright up your life. The hair is glowing in all colours of the rainbow due to RGB-LEDs on the back. The soldering kit is very simple and easy to assamble.
+
+<img src="RainbowUnicorn01/manual/images/thumbnail.jpg" width=400px alt="Rainbow Unicorn">
+
+- Difficulty: **2/5**
+
 ### [Humo - Solder-Fume Exctractor](Humo/)
 This simple solder fume extractor just needs a PC fan and an solder fume filter. If you add some gogglie eyes the fume extractor has a pretty nice smiling face. It is optimised for laser cutted parts.
 
