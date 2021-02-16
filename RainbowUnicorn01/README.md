@@ -5,6 +5,7 @@ This unicorn will bright up your life. The hair is glowing in all colours of the
 <img src="manual/images/rgb-unicorn_front.jpg" width=300px alt="Rainbow Unicorn"> <img src="manual/images/rgb-unicorn_back.jpg" width=300px alt="Rainbow Unicorn">
 
 The RGB-Effect looks like this, but much better in real :)
+
 <img src="manual/images/rgb-unicorn.gif" width=480px alt="Rainbow Unicorn gif">
 
 - Status: **Complete**
