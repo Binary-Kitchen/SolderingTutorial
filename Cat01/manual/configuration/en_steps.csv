@@ -1,0 +1,9 @@
+images/PXL_20210221_105555598,Check your parts.;A CR2032 battery is not included. You can get them online or at bigger electronic stores.
+images/PXL_20210221_105913564,Choose a LED colour and add solder to one side of each of the LED pads of the eyes.
+images/PXL_20210221_111405009,Careful! The alignment of the LEDs is important! First read all steps;The LEDs have a small green line on the top; On the PCB there are small arrows or small dots printed on; The arrows or dots on the PCB show the side{,} where the small green line has to go;Tip: When the cat is looking at you{,} the dots are on the left side. ;To solder the LED{,} heat the solder again and move the LED from the side onto the pad with solder;Then solder the other side;,\centering\includegraphics[width=.8\linewidth]{../../misc/led_drawing/smd_led_up.pdf}
+images/PXL_20210221_111732292,Turn the board over and solder the resistor the same way (the resistor has no direction)
+images/PXL_20210221_111855246,Add solder to one side of the switch;Bend the legs so that they touch the PCB.
+images/PXL_20210221_111953977,Solder the switch on in the same way as the resistor; Then solder the second leg onto the board.
+images/PXL_20210221_112137301, The battery holder has a direction{,} which is marked with a cut edge. The same edge is also printed on the PCB.;Put solder on one pad of the battery holder;Heat the pad with solder again and slide the battery holder from the side onto the pad.;Make sure{,} that the other leg of the battery holder touches the other pad.;Solder the other leg onto the other pad on the PCB.
+images/PXL_20210221_112212478,Insert the battery as shown; the taps on the positive side must touch the top of the battery.; Slide the battery into the battery holder from the left and press down on the left side only.
+images/PXL_20210221_112223695,You are done!; You can still attach a magnet to the battery{,} to better attach the soldering kit to your clothes.
