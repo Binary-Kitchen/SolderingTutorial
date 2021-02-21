@@ -24,7 +24,6 @@ The RGB-Effect looks like this, but much better in real :)
 
 - Board: [CC-BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/) - Binary Kitchen e.V.
 - Unicorn SVG [CC-BY-SA](https://creativecommons.org/licenses/by-sa/4.0/) - [Unicorn by Mooms from the Noun Project](https://thenounproject.com/term/unicorn/2061795/) (We've bought a licence, you should honor the artist work too!)
-- Idea and scheme: [CC-BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/) - [Elektronikmuseum Tettnang](http://www.emuseum-tettnang.de/)
 
 ### Buy Soldering Kits
 If you want to buy the parts and PCB for a soldering kit you can find everything here: [shop.blinkyparts.com](https://shop.blinkyparts.com/de/Regenbogen-Einhorn-Einfacher-Bausatz-fuer-einen-tollen-Anstecker/blink232242)
