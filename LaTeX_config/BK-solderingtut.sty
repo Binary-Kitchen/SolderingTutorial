@@ -86,8 +86,6 @@
 \RequirePackage{xcolor}
 \RequirePackage{tikz}
 
-%\RequirePackage{cclicenses}
-
 \clist_new:N \g_BK@resistorColorLegend_clist
 
 \ior_open:Nn \BK_soldering_ior {LaTeX_config/resistor_colors.csv}
@@ -179,6 +177,8 @@
 	licenseNote .code:n =\cs_set:Npn \@licenseNote {#1},
 	appendix .code:n = \cs_set:Npn \@appendix {#1},
 	additionalSettings .code:n = \AtBeginDocument{#1},
+	partAlias .bool_gset:N = \g_BK@partAlias_bool,
+	partAlias .initial:n = false
 }
 
 \newcommand*{\@skillLevel}{
@@ -237,17 +237,35 @@
 	\tl_clear:N \l_BK_soldering@parts_coldef_tl
 	%\int_step_inline:nnnn {\exp_args:NV \clist_count:n \BK_soldering@parts_header} {-1} {1}  {
 	\clist_map_inline:Nn \BK_soldering@parts_header	{\tl_put_right:Nn \l_BK_soldering@parts_coldef_tl {l}}
-	
 	\clist_clear:N \l_tmpa_clist
 	
 	\ior_map_inline:Nn \BK_soldering_ior {
 %		\exp_args:NV \tl_if_eq:nnF \BK_soldering@parts_header {##1} {
 			\clist_set:Nn \BK_soldering@parts_clist {##1}
 			
-			\int_compare:nT {\clist_count:N \BK_soldering@parts_header = \clist_count:N \BK_soldering@parts_clist} {
-			\clist_reverse:N \BK_soldering@parts_clist
+      \int_compare:nT {\clist_count:N \BK_soldering@parts_header <= \clist_count:N \BK_soldering@parts_clist} {
+			
+      \bool_if:NT \g_BK@partAlias_bool {
+					\int_compare:nNnT {\clist_count:N \BK_soldering@parts_clist} = {\clist_count:N \BK_soldering@parts_header +1}
+					{
+						\clist_set_eq:NN \l_tmpb_list \BK_soldering@parts_clist
+						\clist_clear:N \l_tmpb_clist
+						\int_step_inline:nnnTF {1} {1} {\clist_count:N \BK_soldering@parts_clist -2} {
+							\clist_push:Nn \l_tmpb_clist {###1}
+						}
+						
+						\exp_args:Nno \cs_new:cn {BK@partReference_\clist_item:Nn \BK_soldering@parts_clist {\clist_count:N \BK_soldering@parts_clist}}
+						{\clist_item:Nn \l_tmpb_clist {\clist_count:N \l_tmpb_clist}}
+					
+						%				\clist_map_inline:N \BK_soldering@parts_clist 
+						%				\clist_item:Nn \BK_soldering@parts_clist {\clist_count:N \BK_soldering@parts_clist}
+					}
+				}
+			
+			\clist_set_eq:NN \BK_soldering@parts_clist \l_tmpb_clist
 			\clist_pop:NN \BK_soldering@parts_clist \l_tmpa_tl
 			
+%			\tl_show:N \l_tmpa_tl
 			\tl_if_in:NnTF \l_tmpa_tl {-} {
 				\seq_set_split:NnV \l_tmpa_seq {-} \l_tmpa_tl
 			
