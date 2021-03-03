@@ -266,10 +266,12 @@
 
 \cs_set:Nn \__BK_comment_left: {}
 \cs_set:Nn \__BK_comment_right: {}
+\tl_new:N \g_BK_soldering_PartName_tl
 
 \newcommand*{\@parts}{
 	\ior_open:Nn \BK_soldering_ior {\g_BK@projectPath_tl/configuration/\g_BK@languageKey_tl _parts.csv}
 	\ior_get:NN \BK_soldering_ior \BK_soldering@parts_header
+        \tl_gset:Nx \g_BK_soldering_PartName_tl {\clist_item:Nn \BK_soldering@parts_header {2}}
 	\tl_clear:N \l_BK_soldering@parts_coldef_tl
 	%\int_step_inline:nnnn {\exp_args:NV \clist_count:n \BK_soldering@parts_header} {-1} {1}  {
 	\clist_map_inline:Nn \BK_soldering@parts_header	{\tl_put_right:Nn \l_BK_soldering@parts_coldef_tl {l}}
@@ -395,7 +397,7 @@
 \NewDocumentCommand\usePart{som}{
   \cs_set:Nn \__BK_comment_left: {[}
   \cs_set:Nn \__BK_comment_right: {]}
-  \IfBooleanF{#1} {\prop_item:cn {g_BK_part_#3_prop} {Name}\space}
+  \IfBooleanF{#1} {\prop_item:cn {g_BK_part_#3_prop} {\g_BK_soldering_PartName_tl}\space}
   \IfNoValueTF {#2} {
     \prop_item:cn {g_BK_part_#3_prop} {Comment}
   }{
