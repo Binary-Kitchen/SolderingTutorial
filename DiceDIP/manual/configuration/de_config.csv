@@ -11,5 +11,6 @@ descriptionLicense=CC-BY-SA 4.0 Binary Kitchen e.V.
 boardTitle=Platine
 boardVersion=v1.0
 boardLicense=CC-BY-SA 4.0 Binary Kitchen e.V.
+partLabel=true
 appendix={\centering\includegraphics[width=1\linewidth]{images/diceDIP}}
 additionalSettings=\setlength{\ImageColWidth}{\dimexpr.5\linewidth-\tabcolsep\relax}%Adjust Colunm width for landscape Images
