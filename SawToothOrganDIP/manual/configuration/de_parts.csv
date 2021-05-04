@@ -14,7 +14,7 @@ Anzahl,Bezeichnung,Beschreibung,Beschriftung/Farbkodierung
 1,R6,\SI{82}{\ohm} Widerstand,Grau - Rot - Schwarz - Gold - Braun
 1,RK4,\SI{3}{\kilo\ohm} Widerstand,Orange - Schwarz - Schwarz - Braun - Braun
 4,RK5--RK8,\SI{2.7}{\kilo\ohm} Widerstand,Rot - Violett - Schwarz - Braun - Braun
-1,RK9{,}RK10,\SI{2.2}{\kilo\ohm} Widerstand,Rot - Rot - Schwarz - Braun - Braun
+2,RK9{,}RK10,\SI{2.2}{\kilo\ohm} Widerstand,Rot - Rot - Schwarz - Braun - Braun
 1,RK11,\SI{2}{\kilo\ohm} Widerstand,Rot - Schwarz - Schwarz - Braun - Braun
 1,RK12,\SI{1.2}{\kilo\ohm} Widerstand,Braun - Rot - Schwarz - Braun - Braun
 1,RV6,\SI{25}{\kilo\ohm} Potentiometer,
