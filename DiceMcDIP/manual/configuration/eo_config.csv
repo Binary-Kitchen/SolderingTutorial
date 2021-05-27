@@ -1,0 +1,15 @@
+title=ĵetkubo MC (DIP)
+titlePicture=images/IMG_20180630_210727
+skillTitle=malfacileco
+skillLevel=2/5
+buildTitle=konstrutempo
+buildTime=1--2 horoj
+stepTitle=paŝo
+descriptionTitle=instruado
+descriptionVersion=v1.0a
+descriptionLicense=CC-BY-SA 4.0 Binary Kitchen e.V.
+boardTitle=cirkvitkarto
+boardVersion=v1.0
+boardLicense=CC-BY-SA 4.0 Binary Kitchen e.V.
+appendix={\centering\includegraphics[width=.5\linewidth]{images/diceMcDIP}}
+additionalSettings=\setlength{\ImageColWidth}{\dimexpr.5\linewidth-\tabcolsep\relax}%Agordu kolumnolarĝon por horizontalaj bildoj

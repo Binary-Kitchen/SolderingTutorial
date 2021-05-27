@@ -1,0 +1,14 @@
+title=koro (SMD)
+titlePicture=images/DSC04820
+skillTitle=malfacileco
+skillLevel=4/5
+buildTitle=konstrutempo
+buildTime=1--2 horoj
+stepTitle=paŝo
+descriptionTitle=instruado
+descriptionVersion=v1.4a
+descriptionLicense=CC-BY-SA 4.0 Binary Kitchen e.V.
+boardTitle=cirkvitkarto
+boardVersion=v1.4
+boardLicense=CC-BY-NC-SA Arne Rossius
+appendix={\centering\includegraphics[width=.9\linewidth]{images/heartSMD-bottom}~\\\includegraphics[width=.9\linewidth]{images/heartSMD-top}}

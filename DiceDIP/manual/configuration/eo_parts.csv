@@ -1,0 +1,23 @@
+nombro,nomo,priskribo,surskribo/kolorkodo
+2,C1{,} C2,ceramika kondensilo \SI{100}{\nano\farad},104
+1,C3,kondensilo \SI{47}{\micro\farad},
+3,D1{,} D2{,} D3,diodo BAW 76,
+1,D10,diodo 1N4007,
+1,IC1,CMOS-ico 4029,
+1,IC2,CMOS-ico 4093,
+7,LED1 -- LED7,LED \SI{5}{\mm},
+2,R1{,} R3,rezistilo \SI{2,2}{\kilo\ohm},ruĝa - ruĝa - nigra - bruna - bruna
+1,R2,rezistilo \SI{1}{\mega\ohm},bruna - nigra - nigra - flava - bruna
+1,R4,rezistilo \SI{2,2}{\mega\ohm},ruĝa - ruĝa - nigra - flava - bruna
+1,R5,rezistilo \SI{120}{\kilo\ohm},bruna - ruĝa - nigra - oranĝa - bruna
+2,R6{,} R8,rezistilo \SI{1,5}{\kilo\ohm},bruna - verda - nigra - bruna - bruna
+1,R7,rezistilo \SI{1,8}{\kilo\ohm},bruna - griza - nigra - bruna - bruna
+1,R9,rezistilo \SI{3,3}{\kilo\ohm},oranĝa - oranĝa - nigra - bruna - bruna
+1,T1,transistoro BC547B,
+1,S1,premŝaltilo,
+1,X1,klemo 2-polusa,
+1,cirkvitkarto,,
+1,ico-soklo 14-polusa,,
+1,ico-soklo 16-polusa,,
+1,bateriklipo por \SI{9}{\volt}-bloko,,
+1,baterio \SI{9}{\volt}-bloko,,

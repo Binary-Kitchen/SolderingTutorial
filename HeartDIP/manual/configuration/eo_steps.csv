@@ -1,0 +1,8 @@
+images/DSC04791,Konsiloj:;Valoro de rezistilo povas esti konstata per kolorkodo;Orientiĝo de la karto tiel{,} ke la LED-priskribo povas esti legata normale (vidu bildon);Orientiĝo ne gravas ĉe rezistiloj;LED-oj havas platan flankon kaj pli mallongan krureton. Ambaŭ indikas la negativan flankon
+images/DSC04793,Allutu IC1-ingon kun la nazo maldekstre sur la karto
+images/DSC04795,Allutu rezistilojn R1 ĝis R6 (\SI{47}{\ohm});Orientiĝo ne gravas
+images/DSC04796,Allutu kondensilon C1 (104);Orientiĝo ne gravas
+images/DSC04797,Allutu LED-ojn LED1 ĝis LED18;Atentu! Orientiĝo gravas. Orientiĝo ŝanĝiĝas sur la karto;LED-oj havas platan flankon kaj pli mallongan krureton. Ambaŭ indikas la negativan flankon;Sur la karto la negativa flanko montriĝas per plataĵo
+images/DSC04798,Allutu ŝaltilon S1;Konsilo: Kruretoj havas diferencajn distancojn. Nenio devas esti kurbigata. Ŝaltilo konformas ekzakte
+images/DSC04799,Kurentkonektilo X1 kun la malfermo suben
+images/DSC04800,Enmetu icon IC1 kun la nazo maldekstre en la ingon;Konsilo: La kruretoj de la ico devas esti adaptataj kurbigante ilin iomete por konformi kun la ingo;Eble forigu la izolaĵon ce la pintoj de la konektaj kabloj kaj stanu;Alŝraŭbu baterion (+ ruĝa{,} - nigra);Enmetu bateriojn;Pretas!

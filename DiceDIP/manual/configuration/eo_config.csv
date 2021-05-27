@@ -1,0 +1,15 @@
+title=ĵetkubo (DIP)
+titlePicture=images/DSC04788
+skillTitle=malfacileco
+skillLevel=3/5
+buildTitle=konstrutempo
+buildTime=1--2 horoj
+stepTitle=paŝo
+descriptionTitle=instruado
+descriptionVersion=v1.0a
+descriptionLicense=CC-BY-SA 4.0 Binary Kitchen e.V.
+boardTitle=cirkvitkarto
+boardVersion=v1.0
+boardLicense=CC-BY-SA 4.0 Binary Kitchen e.V.
+appendix={\centering\includegraphics[width=1\linewidth]{images/diceDIP}}
+additionalSettings=\setlength{\ImageColWidth}{\dimexpr.5\linewidth-\tabcolsep\relax}%Agordu kolumnolarĝon por horizontalaj bildoj
