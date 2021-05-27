@@ -10,15 +10,14 @@ A handy breakout board to get all important voltages from an standard ATX power 
 
 | Quantity | Name               | Description                           | Signing/Colorcode | 
 |----------|--------------------|---------------------------------------|-------------------| 
-|          |                    |                                       |                   | 
-| 3        | R1, R3, R7         | 3.3 k ohm 0805 resistor               | 332               | 
-| 1        | R2                 | 330  ohm 0805 resistor                | 331               | 
-| 3        | R4, R5, R6         | 1.2 k ohm 0805 resistor               | 122               | 
-| 1        | R8                 | 10 k ohm 0805 resistor                | 103               | 
+| 3        | R1, R3, R7         | 3.3 k ohm 0805 resistor               | 3301 or 332       | 
+| 1        | R2                 | 330  ohm 0805 resistor                | 3300 or 331       | 
+| 3        | R4, R5, R6         | 1.2 k ohm 0805 resistor               | 1201 or 122       | 
+| 1        | R8                 | 10 k ohm 0805 resistor                | 1002 or 103       | 
 | 1        | R9                 | 9  ohm 10 W power resistor (optional) |                   | 
-| 2        | R10, R15           | 43 k ohm 0805 resistor                | 433               | 
+| 2        | R10, R15           | 43 k ohm 0805 resistor                | 4302 or 433       | 
 | 4        | R12, R14, R17, R19 | 51 k ohm 0805 resistor                | 5102 or 513       | 
-| 2        | R11, R16           | 75 k ohm 0805 resistor                | 753               | 
+| 2        | R11, R16           | 75 k ohm 0805 resistor                | 7502 or 753       | 
 | 2        | C1,C3              | 0.1 uF 0805 SMD capacitor             | red stripe        | 
 | 1        | C2                 | 1 uF 0805 SMD capacitor               | blue stripe       | 
 | 6        | LED1, LED3--LED7   | 0805 SMD LED red                      |                   | 
