@@ -26,7 +26,7 @@ A Cat in a box easy SMD kit. Bright glowing LED-eyes are watching every step! Wi
 
 <img src="Cat01/manual/images/thumbnail.jpg" width=400px alt="Cat in a Box">
 
-- Difficulty: **4/5**
+- Difficulty: **3/5**
 
 ### [Cube DIP](CubeDIP/)
 Simple LED cube consiting of 27 RGB LEDs in a 3x3x3 configuration. No programming needed.
@@ -80,7 +80,7 @@ This simple solder fume extractor just needs a PC fan and an solder fume filter.
 ### [I Can Solder DIP](ICanSolderDIP/)
 Very easy soldering kit with three LEDs. Can be used as pin button.
 
-<img src="ICanSolderDIP/manual/images/IMG_20191023_174300.jpg" width=400px alt="I Can Solder DIP">
+<img src="ICanSolderDIP/manual/images/PXL_20210221_114240481.jpg" width=400px alt="I Can Solder DIP">
 
 - Difficulty: **1/5**
 
