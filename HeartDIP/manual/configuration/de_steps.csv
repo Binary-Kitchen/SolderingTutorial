@@ -4,5 +4,5 @@ images/DSC04795,Widerstände \usePart{R} einlöten;Ausrichtung ist egal
 images/DSC04796,Kondensator \usePart{C1} auflöten;Ausrichtung ist egal
 images/DSC04797,LED1 bis LED18 auflöten;Achtung! Ausrichtung wichtig. Ausrichtung wechselt auf der Platine;LEDs haben eine Flache Seite und ein kürzeres Beinchen. Beides zeigt die negative Seite an;Auf der Platine wird die negative Seite durch eine Abflachung dargestellt
 images/DSC04798,Schalter S1 auflöten;Tipp: Beinchen haben unterschiedliche Abstände. Es muss nichts verbogen werden. Schalter passt exakt
-images/DSC04799,Stromanschluss X1 mit Öffnung nach unten
+images/DSC04799,Stromanschluss X1 mit Öffnung nach unten auflöten.; Die Kabel können auch direkt aufgelötet werden.
 images/DSC04800,IC1 mit der Nase nach links in Fassung einstecken;Tipp: Die Beinchen des ICs müssen leicht zurechtgebogen werden{,} um in die Fassung zu passen;Eventuell Isolierung an den Spitzen der Anschlusskabel der Batterie entfernen und verzinnen;Batterie anschrauben (+ rot{,} - schwarz);Batterien einlegen;Fertig!
