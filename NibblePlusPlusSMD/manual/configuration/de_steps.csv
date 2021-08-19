@@ -1,0 +1,8 @@
+images/IMG_20190211_205737,Hint: Resistors do not have a direction; Capacitors are marked with colours (direction does not matter); LEDs DO HAVE a direction!;Solder resistors R1 - R5 on the front-side;
+images/IMG_20190211_211934,Carefull: LEDs do have a direction! First read this part completely;Solder D1 - D5 to the board; The LED has a green marking on the back side; A dot is printed onto the board; The dot shows the direction where the green marking has to be directed while soldering,\centering\includegraphics[width=.8\linewidth]{../../misc/led_drawing/smd_led_up.pdf}
+images/IMG_20190211_211934,Solder CD4017 to the front-side; Direction is marked with a white dot
+images/IMG_20190211_212406,Solder C1 - C3 to the back-side of the board; Direction is not important
+images/IMG_20190211_212406,Solder R6 and R7 to the back-side of the board; Direciton is not important
+images/IMG_20190211_212406,Solder U1 (NE555) to the back-side of the board; The longer white line (bottom right) on the board marks the direction 
+images/IMG_20190211_212406,Solder the switch SW1 to the board back-side
+images/IMG_20190211_212406,Soder battery-holder BT1 to the back-side of the board; Insert a battery; All LEDs should glow; You are finished!

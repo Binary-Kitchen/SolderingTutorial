@@ -1,0 +1,14 @@
+title=Nibble++ SMD Löt-Challenge
+titlePicture=images/front-generated
+skillTitle=Schwierigkeit
+skillLevel=6/5
+buildTitle=Bauzeit
+buildTime=1--2 Stunden
+stepTitle=Schritte
+descriptionTitle=Anleitung
+descriptionVersion=v1.0
+descriptionLicense=CC-BY-SA 4.0 Binary Kitchen e.V.
+boardTitle=Board
+boardVersion=v1.1
+boardLicense=CC-BY-SA 4.0 Binary Kitchen e.V.
+appendix={\centering\includegraphics[width=.5\linewidth]{images/front}~\includegraphics[width=.5\linewidth]{images/back}}
