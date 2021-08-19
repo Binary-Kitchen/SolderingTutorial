@@ -11,4 +11,5 @@ descriptionLicense=CC-BY-SA 4.0 Binary Kitchen e.V.
 boardTitle=Board
 boardVersion=v1.1
 boardLicense=CC-BY-SA 4.0 Elektronikmuseium Tettnang  \& Timo Schindler
+partLabel=true
 appendix={\centering\includegraphics[width=.5\linewidth]{images/BoardFront}~\includegraphics[width=.5\linewidth]{images/BoardBack}}
