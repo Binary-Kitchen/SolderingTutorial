@@ -1,0 +1,14 @@
+title=Arrow (SMD)
+titlePicture=images/DSC04802
+skillTitle=Difficulty
+skillLevel=4/5
+buildTitle=Build Time
+buildTime=1--2 hours
+stepTitle=Step
+descriptionTitle=Manual
+descriptionVersion=v1.4a
+descriptionLicense=CC-BY-SA 4.0 Binary Kitchen e.V.
+boardTitle=PCB
+boardVersion=v1.4
+boardLicense=CC-BY-NC-SA Arne Rossius
+appendix={\centering\includegraphics[width=.35\linewidth]{images/arrowSMD_bottom}~\includegraphics[width=.35\linewidth]{images/arrowSMD_top}}
