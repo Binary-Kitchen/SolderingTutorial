@@ -1,7 +1,7 @@
 Menge,Name,Beschreibung,Beschriftung/Farbcode
-5,R1--R4{,} R6,Widerstand \SI{220}{\ohm},Rot - Rot - Braun - Gold
-1,R5,Widerstand \SI{1}{\kilo\ohm},Braun - Schwarz - Rot - Gold
-1,R7,Widerstand \SI{10}{\kilo\ohm},Braun - Schwarz - Orange - Gold
+5,R1--R4{,} R6,Widerstand \SI{220}{\ohm},Rot | Rot | Braun | Gold,R1
+1,R5,Widerstand \SI{1}{\kilo\ohm},Braun | Schwarz | Rot | Gold,R5
+1,R7,Widerstand \SI{10}{\kilo\ohm},Braun | Schwarz | Orange | Gold,R7
 7,S1--S7,Taster,
 1,SG1,Lautsprecher,
 1,JP1,Pinheader 3x1,
@@ -10,8 +10,8 @@ Menge,Name,Beschreibung,Beschriftung/Farbcode
 1,LED3,LED 10mm Grün,
 1,LED4,LED 10mm Blau,
 1,LED7,7-Segment Anzeige,
-2,C1{,} C2,Keramik Kondensator \SI{100}{\nano\farad},104
-2,C3{,} C4,Keramik Kondensator \SI{22}{\pico\farad},22
+2,C1{,} C2,Keramik Kondensator \SI{100}{\nano\farad},104,C2
+2,C3{,} C4,Keramik Kondensator \SI{22}{\pico\farad},22,C4
 1,IC1,74HC 595,
 1,IC2,Mikrocontroller Atmel Atmega 328P-PU,
 1,Q1,16MHz Quarz,
