@@ -1,0 +1,11 @@
+Quantity,Name,Description,Labelling/Colour code
+1,C1,Ceramic capacitor \SI{100}{\nano\farad},104,C1
+1,IC1,Microcontroller Atmel ATTiny 2313A,
+18,LED1--LED18,LED \SI{5}{\mm},
+6,R1--R6,resistor \SI{47}{\ohm},Gelb | Violett |Schwarz | Gold | Braun,R
+1,S1,push-button,
+1,X1,Terminal 2-pole,
+1,,IC socket 20-pole,
+1,,Battery holder,
+2,,Battery Mignon (AA),
+1,,Printed circuit board,

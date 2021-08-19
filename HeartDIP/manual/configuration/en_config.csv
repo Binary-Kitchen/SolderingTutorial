@@ -1,0 +1,15 @@
+title=Heart (DIP)
+titlePicture=images/DSC04800
+skillTitle=Difficulty
+skillLevel=2/5
+buildTitle=Build Time
+buildTime=1--2 hours
+stepTitle=Step
+descriptionTitle=Description
+descriptionVersion=v2.2a
+descriptionLicense=CC-BY-SA 4.0 Binary Kitchen e.V.
+boardTitle=Platine
+boardVersion=v2.2
+boardLicense=CC-BY-NC-SA Arne Rossius
+partLabel=true
+appendix={\centering\includegraphics[width=.5\linewidth]{images/heartDIP}}

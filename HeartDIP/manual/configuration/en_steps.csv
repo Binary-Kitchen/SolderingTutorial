@@ -1,0 +1,8 @@
+images/DSC04791, Hints:;Resistor size can be determined via colour coding;Orientation of the PCB so{,} that LED designation can be read normally (see picture);Orientation of resistors does not matter;LEDs have a flat side and a shorter leg. Both indicate the negative side
+images/DSC04793,Solder IC1 socket with the nose to the left on the PCB
+images/DSC04795,Solder resistors \usePart{R};orientation doesn't matter
+images/DSC04796,Solder capacitor \usePart{C1};orientation does not matter
+images/DSC04797,Solder LED1 to LED18;Attention! Direction of LEDs is important. The Direction changes on the board;LEDs have a flat side and a shorter leg. Both indicate the negative side;On the PCB{,} the negative side is indicated by a flattening.
+images/DSC04798,Solder switch S1;Hint: Legs have different distances. Nothing has to be bent. Switch fits exactly.
+images/DSC04799,Soder the Power connector X1 with opening downwards; The cables can also be soldered directly to the board.
+images/DSC04800,Insert IC1 into the socket with the nose to the left;Hint: The legs of the IC must be bent slightly{,} to fit into the socket;Remove any insulation from the tips of the battery connection cables and tin them;Screw on the battery (+ red{,} - black);Insert the batteries;Done!
