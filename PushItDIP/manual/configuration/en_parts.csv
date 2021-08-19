@@ -1,0 +1,23 @@
+Quantity,Name,Description,Label/Color Code
+5,R1--R4{,} R6,Resistor \SI{220}{\ohm},Rot | Rot | Braun | Gold,R1
+1,R5,Resistor \SI{1}{\kilo\ohm},Braun | Schwarz | Rot | Gold,R5
+1,R7,Resistor \SI{10}{\kilo\ohm},Braun | Schwarz | Orange | Gold,R7
+7,S1--S7,Push Button,
+1,SG1,Speaker,
+1,JP1,Pinheader 3x1,
+1,LED1,LED 10mm Yellow,
+1,LED2,LED 10mm Red,
+1,LED3,LED 10mm Green,
+1,LED4,LED 10mm Blue,
+1,LED7,7-segment display,
+2,C1{,} C2,Ceramic Capacitor \SI{100}{\nano\farad},104,C2
+2,C3{,} C4,Ceramic Capacitor \SI{22}{\pico\farad},22,C4
+1,IC1,74HC 595,
+1,IC2,Microcontroller Atmel Atmega 328P-PU,
+1,Q1,16MHz Crystal,
+1,POWER,terminal 2-pole,
+1,{ },IC-Socket 16-pole,
+1,{ },IC-Socket 28-pole,
+1,{ },PCB,
+1,{ },Battery Holder,
+4,{ },Batteries Mignon (AA),
