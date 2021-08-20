@@ -1,5 +1,5 @@
 images/IMG_20180630_203652,Tipps:;Widerstandsgröße kann über Farbkodierung ermittelt werden;Ausrichtung der Platine so{,} dass LED-Bezeichnung normal gelesen werden kann (siehe Bild);Ausrichtung bei Widerständen ist egal;LEDs haben eine Flache Seite und ein kürzeres Beinchen. Beides zeigt die negative Seite an,
-images/IMG_20180630_203728,Widerstände R1 bis R7 (\SI{82}{\ohm}) einlöten;Ausrichtung ist egal,,
+images/IMG_20180630_203728,Widerstände R1 bis R7 (\SI{82}{\ohm}) \usePart{R} einlöten;Ausrichtung ist egal,,
 images/IMG_20180630_204056,IC1-Fassung mit der Nase nach links auf die Platine löten,,
 images/IMG_20180630_204344,Schalter S1 auflöten;Tipp: Beinchen haben unterschiedliche Abstände. Es muss nichts verbogen werden. Schalter passt exakt,,
 images/IMG_20180630_204632,Kondensator C1 (104) auflöten;Ausrichtung ist egal,,

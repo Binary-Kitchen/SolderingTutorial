@@ -1,0 +1,8 @@
+images/IMG_20180630_203652, Hints:;Resistor size can be determined by color coding;Alignment of the board so{,} that LED designation can be read normally (see picture);Alignment for resistors does not matter;LEDs have a flat side and a shorter leg. Both indicate the negative side,
+images/IMG_20180630_203728,Solder resistors R1 to R7 (\SI{82}{\ohm}) \usePart{R};orientation does not matter,,
+images/IMG_20180630_204056,Solder IC1 socket with the nose to the left on the board,,
+images/IMG_20180630_204344,Solder button S1; Hint: Legs have different distances. Nothing has to be bent. Switch fits exactly,,
+images/IMG_20180630_204632,Solder capacitor C1 (104);orientation does not matter,,
+images/IMG_20180630_205651,Solder LED1 to LED7;Attention! Alignment is important. LEDs have a flat side and a shorter leg. Both indicate the negative side;On the board, the negative side is represented by a flat,,
+images/IMG_20180630_210235,Power connector X1 with opening downwards,,
+images/IMG_20180630_210412,Insert IC1 with the nose to the left into the socket; Hint: The legs of the IC must be slightly bent{,} to fit into the socket;Possibly remove and tin the insulation at the tips of the connecting cables of the battery;Screw on the battery (+ red{,} - black);Insert the batteries;Done!
