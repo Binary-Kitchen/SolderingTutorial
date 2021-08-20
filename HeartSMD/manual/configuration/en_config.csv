@@ -1,0 +1,14 @@
+title=Heart (SMD)
+titlePicture=images/DSC04820
+skillTitle=Difficulty
+skillLevel=4/5
+buildTitle=Build Time
+buildTime=1--2 hours
+stepTitle=Step
+descriptionTitle=Manual
+descriptionVersion=v1.4a
+descriptionLicense=CC-BY-SA 4.0 Binary Kitchen e.V.
+boardTitle=PCB
+boardVersion=v1.4
+boardLicense=CC-BY-NC-SA Arne Rossius
+appendix={\centering\includegraphics[width=.9\linewidth]{images/heartSMD-bottom}~\\\includegraphics[width=.9\linewidth]{images/heartSMD-top}}

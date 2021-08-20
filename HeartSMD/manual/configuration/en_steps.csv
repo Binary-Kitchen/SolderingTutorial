@@ -1,0 +1,8 @@
+images/DSC04821,Fix the board to the base/table with adhesive tape,
+images/DSC04821,Pick up IC1 with adhesive tape. Tape should cover only half of the IC;Then the IC can be aligned and fixed with tape;Alignment important: Small dot on IC must match dot on board top left;Solder all legs on board with solder;Then tape can be removed and the other side can be fixed,
+images/DSC04822,Solder resistors R1 to R6;To do this, tin a pad;Then heat tin and feed the resistor to the side with tweezers;Then solder the second side,
+images//DSC04823,Solder capacitor C1 with the technique presented before,
+images/DSC04824,Attention! Alignment of the LEDs is important! First read all points of the step;Solder the LEDs the same way as the resistors;Turn the board over;The LEDs have a small green line on the top side; There are small arrows or small dots printed on the board; The arrows or dots on the board show the side{,} where the small green line has to be;Tip: If the arrows or dots on the board are hard to see{,} refer to the layout drawing on the last page of the manual,\centering\includegraphics[width=.8\linewidth]{../../misc/led_drawing/smd_led_up.pdf}
+images/DSC04825,Solder on switch with standard technique;orientation does not matter,
+images/DSC04826,Solder battery holder;Turn over PCB;Battery holder and PCB have plus and minus symbol printed on them. This must match,
+images/DSC04827,Insert battery correctly. A metal tab (on the left in the picture) must grip the top of the battery; switch on. Done!

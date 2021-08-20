@@ -1,0 +1,9 @@
+Quantity,Name,Description,Label/Color Code
+1,C1,Ceramic capacitor \SI{100}{\nano\farad},
+1,IC1,Micro Controller Atmel ATTiny 2313A,
+18,LED1--LED18,LED SMD 0805,
+6,R1--R6,Resistor \SI{47}{\ohm},470
+1,SW1,Push Button,
+1,BAT1,Battery Holder,
+1,,Battery CR2032,
+1,,PCB,
