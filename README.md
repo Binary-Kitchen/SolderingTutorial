@@ -70,6 +70,13 @@ This unicorn will bright up your life. The hair is glowing in all colours of the
 
 - Difficulty: **2/5**
 
+### [Rainbow Butterfly](RainbowButterfly/)
+A wonderful rainbow Butterfly. The wings are enlighted by RGB-LEDs from the back of the PCB. The soldering kit is very simple and easy to assamble.
+
+<img src="RainbowButterfly/manual/images/thumbnail.jpg" width=400px alt="Rainbow Butterfly">
+
+- Difficulty: **2/5**
+
 ### [Humo - Solder-Fume Exctractor](Humo/)
 This simple solder fume extractor just needs a PC fan and an solder fume filter. If you add some goggly eyes the fume extractor has a pretty nice smiling face. It is optimised for laser cutted parts.
 
