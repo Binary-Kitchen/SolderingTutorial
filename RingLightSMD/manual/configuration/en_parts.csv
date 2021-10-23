@@ -1,0 +1,15 @@
+Quantity,Description,Value
+,,,
+2,C1{,} C2,\SI{100}{\nano\farad}
+1,C3,\SI{1}{\micro\farad}
+20,R1 -- R20,\SI{82}{\ohm}
+2,R21{,} R22,\SI{100}{\kilo\ohm}
+2,R23{,} R24,\SI{1}{\kilo\ohm}
+20,D1-D20,0805 SMD-LED
+1,U1,NE555 SOIC-8
+2,U2{,}U3, TI4017
+1,SW1,Switch
+2,Q1{,} Q2,BC850 Transistor
+1,BT1, Battery Holder
+1,Battery,CR2032 (not included)
+1,PCB,
