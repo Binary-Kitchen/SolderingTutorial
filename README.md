@@ -63,20 +63,6 @@ Small soldering kit with an heart on it from http://wiki.blinkenarea.org/index.p
 
 - Difficulty: **4/5**
 
-### [Rainbow Unicorn 1](RainbowUnicorn01/)
-This unicorn will bright up your life. The hair is glowing in all colours of the rainbow due to RGB-LEDs on the back. The soldering kit is very simple and easy to assamble.
-
-<img src="RainbowUnicorn01/manual/images/thumbnail.jpg" width=400px alt="Rainbow Unicorn">
-
-- Difficulty: **2/5**
-
-### [Rainbow Butterfly](RainbowButterfly/)
-A wonderful rainbow Butterfly. The wings are enlighted by RGB-LEDs from the back of the PCB. The soldering kit is very simple and easy to assamble.
-
-<img src="RainbowButterfly/manual/images/thumbnail.jpg" width=400px alt="Rainbow Butterfly">
-
-- Difficulty: **2/5**
-
 ### [Humo - Solder-Fume Exctractor](Humo/)
 This simple solder fume extractor just needs a PC fan and an solder fume filter. If you add some goggly eyes the fume extractor has a pretty nice smiling face. It is optimised for laser cutted parts.
 
@@ -97,6 +83,13 @@ Small soldering kit using SMD components with the kitchen head on it.
 <img src="KitchenHeadSMD/manual/images/DSC04829.jpg" width=400px alt="Kitchen Head SMD">
 
 - Difficulty: **4/5**
+
+### [Moon Cat](MoonCat/)
+Excuse me? What are you staring at? This wonderful kit is very simple in terms of circuitry, but the result is simply hilarious.
+
+<img src="MoonCat/manual/images/thumbnail.jpg" width=400px alt="Moon Cat">
+
+- Difficulty: **2/5**
 
 ### [Nibble++](NibblePlusPlusSMD/)
 A simple PCB to test your SMD hand-soldering skills. Going down to sand grain sized 01005 SMD parts, this button is a challenge for experienced "soldiers" and those who want to become one.
@@ -125,6 +118,20 @@ Easy soldering Kit using simple Tools and nearly no soldering knowledge is neede
 Simon Says clone with (optional) multiplayer mode
 
 <img src="PushItDIP/manual/images/PushItDIP-V1_1_Complete.jpg" width=400px alt="Push-It DIP">
+
+- Difficulty: **2/5**
+
+### [Rainbow Butterfly](RainbowButterfly/)
+A wonderful rainbow Butterfly. The wings are enlighted by RGB-LEDs from the back of the PCB. The soldering kit is very simple and easy to assamble.
+
+<img src="RainbowButterfly/manual/images/thumbnail.jpg" width=400px alt="Rainbow Butterfly">
+
+- Difficulty: **2/5**
+
+### [Rainbow Unicorn 1](RainbowUnicorn01/)
+This unicorn will bright up your life. The hair is glowing in all colours of the rainbow due to RGB-LEDs on the back. The soldering kit is very simple and easy to assamble.
+
+<img src="RainbowUnicorn01/manual/images/thumbnail.jpg" width=400px alt="Rainbow Unicorn">
 
 - Difficulty: **2/5**
 
