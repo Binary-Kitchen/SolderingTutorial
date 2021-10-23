@@ -1,7 +1,7 @@
 # Ring Light
 The running light is achieved by a circuit of a clockgenerator NE555 (U1) and two shift registers TI4017 (U2, U3). The NE555 uses the clock signal to shift one bit through both shift registers. At the end the circuit is reset and the cycle starts anew. The outputs of U2 controls the 20 LEDs (D1-D20). Since the TI4017 only has 10 outputs, one output controls  two LEDs. U3 controls one transistor each (Q1, Q2) using two outputs, which alternately pull D1-D10 or D11-D20 to GND. This process repeats itself.
 
-<img src="manual/images/front-generated.png" width=400px alt="Nibble++">
+<img src="manual/images/thumbnail.jpg" width=400px alt="Ring Light">
 
 - Status: **Complete**
 - Difficulty: **4/5**
