@@ -135,6 +135,13 @@ This unicorn will bright up your life. The hair is glowing in all colours of the
 
 - Difficulty: **2/5**
 
+### [Ring Light SMD]RingLightSMD/)
+A simple SMD learning kit where a light chases around a circle.
+
+<img src="RingLightSMD/manual/images/thumbnail.jpg" width=400px alt="Ring Light SMD">
+
+- Difficulty: **4/5**
+
 ### [Saw-Tooth Organ DIP](SawToothOrganDIP/)
 Some Transistors creating a saw tooth wave enabling a very simple organ which you can play like a piano with a stylus.
 
