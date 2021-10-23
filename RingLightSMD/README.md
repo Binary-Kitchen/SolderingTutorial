@@ -30,6 +30,9 @@ You can find the manual and pictures of every step in the manual folder.
 ## PCB Layout
 The PCB-Layout can be found on Github: tbd
 
+## Video
+A video of the running PCB can be found here: [YouTube](https://youtu.be/Xx-zP-Ia8_w)
+
 ## Copyright and Authorship
 - PCB-Layout: [CC-BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/) - [Taxxizz](https://twitter.com/Taxxizz)
 - Manual (TeX): [LPPL](https://www.latex-project.org/lppl.txt) - [Marei Peischl](https://peitex.de)
