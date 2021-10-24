@@ -39,4 +39,4 @@ A video of the running PCB can be found here: [YouTube](https://youtu.be/Xx-zP-I
 - Manual (pdf): [CC-BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/) - [Binary Kitchen e.V.](https://www.binary-kitchen.de)
 
 ### Buy Soldering Kits
-If you want to buy the parts and PCB for a soldering kit you can find everything here: [shop.blinkyparts.com](https://shop.blinkyparts.com/)
+If you want to buy the parts and PCB for a soldering kit you can find everything here: [shop.blinkyparts.com - Running Light](https://shop.blinkyparts.com/en/SMD-running-light-Soldering-kit-for-the-proper-learning-of-soldering-SMD-components/blink233142)
