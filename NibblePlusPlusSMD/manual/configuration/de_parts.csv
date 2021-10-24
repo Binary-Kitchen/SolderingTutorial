@@ -1,20 +1,20 @@
-Quantity,Name,Description,Signing/Value
+Menge,Name,Beschreibung, Kennzeichnung/Wert
 ,,,
-1,BT1,SMD Battery Holder,CR2032
-2,C1{,}C3,0805 capacitor,\SI{100}{\nano\farad}
+1,BT1,SMD-Batteriehalter,CR2032
+2,C1{,}C3,0805 Kondensator,\SI{100}{\nano\farad}
 1,C2,0805 capacitor,\SI{1}{\micro\farad}
-1,D1,0805 SMD LED,red
-1,D2,0603 SMD LED,orange
-1,D3,0402 SMD LED,yellow
-1,D4,0201 SMD LED,green
-1,D5,0201 SMD LED,blue
-1,R1,0805 SMD resistor,\SI{82}{\ohm}
-1,R2,0603 SMD resistor,\SI{82}{\ohm}
-1,R3,0402 SMD resistor,\SI{62}{\ohm}
-1,R4,0201 SMD resistor,\SI{330}{\ohm}
-1,R5,01005 SMD resistor,\SI{33}{\ohm}
-2,R6{,} R7,0805 SMD resistor,\SI{100}{\kilo\ohm}
-1,SW1,SMD Switch,
-1,U1,SOIC-8 Timer,NE555
-1,U2,SOP-16 Counter,CD4017
-1,,Board,
+1,D1,0805 SMD-LED,rot
+1,D2,0603 SMD-LED,orange
+1,D3,0402 SMD-LED,gelb
+1,D4,0201 SMD-LED,grün
+1,D5,0201 SMD-LED,blau
+1,R1,0805 SMD-Widerstand,\SI{82}{\ohm}
+1,R2,0603 SMD-Widerstand,\SI{82}{\ohm}
+1,R3,0402 SMD-Widerstand,\SI{62}{\ohm}
+1,R4,0201 SMD-Widerstand,\SI{330}{\ohm}
+1,R5,01005 SMD-Widerstand,\SI{33}{\ohm}
+2,R6{,} R7,0805 SMD-Widerstand,\SI{100}{\kilo\ohm}
+1,SW1,SMD-Schalter,
+1,U1,SOIC-8 Zeitgeber,NE555
+1,U2,SOP-16 Zähler,CD4017
+1,,Platine,
