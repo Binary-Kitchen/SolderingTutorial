@@ -21,12 +21,20 @@ Small soldering kit with an arrow on it from https://wiki.blinkenarea.org/index.
 
 - Difficulty: **4/5**
 
-### [Cat in a Box](Cat01/)
+### [Cat in a Box 1](Cat01/)
 A Cat in a box easy SMD kit. Bright glowing LED-eyes are watching every step! With this soldering kit it is super easy to learn SMD soldering.
 
 <img src="Cat01/manual/images/thumbnail.jpg" width=400px alt="Cat in a Box">
 
 - Difficulty: **3/5**
+
+### [Cat in a Box 2](Cat02/)
+Can you please turn around? If you stare, the cat will stare boack in all colours of the rainbow due to RGB-LEDs on the back. The soldering kit is very simple and easy to assamble.
+
+<img src="Cat02/manual/images/thumbnail.jpg" width=400px alt="Cat in a Box 2">
+
+- Difficulty: **2/5**
+
 
 ### [Cube DIP](CubeDIP/)
 Simple LED cube consiting of 27 RGB LEDs in a 3x3x3 configuration. No programming needed.
