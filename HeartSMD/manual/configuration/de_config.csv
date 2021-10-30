@@ -6,9 +6,31 @@ buildTitle=Bauzeit
 buildTime=1--2 Stunden
 stepTitle=Schritt
 descriptionTitle=Anleitung
-descriptionVersion=v1.4a
+descriptionVersion=v2.0
 descriptionLicense=CC-BY-SA 4.0 Binary Kitchen e.V.
 boardTitle=Platine
 boardVersion=v1.4
 boardLicense=CC-BY-NC-SA Arne Rossius
 appendix={\centering\includegraphics[width=.9\linewidth]{images/heartSMD-bottom}~\\\includegraphics[width=.9\linewidth]{images/heartSMD-top}}
+warningsTitle=Sicherheitshinweise
+warnings= {
+\begin{itemize}
+   \item ACHTUNG: Für Kinder unter 3 Jahren nicht geeignet, Erstickungsgefahr durch verschluckbare Kleinteile.
+   \item Wir empfehlen: Betreuung des Aufbaus und des Lötvorgangs durch eine erwachsene Person.
+   \item Bewahre diese Bedienungsanleitung für den späteren Gebrauch sicher auf! Sie enthält wichtige Informationen.
+   \item Sollte die Batterie einmal leer sein, ersetze diese nur mit einer neuen Batterie mit denselben Werten.
+   \item Beim Löten werden der Lötkolben, das Lötzinn und auch die Bauteile, die gelötet werden, sehr heiß.
+   \item Während des Lötens und zusammenbau des Bausatzes IMMER eine Schutzbrille tragen.
+   \item Verwende beim Löten immer eine feuerfeste Unterlage! Das verhindert das Wegrutschen der Bauteile.
+   \item Um den Lötkolben während des Aufbaus sicher aufzubewahren, benutze immer einen passenden Lötständer.
+   \item Der Bausatz ist lediglich für den Batteriebetrieb vorgesehen.
+   \item ACHTUNG: Schließe den Bausatz niemals an 230 V Netzspannung an! Es besteht absolute Lebensgefahr!
+   \item Bitte führen Sie das Gerät nach Ablauf der Gebrauchszeit entsprechend zertifizierten Entsorgern zu. Das ist gut für die Umwelt und sorgt für eine korrekte Entsorgung.
+   \item Änderungen und Irrtümer vorbehalten.
+\end{itemize}}
+warningsAddress=
+warningsCE=
+warningsRoHS=
+warningsWEEE=
+warningsWEEETitle=
+warningsWEEEText=
