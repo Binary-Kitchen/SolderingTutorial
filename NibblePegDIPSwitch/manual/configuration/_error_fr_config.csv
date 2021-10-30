@@ -1,0 +1,40 @@
+title=Pince à linge \og{}~Nibble clignotant~\fg{} avec interrupteur
+titlePicture=images/01-DSC06774
+skillTitle=Difficulté
+skillLevel=2/5
+buildTitle=Temps de construction
+buildTime=20--40 Minutes
+stepTitle=Étape
+descriptionTitle=Manuel
+descriptionVersion=v2.0
+descriptionLicense={CC-BY-SA 4.0 Binary Kitchen e.\,V.{,} Hannes Restel et Christopher König}
+licenseNoteTitle=Idée
+licenseNote = Timo Schindler{,} extension interrupteur par Hannes Restel et Christopher König
+warningsTitle=Information sur la sécurité
+warnings= {
+\begin{itemize}
+\begin{itemize}
+   \item ATTENTION : Ne convient pas aux enfants de moins de 3 ans, risque d'étouffement en raison des petites pièces qui peuvent être avalées.
+   \item Nous recommandons : La supervision du processus d'assemblage et de soudure par un adulte.
+   \item Conservez ce mode d'emploi dans un endroit sûr pour une utilisation ultérieure ! Il contient des informations importantes.
+   \item Si la batterie est vide, remplacez-la uniquement par une batterie neuve présentant les mêmes valeurs.
+   \item Lors de la soudure, le fer à souder, la soudure et les composants à souder deviennent très chauds.
+   \item Portez toujours des lunettes de sécurité lorsque vous soudez et assemblez le kit.
+   \item Toujours une panne de soudure ignifuge lorsque vous effectuez des soudures ! Vous éviterez ainsi que les composants ne glissent.
+   \item Pour protéger le fer à souder pendant le montage, utilisez toujours un support de soudure adapté.
+   \item Le kit est conçu pour fonctionner sur piles uniquement.
+   \item ATTENTION : Ne branchez jamais le kit sur le réseau électrique 230 V ! Il y a un danger absolu pour la vie !
+   \item Veuillez apporter l'appareil à des entreprises de mise au rebut certifiées à la fin de sa vie utile. Cela est bon pour l'environnement et garantit une élimination correcte.
+   \item Sous réserve de modifications et d'erreurs.
+\end{itemize}}
+warningsAddress=blinkyparts.com\\Egerstr. 9\\93057 Regensburg\\GERMANY
+warningsCE={\includegraphics[height=10mm]{LaTeX_config/ce}\hspace{20mm}}
+warningsRoHS={\includegraphics[height=10mm]{LaTeX_config/rohs}\hspace{20mm}}
+warningsWEEE={\includegraphics[height=10mm]{LaTeX_config/weee}}
+warningsWEEETitle=Disposal\\\\
+warningsWEEEText= {
+Cet appareil est étiqueté conformément à la directive européenne 2012/19/UE relative aux déchets d'équipements électriques et électroniques (DEEE). Cette directive fournit le cadre juridique pour la reprise et le recyclage des déchets d'équipements dans toute l'UE.
+\begin{itemize}
+    \item \textbf{emballage} : L'emballage est composé de matériaux respectueux de l'environnement et est donc recyclable. Jetez les matériaux d'emballage qui ne sont plus nécessaires en conséquence.
+    \item \textbf{déchets d'équipements} : Les vieux appareils contiennent souvent encore des matériaux précieux. Remettez donc votre ancien appareil à votre revendeur ou à un centre de recyclage pour qu'il soit réutilisé. Renseignez-vous auprès de votre revendeur ou des autorités locales pour connaître les filières d'élimination actuelles.
+\end{itemize}}
