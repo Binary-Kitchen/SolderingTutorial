@@ -23,7 +23,7 @@ A handy breakout board to get all important voltages from an standard ATX power 
 | 6        | LED1, LED3--LED7   | 0805 SMD LED red                      |                   | 
 | 1        | LED2               | 0805 SMD LED green                    |                   | 
 | 4        | F1,--F4            | 1812 SMD PTC Fuse 3A                  | T300              | 
-| 1        | U2                 | TPS2513                               |                   | 
+| 1        | U1                 | TPS2513                               |                   | 
 | 1        | IC1                | LM-317 (through hole)                 |                   | 
 | 2        | X1, X2             | USB female connector (through hole)   |                   | 
 | 6        | JP1--JP6           | 5-pin header                          |                   | 
