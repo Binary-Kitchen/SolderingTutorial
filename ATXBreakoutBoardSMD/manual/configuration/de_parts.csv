@@ -13,7 +13,7 @@ Menge,Name,Beschreibung,Beschriftung/Farbcode
 6,LED1{,} LED3--LED7,0805 SMD LED rot,
 1,LED2,0805 SMD LED grün,
 4,F1{,}--F4,1812 SMD PTC Sicherung \SI{3}{\ampere},T300
-1,U2,TPS2513,
+1,U1,TPS2513,
 1,IC1,LM-317 (through hole),
 2,X1{,} X2,USB Buchse (through hole),
 6,JP1--JP6,5-pin Header,
