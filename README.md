@@ -57,6 +57,13 @@ Dice with micro controller. Electronic dice which uses C random generator.
 
 - Difficulty: **2/5**
 
+### [Ermer Beeper DIP](ErmerBeeperDIP/)
+The Ermer Beeper is a very neat continuity tester or beeper.
+
+<img src="ErmerBeeperDIP/manual/images/thumbnail.jpg" width=400px alt="Ermer Beeper DIP">
+
+- Difficulty: **2/5**
+
 ### [Heart DIP](HeartDIP/)
 Small soldering kit with an heart on from https://wiki.blinkenarea.org/index.php/AntiKippenLights-Atmel
 
