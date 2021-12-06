@@ -1,0 +1,13 @@
+Quantity,Name,Description,Signing/Colorcode
+,,,
+2,C1{,}C2,\SI{100}{\nano\farad} capacitor, 104
+1,R1,\SI{1}{\kilo\ohm} resistor,Braun | Schwarz | Schwarz | Braun | Braun,R1
+2,R2{,}R3, \SI{5,6}{\kilo\ohm} resistor,Grün | Blau | Schwarz | Braun | Braun,R2
+1,R4, \SI{56}{\ohm} resistor,Grün | Blau | Schwarz | Gold | Braun,R4
+2,Q1{,}Q2,BC547C NPN transistor,
+1,LS1,\SI{8}{\ohm}--\SI{100}{\ohm} speaker
+2,J1{,}J2,\SI{4}{\mm} binding posts
+1,BT1,2xAAA battery holder
+2,,AA batteries (not included)
+7,,wooden box parts (optional)
+1,,PCB

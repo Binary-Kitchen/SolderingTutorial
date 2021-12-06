@@ -1,0 +1,13 @@
+images/thumbnail,Tipps: Der Widerstandswert kann über die aufgedruckte Farbkodierung bestimmt werden;Die Orientierung für Widerstände und Kondensatoren ist nicht wichtig; Achtung die Orientierung von Transistoren ist wichtig und auf der Platine abgedruckt.
+images/PXL_20211128_110632834,Löte alle Widerstände auf.;Achte auf den korrekten Wert{,} der auf dem Board aufgedruckt ist.
+images/PXL_20211128_110756036,Löte die Kondensatoren C1{,}C2 auf.
+images/PXL_20211128_111006165,Löte die zwei NPN Transistoren BC547C (Q1--Q2) auf.
+images/PXL_20211128_111150992,Drehe die Platine um.;Löte den Lautsprecher auf.
+images/PXL_20211128_111431755,Fädle den roten und schwarzen Draht des Batteriehalters durch die Löcher neben den Lötpunkten.;Stecke nun die Drähte in die Lötpunkte. Achtung: rot ist positiv{,}schwarz ist negativ.;Löte die Drähte fest.
+images/PXL_20211128_112029806,Schraube nun die Bananebuchsen wie auf dem Bild abgebildet auf.;Setzte die Batterien ein: Fertig ist dein Ermer Piepser!
+images/PXL_20211128_112337550,(Optional) Wenn du auch eine Holzbox hast{,} kannst du hier weiter machen: Schleife zunächst alle Oberflächen mit einem feinen Schleifpapier ab.
+images/PXL_20211128_112501969,Leime die beiden Oberseiten so zusammen{,} sodass die Löcher übereinstimmen. Die Aufschrift Ermer Piepser sollte zu sehen sein{,} wenn du die geleimten Stücke umdrehst.
+images/PXL_20211128_113014473,Stecke und leime die restlichen Bauteile zusammen wie auf dem Foto abgebildet.
+images/PXL_20211128_113928673,Schraube die Bananenbuchsen in die Löcher (Rot ist links). Vergiss nicht die Beilagscheibe.
+images/PXL_20211128_114312070,Entferne die Batterien! Schraube nun den Ermer Piepser wie abgebildet auf. Achtung: Entferne auch die Lötfähnchen{,} diese verursachen versehentliche Kurzschlüsse.
+images/PXL_20211128_114408002,Fertig! Dein Durchgangsprüfer hat jetzt auch eine tolle Box!

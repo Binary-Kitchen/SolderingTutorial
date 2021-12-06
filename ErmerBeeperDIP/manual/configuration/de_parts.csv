@@ -1,0 +1,14 @@
+Anzahl,Bezeichnung,Beschreibung,Beschriftung/Farbkodierung
+,,,
+
+2,C1{,}C2,\SI{100}{\nano\farad} Kondensator, 104
+1,R1,\SI{1}{\kilo\ohm} Widerstand,Braun | Schwarz | Schwarz | Braun | Braun,R1
+2,R2{,}R3, \SI{5,6}{\kilo\ohm} Widerstand,Grün | Blau | Schwarz | Braun | Braun,R2
+1,R4, \SI{56}{\ohm} Widerstand,Grün | Blau | Schwarz | Gold | Braun,R4
+2,Q1{,}Q2,BC547C NPN Transistor
+1,LS1,\SI{8}{\ohm}--\SI{100}{\ohm} Lautsprecher
+2,J1{,}J2,\SI{4}{\mm} Bananen Buchsen
+1,BT1,2xAA Batteriehalter
+2,,AA Batterien (nicht enthalten)
+7,,Holzboxteile (optional)
+1,,PCB
