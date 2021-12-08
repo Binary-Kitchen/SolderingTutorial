@@ -1,0 +1,18 @@
+Quantity,Name,Description,Signing/Colorcode
+,,,
+1,C1,\SI{10}{\nano\farad} capacitor, 103
+1,R1,\SI{330}{\ohm} resistor,Orange | Orange | Schwarz | Schwarz | Braun
+1,Q1,BC547C NPN transistor
+1,D3,z-diode
+2,D1{,} D2,\SI{5}{\mm} THT LED orange
+1,BT1,1xAA battery holder
+1,SW1,push button
+1,,AA batterie (not included)
+1,T1, coil (will be made)
+1,,ferrite core (needed for coil)
+2,,cable \SI{300}{\mm} (needed for coil)
+1,,PCB
+1,C\_b1,not included and needed
+1,R\_b1,not included and needed
+1,Q\_b1,not included and needed
+1,D\_b3,not included and needed

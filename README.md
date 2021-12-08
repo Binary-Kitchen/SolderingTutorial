@@ -129,6 +129,13 @@ Easy soldering Kit using simple Tools and nearly no soldering knowledge is neede
 
 - Difficulty: **2/5**
 
+### [Owl Thief THT](OwlThiefDIP/)
+A simple joule thief circuit on the back of an owl. If you solder everything right, you can empty old batteries and make the eyes glow orange.
+
+<img src="OwlThiefDIP/manual/images/thumbnail.jpg" width=400px alt="OwlThiefDIP">
+
+- Difficulty: **2/5**
+
 ### [Push-It DIP](PushItDIP/)
 Simon Says clone with (optional) multiplayer mode
 

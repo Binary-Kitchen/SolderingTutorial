@@ -1,0 +1,19 @@
+Anzahl,Bezeichnung,Beschreibung,Beschriftung/Farbkodierung
+,,,
+
+1,C1,\SI{10}{\nano\farad} Kondensator, 103
+1,R1,\SI{330}{\ohm} Widerstand,Orange | Orange | Schwarz | Schwarz | Braun
+1,Q1,BC547C NPN Transistor
+1,D3,Z-Diode
+2,D1{,} D2,\SI{5}{\mm} THT LED Orange
+1,BT1,1xAA Batteriehalter
+1,SW1,Einschalter
+1,,AA Batterie (nicht enthalten)
+1,T1, Spule (wird selbst gewickelt)
+1,,Feritkern (für Spule)
+2,,cable \SI{300}{\mm} (für Spule)
+1,,PCB
+1,C\_b1,nicht enhalten/nötig
+1,R\_b1,nicht enhalten/nötig
+1,Q\_b1,nicht enhalten/nötig
+1,D\_b3,nicht enhalten/nötig
