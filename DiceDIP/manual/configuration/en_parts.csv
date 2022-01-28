@@ -15,7 +15,7 @@ Quantity,Name,Description,Label/Color Code
 1,R9,Resistor \SI{3,3}{\kilo\ohm},Orange|Orange|Schwarz|Braun|Braun,R9
 1,T1,Transistor BC547B,
 1,S1,Push Button,
-1,X1,Klemme 2-polig,
+1,X1,Terminal Block 2-poles (optional),
 1,PCB,,
 1,IC-Socket 14-polig,,
 1,IC-Socket 16-polig,,

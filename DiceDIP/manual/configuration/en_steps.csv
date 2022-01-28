@@ -9,5 +9,5 @@ images/DSC04784,Attention! Orientation of the transistor is important;solder tra
 images/DSC04785,Attention! Alignment of this capacitor is important;Solder capacitor C3 (\SI{47}{\micro\farad}) with long leg (+) downwards; Hint: There is a plus sign printed on the board.
 images/DSC04786,Solder switch S1; Hint: Legs have different distances. Nothing has to be bent. Switch fits exactly; Some pressure may be necessary
 images/DSC04787,Attention! Alignment of LED is crucial;Solder LED 1-7. Alignment important! Short leg upwards
-images/DSC04788,Solder power connector X1 with opening upwards
+images/DSC04788,Solder power connector X1 with opening upwards;As an alternative{,} the cables can also be soldered directly (VCC red{,} GND black); before doing so{,} guide the cable through the hole next to the connection and tie it in a knot (strain relief).
 images/thumbnail,Connect battery holder (VCC red{,} GND black);Insert both ICs into the sockets (count the number of legs! There are differences here);Insert batteries;Push button. Done;Cube goes off again by itself

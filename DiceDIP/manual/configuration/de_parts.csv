@@ -15,7 +15,7 @@ Menge,Name,Beschreibung,Beschriftung/Farbcode
 1,R9,Widerstand \SI{3,3}{\kilo\ohm},Orange|Orange|Schwarz|Braun|Braun,R9
 1,T1,Transistor BC547B,
 1,S1,Taster,
-1,X1,Klemme 2-polig,
+1,X1,Klemme 2-polig (optional),
 1,Platine,,
 1,IC-Sockel 14-polig,,
 1,IC-Sockel 16-polig,,
