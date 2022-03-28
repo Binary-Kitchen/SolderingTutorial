@@ -1,6 +1,6 @@
 Menge,Bauteil
 1, Wäscheklammer{,} am besten aus Holz
-4, LEDs (\SI{3}{\mm}){,} blinkend mit eingebautem Vorwiderstand
+4, LEDs (\SI{3}{\mm} oder \SI{5}{\mm}){,} blinkend mit eingebautem Vorwiderstand
 2, Drähte{,} so lang wie die Klammer
 1, Batteriehalter
-1, CR2032-Knopfzelle
+1, CR2032-Knopfzelle (nicht enthalten)

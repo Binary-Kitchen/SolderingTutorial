@@ -1,5 +1,6 @@
 Quantity,Name,Description,Signing/Colorcode
-4,,\SI{3}{\mm} RGB flashing LED,
+4,,\SI{3}{\mm} or \SI{5}{\mm} RGB flashing LED,
 1,,Wooden peg,
-1,,CR2032 \SI{3}{\V} Battery,
 2,,Wire (same length as peg),
+1,,CR2032 battery holder,
+1,,CR2032 \SI{3}{\V} battery (not included),
