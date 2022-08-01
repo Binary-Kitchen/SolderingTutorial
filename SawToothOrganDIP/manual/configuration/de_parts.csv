@@ -20,5 +20,5 @@ Anzahl,Bezeichnung,Beschreibung,Beschriftung/Farbkodierung
 1,RV6,\SI{25}{\kilo\ohm} Potentiometer,
 1,SW1,Schalter,
 1,,\SI{30}{\centi\metre} flexibler Draht
-1,,\SI{3}{\centi\metre} starren Draht
+1,,\SI{3}{\centi\metre} starren Draht (optional)
 1,,PCB,

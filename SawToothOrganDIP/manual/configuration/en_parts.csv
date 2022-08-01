@@ -20,5 +20,5 @@ Quantity,Name,Description,Signing/Colorcode
 1,RV6,\SI{25}{\kilo\ohm} potentiometer,
 1,SW1,push button,
 1,,wire flexible \SI{30}{\centi\metre}
-1,,wire stiff \SI{3}{\centi\metre}
+1,,wire stiff \SI{3}{\centi\metre} (optional)
 1,,PCB,
