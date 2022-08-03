@@ -5,6 +5,8 @@ We've tried to collect and create tutorials with different difficulties and are 
 
 For an overview of all kits with manuals and interactive pcb views got to: https://binary-kitchen.github.io/SolderingTutorial
 
+If you want to buy soldering Kits you can find some here: [shop.blinkyparts.com](https://shop.blinkyparts.com)
+
 ## Soldering Kits
 
 ### [ATX Breakout Board](ATXBreakoutBoardSMD/)
@@ -20,6 +22,13 @@ Small soldering kit with an arrow on it from https://wiki.blinkenarea.org/index.
 <img src="ArrowSMD/manual/images/DSC04802.jpg" width=400px alt="Arrow SMD">
 
 - Difficulty: **4/5**
+
+### [Axolotl Badge](AxolotlBadge/)
+Easy RGB soldering kit with the best Axolotl!
+
+<img src="ArrowSMD/manual/images/thumbnail.jpg" width=400px alt="Axolotl Badge">
+
+- Difficulty: **2/5**
 
 ### [Cat in a Box 1](Cat01/)
 A Cat in a box easy SMD kit. Bright glowing LED-eyes are watching every step! With this soldering kit it is super easy to learn SMD soldering.
@@ -164,6 +173,13 @@ A simple SMD learning kit where a light chases around a circle.
 
 - Difficulty: **4/5**
 
+### [Rainbow Rocket](RocketBadge/)
+Fly to the moon with this RGB rocket badge.
+
+<img src="RocketBadge/manual/images/thumbnail.jpg" width=400px alt="Rainbow Rocket">
+
+- Difficulty: **2/5**
+
 ### [Saw-Tooth Organ DIP](SawToothOrganDIP/)
 Some Transistors creating a saw tooth wave enabling a very simple organ which you can play like a piano with a stylus.
 
@@ -192,6 +208,7 @@ Boards:
 - Thomas Basler <noby@binary-kitchen.de>
 - Francesco Truzzi <http://www.truzzi.me>
 - Timo Schindler <https://www.timoschindler.de>
+- Thomas Schmid
 
 TeX-Code:
 - Marei Peischl <marei@binary-kitchen.de> <https://github.com/TeXhackse>
