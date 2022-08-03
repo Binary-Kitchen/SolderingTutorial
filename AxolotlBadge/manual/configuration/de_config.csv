@@ -1,0 +1,41 @@
+title=Axolotl Badge
+titlePicture=images/thumbnail
+skillTitle=Schwierigkeit
+skillLevel=2/5
+buildTitle=Bauzeit
+buildTime=30 -- 60 Minuten
+stepTitle=Schritt
+descriptionTitle=Anleitung
+descriptionVersion=v2.0
+descriptionLicense=CC-BY-SA 4.0 Binary Kitchen e.V.
+boardTitle=Board
+boardVersion=v1.0
+boardLicense=CC-BY-SA 4.0 Timo Schindler @ blinkyparts.com
+appendix=
+warningsTitle=Sicherheitshinweise
+warnings= {
+\begin{itemize}
+   \item ACHTUNG: Für Kinder unter 3 Jahren nicht geeignet, Erstickungsgefahr durch verschluckbare Kleinteile.
+   \item Wir empfehlen: Betreuung des Aufbaus und des Lötvorgangs durch eine erwachsene Person.
+   \item Bewahre diese Bedienungsanleitung für den späteren Gebrauch sicher auf! Sie enthält wichtige Informationen.
+   \item Sollte die Batterie einmal leer sein, ersetze diese nur mit einer neuen Batterie mit denselben Werten.
+   \item Beim Löten werden der Lötkolben, das Lötzinn und auch die Bauteile, die gelötet werden, sehr heiß.
+   \item Während des Lötens und zusammenbau des Bausatzes IMMER eine Schutzbrille tragen.
+   \item Verwende beim Löten immer eine feuerfeste Unterlage! Das verhindert das Wegrutschen der Bauteile.
+   \item Um den Lötkolben während des Aufbaus sicher aufzubewahren, benutze immer einen passenden Lötständer.
+   \item Der Bausatz ist lediglich für den Batteriebetrieb vorgesehen.
+   \item ACHTUNG: Schließe den Bausatz niemals an 230 V Netzspannung an! Es besteht absolute Lebensgefahr!
+   \item Bitte führen Sie das Gerät nach Ablauf der Gebrauchszeit entsprechend zertifizierten Entsorgern zu. Das ist gut für die Umwelt und sorgt für eine korrekte Entsorgung.
+   \item Änderungen und Irrtümer vorbehalten.
+\end{itemize}}
+warningsAddress=blinkyparts.com\\Egerstr. 9\\93057 Regensburg\\GERMANY
+warningsCE={\includegraphics[height=10mm]{LaTeX_config/ce}\hspace{20mm}}
+warningsRoHS={\includegraphics[height=10mm]{LaTeX_config/rohs}\hspace{20mm}}
+warningsWEEE={\includegraphics[height=10mm]{LaTeX_config/weee}}
+warningsWEEETitle=Entsorgung\\\\
+warningsWEEEText= {
+Dieses Gerät ist entsprechend der europäischen Richtlinie 2012/19/EU über Elektro- und Elektronikaltgeräte (waste electrical and electronic equipment - WEEE) gekennzeichnet. Die Richtlinie gibt den Rahmen für eine EU-weit gültige Rücknahme und Verwertung der Altgeräte vor.
+\begin{itemize}
+    \item \textbf{Verpackung}: Die Verpackung besteht aus umweltfreundlichen Materialien und ist deshalb recycelbar. Entsorgen Sie nicht mehr benötigte Verpackungsmaterialien entsprechend.
+    \item \textbf{Altgerät}: Altgeräte enthalten vielfach noch wertvolle Materialien. Geben Sie deshalb Ihr ausgedientes Gerät bei Ihrem Händler bzw. einem Recyclingcenter zur Wiederverwertung ab. Aktuelle Entsorgungswege erfragen Sie bitte bei Ihrem Händler oder Ihrer Gemeindeverwaltung. 
+\end{itemize}}
