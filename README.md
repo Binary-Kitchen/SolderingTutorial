@@ -26,7 +26,7 @@ Small soldering kit with an arrow on it from https://wiki.blinkenarea.org/index.
 ### [Axolotl Badge](AxolotlBadge/)
 Easy RGB soldering kit with the best Axolotl!
 
-<img src="ArrowSMD/manual/images/thumbnail.jpg" width=400px alt="Axolotl Badge">
+<img src="AxolotlBadge/manual/images/thumbnail.jpg" width=400px alt="Axolotl Badge">
 
 - Difficulty: **2/5**
 
@@ -127,7 +127,7 @@ A simple PCB to test your SMD hand-soldering skills. Going down to sand grain si
 #### [Nibble Peg DIP](NibblePegDIP/)
 Very easy soldering Kit using simple Tools and nearly no soldering knowledge is needed.
 
-<img src="NibblePegDIP/manual/images/IMG_5910.JPG" width=400px alt="Nibble Peg DIP">
+<img src="NibblePegDIP/manual/images/thumbnail.jpg" width=400px alt="Nibble Peg DIP">
 
 - Difficulty: **1/5**
 
