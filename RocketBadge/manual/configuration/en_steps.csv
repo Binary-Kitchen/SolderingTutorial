@@ -1,0 +1,10 @@
+images/PXL_20220725_073647881,Check your parts.;A CR2032 battery is not included. You can get them online or at bigger electronic stores.
+images/PXL_20220725_074828172,Turn the PCB to the back-side.;Add solder to all four long LED-Pads marked with an +.
+images/PXL_20220725_075437487,The long leg of the LED marks the positive side.; Bend the legs{,} so that the LED lays flat on the board and the legs are also touching the board. (see the example in the left upper corner of the picture);Solder the posive leg (long) to the positive pad where you've added the solder already.;Ensure that the second leg also touches the other pad without solder.
+images/PXL_20220725_075744144,Solder the other leg of the LED (cathode{,} negative side) to the board.;Cut away the excess of the legs.
+images/PXL_20220725_080028908,The button has no direction;Add solder to one pad of the button.;Bend the legs of the button so it can touch the surface of the board. (see example in the picture);Heat up the pad with the solder again and push the button from the side onto the pad.;Make sure the other leg of the button touches the other pad.
+images/PXL_20220725_080554356,Solder the other leg of the button onto the board.
+images/PXL_20220725_080732674,The battery holder has a direction marked with an cut edge. You can find the same missing edge also on the board;Add solder to one pad of the battery holder.;Heat up the pad with the solder again and push the batteryholder from the side onto the pad.;Make sure the other leg of the battery holder touches the other pad.;Solder the other leg onto the other pad on the board.
+images/PXL_20220725_083038904,If you wish{,} you can add hot glue to the yellow part of the board on the back-side. This helps distribute the light of the LED better.
+images/PXL_20220725_083038904,Insert the battery as shown of the picture.; The receivers of the positive side need to touch the top of the battery. Slide it from the left in and push only the left side down.
+images/PXL_20220725_085343276,You are finished!; You can attach a magnet to the battery to better attach the solder kit to your clothing or a keychain in the top hole.
