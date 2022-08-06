@@ -101,6 +101,14 @@ Very easy soldering kit with three LEDs. Can be used as pin button.
 
 - Difficulty: **1/5**
 
+### [Katie The Cat](KatieTheCat/)
+A wonderful and easy soldering Kit with two different eye-colours.
+
+<img src="KatieTheCat/manual/images/thumbnail.jpg" width=400px alt="Katie the Cat">
+
+- Difficulty: **2/5**
+
+
 ### [Kitchen Head SMD](KitchenHeadSMD/)
 Small soldering kit using SMD components with the kitchen head on it.
 
