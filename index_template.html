@@ -26,19 +26,16 @@
                         <img class="card-img-top img-fluid" src="{{ project["thumbnail"] }}" alt="Card image cap">
                         <div class="card-body">
                             <h5 class="card-title">{{name}}</h5>
-                            <span class="font-weight-normal">Manuals: </span>
                             {% if not project["manuals"] %}
                             <span class="card-text"><small class="text-muted">No manuals yet</small></span>
                             {% else %}
-                            <div class="btn-group" role="group" aria-label="Manuals">
                                 {% for language, link in project["manuals"].items() %}
-                                <a class="btn btn-light" href="{{ link }}" role="button">{{ language }}</a>
+                                <a class="btn btn-info  mb-2" href="{{ link }}" role="button">PDF Manual {{ language }}</a><br>
                                 {% endfor %}
-                            </div>
                             {% endif %}
-                            {% if project["ibom"] is not none %}
-                            <a class="btn btn-info" href="{{ project["ibom"] }}" role="button">Interactive Board</a>
-                            {% endif %}
+                                {% if project["ibom"] is not none %}
+                                <a class="btn btn-info" href="{{ project["ibom"] }}" role="button">Interactive Board</a>
+                                {% endif %}
                         </div>
                     </div>
                 </div>
