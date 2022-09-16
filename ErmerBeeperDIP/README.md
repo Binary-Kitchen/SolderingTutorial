@@ -1,6 +1,6 @@
 # Ermer Beeper - DIP
 
-The Ermer Beeper is a very neat continuity tester or beeper. This one is VERY fast and also faster than the most multimeters. No display, no LED, no switch. Just a speaker to beep you through your circuit. Based on a gread scientist [Christof Ermer]/https://homepages.uni-regensburg.de/~erc24492/)
+The Ermer Beeper is a very neat continuity tester or beeper. This one is VERY fast and also faster than the most multimeters. No display, no LED, no switch. Just a speaker to beep you through your circuit. Based on a gread scientist [Christof Ermer](https://homepages.uni-regensburg.de/~erc24492/)
 
 <img src="manual/images/PXL_20211128_110632834.jpg" width=300px alt="Ermer Beeper"> <img src="manual/images/PXL_20211128_113559682.jpg" width=300px alt="Ermer Beeper">
 
@@ -31,9 +31,9 @@ You can find the manual and pictures of every step here: https://github.com/Bina
 
 ### Copyright and Authorship
 
-- Board: [CC-BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/) - Timo Schindler
+- Board: [CC-BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/) - Timo Schindler @ blinkyparts.com
 - Idea and scheme: [Christoph Ermer](https://homepages.uni-regensburg.de/~erc24492/)
 
-### Buy Kits
+### Buy ready to solder kit
 
-You can also buy a kit @ [shop.blinkyparts.com](https://shop.blinkyparts.com).
+You can also buy for this ermer beeper a ready to solder soldering-kit @ [shop.blinkyparts.com](https://shop.blinkyparts.com/de/Ermer-Piepser-Durchgangspruefer-nicht-von-dieser-Welt/blink233942).
