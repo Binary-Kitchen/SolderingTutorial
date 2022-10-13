@@ -9,6 +9,6 @@ images/IMG_20180701_000355,USB Buchsen X1 und X2 auflöten.; Hinweis: Es kann se
 images/IMG_20180701_001109,Pin Header JP1 - JP6 mit den kurzen Pins ans Board löten.; JP7 ist optional und wird nur gebraucht{,} wenn ein Voltmeter angeschlossen werden soll.,
 images/IMG_20180701_001733,Druckknopf SW1 auflöten; Ausrichtung ist nicht wichtig,
 images/IMG_20180701_001909,Potentiometer VR1 auflöten,
-images/IMG_20180701_002328,ATX Anschluss J1 auflöten,
+images/IMG_20180701_002328,ATX Anschluss J1 auflöten;Hinweis: Es funktionieren sowohl 24 als auch 20 PIN-ATX-Netzteile,
 images/IMG_20180701_002328,Die schwarzen bzw. roten Bananenbuchsen anschrauben,
 images/IMG_20180701_002328,Optional: Wenn Nylon Beinchen vorhanden sind{,} diese in die Löcher der Ecken stecken.;Optional: Um Kurzschlüsse zu vermeiden kann die Rückseite des ATX-Connectors mit Heißkleber verklebt werden; Hinweis: Das Entwicklerfeld auf der linken oberen Seite ist für eine spätere Entwicklung von Schaltungen. Hier wird voerst nichts aufgelötet.,
