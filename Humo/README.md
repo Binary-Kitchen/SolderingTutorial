@@ -1,6 +1,6 @@
 # "Humo" Solder Fume Extractor
 
-This simple solder fume extractor just needs a PC fan and an solder fume filter. If you add some gogglie eyes the fume extractor has a pretty nice smiling face. It is optimised for laser cutted parts.
+This simple solder fume extractor just needs a PC fan and a solder fume filter. If you add some gogglie eyes the fume extractor has a pretty nice smiling face. It is optimised for laser cut parts.
 
 <img src="manual/images/thumbnail.jpg" width=500px alt="Humo is happy">
 
