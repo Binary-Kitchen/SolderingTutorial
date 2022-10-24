@@ -1,6 +1,6 @@
 # Cat in a Box
 
-Can you please turn around? If you stare, the cat will stare boack in all colours of the rainbow due to RGB-LEDs on the back. The soldering kit is very simple and easy to assamble.
+Can you please turn around? If you stare, the cat will stare back in all colours of the rainbow due to RGB-LEDs on the back. The soldering kit is very simple and easy to assemble.
 
 <img src="manual/images/thumbnail.jpg" width=300px alt="Cat in a Box"> <img src="manual/images/PXL_20211023_201359360.jpg" width=300px alt="Cat in a Box">
 
