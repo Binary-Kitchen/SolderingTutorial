@@ -1,6 +1,6 @@
 # Rainbow Butterfly
 
-This beautiful butterfly will bright up your life. The wings are glowing in all colours of the rainbow due to RGB-LEDs on the back. The soldering kit is very simple and easy to assamble.
+This beautiful butterfly will brighten up your life. The wings are glowing in all colours of the rainbow due to RGB-LEDs on the back. The soldering kit is very simple and easy to assemble.
 
 <img src="manual/images/thumbnail.jpg" width=300px alt="Rainbow Unicorn">
 

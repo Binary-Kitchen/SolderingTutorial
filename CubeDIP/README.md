@@ -1,5 +1,5 @@
 # LED Cube DIP
-Simple LED cube consiting of 27 RGB LEDs in a 3x3x3 configuration. No programming needed.
+Simple LED cube consisting of 27 RGB LEDs in a 3x3x3 configuration. No programming needed.
 
 <img src="manual/images/IMG_20180903_225030.jpg" width=400px alt="Dice DIP">
 

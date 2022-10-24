@@ -10,7 +10,7 @@ If you want to buy soldering Kits you can find some here: [shop.blinkyparts.com]
 ## Soldering Kits
 
 ### [ATX Breakout Board](ATXBreakoutBoardSMD/)
-Handy Breakout Board to get all the important voltages from an standard ATX power supply.
+Handy Breakout Board to get all the important voltages from a standard ATX power supply.
 
 <img src="ATXBreakoutBoardSMD/manual/images/IMG_20180701_002328.jpg" width=400px alt="ATX Breakout Board">
 
@@ -38,7 +38,7 @@ A Cat in a box easy SMD kit. Bright glowing LED-eyes are watching every step! Wi
 - Difficulty: **3/5**
 
 ### [Cat in a Box 2](Cat02/)
-Can you please turn around? If you stare, the cat will stare boack in all colours of the rainbow due to RGB-LEDs on the back. The soldering kit is very simple and easy to assamble.
+Can you please turn around? If you stare, the cat will stare back in all colours of the rainbow due to RGB-LEDs on the back. The soldering kit is very simple and easy to assemble.
 
 <img src="Cat02/manual/images/thumbnail.jpg" width=400px alt="Cat in a Box 2">
 
@@ -46,7 +46,7 @@ Can you please turn around? If you stare, the cat will stare boack in all colour
 
 
 ### [Cube DIP](CubeDIP/)
-Simple LED cube consiting of 27 RGB LEDs in a 3x3x3 configuration. No programming needed.
+Simple LED cube consisting of 27 RGB LEDs in a 3x3x3 configuration. No programming needed.
 
 <img src="CubeDIP/manual/images/IMG_20180903_225030.jpg" width=400px alt="Cube DIP">
 
@@ -88,7 +88,7 @@ Small soldering kit with an heart on it from http://wiki.blinkenarea.org/index.p
 - Difficulty: **4/5**
 
 ### [Humo - Solder-Fume Exctractor](Humo/)
-This simple solder fume extractor just needs a PC fan and an solder fume filter. If you add some goggly eyes the fume extractor has a pretty nice smiling face. It is optimised for laser cutted parts.
+This simple solder fume extractor just needs a PC fan and a solder fume filter. If you add some goggly eyes the fume extractor has a pretty nice smiling face. It is optimised for laser cut parts.
 
 <img src="Humo/manual/images/thumbnail.jpg" width=400px alt="Heart SMD">
 
@@ -161,14 +161,14 @@ Simon Says clone with (optional) multiplayer mode
 - Difficulty: **2/5**
 
 ### [Rainbow Butterfly](RainbowButterfly/)
-A wonderful rainbow Butterfly. The wings are enlighted by RGB-LEDs from the back of the PCB. The soldering kit is very simple and easy to assamble.
+A wonderful rainbow Butterfly. The wings are enlighted by RGB-LEDs from the back of the PCB. The soldering kit is very simple and easy to assemble.
 
 <img src="RainbowButterfly/manual/images/thumbnail.jpg" width=400px alt="Rainbow Butterfly">
 
 - Difficulty: **2/5**
 
 ### [Rainbow Unicorn 1](RainbowUnicorn01/)
-This unicorn will bright up your life. The hair is glowing in all colours of the rainbow due to RGB-LEDs on the back. The soldering kit is very simple and easy to assamble.
+This unicorn will brighten up your life. The hair is glowing in all colours of the rainbow due to RGB-LEDs on the back. The soldering kit is very simple and easy to assemble.
 
 <img src="RainbowUnicorn01/manual/images/thumbnail.jpg" width=400px alt="Rainbow Unicorn">
 
@@ -232,4 +232,4 @@ Manuals:
 - Timo Schindler <https://www.timoschindler.de>
 - Hannes <https://github.com/misamura>
 
-Note: This list of authors can be uncomplete. Please also consider the README.md in the sub-folders for authorship.
+Note: This list of authors can be incomplete. Please also consider the README.md in the sub-folders for authorship.

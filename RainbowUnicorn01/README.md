@@ -1,6 +1,6 @@
 # Rainbow Unicorn 1
 
-This unicorn will bright up your life. The hair is glowing in all colours of the rainbow due to RGB-LEDs on the back. The soldering kit is very simple and easy to assamble.
+This unicorn will brighten up your life. The hair is glowing in all colours of the rainbow due to RGB-LEDs on the back. The soldering kit is very simple and easy to assemble.
 
 <img src="manual/images/rgb-unicorn_front.jpg" width=300px alt="Rainbow Unicorn"> <img src="manual/images/rgb-unicorn_back.jpg" width=300px alt="Rainbow Unicorn">
 
