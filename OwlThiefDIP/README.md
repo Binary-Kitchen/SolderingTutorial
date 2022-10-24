@@ -35,9 +35,13 @@ You can find the manual and pictures of every step here: https://github.com/Bina
 
 ### Copyright and Authorship
 
-- Board: [CC-BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/) - Timo Schindler
-- Butterfly SVG [CC-BY-SA](https://creativecommons.org/licenses/by-sa/4.0/) - [Owl by iconixar from NounProject.com](https://thenounproject.com/icon/owl-4070296/) (We've bought a licence, you should honor the artist work too!)
+- Board: [CC-BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/) - Timo Schindler @ [blinkyparts.com](https://shop.binkyparts.com)
+- Owl SVG [CC-BY-SA](https://creativecommons.org/licenses/by-sa/4.0/) - [Owl by iconixar from NounProject.com](https://thenounproject.com/icon/owl-4070296/) (We've bought a licence, you should honor the artist work too!)
 
 ### Buy Kits
 
-You can also buy a kit @ [shop.blinkyparts.com](https://shop.blinkyparts.com/de/Der-OwlThief-Eine-goldene-Eule-mit-leuchtenden-Orangen-Augen-Joul-Thief-Schaltung-in-THT-Version/blink234042).
+You can also buy a ready to make soldering-kit @ [shop.blinkyparts.com](https://shop.blinkyparts.com/de/Der-OwlThief-Eine-goldene-Eule-mit-leuchtenden-Orangen-Augen-Joul-Thief-Schaltung-in-THT-Version/blink234042).
+
+### Press
+
+Wow! We were mentioned in the great heiseonline IT-news magazine: https://www.heise.de/news/Extravagantes-Platinendesign-Mach-s-ein-bisschen-huebscher-7243649.html
