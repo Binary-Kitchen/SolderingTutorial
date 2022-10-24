@@ -14,7 +14,7 @@ Katie is a cat! Katie is a cat with two eye colours! Katie is also a wonderfull 
 | Blue LEDs 5mm                 |     1    |
 | Green LEDs 5mm                |     1    |
 | Resistor 750 Ohm		|     1	   |
-| Resistor 57 Ohm		|     1	   |
+| Resistor 47 Ohm		|     1	   |
 | Button                        |     1    |
 | CR2032 Battery Holder (SMD)   |     1    |
 | CR2032 Battery (not included) |     1    |
