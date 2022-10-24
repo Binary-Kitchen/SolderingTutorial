@@ -2,7 +2,7 @@ Anzahl,Name,Beschreibung,Beschriftung/Farbcode
 1,D1,Blaue LED \SI{5}{\mm},
 1,D2,Grüne LED \SI{5}{\mm},
 1,R1,Widerstand \SI{750}{\ohm},Violett | Grün | Schwarz | Schwarz | Braun,R1
-1,R2,Widerstand \SI{57}{\ohm},Grün | Violett | Schwarz | Gold | Braun,R2
+1,R2,Widerstand \SI{47}{\ohm},Gelb | Violett | Schwarz | Gold | Braun,R2
 1,S1,Schalter,
 1,BT1,CR2032 Batterie Halter,
 1, ,CR2032 Batterie (nicht enthalten),

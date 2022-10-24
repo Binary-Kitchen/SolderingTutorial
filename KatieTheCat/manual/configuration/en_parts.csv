@@ -2,7 +2,7 @@ Quantity,Name,Description,Colour Code
 1,D1,Blue LED \SI{5}{\mm},
 1,D2,Green LED \SI{5}{\mm},
 1,R1,Resistor \SI{750}{\ohm},Violett | Grün | Schwarz | Schwarz | Braun,R1
-1,R2,Resistor \SI{57}{\ohm},Grün | Violett | Schwarz | Gold | Braun,R2
+1,R2,Resistor \SI{47}{\ohm},Gelb | Violett | Schwarz | Gold | Braun,R2
 1,S1,Push Button,
 1,BT1,CR2032 Battery Holder,
 1, ,CR2032 Battery (not included),
