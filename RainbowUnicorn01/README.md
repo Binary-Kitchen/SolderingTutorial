@@ -20,6 +20,12 @@ The RGB-Effect looks like this, but much better in real :)
 | CR2032 Battery Holder (SMD)   |     1    |
 | CR2032 Battery (not included) |     1    |
 
+### Case
+
+There is a case for this unicorn available [here](https://github.com/Binary-Kitchen/rainbow_unicorn) that you can print on your 3D printer.
+
+<img src="manual/images/rgb-unicorn_case.jpg" width=480px>
+
 ### Copyright and Authorship
 
 - Board: [CC-BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/) - Binary Kitchen e.V.
