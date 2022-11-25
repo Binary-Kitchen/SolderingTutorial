@@ -10,5 +10,5 @@ images/IMG_20180701_001109,Solder the pin header JP1 - JP6 with the short side t
 images/IMG_20180701_001733,Solder switch SW1 to the board; Direction not important
 images/IMG_20180701_001909,Solder potentiometer VR1 to the board
 images/IMG_20180701_002328,Solder ATX connector J1 to the board; Hint: Both 20-Pin and 24-Pin ATX power supply-connectors are working.
-images/IMG_20180701_002328,Screw black and red binding posts to the board;
+images/IMG_20180701_002328,Screw black and red binding posts to the board; Attention: To avoid shorts, the washers of the banana sockets must be on the top side. It is also recommended not to mount the solder tag{,} if it is not needed. This prevents accidental shorts
 images/IMG_20180701_002328,Optional: If you have nylon legs{,} push them into the holes in the corner; Optional: To prevent shortages put some hot glue on the back of the ATX connectors; Hint: The pin-filed on the top left corner is for development and will not be soldered;

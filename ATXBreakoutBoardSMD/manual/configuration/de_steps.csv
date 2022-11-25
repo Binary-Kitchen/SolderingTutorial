@@ -10,5 +10,5 @@ images/IMG_20180701_001109,Pin Header JP1 - JP6 mit den kurzen Pins ans Board l�
 images/IMG_20180701_001733,Druckknopf SW1 auflöten; Ausrichtung ist nicht wichtig,
 images/IMG_20180701_001909,Potentiometer VR1 auflöten,
 images/IMG_20180701_002328,ATX Anschluss J1 auflöten;Hinweis: Es funktionieren sowohl 24 als auch 20 PIN-ATX-Netzteile,
-images/IMG_20180701_002328,Die schwarzen bzw. roten Bananenbuchsen anschrauben,
+images/IMG_20180701_002328,Die schwarzen bzw. roten Bananenbuchsen anschrauben; Achtung: Um Kurzschlüsse zu vermeiden müssen sich die Beilagscheiben der Bananenbuchsen auf der Oberseite befinden. Auf der Unterseite sollte lediglich die Mutter zum festschrauben sein.; Es ist auch zu empfehlen die Lötfahne nicht zu montieren{,} wenn diese nicht benötig wird. Dies verhindert versehentliche Kurzschlüsse.,
 images/IMG_20180701_002328,Optional: Wenn Nylon Beinchen vorhanden sind{,} diese in die Löcher der Ecken stecken.;Optional: Um Kurzschlüsse zu vermeiden kann die Rückseite des ATX-Connectors mit Heißkleber verklebt werden; Hinweis: Das Entwicklerfeld auf der linken oberen Seite ist für eine spätere Entwicklung von Schaltungen. Hier wird voerst nichts aufgelötet.,
