@@ -27,4 +27,4 @@ The RGB-Effect looks like this, but much better in real :)
 - Artwork [CC-BY-SA 4.0 ](https://creativecommons.org/licenses/by-sa/4.0/) - kunkelkunst
 
 ### Buy Soldering Kits
-If you want to buy the parts and PCB for a soldering kit you can find everything here: [shop.blinkyparts.com](https://shop.blinkyparts.com/de/Regenbogen-Einhorn-Einfacher-Bausatz-fuer-einen-tollen-Anstecker/blink232242)
+If you want to buy the parts and PCB for a soldering kit you can find everything here: [shop.blinkyparts.com](https://shop.blinkyparts.com/de/Dino-Aus-einer-laengst-vergangenen-Zeit-leuchtet-dieser-Loetbausatz-in-allen-Farben-des-Regenbogens/blink236742)
