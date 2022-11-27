@@ -2,7 +2,7 @@
 
 This rainbow dinosaur will brighten up your life. The spikes are glowing in all colours of the rainbow due to RGB-LEDs on the back. The soldering kit is very simple and easy to assemble.
 
-<img src="manual/images/thumbnail.jpg" width=300px alt="Rainbow Dinosaur"> <img src="manual/images/PXL_20221125_145216097.jpg" width=300px alt="Rainbow Dinosaur">
+<img src="manual/images/thumbnail.jpg" width=400px alt="Rainbow Dinosaur"> <img src="manual/images/PXL_20221125_145216097.jpg" width=400px alt="Rainbow Dinosaur">
 
 The RGB-Effect looks like this, but much better in real :)
 
