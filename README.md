@@ -66,6 +66,13 @@ Dice with micro controller. Electronic dice which uses C random generator.
 
 - Difficulty: **2/5**
 
+### [Dino](Dino/)
+This rainbow dinosaur will brighten up your life. The spikes are glowing in all colours of the rainbow due to RGB-LEDs on the back. The soldering kit is very simple and easy to assemble.
+
+<img src="Dino/manual/images/thumbnail.jpg" width=400px alt="Dino">
+
+- Difficulty: **2/5**
+
 ### [Ermer Beeper DIP](ErmerBeeperDIP/)
 The Ermer Beeper is a very neat continuity tester or beeper.
 
