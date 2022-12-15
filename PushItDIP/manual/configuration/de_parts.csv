@@ -1,7 +1,7 @@
 Menge,Name,Beschreibung,Beschriftung/Farbcode
-5,R1--R4{,} R6,Widerstand \SI{220}{\ohm},Rot | Rot | Braun | Gold,R1
-1,R5,Widerstand \SI{1}{\kilo\ohm},Braun | Schwarz | Rot | Gold,R5
-1,R7,Widerstand \SI{10}{\kilo\ohm},Braun | Schwarz | Orange | Gold,R7
+5,R1--R4{,} R6,Widerstand \SI{220}{\ohm},Rot | Rot | Schwarz | Schwarz | Braun,R1
+1,R5,Widerstand \SI{1}{\kilo\ohm},Braun | Schwarz | Schwarz | Braun | Braun,R5
+1,R7,Widerstand \SI{10}{\kilo\ohm},Braun | Schwarz | Schwarz | Rot | Braun,R7
 7,S1--S7,Taster,
 1,SG1,Lautsprecher,
 1,JP1,Pinheader 3x1,
