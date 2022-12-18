@@ -10,7 +10,7 @@ images/IMG_8994,Solder IC1 socket as well as IC2 socket with the nose to the rig
 images/IMG_8995,Solder switches S1 to S4 as well as MODE{,} START and REPEAT; Hint: Legs have different distances. Nothing has to be bent. Switch fits exactly
 images/IMG_8996,solder 7-segment display LED7;The dot must be in the lower right corner
 images/IMG_8997,Solder loudspeaker SG1;Attention! Alignment is important;The printed plus sign must be in line with the PCB;Remove the protective sticker if present
-images/IMG_8999,Solder LED1 to LED4. Note colors according to picture;Attention! Alignment is important;LEDs have a flat side and a shorter leg. Both indicate the negative side;On the PCB the negative side is represented by a flat area.
+images/IMG_8999,Solder LED1 to LED4. Note colors according to picture;Attention! Alignment is important;LEDs have a longer and a shorter leg. The shorter leg indicates the negative side;On the PCB the negative side is represented by a flat area on the circle of the LED.
 images/IMG_9000,Solder POWER connector with the opening downwards
 images/IMG_9004,Insert IC1 and IC2 with the nose to the right into the socket;Tip: The legs of the ICs must be bent slightly{,} to fit into the socket;Possibly remove and tin the insulation at the tips of the connecting cables of the battery;Screw on the battery (+ red{,} - black)
 images/IMG_9006,Fix the battery compartment with double-sided tape to the backside of the board;Cover the two ICs with some tape (protection against touch and moisture while playing);Insert the batteries;Done!
