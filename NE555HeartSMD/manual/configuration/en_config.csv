@@ -1,0 +1,41 @@
+title=NE555 Heart (SMD)
+titlePicture=images/thumbnail
+skillTitle=Difficulty
+skillLevel=4/5
+buildTitle=Build Time
+buildTime=1--2 hours
+stepTitle=Step
+descriptionTitle=Manual
+descriptionVersion=v1.0
+descriptionLicense=CC-BY-SA 4.0 Binary Kitchen e.V.
+boardTitle=PCB
+boardVersion=v2.2
+boardLicense=CC-BY-SA 4.0 Timo Schindler @ blinkyparts.com
+appendix=
+warningsTitle=Safety Information
+warnings= {
+\begin{itemize}
+   \item ATTENTION: Not suitable for children under 3 years, choking hazard due to small parts that may be swallowed.
+   \item We recommend: Supervision of the assembly and soldering process by an adult.
+   \item Keep these operating instructions in a safe place for later use! It contains important information.
+   \item If the battery is empty, replace it only with a new battery with the same values.
+   \item When soldering, the soldering iron, the solder and also the components being soldered become very hot.
+   \item Always wear safety glasses when soldering and assembling the kit.
+   \item Always use a fire proof soldering pad when soldering! This prevents the components from slipping away.
+   \item To keep the soldering iron safe during assembly, always use a suitable soldering stand.
+   \item The kit is designed for battery operation only.
+   \item CAUTION: Never connect the kit to 230 V mains voltage! There is an absolute danger to life!
+   \item Please take the device to appropriately certified disposal companies at the end of its service life. This is good for the environment and ensures correct disposal.
+   \item Subject to changes and errors.
+\end{itemize}}
+warningsAddress=blinkyparts.com\\Egerstr. 9\\93057 Regensburg\\GERMANY
+warningsCE={\includegraphics[height=10mm]{LaTeX_config/ce}\hspace{20mm}}
+warningsRoHS={\includegraphics[height=10mm]{LaTeX_config/rohs}\hspace{20mm}}
+warningsWEEE={\includegraphics[height=10mm]{LaTeX_config/weee}}
+warningsWEEETitle=Disposal\\\\
+warningsWEEEText= {
+This appliance is labelled in accordance with the European Directive 2012/19/EU on waste electrical and electronic equipment (WEEE). The directive provides the legal framework for the take-back and recycling of waste equipment throughout the EU.
+\begin{itemize}
+    \item \textbf{packaging}: The packaging is made of environmentally friendly materials and is therefore recyclable. Dispose of packaging materials that are no longer needed accordingly.
+    \item \textbf{waste equipment}: Old appliances often still contain valuable materials. Therefore, hand in your old appliance to your retailer or a recycling centre for reuse. Please ask your retailer or your local authority for the current disposal routes.
+\end{itemize}}

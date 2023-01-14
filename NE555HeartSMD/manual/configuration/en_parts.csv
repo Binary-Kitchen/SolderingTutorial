@@ -1,0 +1,17 @@
+Quantity,Name,Description,Label/Color Code
+2,U2{,}U3,CD4017 counter,4017
+1,U1,NE555 timer,NE555
+2,D1{,}D2, 1N4007 diode, A7
+1,RV1,Potentiometer,
+1,C1,\SI{10}{\nano\farad} ceramic capacitor,green
+2,C2{,}C3,\SI{100}{\nano\farad} ceramic capacitor,red
+1,C4,\SI{1}{\mu\farad} ceramic capacitor,blue
+1,BT1,CR2032 Battery holder
+24,D5--D28,LED SMD 0805 red,
+1,R2,Resistor \SI{1}{\kilo\ohm},102
+1,R3,Resistor \SI{100}{\kilo\ohm},104
+1,R4,Resistor \SI{47}{\ohm},47
+1,SW1,Push Button,
+1,SW2,Slider Switch,
+1,,Batterie CR2032 (optional),
+1,,PCB,
