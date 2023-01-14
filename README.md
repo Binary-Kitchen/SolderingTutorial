@@ -130,6 +130,13 @@ Excuse me? What are you staring at? This wonderful kit is very simple in terms o
 
 - Difficulty: **2/5**
 
+### [NE555 Heart SMD](NE555HeartSMD/)
+A wonderful Heart with SMD LEDs. You can choose between full on, follow-LEDs and even can influence the speed of your LEDs.
+
+<img src="NE555HeartSMD/manual/images/thumbnail.jpg" width=400px alt="NE555 Heart SMD">
+
+- Difficulty: **4/5**
+
 ### [Nibble++](NibblePlusPlusSMD/)
 A simple PCB to test your SMD hand-soldering skills. Going down to sand grain sized 01005 SMD parts, this button is a challenge for experienced "soldiers" and those who want to become one.
 
