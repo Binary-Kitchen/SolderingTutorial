@@ -12,7 +12,7 @@ Small soldering kit with an heart on it from driven by a NE555.
 |--------|--------|-------------------------|---------|
 | 2      | U2,U3  | CD4017 Counter          | 4017    |
 | 1      | U1     | NE555 Timer             | NE555   |
-| 2      | D1,D2  | Diode 1N4007            | IN5817  |
+| 2      | D1,D2  | Diode 1N4007            | 1N5817  |
 | 1      | RV1    | Potentiometer           |         |
 | 1      | C1     | 10nF Ceramic Capacitor  | 103     |
 | 2      | C2,C3  | 100nF Ceramic Capacitor | 104     |
