@@ -130,6 +130,13 @@ Excuse me? What are you staring at? This wonderful kit is very simple in terms o
 
 - Difficulty: **2/5**
 
+### [NE555 Heart THT](NE555HeartTHT/)
+A wonderful Heart with SMD LEDs. You can choose between full on, follow-LEDs and even can influence the speed of your LEDs.
+
+<img src="NE555HeartTHT/manual/images/thumbnail.jpg" width=400px alt="NE555 Heart THT">
+
+- Difficulty: **3/5**
+
 ### [NE555 Heart SMD](NE555HeartSMD/)
 A wonderful Heart with SMD LEDs. You can choose between full on, follow-LEDs and even can influence the speed of your LEDs.
 
