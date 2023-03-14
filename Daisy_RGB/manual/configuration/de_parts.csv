@@ -1,0 +1,14 @@
+Anzahl,Beschreibung
+,
+1,RGB LED \SI{10}{\mm}
+1,Druckschalter
+3,Schiebeschalter
+3,\SI{100}{\ohm} Widerstand
+1,Stiftleiste gerade (4 Pins)
+1,Stiftleiste L-förmig (4 Pins)
+1,Potentiometer \SI{2}{\kilo\ohm} blau
+3,Potentiometer \SI{2}{\kilo\ohm} schwarz
+3,Kappen für Potentiometer
+1,3xAA Batterie Halter
+3,AA Akku oder Batterie (nicht enthalten)
+3,Platine (PCB)

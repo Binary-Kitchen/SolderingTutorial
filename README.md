@@ -52,6 +52,13 @@ Simple LED cube consisting of 27 RGB LEDs in a 3x3x3 configuration. No programmi
 
 - Difficulty: **3/5**
 
+### [Daisy RGB](Daisy_RGB/)
+This 3D construction kit allows you to solder a personalized daisy with a large RGB LED in the center, with colors adjustable using variable resistors and overall brightness and individual colors adjustable via slide switches.
+
+<img src="Daisy_RGB/manual/images/thumbnail.jpg" width=400px alt="Daisy RGB">
+
+- Difficulty: **2/5**
+
 ### [Dice DIP](DiceDIP/)
 Electronic dice which uses button bouncing and timing for randomness.
 
