@@ -1,0 +1,16 @@
+Quantity,Name,Description,Labelling/Colour code
+1,U1,ESP32,ESP32-WROOM32
+1,U2,radio module,ML01DP5
+2,D1{,}D2,\SI{3}{\mm} LED green,
+1,C1,\SI{10}{\micro\farad} Kondensator,
+2,C2,\SI{100}{\nano\farad} Keramikkondensator,104
+1,J1,4xpin header L-shaped,
+2,U1,pin header 1x19,
+1,,4xcable,
+1,R1{,}R2,resistor \SI{68}{\ohm},Blau | Grau | Schwarz | Gold | Braun,R1
+1,R3,resistor \SI{390}{\ohm},Orange | Weiß | Schwarz | Schwarz | Braun,R3
+1,,Printed circuit board,
+6,,Optional: M2x6 screw,
+2,,Optional: 3D printed case parts,
+2,,Not included: Toothpick,
+1,,Not included: Micro USB cable,

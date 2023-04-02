@@ -174,6 +174,13 @@ Easy soldering Kit using simple Tools and nearly no soldering knowledge is neede
 
 - Difficulty: **2/5**
 
+### [OpenDTU Breakout Board](OpenDTU_Breakout/)
+A board to get information from your solar power panels with an Hoymiles inverter.
+
+<img src="OpenDTU_Breakout/manual/images/thumbnail.jpg" width=400px alt="OpenDTU_Breakout">
+
+- Difficulty: **2/5**
+
 ### [Owl Thief THT](OwlThiefDIP/)
 A simple joule thief circuit on the back of an owl. If you solder everything right, you can empty old batteries and make the eyes glow orange.
 

@@ -1,0 +1,16 @@
+Menge,Name,Beschreibung,Beschriftung/Farbcode
+1,U1,ESP32,ESP32-WROOM32
+1,U2,Funkmodul,ML01DP5
+2,D1{,}D2, \SI{3}{\mm} LED grün,
+1,C1,\SI{10}{\micro\farad} Kondensator,
+2,C2,\SI{100}{\nano\farad} Keramikkondensator,104
+1,J1,4xPinheader L-förmig,
+2,U1,Pinbuchse 1x19,
+1,,4-fach Kabel,
+1,R1{,}R2,Widerstand \SI{68}{\ohm},Blau | Grau | Schwarz | Gold | Braun,R1
+1,R3,Widerstand \SI{390}{\ohm},Orange | Weiß | Schwarz | Schwarz | Braun,R3
+1,,Platine,
+6,,Optional: M2x6 Schraube,
+2,,Optional: 3D-Druck Caseteile,
+2,,Nicht enthalten: Zahnstocher,
+1,,Nicht enthalten: Mikro-USB-Kabel,
