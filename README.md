@@ -188,6 +188,13 @@ A simple joule thief circuit on the back of an owl. If you solder everything rig
 
 - Difficulty: **2/5**
 
+### [Pinecil Case](Pinecil_Case/)
+A perfect 3D-printed rugged case for your pinecil, extra tips and usb-c cable.
+
+<img src="Pinecil_Case/manual/images/thumbnail.jpg" width=400px alt="Pinecil_Case">
+
+- Difficulty: **1/5**
+
 ### [Push-It DIP](PushItDIP/)
 Simon Says clone with (optional) multiplayer mode
 
