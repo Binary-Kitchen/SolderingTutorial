@@ -5,7 +5,7 @@ Menge,Name,Beschreibung,Beschriftung/Farbcode
 2,D1{,}D2, \SI{3}{\mm} LED grün,
 2,,\SI{15}{\mm} LED Abstandshalter
 1,C1,\SI{10}{\micro\farad} Kondensator,
-2,C2,\SI{100}{\nano\farad} Keramikkondensator,104
+1,C2,\SI{100}{\nano\farad} Keramikkondensator,104
 1,J1,4xPinheader L-förmig,
 2,U1,Pinbuchse 1x19,
 1,,4-fach Kabel,
