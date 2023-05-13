@@ -12,6 +12,7 @@ A board to get information from your solar power panels with an Hoymiles inverte
 |----------|------|-------------|------------------|
 | 1     | U1   | ESP32       | ESP32-WROOM32         |
 | 1     | U2   | Wireless module   | ML01DP5               |
+| 1	|	| Display | SH1106 |
 | 2     | D1,D2 | 3mm green LED |                      |
 | 1     | C1   | 10µF capacitor |                      |
 | 2     | C2   | 100nF ceramic capacitor | 104                |
