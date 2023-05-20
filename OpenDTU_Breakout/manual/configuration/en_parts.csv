@@ -8,10 +8,11 @@ Quantity,Name,Description,Labelling/Colour code
 1,C1,\SI{10}{\micro\farad} Capacitor,
 1,C2,\SI{100}{\nano\farad} Ceramic Capacitor,104
 1,J1,4xpin header L-shaped,
-2,U1,pin header 1x19,
-1,,4xcable,
-2,R1{,}R2,resistor \SI{68}{\ohm},Blau | Grau | Schwarz | Gold | Braun,R1
-1,R3,resistor \SI{390}{\ohm},Orange | Weiß | Schwarz | Schwarz | Braun,R3
+1,U2,Pin Header 2x8,
+2,U1,Pin Header 1x19,
+1,,4xCable,
+2,R1{,}R2,Resistor \SI{68}{\ohm},Blau | Grau | Schwarz | Gold | Braun,R1
+1,R3,Resistor \SI{390}{\ohm},Orange | Weiß | Schwarz | Schwarz | Braun,R3
 1,,Printed circuit board,
 6,,Optional: M2x6 screw,
 2,,Optional: 3D printed case parts,
