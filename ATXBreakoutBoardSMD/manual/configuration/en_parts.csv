@@ -17,7 +17,7 @@ Quantity,Name,Description,Signing/Colorcode
 1,IC1,LM-317 (through hole),
 2,X1{,} X2,USB female connector (through hole),
 6,JP1--JP6,5-pin header,
-1,JP7,3-pin header (optional),
+1,JP7,voltmeter (ptional),
 1,SW1,\SI{8}{\mm} x \SI{8}{\mm} push button,
 1,VR1,\SI{2}{\kilo\ohm} PCB mount potentiometer \SI{9}{\mm},
 1,J1,24-pin ATX connector,
