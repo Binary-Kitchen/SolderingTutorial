@@ -1,6 +1,6 @@
 Menge,Name,Beschreibung,Beschriftung/Farbcode
+,,Immer enthalten:,
 1,U1,ESP32,ESP32-WROOM32
-1,U2,Funkmodul,ML01DP5
 1,,Display,SH1106
 1,,Antenne
 2,D1{,}D2, \SI{3}{\mm} LED grün,
@@ -14,7 +14,19 @@ Menge,Name,Beschreibung,Beschriftung/Farbcode
 2,R1{,}R2,Widerstand \SI{68}{\ohm},Blau | Grau | Schwarz | Gold | Braun,R1
 1,R3,Widerstand \SI{390}{\ohm},Orange | Weiß | Schwarz | Schwarz | Braun,R3
 1,,Platine,
-6,,Optional: M2x6 Schraube,
-2,,Optional: 3D-Druck Caseteile,
-2,,Nicht enthalten: Zahnstocher,
-1,,Nicht enthalten: Mikro-USB-Kabel,
+6,,M2x6,Gehäuseschraube
+2,,3D-Druck Teile,Gehäuseteile
+
+,,Nur bei NRF-Variante:,
+1,U2,Funkmodul ,ML01DP5
+
+,,Nur bei CMT-Variante:,
+1,,Funkmodulplatine,CMT2300A Breakout
+1,U1,CMT2300A Funkmodul,E49 900M20S
+1,J1,2x4 Pinleiste,
+1,,Antennenbuchse,
+
+,,Nicht enthalten:,
+2,,Zahnstocher,
+1,,Mikro-USB-Kabel,
+

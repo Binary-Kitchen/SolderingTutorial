@@ -1,20 +1,32 @@
-Quantity,Name,Description,Labelling/Colour code
+Quantity,Name,Description,Labelling/Colour Code
+,,Always included:,
 1,U1,ESP32,ESP32-WROOM32
-1,U2,Radio Module,ML01DP5
 1,,Display,SH1106
 1,,Antenna
-2,D1{,}D2,\SI{3}{\mm} LED green,
-1,,\SI{15}{\mm} LED spacer
+2,,D1{,}D2,,\SI{3}{\mm} LED green,
+2,,\SI{15}{\mm} LED spacer
 1,C1,\SI{10}{\micro\farad} Capacitor,
-1,C2,\SI{100}{\nano\farad} Ceramic Capacitor,104
+1,C2,\SI{100}{\nano\farad} Ceramic capacitor,104
 1,J1,4xpin header L-shaped,
-1,U2,Pin Header 2x8,
-2,U1,Pin Header 1x19,
-1,,4xCable,
-2,R1{,}R2,Resistor \SI{68}{\ohm},Blau | Grau | Schwarz | Gold | Braun,R1
-1,R3,Resistor \SI{390}{\ohm},Orange | Weiß | Schwarz | Schwarz | Braun,R3
+1,U2,pin socket 2x8,
+2,U1,pin socket 1x19,
+1,,4xcable,
+2,R1{,}R2,resistor \SI{68}{\ohm},Blau | Grau | Schwarz | Gold | Braun,R1
+1,R3,resistor \SI{390}{\ohm},Orange | Weiß | Schwarz | Schwarz | Braun,R3
 1,,Printed circuit board,
-6,,Optional: M2x6 screw,
-2,,Optional: 3D printed case parts,
-2,,Not included: Toothpick,
-1,,Not included: Micro USB cable,
+6,,M2x6 case screw,
+2,,3D printed case parts,
+
+,,NRF variant only:,
+1,U2,Radio module ,ML01DP5
+
+,,,CMT variant only:,
+1,,Radio module board,CMT2300A Breakout
+1,U1,CMT2300A radio module,E49 900M20S
+1,J1,2x4 pin header,
+1,,Antenna socket,
+
+,,Not included:,
+2,,toothpick,
+1,,micro USB cable,
+
