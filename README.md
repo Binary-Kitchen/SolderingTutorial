@@ -42,10 +42,10 @@ A Cat in a box easy SMD kit. Bright glowing LED-eyes are watching every step! Wi
 
 - Difficulty: **3/5**
 
-### [Cat in a Box 2](Cat02/)
+### [Cat In A Box](CatInABox/)
 Can you please turn around? If you stare, the cat will stare back in all colours of the rainbow due to RGB-LEDs on the back. The soldering kit is very simple and easy to assemble.
 
-<img src="Cat02/manual/images/thumbnail.jpg" width=400px alt="Cat in a Box 2">
+<img src="CatInABox/manual/images/thumbnail.jpg" width=400px alt="Cat in a Box 2">
 
 - Difficulty: **2/5**
 
