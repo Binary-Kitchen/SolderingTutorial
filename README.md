@@ -228,6 +228,14 @@ A simple SMD learning kit where a light chases around a circle.
 
 - Difficulty: **4/5**
 
+### [Robo Robin](RoboRobin/)
+Light up this super easy Robot. It has RGB-LEDs as eyees.
+
+<img src="RoboRobin/manual/images/thumbnail.jpg" width=400px alt="Robo Robin">
+
+- Difficulty: **1/5**
+
+
 ### [Rainbow Rocket](RocketBadge/)
 Fly to the moon with this RGB rocket badge.
 

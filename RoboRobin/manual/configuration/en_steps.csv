@@ -1,0 +1,11 @@
+images/PXL_20230728_152946747-EDIT,Check your components.;A CR2032 battery is not included. You can purchase it online or at larger electronics stores.
+images/PXL_20230728_161814478-EDIT,Turn the board to the back side;Apply solder to the left rectangular solder pad of the switch ('Schalter').
+images/PXL_20230728_162346999-EDIT,Bend the silver wire ends of the switch so that the wire ends touch the solder pads when placed on the board (see the picture. We have photographed a pre-bent switch there).;Now heat the solder of the left solder pad again and slide the switch from the side onto the solder pad.
+images/PXL_20230728_162435461-EDIT,Solder the second side of the switch onto the solder pad.
+images/PXL_20230728_162536237-EDIT,The long leg of the LED marks the positive side.;Insert the LED through the holes near the eyes. The long leg must go into the hole marked with a plus sign (+).;Slightly bend the legs to the side so that the LEDs cannot fall out anymore.
+images/PXL_20230728_162630845-EDIT,Solder all four legs securely. Make sure that the LEDs lie directly on the front side of the board.
+images/PXL_20230728_162808952-EDIT,Attention! For this step{,} make sure that your safety glasses fit well. The wires tend to jump around.;Cut the protruding wires close to the board.
+images/PXL_20230728_162845546-EDIT,Insert the black battery holder from the back through the board. The rectangular nose must face the plus symbol (+).
+images/PXL_20230728_163018240-EDIT,Turn the board to the front and solder both solder pins at the holes.
+images/PXL_20230728_163539629-EDIT,You're done soldering!;Now{,} place the battery in the battery holder so that the battery is inserted with the round side (minus side).
+images/PXL_20230728_163548412-EDIT,Press the battery on the positive side (at the plus +) into the battery holder.;You're done! Great!; Just press the switch{,} and your Robo Robin will light up.
