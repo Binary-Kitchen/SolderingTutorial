@@ -1,8 +1,11 @@
 Anzahl,Beschreibung
 ,
-9,Holzteile
+10,Holzteile
 1,\SI{120}{\mm} PC Lüfter
 4,PC Lüfter Schrauben
 1,Lüfter Gitter
 1,Aktivkohlefilter
-1,DC-DC step-up
+1,USBC Power Delivery 12V Platine
+1,LED Streifen
+1,Schalter
+2,Holzschrauben
