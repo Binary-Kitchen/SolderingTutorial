@@ -11,8 +11,7 @@ Quantity,Name,Description,Labelling/Colour Code
 1,U2,pin socket 2x8,
 2,U1,pin socket 1x19,
 1,,4xcable,
-2,R1{,}R2,resistor \SI{68}{\ohm},Blau | Grau | Schwarz | Gold | Braun,R1
-1,R3,resistor \SI{390}{\ohm},Orange | Weiß | Schwarz | Schwarz | Braun,R3
+3,R1-R3,resistor \SI{390}{\ohm},Orange | Weiß | Schwarz | Schwarz | Braun,R3
 1,,Printed circuit board,
 6,,M2x6 case screw,
 2,,3D printed case parts,
