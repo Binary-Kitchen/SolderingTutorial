@@ -40,11 +40,10 @@ landing_page: index.html
 
 
 clean:
-	rm $(foreach TEMP, $(TEMP_FILES), \
+	rm -f $(foreach TEMP, $(TEMP_FILES), \
 		$(wildcard */*/$(TEMP)))
-	rm  $(foreach TEMP, $(TEMP_FILES), \
+	rm -f $(foreach TEMP, $(TEMP_FILES), \
 		$(wildcard */$(TEMP)))
-	rm index.html
 
 $(MANUALS):
 	latexmk -lualatex --jobname=$@ "LaTeX_config/solderingTut"
