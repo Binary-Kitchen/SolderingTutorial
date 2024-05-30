@@ -1,8 +1,8 @@
 images/DSC04775,Tipps:;Widerstandsgröße kann über Farbkodierung ermittelt werden;Ausrichtung der Platine so{,} dass Binary Kitchen e.V. normal gelesen werden kann (siehe Bild);Ausrichtung bei Widerständen ist egal;LEDs haben eine Flache Seite und ein kürzeres Beinchen. Beides zeigt die negative Seite an
 images/DSC04776,Beide IC Sockel (Nur den Sockel{,} nicht der eigentliche IC-Baustein) mit der Nase nach oben auf die Platine löten;Achtung: Nicht den IC sondern nur den IC-Sockel;Pinanzahl beachten: IC1 mit 14 Beinchen links{,} IC2 mit 16 Beinchen rechts
-images/DSC04779,Widerstände R1 \usePart{R1} (\SI{2,2}{\kilo\ohm}) und R2 \usePart{R2} (\SI{1}{\mega\ohm}) einlöten;Ausrichtung ist egal
-images/DSC04780,Widerstäne R3 \usePart{R3} (\SI{2,2}{\kilo\ohm}) und R4 \usePart{R4} (\SI{2,2}{\mega\ohm}) einlöten;Ausrichtung ist egal
-images/DSC04781,\begin{flushleft}Widerstände R5~\usePart{R5} (\SI{120}{\kilo\ohm}){,} R6~\usePart{R6} (\SI{1,5}{\kilo\ohm}){,} R7~\usePart{R7} (\SI{1,8}{\kilo\ohm}){,} R8~\usePart{R8} (\SI{1,5}{\kilo\ohm}) und R9~\usePart{R9} (\SI{3,3}{\kilo\ohm}) einlöten\end{flushleft};Ausrichtung ist egal
+images/DSC04779,Widerstände R1 \usePart{R1|R3} (\SI{2,2}{\kilo\ohm}) und R2 \usePart{R2} (\SI{1}{\mega\ohm}) einlöten;Ausrichtung ist egal
+images/DSC04780,Widerstäne R3 \usePart{R1|R3} (\SI{2,2}{\kilo\ohm}) und R4 \usePart{R4} (\SI{2,2}{\mega\ohm}) einlöten;Ausrichtung ist egal
+images/DSC04781,\begin{flushleft}Widerstände R5~\usePart{R5} (\SI{120}{\kilo\ohm}){,} R6~\usePart{R6|R8} (\SI{1,5}{\kilo\ohm}){,} R7~\usePart{R7} (\SI{1,8}{\kilo\ohm}){,} R8~\usePart{R6|R8} (\SI{1,5}{\kilo\ohm}) und R9~\usePart{R9} (\SI{3,3}{\kilo\ohm}) einlöten\end{flushleft};Ausrichtung ist egal
 images/DSC04782,Achtung! Ausrichtung bei Dioden entscheidend;Dioden D1 bis D3 (BAW76) mit schwarzer Seite in Richtung weißer Markierung auf der Platine einlöten;Diode D10 (1N4007) mit weißer Seite in Richtung weißer Markierung auf der Platine einlöten
 images/DSC04783,Kondensatoren C1 (104) und C2 (104) einlöten;Ausrichtung ist egal
 images/DSC04784,Achtung! Ausrichtung des Transistors wichtig;Transistor T1 (BC547) gemäß Markierung einlöten;Ausrichtung: Flache Seite nach unten

@@ -1,8 +1,8 @@
 images/DSC04775,Tips:;Resistor value can be determined by color coding;Alignment of the board so{,} that Binary Kitchen e.V. can be read normally (see picture);Alignment for resistors does not matter;LEDs have a flat side and a shorter leg. Both indicate the negative side
 images/DSC04776,Solder both IC sockets (Only the socket{,} not the actual IC device) with the nose up on the board;Attention: Do not solder the IC but only the IC socket;Note the pin count: IC1 with 14 pins left{,} IC2 with 16 pins right
-images/DSC04779,Solder resistors R1 \usePart{R1} (\SI{2,2}{\kilo\ohm}) and R2 \usePart{R2} (\SI{1}{\mega\ohm});orientation does not matter
-images/DSC04780,Solder resistors R3 \usePart{R3} (\SI{2,2}{\kilo\ohm}) and R4 \usePart{R4} (\SI{2,2}{\mega\ohm}); orientation does not matter.
-images/DSC04781,\begin{flushleft}Solder resistors R5~\usePart{R5} (\SI{120}{\kilo\ohm}){,} R6~\usePart{R6} (\SI{1,5}{\kilo\ohm}){,} R7~\usePart{R7} (\SI{1,8}{\kilo\ohm}){,} R8~\usePart{R8} (\SI{1,5}{\kilo\ohm}) and R9~\usePart{R9} (\SI{3,3}{\kilo\ohm})\end{flushleft}; orientation does not matter.
+images/DSC04779,Solder resistors R1 \usePart{R1|R3} (\SI{2,2}{\kilo\ohm}) and R2 \usePart{R2} (\SI{1}{\mega\ohm});orientation does not matter
+images/DSC04780,Solder resistors R3 \usePart{R1|R3} (\SI{2,2}{\kilo\ohm}) and R4 \usePart{R4} (\SI{2,2}{\mega\ohm}); orientation does not matter.
+images/DSC04781,\begin{flushleft}Solder resistors R5~\usePart{R5} (\SI{120}{\kilo\ohm}){,} R6~\usePart{R6|R8} (\SI{1,5}{\kilo\ohm}){,} R7~\usePart{R7} (\SI{1,8}{\kilo\ohm}){,} R8~\usePart{R6|R8} (\SI{1,5}{\kilo\ohm}) and R9~\usePart{R9} (\SI{3,3}{\kilo\ohm})\end{flushleft}; orientation does not matter.
 images/DSC04782,Attention! Orientation of diodes is important;solder diodes D1 to D3 (BAW76) with black side towards white mark on PCB;solder diode D10 (1N4007) with white side towards white mark on PCB
 images/DSC04783,Solder capacitors C1 (104) and C2 (104);orientation does not matter
 images/DSC04784,Attention! Orientation of the transistor is important;solder transistor T1 (BC547) according to the marking;orientation: flat side downwards
