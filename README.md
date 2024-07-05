@@ -7,6 +7,11 @@ For an overview of all kits with manuals and interactive pcb views got to: https
 
 If you want to buy soldering Kits you can find some here: [shop.blinkyparts.com](https://shop.blinkyparts.com)
 
+We have tips how to organise a soldering workshop in the field and how to further decorate the kits: [Wiki: Festival Setup](https://github.com/Binary-Kitchen/SolderingTutorial/wiki/Festival-Setup)
+
+<img src="https://github.com/Binary-Kitchen/SolderingTutorial/wiki/images/festival/unicorn/unicorn.jpg" width=400px alt="Unicorn with glitter">
+
+
 ## Soldering Kits
 
 ### [ATX Breakout Board](ATXBreakoutBoardSMD/)
