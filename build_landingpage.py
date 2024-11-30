@@ -35,7 +35,12 @@ def main(args):
             name = os.path.basename(manual)
             name = os.path.splitext(name)[0]
             match = re.fullmatch(".*_(.*)$", name)
-            lang = match.group(1)
+            #lang = match.group(1)
+            if match:
+                lang = match.group(1)
+                get_project(d)["manuals"][lang] = manual
+            else:
+                print(f"Warning: No language code found in the name of the file '{name}'")
             get_project(d)["manuals"][lang] = manual
 
 
