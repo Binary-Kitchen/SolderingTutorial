@@ -90,6 +90,13 @@ This rainbow dinosaur will brighten up your life. The spikes are glowing in all 
 
 - Difficulty: **2/5**
 
+### [Elefant](Elefant/)
+Everyone knows the great elephant from the “Sendung mit der Maus” and, as always, he has a good idea. An LED in the trunk that lights up in RGB colors.
+
+<img src="Elefant/manual/images/thumbnail.jpg" width=400px alt="Elefant">
+
+- Difficulty: **2/5**
+
 ### [Ermer Beeper DIP](ErmerBeeperDIP/)
 The Ermer Beeper is a very neat continuity tester or beeper.
 
