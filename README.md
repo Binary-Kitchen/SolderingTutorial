@@ -90,6 +90,13 @@ This rainbow dinosaur will brighten up your life. The spikes are glowing in all 
 
 - Difficulty: **2/5**
 
+### [Elefant](Elefant/)
+Everyone knows the great elephant from the “Sendung mit der Maus” and, as always, he has a good idea. An LED in the trunk that lights up in RGB colors.
+
+<img src="Elefant/manual/images/thumbnail.jpg" width=400px alt="Elefant">
+
+- Difficulty: **2/5**
+
 ### [Ermer Beeper DIP](ErmerBeeperDIP/)
 The Ermer Beeper is a very neat continuity tester or beeper.
 
@@ -261,6 +268,13 @@ A very easy circuit to power a little robot with a vibration motor.
 <img src="/ShittyRobots/manual/images/shitty-robots.jpg" width=400px alt="Shitty Robot">
 
 - Difficulty: **1/5**
+
+### [WeevilEye](WeevilEye/)
+The kit is a very easy kit with push-through parts, which is explicitly aimed at beginners. Once assembled, the red LED “eyes” light up brighter or dimmer depending on how much light falls on the photo sensor. 
+
+<img src="/WeevilEye/manual/images/thumbnail.jpg" width=400px alt="WeevilEye">
+
+- Difficulty: **2/5**
 
 ## License
 This work is licensed under different licenses. Please see subfolders for details and LICENSE.md file in the top level directory for all used license files.

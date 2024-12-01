@@ -1,0 +1,10 @@
+Anzahl,Name,Beschreibung,Beschriftung/Farbcode
+,
+2,D1-D2,LEDs Rot \SI{5}{\mm}
+1,R1,Widerstand \SI{47}{\kilo\ohm},Gelb | Violett | Schwarz | Rot | Braun,R1
+1,R3-R4,Widerstand \SI{220}{\ohm},Rot | Rot | Schwarz | Schwarz | Braun,R3
+1,R2,Fotowiderstand
+1,Q1,Transistor 
+1,BT1,CR2032 Batterie Halter
+1,,CR2032 Batterie (nicht enthalten)
+1,,WeevilEye (PCB)
