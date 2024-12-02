@@ -2,7 +2,7 @@
 
 Everyone knows the great elephant from the “Sendung mit der Maus” and, as always, he has a good idea. An LED in the trunk that lights up in RGB colors.
 
-<img src="manual/images/thumbnail.jpg" width=300px alt="Al Hacka Alpaca"> <img src="manual/images/PXL_20230608_085623606.jpg" width=300px alt="Al Hacka Alpaca">
+<img src="manual/images/thumbnail.jpg" width=300px alt="elefant"> <img src="manual/images/PXL_20241002_130212123-EDIT.jpg" width=300px alt="elefant">
 
 - Status: **Complete**
 - Difficulty: **2/5**

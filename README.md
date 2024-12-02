@@ -147,6 +147,13 @@ Small soldering kit using SMD components with the kitchen head on it.
 
 - Difficulty: **4/5**
 
+### [LEDWolf](LEDWolf/)
+This great LED wolf is a good way to start tinkering if you don't have a soldering iron with you at the moment. All you need is a little glue and a small Phillips screwdriver to assemble this great wolf.
+
+<img src="LEDWolf/manual/images/thumbnail.jpg" width=400px alt="LEDWolf">
+
+- Difficulty: **1   /5**
+
 ### [Moon Cat](MoonCat/)
 Excuse me? What are you staring at? This wonderful kit is very simple in terms of circuitry, but the result is simply hilarious.
 
@@ -268,6 +275,13 @@ A very easy circuit to power a little robot with a vibration motor.
 <img src="/ShittyRobots/manual/images/shitty-robots.jpg" width=400px alt="Shitty Robot">
 
 - Difficulty: **1/5**
+
+### [SmartLED](SmartLED/)
+Create a wonderful smart LED-Lamp you can control with you Smatphone.
+
+<img src="/SmartLED/manual/images/thumbnail.jpg" width=400px alt="SmartLED">
+
+- Difficulty: **4/5**
 
 ### [WeevilEye](WeevilEye/)
 The kit is a very easy kit with push-through parts, which is explicitly aimed at beginners. Once assembled, the red LED “eyes” light up brighter or dimmer depending on how much light falls on the photo sensor. 
