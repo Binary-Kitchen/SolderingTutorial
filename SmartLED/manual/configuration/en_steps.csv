@@ -1,0 +1,24 @@
+images/IMG_20241113_180558079,Check{,} if all parts are present.
+images/IMG_20241114_152947542,Solder three wires to the LED strip. Look at the arrows on the LED strip. The wires must be soldered to the end of the strip{,} where the arrows do not point.; Pay attention to the colors of the wires. Black for GND{,} orange for data{,} and red for +5V.
+images/IMG_20241114_153506063,Take the aluminum rods and the 3D-printed parts.; Insert the short aluminum rod into the 3D-printed part on the side with the flat area.; Repeat this step with the longer rod on the opposite side.
+images/IMG_20241114_153903506,Run the wires from the top through the longer of the two rods.; Wrap the LED strip around the cylinder.; When you're satisfied{,} you can peel off the blue tape on the back and stick everything to the 3D-printed part.
+images/IMG_20241114_154839340,Take the wooden part with the two large holes.; Insert the longer end of the aluminum rod through the center hole.; Take the 3D-printed ring. Thread all wires through the hole in the ring.; Slide the ring onto the aluminum rod and push it up{,} until the rod is visible on the other side of the ring.
+images/IMG_20241114_154954088,Slide the wooden plate toward the ring{,} until it fits snugly.; Rotate the wooden plate{,} until the top part is centered above it.; Glue the wooden plate to the ring.
+images/IMG_20241114_155158214,Take the toggle switch and the wooden part with the small hole in the middle.; Unscrew the nut from the toggle switch.; Insert the switch through the hole in the wooden plate and screw the nut back onto the switch.
+images/IMG_20241114_155330473,Take the USB cable{,} the wooden plate with the hole{,} and the printed part with the U-shaped pattern.; Thread the USB cable through the hole in the wooden plate. It should extend about 10 cm.; Press the cable against the wall in the printed part with the U-shape{,} until it sits firmly.
+images/IMG_20241114_155532426,Take the assembled part with the aluminum rods.; Unscrew the nut from the push button and insert it into the hole on the edge of the wooden plate.; Screw the nut back onto the other side of the button{,} until everything is secure.
+images/IMG_20241114_160046481,Take the wooden part with the toggle switch and the wooden part with the USB cable.; Solder the red wire of the USB cable to the middle terminal of the toggle switch.; Solder a piece of red wire to one of the outer terminals.
+images/IMG_20241114_160515166,Take the wooden part with the push button and solder a wire to each terminal. You can choose the color yourself.
+images/IMG_20241114_160926781,Solder the black wire to GND and the red wire to VIN of the ESP.
+images/IMG_20241114_161604246,Now solder the two wires from the push button to GND and D15. The order doesn't matter.
+images/IMG_20241114_162639077,Solder the wires from the LED strip to the ESP32.; The red wire goes to VIN{,} the black to GND{,} and the orange to D16.
+images/IMG_20241114_162952372_HDR,Plug the USB cable into a power adapter. If nothing lights up{,} check if the toggle switch is turned on.
+images/IMG_20241114_164521055,Glue the lower half of the casing together. If you don't have glue{,} you can also use superglue.
+images/IMG_20241114_164802782_HDR,Check again{,} if everything works. Once the casing is glued{,} it cannot be disassembled anymore.
+images/IMG_20241114_165121924_HDR,If everything fits{,} glue the casing together. Make sure the wires are not pinched and are neatly tucked into the box.; As a final step{,} you can glue the printed top onto the tip.
+images/wled,Take your phone and go to the Wi-Fi settings.; Connect to the Wi-Fi network WLED-AP. Let it redirect you to the login page.; When you click on WIFI SETTINGS{,} you can connect the lamp to your Wi-Fi and control it through the WLED app.
+images/wled5,Set the length of the LED strip. To do this{,} open the WLED app and select "Config."
+images/wled3,Now choose LED Preferences.
+images/wled4,Edit the option Length and set it to the length of your LED strip.; You can either count all the LEDs or increase the value{,} until the entire strip lights up.
+images/IMG_20241114_170117387,How to configure the push button{,} can be found here: https://kno.wled.ge/features/macros/
+images/wled2,Have fun with your new lamp!; Check out the WLED documentation for more features: https://kno.wled.ge.

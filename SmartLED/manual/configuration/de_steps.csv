@@ -1,0 +1,24 @@
+images/IMG_20241113_180558079,Schau{,} ob alle Teile da sind.
+images/IMG_20241114_152947542,Löte drei Kabel an den LED-Streifen. Schau dir die Pfeile auf dem LED-Streifen an. Die Kabel müssen an dem ende des Streifens anglötet werden{,} auf den die Pfeile nicht zeigen.; Achte auf die Farben der Kabel. Schwarz für Gnd{,} Orange für data und Rot für +5V.
+images/IMG_20241114_153506063,Nimm dir die Alu-Rohre und die 3D-gedruckten Teile zur Hand.; Stecke das kurze Alu-Rohr in das 3D-gedruckte Teil auf der Seite mit der Abflachung.; Wiederhole diesen Schritt mit dem längeren Rohr auf der gegenüberliegenden Seite.
+images/IMG_20241114_153903506,Führe die Kabel von oben her durch das längere der beiden Rohre.; Wickle den LED-Streifen um den Zylinder.; Wenn du zufrieden bist{,} kannst du das blaue Tape auf der Rückseite abziehen und alles am 3D-gedruckten Teil ankleben.
+images/IMG_20241114_154839340,Nimm das Holzteil mit den zwei großen Löchern.; Stecke das längere Ende des Alu-Rohrs durch das mittige Loch.; Nimm den 3D-gedruckten Ring. Führe alle Kabel durch das Loch im Ring.; Stecke den Ring auf das Alu-Rohr. Schiebe ihn nach oben{,} bis das Rohr auf der anderen Seite des Rings zu sehen ist.
+images/IMG_20241114_154954088,Schiebe die Holzplatte in Richtung Ring{,} bis sie anliegt.; Drehe die Holzplatte{,} bis der obere teil mittig über ihr steht.; Klebe die Holzplatte am Ring fest.
+images/IMG_20241114_155158214,Nimm den Kippschalter und das Holzteil mit dem kleinen Loch in der Mitte zur Hand.; Schraube die Mutter vom Kippschalter ab.; Stecke den Schalter durch das Loch in der Holzplatte und schraube die Mutter wieder auf den Schalter.
+images/IMG_20241114_155330473,Nimm das USB-Kabel{,} die Holzplatte mit Loch und das gedruckte Teil mit U-förmigem Muster.; Stecke das USB-Kabel durch das Loch in der Holzplatte. Es sollte ca. 10 cm überstehen.; Drücke das Kabel direkt an der Wand in das gedruckte Teil mit der U-Form{,} bis es festsitzt.
+images/IMG_20241114_155532426,Nimm das getrocknete Teil mit den Alu-Rohren zur Hand.; Schraube die Mutter vom Drucktaster ab und stecke ihn in das Loch am Rand der Holzplatte.; Schraube die Mutter wieder auf die andere Seite des Tasters{,} bis alles festsitzt.
+images/IMG_20241114_160046481,Nimm das Holzteil mit dem Kippschalter und das Holzteil mit dem USB-Kabel zur Hand.; Löte das rote Kabel des USB-Kabels an den mittleren Anschluss des Kippschalters.; An einen der äußeren Anschlüsse lötest du ein Stück rotes Kabel.
+images/IMG_20241114_160515166,Nimm das Holzteil mit dem Drucktaster und löte an beide Enden je eine Litze an. Die Farbe kannst du selbst wählen.
+images/IMG_20241114_160926781,Löte das schwarze Kabel an GND und das rote Kabel an VIN des ESPs.
+images/IMG_20241114_161604246,Löte jetzt die beiden Kabel vom Druckknopf an GND und D15 an. Die Reihenfolge ist egal.
+images/IMG_20241114_162639077,Löte die Kabel vom LED-Streifen an den ESP32.; Das rote Kabel kommt an VIN{,} das schwarze an GND und das orangene an D16.
+images/IMG_20241114_162952372_HDR,Stecke das USB-Kabel an ein Netzteil an. Wenn nichts leuchtet{,} überprüfe ob der Kippschalter eingeschaltet ist.
+images/IMG_20241114_164521055,Klebe die untere Hälfte des Gehäuses zusammen. Wenn du keinen Leim hast{,} kannst du auch Sekundenkleber nehmen.
+images/IMG_20241114_164802782_HDR,Überprüfe noch einmal{,} ob alles funktioniert. Wenn das Gehäuse verklebt ist{,} kann man es nicht mehr auseinanderbekommen.
+images/IMG_20241114_165121924_HDR,Wenn alles passt{,} klebst du das Gehäuse zusammen. Achte darauf{,} dass die Kabel nicht eingeklemmt werden und ordentlich in der Box verstaut sind.; Als letzten Schritt kannst du noch das gedruckte Oberteil auf die Spitze kleben.
+images/wled,Nimm dein Handy und gehe in die WLAN-Einstellungen.; Verbinde dich mit dem WLAN WLED-AP. Lasse dich zur Anmeldeseite Leiten.; Wenn du auf WIFI SETTINGS klickst{,} kannst du die Lampe mit deinem WLAN verbinden und über die WLED-App steuern.
+images/wled5,Bestimme die Länge des LED-Streifens. Gehe dazu in die Wled-App und wähle "Config".
+images/wled3,Wähle nun LED Preferences
+images/wled4,Bearbeite die Option Length und setze sie auf die Länge deines LED-Streifens.; Du kannst dazu entweder alle LEDs zählen oder den Wert erhöhen{,} bis der komplette streifen leuchtet.
+images/IMG_20241114_170117387,Wie der Drucktaster konfiguriert wird{,} steht hier: https://kno.wled.ge/features/macros/
+images/wled2,Viel Spaß mit deiner neuen Lampe!; Schau dir für mehr Funktionen die WLED-Dokumentation an: https://kno.wled.ge.
