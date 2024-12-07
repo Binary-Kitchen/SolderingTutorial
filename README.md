@@ -112,7 +112,7 @@ Small soldering kit with an heart on from https://wiki.blinkenarea.org/index.php
 - Difficulty: **2/5**
 
 ### [Heart SMD](HeartSMD/)
-Small soldering kit with an heart on it from http://wiki.blinkenarea.org/index.php/AKL-Mini
+Small soldering kit with an heart on it from https://wiki.blinkenarea.org/index.php/AKL-Mini
 
 <img src="HeartSMD/manual/images/DSC04825.jpg" width=400px alt="Heart SMD">
 
