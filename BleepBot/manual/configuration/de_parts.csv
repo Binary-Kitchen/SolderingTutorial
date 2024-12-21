@@ -1,0 +1,12 @@
+Anzahl,Beschreibung,Beschriftung/Farbcode
+,
+2,LEDs blau,
+1,Widerstand \SI{10}{\kilo\ohm},Schwarz | Braun | Schwarz | Rot | Braun,R1
+1,Keramik Kondensator \SI{100}{\nano\farad},104
+1,Transistor 2N3904
+1,ATtiny25
+1,Lautsprecher
+1,Schiebeschalter
+1,CR2032 Batterie Halter
+1,CR2032 Batterie (nicht enthalten)
+1,BleepBot Platine (PCB)

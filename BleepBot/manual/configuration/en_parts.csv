@@ -1,0 +1,12 @@
+Quantity,Description,Labeling/color code
+,
+2,LEDs blue,
+1,Resistor \SI{10}{\kilo\ohm},Schwarz | Braun | Schwarz | Rot | Braun,R1
+1,Ceramic capacitor \SI{100}{\nano\farad},104
+1,Transistor 2N3904
+1,ATtiny25
+1,Loudspeaker
+1,Slide switch
+1,CR2032 battery holder
+1,CR2032 battery (not included)
+1,BleepBot circuit board (PCB)

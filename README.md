@@ -40,6 +40,13 @@ Easy RGB soldering kit with the best Axolotl!
 
 - Difficulty: **2/5**
 
+### [BleepBot](BleepBot/)
+A talking robot!
+
+<img src="BleepBot/manual/images/thumbnail.jpg" width=400px alt="BleepBot">
+
+- Difficulty: **2/5**
+
 ### [Cat in a Box 1](Cat01/)
 A Cat in a box easy SMD kit. Bright glowing LED-eyes are watching every step! With this soldering kit it is super easy to learn SMD soldering.
 
