@@ -1,0 +1,31 @@
+title=SolderBox
+titlePicture=images/thumbnail
+skillTitle=Schwierigkeit
+skillLevel=1/5
+buildTitle=Bauzeit
+buildTime=30 -- 60 Minuten
+stepTitle=Schritt
+descriptionTitle=Anleitung
+descriptionVersion=v2.0
+descriptionLicense=CC-BY-SA 4.0 Binary Kitchen e.V.
+boardTitle=Board
+boardVersion=v1.0
+boardLicense=CC-BY-SA 4.0 blinkyparts GmbH
+partLabel=false
+appendix=
+warningsTitle=Sicherheitshinweise
+warnings= {
+\begin{itemize}
+   \item ACHTUNG: Für Kinder unter 14 Jahren nicht geeignet.
+   \item Erstickungsgefahr durch verschluckbare Kleinteile.
+   \item Wir empfehlen: Betreuung des Aufbaus durch eine erwachsene Person.
+   \item Bewahre diese Aufbauanleitung für den späteren Gebrauch sicher auf! Sie enthält wichtige Informationen.
+   \item Bitte führen Sie das Produkt nach Ablauf der Gebrauchszeit entsprechend zertifizierten Entsorgern zu. Das ist gut für die Umwelt und sorgt für eine korrekte Entsorgung.
+   \item Änderungen und Irrtümer vorbehalten.
+\end{itemize}}
+warningsAddress=blinkyparts GmbH\\Egerstr. 9\\93057 Regensburg\\GERMANY
+warningsCE={}
+warningsRoHS={}
+warningsWEEE={}
+warningsWEEETitle=
+warningsWEEEText= {}

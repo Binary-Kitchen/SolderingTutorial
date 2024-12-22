@@ -290,6 +290,13 @@ Create a wonderful smart LED-Lamp you can control with you Smatphone.
 
 - Difficulty: **4/5**
 
+### [SolderBox](SolderBox/)
+We have designed a soldering box for you that is extra small but still contains everything you need. The box offers space for a complete soldering working place and is still so small that four of the boxes fit into a small Euro box.
+
+<img src="/SolderBox/manual/images/thumbnail.jpg" width=400px alt="SolderBox">
+
+- Difficulty: **1/5**
+
 ### [WeevilEye](WeevilEye/)
 The kit is a very easy kit with push-through parts, which is explicitly aimed at beginners. Once assembled, the red LED “eyes” light up brighter or dimmer depending on how much light falls on the photo sensor. 
 
