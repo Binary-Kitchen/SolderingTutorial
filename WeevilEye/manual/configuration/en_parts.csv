@@ -2,7 +2,7 @@ Quantity,Name,Description,Labelling/Colour code
 ,
 2,D1-D2,LEDs Red \SI{5}{\mm}
 1,R1,Resistor \SI{47}{\kilo\ohm},Gelb | Violett | Schwarz | Rot | Braun,R1
-1,R3-R4,Resistor \SI{220}{\ohm},Rot | Rot | Schwarz | Schwarz | Braun,R3
+2,R3-R4,Resistor \SI{220}{\ohm},Rot | Rot | Schwarz | Schwarz | Braun,R3
 1,R2,Photoresistor
 1,Q1,Transistor 
 1,BT1,CR2032 battery holder
