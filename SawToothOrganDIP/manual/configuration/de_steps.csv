@@ -1,6 +1,6 @@
 images/PXL_20201204_192258716,Tipps: Der Widerstandswert kann über die aufgedruckte Farbkodierung bestimmt werden;Die Orientierung für Widerstände ist nicht wichtig;LEDs haben eine flache Seite und einen kürzeren Schenkel. Beide zeigen die negative Seite an. Die Ausrichtung der LEDs ist auf der Platine aufgedruckt.
 images/PXL_20201204_192726029,Brich den Griffel mit einer Zange an den Sollbruchstellen ab.
-images/PXL_20201204_193939978,Löte alle Widerstände auf.;Achte auf den korrekten Wert{,} der auf dem Board aufgedruckt ist.
+images/PXL_20201204_193939978,Löte alle Widerstände auf.; Achte auf den korrekten Wert{,} der auf dem Board aufgedruckt ist.
 images/PXL_20201204_194415170,Löte das Potentiometer auf.; Löte den Kondensator auf.; Löte die LED auf. Achte auf die korrekte Richtung (Siehe Tipps in Schritt 1)!
 images/PXL_20201204_194610956,Löte den PNP Transistor BC557C (Q4) auf. Achtung: Verwechslungsgefahr mit den NPN Transistoren.
 images/PXL_20201204_194852017,Löte die drei NPN Transistoren BC547C (Q1--Q3) auf.
