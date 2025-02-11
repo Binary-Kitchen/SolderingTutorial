@@ -2,30 +2,33 @@
 
 A perfect 3D-printed rugged case for your pinecil, extra tips and usb-c cable.
 
-<img src="manual/images/thumbnail.jpg" width=300px alt="Pinecil Case"> <img src="manual/images/PXL_20230403_122341053.jpg" width=300px alt="Pinecil Case">
+<img src="manual/images/thumbnail.jpg" width=300px alt="Pinecil Case"> <img src="manual/images/PXL_20250206_155258433.jpg" width=300px alt="Pinecil Case">
 
 - Status: **Complete**
 - Difficulty: **1/5**
 
 ### Parts List
 
-| Quantity | Description                     |
-| -------- | ------------------------------- |
-| 2        | Outer Case (black)              |
-| 2        | Inner Case (orange)             |
-| 1        | Brass wool                      |
-| 2        | Clips                           |
-| 1        | Bearing                         |
-| 1        | Soldering iron holder           |
-| 2        | Coil parts                      |
-| 1        | M3x16 screw                     |
-| 6        | M3x20 screw                     |
-| 1        | M3 nut                          |
-| 1        | Superglue (not included)        |
+| Quantity | Description                    	   |
+| -------- | ------------------------------------- |
+| 2        | Outer Case (black)           		   |
+| 2        | Inner Case (orange)          		   |
+| 1        | Brass wool                   		   |
+| 2        | Clips                        		   |
+| 1        | Bearing                     		   |
+| 1        | Soldering iron holder       		   |
+| 4        | Coil parts                  		   |
+| 1        | M3x16 screw                 		   |
+| 6        | M3x20 screw               		       |
+| 1        | M3 nut                      		   |
+| 4		   | 5x1mm round neodym magnet			   |
+| 8		   | 4x2mm round neodym magnet			   |
+| 1		   | 6x2mm round neodym magnet			   |
+| 1        | Superglue (not included)              |
 | 1        | Pinecil Soldering Iron (not included) |
-| 1        | Pinecil USB-C cable (not included) |
-| 2        | Soldering tips (not included)   |
-| 1        | Solder (not included)           |
+| 1        | Pinecil USB-C cable (not included)    |
+| 2        | Soldering tips (not included)         |
+| 1        | Solder (not included)                 |
 
 ### Copyright and Authorship
 
