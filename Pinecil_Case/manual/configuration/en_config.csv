@@ -1,15 +1,15 @@
 title=Pinecil Case
 titlePicture=images/thumbnail
 skillTitle=Difficulty
-skillLevel=1/5
+skillLevel=2/5
 buildTitle=Build-Time
-buildTime=15 -- 30 Minutes
+buildTime=30 -- 45 Minutes
 stepTitle=Step
 descriptionTitle=Manual
-descriptionVersion=v2.0
+descriptionVersion=v2.1
 descriptionLicense=CC-BY-SA 4.0 Binary Kitchen e.V.
 boardTitle=Board
-boardVersion=v1.0
+boardVersion=v2.0
 boardLicense=CC-BY-NC-SA 4.0 PjotrStrog @ printables.com
 appendix=
 warningsTitle=Safety Information
@@ -28,7 +28,7 @@ warnings= {
    \item Please take the device to appropriately certified disposal companies at the end of its service life. This is good for the environment and ensures correct disposal.
    \item Subject to changes and errors.
 \end{itemize}}
-warningsAddress=blinkyparts.com\\Egerstr. 9\\93057 Regensburg\\GERMANY
+warningsAddress=blinkyparts GmbH\\Egerstr. 9\\93057 Regensburg\\GERMANY
 warningsCE={\includegraphics[height=10mm]{LaTeX_config/ce}\hspace{20mm}}
 warningsRoHS={\includegraphics[height=10mm]{LaTeX_config/rohs}\hspace{20mm}}
 warningsWEEE={\includegraphics[height=10mm]{LaTeX_config/weee}}
