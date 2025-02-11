@@ -14,6 +14,7 @@ A perfect 3D-printed rugged case for your pinecil, extra tips and usb-c cable.
 | 2        | Outer Case (black)           		   |
 | 2        | Inner Case (orange)          		   |
 | 1        | Brass wool                   		   |
+| 1		   | Brass wool cover					   |
 | 2        | Clips                        		   |
 | 1        | Bearing                     		   |
 | 1        | Soldering iron holder       		   |
