@@ -22,7 +22,7 @@ Handy Breakout Board to get all the important voltages from a standard ATX power
 - Difficulty: **4/5**
 
 ### [Al Hacka Alpakca](AlHackaAlpaka/)
-Easy soldering kit in homage to jugendhackt and its mascot.
+Easy soldering kit in homage to Jugend hackt and its mascot.
 
 <img src="AlHackaAlpaka/manual/images/thumbnail.jpg" width=400px alt="AlHackaAlpaka">
 
