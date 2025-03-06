@@ -297,6 +297,13 @@ We have designed a soldering box for you that is extra small but still contains 
 
 - Difficulty: **1/5**
 
+### [SpaceEggs](SpaceEggs/)
+The **Space Egg** is a fun and beginner-friendly **soldering kit** combined with **3D-printed components**. It features an interactive mechanism where turning the egg
+
+<img src="/SpaceEggs/manual/images/thumbnail.jpg" width=400px alt="SpaceEggs">
+
+- Difficulty: **2/5**
+
 ### [WeevilEye](WeevilEye/)
 The kit is a very easy kit with push-through parts, which is explicitly aimed at beginners. Once assembled, the red LED “eyes” light up brighter or dimmer depending on how much light falls on the photo sensor. 
 
