@@ -18,4 +18,4 @@ We have designed a soldering box for you that is extra small but still contains 
 
 
 ### Buy Soldering Kits
-If you want to buy the parts for a box? You can find everything here: [shop.blinkyparts.com](https://shop.blinkyparts.com/)
+If you want to buy the parts for a box? You can find everything here: [shop.blinkyparts.com](https://shop.blinkyparts.com/de/Loetbox-Ein-Loetarbeitsplatz-in-einer-Box/blink23103)
