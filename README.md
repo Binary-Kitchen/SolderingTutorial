@@ -340,5 +340,6 @@ Manuals:
 - Marei Peischl <marei@binary-kitchen.de> <https://github.com/TeXhackse>
 - Timo Schindler <https://www.timoschindler.de>
 - Hannes <https://github.com/misamura>
+- Mario Langhammer <https://github.com/Mallo321123>
 
 Note: This list of authors can be incomplete. Please also consider the README.md in the sub-folders for authorship.
