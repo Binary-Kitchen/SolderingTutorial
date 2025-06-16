@@ -1,0 +1,10 @@
+images/teileuebersicht,Check{,} whether all parts are present.
+images/diode,First solder the diode to the intended position on the circuit board; pay attention to the correct orientation; the black line on the diode must point in the same direction as the marking on the circuit board.
+images/kondensator,Next{,} we solder the capacitor to the circuit board.
+images/buchse,When soldering the BNC socket{,} make sure that it is fully seated and not crooked.
+images/widerstaende1,Now place all the resistors on the board;Tip: Solder row by row;Tip: First attach the resistors with a little solder and then align them;The resistors have the following color code: Brown{,}~Black{,}~Red{,}~Gold
+images/widerstaende2,Now cut the wires of the resistors in stages. This will help you in the next step.
+images/widerstaende3,Now plug the second circuit board onto the wires of the resistors;Make sure that all the wires really do protrude through the circuit board.
+images/widerstaende4,Now you can solder all the resistors;Cut off the protruding wire ends as short as possible.
+images/kontaktierung,Finally{,} there is a contact between the two circuit boards;You can use a section of wire from a resistor for this;On the circuit board with the BNC socket{,} the wire goes into the hole between the d and e (50 Ohm logo){,} on the circuit board without the BNC socket{,} the wire goes into the hole in the circle of the letter d.
+images/fertig,Your 50-ohm dummy load is now ready.;For the final check{,} check the circuit board for solder bridges (primarily diode{,} capacitor{,} contact bridge and BNC socket). Measure the resistance at the BNC socket with a multimeter; this should be around \SI{50}{\ohm}; now you can put the dummy load into operation.

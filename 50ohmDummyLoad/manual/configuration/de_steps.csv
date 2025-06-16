@@ -1,0 +1,10 @@
+images/teileuebersicht,Prüfe{,} ob alle Teile vorhanden sind.
+images/diode,Löte als erstes die Diode an die vorgesehene Stelle auf der Platine.; Achte hierbei auf die korrekte Orientierung.; Der schwarze Strich auf der Diode muss in dieselbe Richtung zeigen wie die Markierung des Platinenaufdrucks.
+images/kondensator,Als nächstes Löten wir den Kondensator auf die Platine.
+images/buchse,Beim Einlöten der BNC-Buchse achte darauf{,} dass sie vollständig aufliegt{,} und nicht schief ist.
+images/widerstaende1,Nun kommen alle Widerstände auf die Platine.;Tipp: Löte Reihe für Reihe.;Tipp: Befestige die Widerstände zuerst mit etwas Lötzinn und richte sie anschließend aus.; Die Widerstände haben folgenden Farbcode: Braun{,}~Schwarz{,}~Rot{,}~Gold
+images/widerstaende2,Schneide nun die Drähte der Widerstände stufenweise ab. Das hilft dir im nächsten Schritt.
+images/widerstaende3,Stecke nun die zweite Platine auf die Drähte der Widerstände.;Achte darauf{,} dass auch wirklich alle Drähte durch die Platine ragen.
+images/widerstaende4,Jetzt kannst du alle Widerstände festlöten.;Die überstehenden Drahtenden so kurz wie möglich abschneiden.
+images/kontaktierung,Als Letztes kommt noch eine Kontaktierung zwischen die beiden Platinen.;Hierfür kannst du einen Drahtabschnitt eines Widerstands verwenden.;Auf der Platine mit der BNC-Buchse kommt der Draht in das Loch zwischen dem d und e (50Ohm Logo){,} auf der Platine ohne BNC-Buchse kommt der Draht in das Loch im Kreis vom Buchstaben d.
+images/fertig,Deine 50-Ohm-Dummy-Load ist jetzt fertig.;Zur Endkontrolle überprüfe die Platine auf Lötbrücken (Vorrangig Diode{,} Kondensator{,} Diode{,} Kontaktbrücke und BNC-Buchse.;Messe mit einem Multimeter den Widerstand an der BNC-Buchse{,} dieser sollte um \SI{50}{\ohm} liegen.; Jetzt ḱannst du die Dummy-Load in Betrieb nehmen.
