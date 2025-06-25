@@ -97,6 +97,19 @@ This rainbow dinosaur will brighten up your life. The spikes are glowing in all 
 
 - Difficulty: **2/5**
 
+### [Draussenfuchs Antenna](DraussenfuchsAntenne/)
+A soldering kit for a simple 433MHz Yagi anenna designed for the draussenfuchs.de fox hunting game.
+
+<img src="DraussenfuchsAntenne/manual/images/thumbnail.jpg" width=400px alt="Draussenfuchs Antenna">
+
+- Difficulty: **2/5**
+
+### [Draussenfuchs Sender](DraussenfuchsSender/)
+A soldering kit for a 433MHz fox sender for the draussenfuchs.de fox hunting game.
+<img src="DraussenfuchsSender/manual/images/thumbnail.jpg" width=400px alt="Draussenfuchs Sender">
+
+- Difficulty: **2/5**
+
 ### [Elefant](Elefant/)
 Everyone knows the great elephant from the “Sendung mit der Maus” and, as always, he has a good idea. An LED in the trunk that lights up in RGB colors.
 
