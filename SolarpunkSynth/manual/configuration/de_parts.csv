@@ -1,0 +1,16 @@
+Anzahl,Bezeichnung,Beschreibung
+,,
+3,RV1-RV3,Potentiometer \SI{100}{\kilo\ohm}
+1,,Solarpanel
+3,C1-C3,Keramikkondensator \SI{1}{\micro\farad} (105)
+2,C6-C7,Keramikkondensator \SI{100}{\nano\farad} (104)
+1,74HC14,Schmitt-Trigger SN74HC14N
+1,MCP6002,2-fach Operationsverstärker MCP 6002
+1, ,Kopfhöreranschluss
+2,C4-C5,Elektrolytkondensator \SI{10}{\micro\farad}
+1,R7,Widerstand \SI{22}{\kilo\ohm}
+2,R1{,}R6,Widerstand \SI{10}{\kilo\ohm}
+4,R2-R5,Widerstand \SI{1}{\mega\ohm}
+2,,Piezo Buzzer \SI{20}{\mm}
+2,,ca. \SI{5}{\cm} Litze
+1,,Solarpunk Synth Platine (PCB)

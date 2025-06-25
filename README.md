@@ -303,6 +303,12 @@ Create a wonderful smart LED-Lamp you can control with you Smatphone.
 
 - Difficulty: **4/5**
 
+### [Solarpunk Synthesizer](SolarpunkSynth/)
+A very simple solarpunk Synthesizer based on a simple Schmitt Trigger. Create crazy sounds with this simple soldering kit.
+<img src="/SolarpunkSynth/manual/images/thumbnail.jpg" width=400px alt="SolarpunkSynth">
+
+- Difficulty: **2/5**
+
 ### [SolderBox](SolderBox/)
 We have designed a soldering box for you that is extra small but still contains everything you need. The box offers space for a complete soldering working place and is still so small that four of the boxes fit into a small Euro box.
 
