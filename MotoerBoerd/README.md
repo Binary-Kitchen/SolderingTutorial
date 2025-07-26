@@ -2,7 +2,7 @@
 
 Chirp chirp chirp, chirp chirp! The Motörbörd is a creative soldering kit that you can use to build your own little bird call generator. It is not powered by batteries, but by a small motor that generates electrical energy when turned like a dynamo.
 
-<img src="manual/images/thumbnail.jpg" width=300px alt="Motörbörd"> <img src="manual/images/PXL_20250726_145415766.jpg" width=300px alt="Motörbörd">
+<img src="manual/images/thumbnail.png" width=300px alt="Motörbörd"> <img src="manual/images/PXL_20250726_145415766.jpg" width=300px alt="Motörbörd">
 
 - Status: **Complete**
 - Difficulty: **2/5**
