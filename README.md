@@ -188,6 +188,14 @@ Excuse me? What are you staring at? This wonderful kit is very simple in terms o
 
 - Difficulty: **2/5**
 
+### [Motörbörd](MotoerBoerd/)
+Chirp chirp chirp, chirp chirp! The Motörbörd is a creative soldering kit that you can use to build your own little bird call generator. It is not powered by batteries, but by a small motor that generates electrical energy when turned like a dynamo.
+
+<img src="MotoerBoerd/manual/images/thumbnail.jpg" width=400px alt="MotoerBoerd">
+
+- Difficulty: **2/5**
+
+
 ### [NE555 Heart THT](NE555HeartTHT/)
 A wonderful Heart with SMD LEDs. You can choose between full on, follow-LEDs and even can influence the speed of your LEDs.
 
