@@ -1,6 +1,6 @@
 images/PXL_20241002_125314633,Check your components;A CR2032 battery is not included. You can buy them online or at major electronics stores.
-images/PXL_20241002_125601314, Turn the board to the back;Add solder to the elongated LED pad{,} which is marked with a +.
-images/PXL_20241002_125648828-EDIT,The long leg of the LED marks the positive side;Solder the positive leg (the long one) to the positive pad{,} on which you have already applied solder;Make sure{,} that the second leg also touches the other pad without solder.
+images/PXL_20241002_125601314, Turn the PCB over; you will find the LED pad D1 on the trunk. One of the pads is longer and marked with a plus sign (+). Add solder to the longer LED pad marked with a plus sign (+).
+images/PXL_20241002_125648828-EDIT,The long leg of the LED marks the positive side. Solder the positive leg (the long one) to the plus pad{,} to which you have already applied solder.;Make sure{,} that the second leg also touches the other pad without solder.
 images/PXL_20241002_125719243,Solder the other leg of the LED (cathode{,} negative side) to the circuit board.
 images/PXL_20241002_125840114-EDIT,The button has no direction.;Put solder on one of the pads of the button.;Bend the legs of the button so{,} that the legs can touch the surface of the board.;Heat the pad with solder again push one leg of the button from the side onto the pad.;Make sure{,} that the other leg of the button touches the other pad.
 images/PXL_20241002_125905007-EDIT,Solder the other leg of the button to the board.

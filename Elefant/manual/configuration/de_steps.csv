@@ -1,6 +1,6 @@
 images/PXL_20241002_125314633,Überprüfe deine Bauteile.;Eine CR2032-Batterie ist nicht enthalten. Du kannst sie online oder in größeren Elektronikgeschäften kaufen.
-images/PXL_20241002_125601314, Drehe die Platine auf die Rückseite;Füge Lötzinn auf die das länglichen LED-Pad hinzu{,} welches mit einem + markiert ist.
-images/PXL_20241002_125648828-EDIT,Das lange Beinchen der LED markiert die positive Seite.;Löte das positive Beinchen (das lange) an das positive Pad{,} auf dem du bereits Lötzinn aufgebracht hast.;Achte darauf{,} dass das zweite Beinchen auch das andere Pad ohne Lötzinn berührt.
+images/PXL_20241002_125601314, Drehe die Platine auf die Rückseite;Am Rüssel findest du das LED-Pad D1. Eines der Pads ist länger und mit Plus (+) markiert.;Füge Lötzinn auf die das länglichen LED-Pad hinzu{,} welches mit einem Plus (+) markiert ist.
+images/PXL_20241002_125648828-EDIT,Das lange Beinchen der LED markiert die positive Seite bzw. Plus-Seite.;Löte das positive Beinchen (das lange) auf das Plus Pad{,} auf dem du bereits Lötzinn aufgebracht hast.;Achte darauf{,} dass das zweite Beinchen auch das andere Pad ohne Lötzinn berührt.
 images/PXL_20241002_125719243,Löte das andere Beinchen der LED (Kathode{,} negative Seite) auf die Platine.
 images/PXL_20241002_125840114-EDIT,Der Taster hat keine Richtung.;Gib Lötzinn auf eines der Pads des Tasters.;Biege die Beinchen des Tasters so{,} dass die Beinchen die Oberfläche der Platine berühren können.;Erhitze das Pad mit Lötzinn erneut schiebe ein Beinchen den Taster von der Seite auf das Pad.;Stelle sicher{,} dass das andere Beinchen des Tasters das andere Pad berührt.
 images/PXL_20241002_125905007-EDIT,Löte das andere Beinchen des Tasters auf die Platine.
