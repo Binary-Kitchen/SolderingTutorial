@@ -1,43 +1,35 @@
-# Dice DIP
-Electronic dice which uses button bouncing and timing for randomness.
+# Die Sendung mit der Maus - Maus
 
-<img src="manual/images/DSC04788.jpg" width=400px alt="Dice DIP">
+Everyone knows the great Mouse from the “Sendung mit der Maus” and, as always, wants to play a lot. This soldering kit is a hot wire and you can proof your steady hand!
+
+<img src="manual/images/thumbnail.jpg" width=300px alt="maus"> <img src="manual/images/PXL_20250915_082145220-EDIT" width=300px alt="maus">
 
 - Status: **Complete**
-- Difficulty: **4/5**
+- Difficulty: **2/5**
 
 ### Parts List
-| Quantity | Name                          | Description                | Signing/Colorcode                         |
-|----------|-------------------------------|----------------------------|-------------------------------------------|
-| 2        | C1, C2                        | Ceramic capacitor 100,nF   | 104                                       |
-| 1        | C3                            | Capacitor 47uF             |                                           |
-| 3        | D1, D2, D3                    | Diode BAW 76               |                                           |
-| 1        | D10                           | Diode 1N4007               |                                           |
-| 1        | IC1                           | CMOS-IC 4029               |                                           |
-| 1        | IC2                           | CMOS-IC 4093               |                                           |
-| 7        | LED1 -- LED7                  | LED 5,mm                   |                                           |
-| 2        | R1, R3                        | Resistor 2,2k Ohm          | red - red - black - brown - brown         |
-| 1        | R2                            | Resistor 1M Ohm            | brown - black - black - yellow - brown    |
-| 1        | R4                            | Resistor 2,2M Ohm          | red - red - black - yellow - brown        |
-| 1        | R5                            | Resistor 120k Ohm          | brown - red - black - orange - brown      |
-| 2        | R6, R8                        | Resistor 1,5k Ohm          | brown - green - black - brown - brown     |
-| 1        | R7                            | Resistor 1,8k Ohm          | brown - Grau - black - brown - brown      |
-| 1        | R9                            | Resistor 3,3k Ohm          | orange - orange - black - brown - brown   |
-| 1        | T1                            | Transistor BC547B          |                                           |
-| 1        | S1                            | Button                     |                                           |
-| 1        | X1                            | USB female connector	|                                           |
-| 1        | Platine                       |                            |                                           |
-| 1        | IC-socket 14-polig            |                            |                                           |
-| 1        | IC-socket 16-polig            |                            |                                           |
-| 1        | Batteryclip für 9-Volt-Block  |                            |                                           |
-| 1        | Battery 9V Block              |                            |                                           |
 
-### Manual
-You can find the manual and pictures of every step in the manual folder.
+| Quantity | Name(s)       | Description                 | Label / Color Code                          |
+|----------|---------------|-----------------------------|---------------------------------------------|
+| 2        | Q1, Q2        | Transistor BC547            | BC547                                       |
+| 1        | D1            | LED 5 mm green              |                                             |
+| 1        | D2            | LED 5 mm red                |                                             |
+| 2        | R1, R2        | Resistor 430 Ω              | Yellow · Orange · Black · Black · Brown     |
+| 2        | R3, R4        | Resistor 4.7 kΩ             | Yellow · Violet · Black · Brown · Brown     |
+| 2        | R5, R6        | Resistor 47 kΩ              | Yellow · Violet · Black · Red · Brown       |
+| 1        | SW1           | Switch                      |                                             |
+| 1        | SW2           | Pushbutton                  |                                             |
+| 1        | –             | Rigid cable (approx. 50 cm) |                                             |
+| 1        | –             | Flexible cable (approx. 30 cm) |                                          |
+| 1        | –             | Printed circuit board (PCB) |                                             |
+| 1        | –             | Battery holder for AA cells |                                             |
+| 2        | –             | AA (Mignon) batteries       | *(not included)*                            |
+
 
 ### Copyright and Authorship
-The project is based on https://www.ei.rub.de/media/ei/attachments/files/2009/12/Dokumentation_elektronischer_Wuerfel.pdf
 
-- Board: [CC-BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/) - Thomas Basler
-- Manual (TeX): [LPPL](https://www.latex-project.org/lppl.txt) - [Marei Peischl](https://peitex.de)
-- Manual (pdf): [CC-BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/) - [Binary Kitchen e.V.](https://www.binary-kitchen.de)
+- Graphic: Copyright belongs to WDR - Attention not usable without permission.
+- Board: [CC-BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/) - Timo Schindler @ [blinkyparts.com](https://shop.blinkyparts.com)
+
+### Buy Soldering Kits
+Unfortunately, you can't just buy this great elephant. We are only allowed to give the elephants to organizations that take part in the “Türen auf mit der Maus” day. Are you one of these organizations? Please get in touch with us: [shop.blinkyparts.com](https://shop.blinkyparts.com/)
