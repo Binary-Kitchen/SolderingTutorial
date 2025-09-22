@@ -2,7 +2,7 @@
 
 Everyone knows the great Mouse from the “Sendung mit der Maus” and, as always, wants to play a lot. This soldering kit is a hot wire and you can proof your steady hand!
 
-<img src="manual/images/thumbnail.jpg" width=300px alt="maus"> <img src="manual/images/PXL_20250915_082145220-EDIT" width=300px alt="maus">
+<img src="manual/images/thumbnail.jpg" width=300px alt="maus"> <img src="manual/images/PXL_20250915_082145220-EDIT.jpg" width=300px alt="maus">
 
 - Status: **Complete**
 - Difficulty: **2/5**
