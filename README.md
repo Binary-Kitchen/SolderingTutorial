@@ -179,7 +179,12 @@ This great LED wolf is a good way to start tinkering if you don't have a solderi
 
 <img src="LEDWolf/manual/images/thumbnail.jpg" width=400px alt="LEDWolf">
 
-- Difficulty: **1   /5**
+- Difficulty: **1/5**
+
+### [Maus](Maus/)
+An easy hot wire soldering kit with the Sendung mit der Maus.
+
+<img src="Maus/manual/images/thumbnail.jpg" width=400px alt="Maus">
 
 ### [Moon Cat](MoonCat/)
 Excuse me? What are you staring at? This wonderful kit is very simple in terms of circuitry, but the result is simply hilarious.
