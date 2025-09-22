@@ -1,0 +1,14 @@
+Quantity, Name, Description, Label/Color Code
+2, Q1{,} Q2, Transistor BC547, BC547
+1, D1, LED \SI{5}{\mm} green,
+1, D2, LED \SI{5}{\mm} red,
+2,R1{,} R2,Resistor \SI{430}{\ohm},Gelb|Orange|Schwarz|Schwarz|Braun,R1|R2
+2,R3{,} R4,Resistor \SI{4,7}{\kilo\ohm},Gelb|Violett|Schwarz|Braun|Braun,R3|R4
+2,R5{,} R6,Resistor \SI{47}{\kilo\ohm},Gelb|Violett|Schwarz|Rot|Braun,R5|R6
+1,SW1,Switch,
+1,SW2,Pushbutton,
+1,Rigid cable (approx. \SI{50}{\cm}),
+1,flexible cable (approx. 30 cm),
+1,printed circuit board (PCB),,
+1,battery holder for AA (Mignon) batteries,,
+2,AA (Mignon) batteries (not included),,

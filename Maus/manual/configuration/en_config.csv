@@ -1,0 +1,45 @@
+title=The Mouse and the Hot Wire
+titlePicture=images/thumbnail
+skillTitle=Difficulty
+skillLevel=2/5
+buildTitle=Build Time
+buildTime=1--2 hours
+stepTitle=Step
+descriptionTitle=Manual
+descriptionVersion=v2.0
+descriptionLicense=CC-BY-SA 4.0 Binary Kitchen e.V.
+boardTitle=PCB
+boardVersion=v1.0
+boardLicense=CC-BY-NC-SA 4.0 blinkyparts GmbH
+partLabel=true
+appendix=
+additionalSettings=
+warningsTitle=Safety Information
+warnings= {
+\begin{itemize}
+  \item WARNING: Not suitable for children under 14 years of age.
+   \item Choking hazard due to small parts that can be swallowed.
+   \item We recommend: Supervision of the assembly and soldering process by an adult.
+   \item Keep these assembly instructions in a safe place for future reference! They contain important information.
+   \item If the battery runs out, replace it with a new battery with the same specifications.
+   \item During soldering, the soldering iron, solder, and components being soldered become very hot.
+   \item ALWAYS wear safety goggles when soldering and assembling the kit.
+   \item Always use a fireproof surface when soldering! This prevents the components from slipping.
+   \item Always use a suitable soldering iron holder to store the soldering iron safely during assembly.
+   \item The kit is only intended for battery operation.
+   \item Never allow small children to play with the kit alone! The kit uses small batteries. If these are swallowed, get stuck in the esophagus, and are not treated, this can trigger a harmful chemical reaction and have serious consequences within two hours. If this happens, seek medical attention immediately.
+   \item CAUTION: Never connect the kit to mains voltage! This poses a serious risk to life!
+   \item Please dispose of the device at a certified disposal facility at the end of its service life. This is good for the environment and ensures proper disposal.
+   \item Subject to changes and errors.
+\end{itemize}}
+warningsAddress=blinkyparts.com\\Egerstr. 9\\93057 Regensburg\\GERMANY
+warningsCE={\includegraphics[height=10mm]{LaTeX_config/ce}\hspace{20mm}}
+warningsRoHS={\includegraphics[height=10mm]{LaTeX_config/rohs}\hspace{20mm}}
+warningsWEEE={\includegraphics[height=10mm]{LaTeX_config/weee}}
+warningsWEEETitle=Disposal\\\\
+warningsWEEEText= {
+This appliance is labelled in accordance with the European Directive 2012/19/EU on waste electrical and electronic equipment (WEEE). The directive provides the legal framework for the take-back and recycling of waste equipment throughout the EU.
+\begin{itemize}
+    \item \textbf{packaging}: The packaging is made of environmentally friendly materials and is therefore recyclable. Dispose of packaging materials that are no longer needed accordingly.
+    \item \textbf{waste equipment}: Old appliances often still contain valuable materials. Therefore, hand in your old appliance to your retailer or a recycling centre for reuse. Please ask your retailer or your local authority for the current disposal routes.
+\end{itemize}}
