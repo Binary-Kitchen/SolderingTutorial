@@ -21,7 +21,7 @@ Everyone knows the great elephant from the “Sendung mit der Maus” and, as al
 ### Copyright and Authorship
 
 - Graphic: Copyright belongs to WDR - Attention not usable without permission.
-- Board: [CC-BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/) - Timo Schindler @ [blinkyparts.com](https://shop.blinkyparts.com)
+- Board: [CC-BY-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/) - Timo Schindler @ [blinkyparts.com](https://shop.blinkyparts.com)
 
 ### Buy Soldering Kits
 Unfortunately, you can't just buy this great elephant. We are only allowed to give the elephants to organizations that take part in the “Türen auf mit der Maus” day. Are you one of these organizations? Please get in touch with us: [shop.blinkyparts.com](https://shop.blinkyparts.com/)
