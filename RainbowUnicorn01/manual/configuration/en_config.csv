@@ -1,4 +1,4 @@
-title=Rainbow Unicorn 01
+title=Rainbow Unicorn
 titlePicture=images/thumbnail
 skillTitle=Difficulty
 skillLevel=2/5
@@ -15,17 +15,19 @@ appendix=
 warningsTitle=Safety Information
 warnings= {
 \begin{itemize}
-   \item ATTENTION: Not suitable for children under 3 years, choking hazard due to small parts that may be swallowed.
+  \item WARNING: Not suitable for children under 14 years of age.
+   \item Choking hazard due to small parts that can be swallowed.
    \item We recommend: Supervision of the assembly and soldering process by an adult.
-   \item Keep these operating instructions in a safe place for later use! It contains important information.
-   \item If the battery is empty, replace it only with a new battery with the same values.
-   \item When soldering, the soldering iron, the solder and also the components being soldered become very hot.
-   \item Always wear safety glasses when soldering and assembling the kit.
-   \item Always use a fire proof soldering pad when soldering! This prevents the components from slipping away.
-   \item To keep the soldering iron safe during assembly, always use a suitable soldering stand.
-   \item The kit is designed for battery operation only.
-   \item CAUTION: Never connect the kit to 230 V mains voltage! There is an absolute danger to life!
-   \item Please take the device to appropriately certified disposal companies at the end of its service life. This is good for the environment and ensures correct disposal.
+   \item Keep these assembly instructions in a safe place for future reference! They contain important information.
+   \item If the battery runs out, replace it with a new battery with the same specifications.
+   \item During soldering, the soldering iron, solder, and components being soldered become very hot.
+   \item ALWAYS wear safety goggles when soldering and assembling the kit.
+   \item Always use a fireproof surface when soldering! This prevents the components from slipping.
+   \item Always use a suitable soldering iron holder to store the soldering iron safely during assembly.
+   \item The kit is only intended for battery operation.
+   \item Never allow small children to play with the kit alone! The kit uses small batteries. If these are swallowed, get stuck in the esophagus, and are not treated, this can trigger a harmful chemical reaction and have serious consequences within two hours. If this happens, seek medical attention immediately.
+   \item CAUTION: Never connect the kit to mains voltage! This poses a serious risk to life!
+   \item Please dispose of the device at a certified disposal facility at the end of its service life. This is good for the environment and ensures proper disposal.
    \item Subject to changes and errors.
 \end{itemize}}
 warningsAddress=blinkyparts.com\\Egerstr. 9\\93057 Regensburg\\GERMANY
