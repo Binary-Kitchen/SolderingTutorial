@@ -3,11 +3,11 @@ Menge,Name,Beschreibung,Beschriftung/Farbcode
 1,U1,NE555 Timer,NE555
 2,D1{,}D2, Diode, 1N5817
 1,RV1,200k Potentiometer,
-1,C1,\SI{10}{\nano\farad} Keramikkondensator,103
-2,C2{,}C3,\SI{100}{\nano\farad} Keramikkondensator,104
-1,C4,\SI{1}{\mu\farad} Keramikkondensator,105
+1,C1,\SI{10}{\nano\farad} Keramikkondensator rot,103
+1,C2,\SI{1}{\mu\farad} Keramikkondensator gelb,105
+3,C3--C5,\SI{100}{\nano\farad} Keramikkondensator rot,104
 1,BT1,CR2032 Batteriehalter
-24,D5--D28,LED rot \SI{3}{\mm},
+24,D3--D26,LED rot \SI{3}{\mm},
 1,R1,Widerstand \SI{1}{\kilo\ohm},Braun | Schwarz | Schwarz | Braun | Braun,R1
 1,R2,Widerstand \SI{100}{\kilo\ohm},Braun | Schwarz | Schwarz | Orange | Braun,R2
 1,R3,Widerstand \SI{47}{\ohm},Schwarz | Gelb | Violett | Schwarz | Braun,R3
