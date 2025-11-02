@@ -41,7 +41,7 @@ You can find the manual and pictures of every step in the manual folder.
 
 ### Board Layout
 The board has beend designed by Francesco Truzzi:
-- http://www.truzzi.me/new-atx-breakout-board-pcbs-with-some-additions/
+- http://truzzi.me/new-atx-breakout-board-pcbs-with-some-additions/
 - https://github.com/ftruzzi/ATX-Breakout-Mini
 
 ### Copyright and Authorship
