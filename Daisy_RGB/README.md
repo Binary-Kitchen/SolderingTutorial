@@ -27,9 +27,9 @@ This 3D construction kit allows you to solder a personalized daisy with a large 
 ### Copyright and Authorship
 
 - Board: [CC-BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/) - Timo @ blinkyparts.com
-- Flower SVG [CC-BY 3.0](https://creativecommons.org/licenses/by/3.0/) - [daisy by Jasmine from Noun Project](https://thenounproject.com/icon/daisy-4840366/) (We've bought a licence, you should honor the artist work too!)
-- Grass SVG [CC-BY 3.0](https://creativecommons.org/licenses/by/3.0/) - [grass by Softscape from Noun Project](https://thenounproject.com/icon/grass-4708462/) (We've bought a licence, you should honor the artist work too!)
-- Cloud SVG [CC-BY 3.0](https://creativecommons.org/licenses/by/3.0/) - [Cloud by verry poernomo from Noun Project](https://thenounproject.com/icon/cloud-5383467/) (We've bought a licence, you should honor the artist work too!)
+- Flower SVG [CC-BY 3.0](https://creativecommons.org/licenses/by/3.0/) - [daisy by Jasmine from Noun Project](https://thenounproject.com/icon/daisy-4840366/) (We've bought a license, you should honor the artist work too!)
+- Grass SVG [CC-BY 3.0](https://creativecommons.org/licenses/by/3.0/) - [grass by Softscape from Noun Project](https://thenounproject.com/icon/grass-4708462/) (We've bought a license, you should honor the artist work too!)
+- Cloud SVG [CC-BY 3.0](https://creativecommons.org/licenses/by/3.0/) - [Cloud by verry poernomo from Noun Project](https://thenounproject.com/icon/cloud-5383467/) (We've bought a license, you should honor the artist work too!)
 
 ### Buy Soldering Kits
 If you want to buy the parts and PCB for a soldering kit you can find everything here: [shop.blinkyparts.com](https://shop.blinkyparts.com/de/Gaensebluemchen-RGB-Zeig-jedem-deine-lieblings-Blume-in-Regenbogenfarben/blink237342)
