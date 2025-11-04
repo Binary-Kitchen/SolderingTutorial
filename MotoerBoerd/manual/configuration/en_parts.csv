@@ -2,7 +2,7 @@ Quantity,Description,Labeling/color code
 ,
 1,Electrolytic capacitor \SI{470}{\micro\farad},
 2,Resistor \SI{180}{\kilo\ohm},Braun | Grau | Schwarz | Orange | Gold,R1
-1,Ceramic capacitor \SI{330}{\pico\farad},331
+2,Ceramic capacitor \SI{330}{\pico\farad},331
 1,Motör
 1,Diode
 1,CD4069
