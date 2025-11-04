@@ -3,7 +3,7 @@ This repository contains all files for our soldering kits and courses. Please fe
 
 We've tried to collect and create tutorials with different difficulties and are offering SMD and DIP soldering kits.
 
-For an overview of all kits with manuals and interactive pcb views got to: https://binary-kitchen.github.io/SolderingTutorial
+For an overview of all kits with manuals and interactive pcb views go to: https://binary-kitchen.github.io/SolderingTutorial
 
 If you want to buy soldering Kits you can find some here: [shop.blinkyparts.com](https://shop.blinkyparts.com)
 
@@ -21,7 +21,7 @@ Handy Breakout Board to get all the important voltages from a standard ATX power
 
 - Difficulty: **4/5**
 
-### [Al Hacka Alpakca](AlHackaAlpaka/)
+### [Al Hacka Alpaka](AlHackaAlpaka/)
 Easy soldering kit in homage to Jugend hackt and its mascot.
 
 <img src="AlHackaAlpaka/manual/images/thumbnail.jpg" width=400px alt="AlHackaAlpaka">
@@ -48,7 +48,7 @@ A talking robot!
 - Difficulty: **2/5**
 
 ### [Blinkenrocket Mini](BlinkenrocketMini/)
-A very simple soldering kit and a very intuitive way to programm your own led matrix. Super fun blinkenrocket!
+A very simple soldering kit and a very intuitive way to program your own led matrix. Super fun blinkenrocket!
 
 <img src="BlinkenrocketMini/manual/images/thumbnail.jpg" width=400px alt="BlinkenrocketMini">
 
@@ -105,7 +105,7 @@ This rainbow dinosaur will brighten up your life. The spikes are glowing in all 
 - Difficulty: **2/5**
 
 ### [Draussenfuchs Antenna](DraussenfuchsAntenne/)
-A soldering kit for a simple 433MHz Yagi anenna designed for the draussenfuchs.de fox hunting game.
+A soldering kit for a simple 433MHz Yagi antenna designed for the draussenfuchs.de fox hunting game.
 
 <img src="DraussenfuchsAntenne/manual/images/thumbnail.jpg" width=400px alt="Draussenfuchs Antenna">
 
@@ -288,7 +288,7 @@ A simple SMD learning kit where a light chases around a circle.
 - Difficulty: **4/5**
 
 ### [Robo Robin](RoboRobin/)
-Light up this super easy Robot. It has RGB-LEDs as eyees.
+Light up this super easy Robot. It has RGB-LEDs as eyes.
 
 <img src="RoboRobin/manual/images/thumbnail.jpg" width=400px alt="Robo Robin">
 
@@ -317,7 +317,7 @@ A very easy circuit to power a little robot with a vibration motor.
 - Difficulty: **1/5**
 
 ### [SmartLED](SmartLED/)
-Create a wonderful smart LED-Lamp you can control with you Smatphone.
+Create a wonderful smart LED-Lamp you can control with you Smartphone.
 
 <img src="/SmartLED/manual/images/thumbnail.jpg" width=400px alt="SmartLED">
 
@@ -362,7 +362,7 @@ Please consider README.md in sub-folders for the Copyright and Authorship of the
 Boards:
 - Arne Rossius <arne@blinkenarea.org>
 - Thomas Basler <noby@binary-kitchen.de>
-- Francesco Truzzi <http://www.truzzi.me>
+- Francesco Truzzi <http://truzzi.me>
 - Timo Schindler <https://www.timoschindler.de>
 - Thomas Schmid
 
@@ -382,3 +382,4 @@ Manuals:
 - Mario Langhammer <https://github.com/Mallo321123>
 
 Note: This list of authors can be incomplete. Please also consider the README.md in the sub-folders for authorship.
+
