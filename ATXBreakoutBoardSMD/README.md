@@ -1,5 +1,5 @@
 # ATX Breakout Board - DIP/SMD
-A handy breakout board to get all important voltages from an standard ATX power supply.
+A handy breakout board to get all important voltages from a standard ATX power supply.
 
 <img src="manual/images/IMG_20180701_002328.jpg" width=400px alt="ATX Breakout Board">
 
@@ -32,7 +32,7 @@ A handy breakout board to get all important voltages from an standard ATX power 
 | 1        | VR1                | 2 k ohm PCB mount potentiometer 9 mm  |                   | 
 | 1        | J1                 | 24-pin ATX connector                  |                   | 
 | 5        | T1--T3, T5, T6,    | Red 4mm Binding Post                  |                   | 
-| 1        | T4                 | Black B4mm Binding Post               |                   | 
+| 1        | T4                 | Black 4mm Binding Post                |                   | 
 | 1        |                    | Board                                 |                   | 
 
 
@@ -40,7 +40,7 @@ A handy breakout board to get all important voltages from an standard ATX power 
 You can find the manual and pictures of every step in the manual folder.
 
 ### Board Layout
-The board has beend designed by Francesco Truzzi:
+The board has been designed by Francesco Truzzi:
 - http://truzzi.me/new-atx-breakout-board-pcbs-with-some-additions/
 - https://github.com/ftruzzi/ATX-Breakout-Mini
 
