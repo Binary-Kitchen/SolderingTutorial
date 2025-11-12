@@ -1,0 +1,22 @@
+Quantity, Name, Description, Label/Color Code
+1, IC1, Microcontroller ATtiny85, ATtiny85-20PU
+1, C1, Ceramic Capacitor \SI{100}{\nano\farad}, 104
+1, C2, Ceramic Capacitor \SI{100}{\nano\farad}, 104
+1, D1, Protection Diode, Standard diode (stripe = cathode)
+1, R1, Resistor \SI{1}{\mega\ohm}, Brown|Black|Black|Yellow|Brown
+1, R2, Resistor \SI{10}{\kilo\ohm}, Brown|Black|Black|Red|Brown
+1, R3, Resistor \SI{4.7}{\kilo\ohm}, Yellow|Violet|Black|Brown|Brown
+3, LED1--LED3, LED \SI{5}{\mm} Green (top ring), Green LEDs
+4, LED4--LED7, LED \SI{5}{\mm} Green (middle ring), Green LEDs
+5, LED8--LED12, LED \SI{5}{\mm} Green (bottom ring), Green LEDs
+1, LED13, LED \SI{5}{\mm} Orange (star), Orange LED for tree top
+1, MIC1, Electret Microphone, Small microphone for blow detection
+1, BZ1, Buzzer, Small buzzer for sound effects
+1, SW1, Push Button, push button for on/off switching
+1, BAT1, Battery Pack, Battery pack with pins
+2,, Stem Parts, Two interlocking stem PCBs
+1,, 5-LED Ring PCB, Ring PCB for 5 LEDs (bottom)
+1,, 4-LED Ring PCB, Ring PCB for 4 LEDs (middle)
+1,, 3-LED Ring PCB, Ring PCB for 3 LEDs (top)
+1,, Cloud PCB, Base circuit board
+1,, 2x AAA Batteries (not included), Batteries for power

@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BlinkyTree - Interactive Bill of Materials</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        .header {
+            background-color: #2c5530;
+            color: white;
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        .board-container {
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            margin-bottom: 20px;
+        }
+        .component-list {
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .component {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px;
+            border-bottom: 1px solid #eee;
+            cursor: pointer;
+            transition: background-color 0.2s;
+        }
+        .component:hover {
+            background-color: #f0f8f0;
+        }
+        .component.highlight {
+            background-color: #e8f5e8;
+            border-left: 4px solid #4CAF50;
+        }
+        .christmas-tree {
+            width: 300px;
+            height: 400px;
+            margin: 0 auto;
+            position: relative;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 400"><polygon points="150,20 120,80 180,80" fill="%232d5016"/><polygon points="150,40 110,120 190,120" fill="%234a7c59"/><polygon points="150,70 100,160 200,160" fill="%232d5016"/><polygon points="150,100 90,200 210,200" fill="%234a7c59"/><rect x="140" y="200" width="20" height="40" fill="%23654321"/></svg>') no-repeat center;
+            background-size: contain;
+        }
+        .led-marker {
+            position: absolute;
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            background-color: #ffcc00;
+            border: 2px solid #333;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+        .led-marker:hover {
+            transform: scale(1.5);
+            box-shadow: 0 0 10px rgba(255, 204, 0, 0.8);
+        }
+        .status {
+            text-align: center;
+            color: #666;
+            font-style: italic;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>🎄 BlinkyTree</h1>
+        <p>Interactive Bill of Materials & Assembly Guide</p>
+    </div>
+
+    <div class="board-container">
+        <h2>PCB Layout & Component Placement</h2>
+        <div class="christmas-tree" id="pcb-view">
+            <!-- LED positions will be populated by JavaScript -->
+        </div>
+        <div class="status">
+            <p><em>Interactive BOM is in development. This is a placeholder showing the basic layout.</em></p>
+            <p>Click on components in the list below to highlight their positions on the PCB.</p>
+        </div>
+    </div>
+
+    <div class="component-list">
+        <h2>Component List</h2>
+        <div class="component" data-ref="IC1">
+            <div>
+                <strong>IC1</strong> - ATtiny85 Microcontroller
+                <br><small>8-bit microcontroller in DIP-8 package (ATtiny85-20PU)</small>
+            </div>
+            <div>1x</div>
+        </div>
+        <div class="component" data-ref="C1">
+            <div>
+                <strong>C1</strong> - 100nF Ceramic Capacitor
+                <br><small>Decoupling capacitor, marked "104"</small>
+            </div>
+            <div>1x</div>
+        </div>
+        <div class="component" data-ref="LED1-3">
+            <div>
+                <strong>LED1-LED3</strong> - 5mm Green LEDs (Upper Ring)
+                <br><small>Upper Tree LEDs, observe polarity (long leg = +)</small>
+            </div>
+            <div>3x</div>
+        </div>
+        <div class="component" data-ref="LED4-7">
+            <div>
+                <strong>LED4-LED7</strong> - 5mm Green LEDs (Middle Ring)
+                <br><small>Tree middle ring LEDs, observe polarity</small>
+            </div>
+            <div>4x</div>
+        </div>
+        <div class="component" data-ref="LED8-12">
+            <div>
+                <strong>LED8-LED12</strong> - 5mm Green LEDs (Lower Ring)
+                <br><small>Tree lower ring LEDs, observe polarity</small>
+            </div>
+            <div>5x</div>
+        </div>
+        <div class="component" data-ref="LED13">
+            <div>
+                <strong>LED13</strong> - 5mm Yellow LED (Star)
+                <br><small>Tree star LED, observe polarity</small>
+            </div>
+            <div>1x</div>
+        </div>
+        <div class="component" data-ref="MIC1">
+            <div>
+                <strong>MIC1</strong> - Electret Microphone
+                <br><small>Blow detection sensor, small black component</small>
+            </div>
+            <div>1x</div>
+        </div>
+        <div class="component" data-ref="SW1">
+            <div>
+                <strong>SW1</strong> - Power Button Switch
+                <br><small>Power switch Button</small>
+            </div>
+            <div>1x</div>
+        </div>
+        <div class="component" data-ref="BAT1">
+            <div>
+                <strong>BAT1</strong> - Battery Holder
+                <br><small>CR2032 coin cell holder</small>
+            </div>
+            <div>1x</div>
+        </div>
+    </div>
+
+    <script>
+        // Basic interactivity for component highlighting
+        document.querySelectorAll('.component').forEach(component => {
+            component.addEventListener('click', function() {
+                // Remove previous highlights
+                document.querySelectorAll('.component').forEach(c => c.classList.remove('highlight'));
+                
+                // Highlight clicked component
+                this.classList.add('highlight');
+                
+                // In a real iBOM, this would highlight the component on the PCB
+                console.log('Highlighting:', this.dataset.ref);
+            });
+        });
+
+        // Placeholder for future iBOM integration
+        console.log('BlinkyTree Interactive BOM - Development Version');
+        console.log('Full interactive features will be available when PCB design is complete.');
+    </script>
+</body>
+</html>
