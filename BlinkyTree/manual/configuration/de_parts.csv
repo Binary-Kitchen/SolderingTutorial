@@ -1,0 +1,22 @@
+Anzahl, Name, Beschreibung, Bezeichnung/Farbcode
+1, IC1, Mikrocontroller ATtiny85, ATtiny85-20PU
+1, C1, Keramikkondensator \SI{100}{\nano\farad}, 104
+1, C2, Keramikkondensator \SI{100}{\nano\farad}, 104
+1, D1, Schutzdiode, Standard Diode (Streifen = Kathode)
+1, R1, Widerstand \SI{1}{\mega\ohm}, Braun|Schwarz|Schwarz|Gelb|Braun
+1, R2, Widerstand \SI{10}{\kilo\ohm}, Braun|Schwarz|Schwarz|Rot|Braun
+1, R3, Widerstand \SI{4.7}{\kilo\ohm}, Gelb|Violett|Schwarz|Braun|Braun
+3, LED1--LED3, LED \SI{5}{\mm} Grün (oberer Ring), Grüne LEDs
+4, LED4--LED7, LED \SI{5}{\mm} Grün (mittlerer Ring), Grüne LEDs
+5, LED8--LED12, LED \SI{5}{\mm} Grün (unterer Ring), Grüne LEDs
+1, LED13, LED \SI{5}{\mm} Orange (Stern), Orange LED für Baumspitze
+1, MIC1, Elektret-Mikrofon, Kleines Mikrofon für Puste-Erkennung
+1, BZ1, Summer, Kleiner Summer für Soundeffekte
+1, SW1, Drucktaster, Drucktaster für Ein/Aus-Schalten
+1, BAT1, Batteriepack, Batteriepack mit Pins
+2,, Stammteile, Zwei ineinandergreifende Stamm-Platinen
+1,, 5-LED Ring Platine, Ring-Platine für 5 LEDs (unten)
+1,, 4-LED Ring Platine, Ring-Platine für 4 LEDs (Mitte)
+1,, 3-LED Ring Platine, Ring-Platine für 3 LEDs (oben)
+1,, Wolken-Platine, Basis-Schaltungsplatine
+1,, 2x AAA Batterien (nicht enthalten), Batterien für Stromversorgung

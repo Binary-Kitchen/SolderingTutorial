@@ -1,0 +1,42 @@
+title=BlinkyTree
+titlePicture=images/thumbnail
+skillTitle=Schwierigkeitsgrad
+skillLevel=3/5
+buildTitle=Bauzeit
+buildTime=60--75 Minuten
+stepTitle=Schritt
+descriptionTitle=Anleitung
+descriptionVersion=v1.0
+descriptionLicense=CC-BY-NC 4.0
+boardTitle=Platine
+boardVersion=v1.0
+boardLicense=CC-BY-NC 4.0
+partLabel=true
+appendix=\textbf{Was du brauchst:} Lötkolben{,} Lötzinn{,} normale Seitenschneider{,} kräftige Seitenschneider (WARNUNG: Normale können am Batteriepack brechen){,} Entlötpumpe oder Entlötlitze{,} eine Halterung oder Schraubstock für die Platine. \textbf{Kurz-Anleitung:} Baue zuerst den Stamm{,} setze alle Bauteile der Basis ein{,} baue die Ringe auf dem Stamm auf{,} die LEDs kommen zuletzt. Sehr wichtig: Verlöte die GND‑Pads des Stamms erst{,} nachdem der große Ring aufgesetzt ist!
+additionalSettings=
+warningsTitle=Sicherheitshinweise
+warnings= {\begin{itemize}
+    \item ACHTUNG: Nicht geeignet für Kinder unter 3 Jahren — Erstickungsgefahr durch Kleinteile.
+    \item Wir empfehlen: Montage und Löten nur unter Aufsicht eines Erwachsenen.
+    \item Bewahre diese Anleitung an einem sicheren Ort auf — sie enthält wichtige Informationen.
+    \item Wenn die Batterie leer ist, ersetze sie nur durch eine gleichwertige neue Batterie.
+    \item Beim Löten werden Lötkolben, Lötzinn und Bauteile sehr heiß — Verbrennungsgefahr.
+    \item Trage beim Löten immer eine Schutzbrille.
+    \item Verwende eine feuerfeste Unterlage, damit Bauteile nicht verrutschen.
+    \item Stelle den Lötkolben während der Arbeit immer in einen geeigneten Ständer.
+    \item Der Bausatz ist nur für Batteriebetrieb vorgesehen.
+    \item VORSICHT: Niemals an 230 V Netzspannung anschließen — Lebensgefahr!
+    \item Entsorge das Gerät am Ende der Lebensdauer fachgerecht über Sammelstellen.
+    \item Änderungen und Irrtümer vorbehalten.
+\end{itemize}}
+warningsAddress=https://github.com/monkeyToneCircuits/BlinkyTree\\Ludwigsallee 30\\63739 Aschaffenburg\\GERMANY
+warningsCE={\includegraphics[height=10mm]{LaTeX_config/ce}\hspace{20mm}}
+warningsRoHS={\includegraphics[height=10mm]{LaTeX_config/rohs}\hspace{20mm}}
+warningsWEEE={\includegraphics[height=10mm]{LaTeX_config/weee}}
+warningsWEEETitle=Entsorgung\\
+warningsWEEEText= {
+Dieses Gerät ist entsprechend der europäischen Richtlinie 2012/19/EU über Elektro- und Elektronik-Altgeräte (WEEE) gekennzeichnet. Die Richtlinie regelt die Rücknahme und das Recycling von Altgeräten in der EU.
+\begin{itemize}
+    \item \textbf{Verpackung}: Die Verpackung besteht aus umweltfreundlichen Materialien und ist recycelbar. Entsorge die Verpackungsmaterialien entsprechend.
+    \item \textbf{Altgeräte}: Alte Geräte enthalten oft noch wertvolle Materialien. Gib dein Altgerät bei deinem Händler oder einer Recyclingstelle ab. Frage bei deinem Händler oder der örtlichen Behörde nach den aktuellen Entsorgungsmöglichkeiten.
+\end{itemize}}
