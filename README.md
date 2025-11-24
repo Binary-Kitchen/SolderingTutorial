@@ -54,6 +54,13 @@ A very simple soldering kit and a very intuitive way to program your own led mat
 
 - Difficulty: **2/5**
 
+### [BlinkyTree](BlinkyTree/)
+The BlinkyTree is a soldering kit for a fantastic soldering Christmas tree. The great feature: By blowing on the tree, you can play different songs. A wonderful soldering kit for the Christmas season.
+
+<img src="BlinkyTree/manual/images/thumbnail.jpg" width=400px alt="BlinkyTree">
+
+- Difficulty: **2/5**
+
 ### [Cat in a Box 1](Cat01/)
 A Cat in a box easy SMD kit. Bright glowing LED-eyes are watching every step! With this soldering kit it is super easy to learn SMD soldering.
 
@@ -173,6 +180,13 @@ Small soldering kit using SMD components with the kitchen head on it.
 <img src="KitchenHeadSMD/manual/images/DSC04829.jpg" width=400px alt="Kitchen Head SMD">
 
 - Difficulty: **4/5**
+
+### [LEDSchmuck](LEDSchmuck/)
+The LED jewelry kit allows you to easily and quickly assemble earrings or pendants with RGB LEDs. It's a creative kit for making great individual jewelry pieces.
+
+<img src="LEDSchmuck/manual/images/thumbnail.jpg" width=400px alt="LEDSchmuck">
+
+- Difficulty: **2/5**
 
 ### [LEDWolf](LEDWolf/)
 This great LED wolf is a good way to start tinkering if you don't have a soldering iron with you at the moment. All you need is a little glue and a small Phillips screwdriver to assemble this great wolf.

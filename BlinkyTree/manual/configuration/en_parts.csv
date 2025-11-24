@@ -3,9 +3,9 @@ Quantity, Name, Description, Label/Color Code
 1, C1, Ceramic Capacitor \SI{100}{\nano\farad}, 104
 1, C2, Ceramic Capacitor \SI{100}{\nano\farad}, 104
 1, D1, Protection Diode, Standard diode (stripe = cathode)
-1, R1, Resistor \SI{1}{\mega\ohm}, Brown|Black|Black|Yellow|Brown
-1, R2, Resistor \SI{10}{\kilo\ohm}, Brown|Black|Black|Red|Brown
-1, R3, Resistor \SI{4.7}{\kilo\ohm}, Yellow|Violet|Black|Brown|Brown
+1, R1, Resistor \SI{1}{\mega\ohm}, Brown|Black|Black|Yellow|Brown,R1
+1, R2, Resistor \SI{10}{\kilo\ohm}, Brown|Black|Black|Red|Brown,R2
+1, R3, Resistor \SI{4.7}{\kilo\ohm}, Yellow|Violet|Black|Brown|Brown,R3
 3, LED1--LED3, LED \SI{5}{\mm} Green (top ring), Green LEDs
 4, LED4--LED7, LED \SI{5}{\mm} Green (middle ring), Green LEDs
 5, LED8--LED12, LED \SI{5}{\mm} Green (bottom ring), Green LEDs

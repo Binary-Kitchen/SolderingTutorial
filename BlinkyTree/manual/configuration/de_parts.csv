@@ -3,9 +3,9 @@ Anzahl, Name, Beschreibung, Bezeichnung/Farbcode
 1, C1, Keramikkondensator \SI{100}{\nano\farad}, 104
 1, C2, Keramikkondensator \SI{100}{\nano\farad}, 104
 1, D1, Schutzdiode, Standard Diode (Streifen = Kathode)
-1, R1, Widerstand \SI{1}{\mega\ohm}, Braun|Schwarz|Schwarz|Gelb|Braun
-1, R2, Widerstand \SI{10}{\kilo\ohm}, Braun|Schwarz|Schwarz|Rot|Braun
-1, R3, Widerstand \SI{4.7}{\kilo\ohm}, Gelb|Violett|Schwarz|Braun|Braun
+1, R1, Widerstand \SI{1}{\mega\ohm}, Braun|Schwarz|Schwarz|Gelb|Braun,R1
+1, R2, Widerstand \SI{10}{\kilo\ohm}, Braun|Schwarz|Schwarz|Rot|Braun,R2
+1, R3, Widerstand \SI{4.7}{\kilo\ohm}, Gelb|Violett|Schwarz|Braun|Braun,R3
 3, LED1--LED3, LED \SI{5}{\mm} Grün (oberer Ring), Grüne LEDs
 4, LED4--LED7, LED \SI{5}{\mm} Grün (mittlerer Ring), Grüne LEDs
 5, LED8--LED12, LED \SI{5}{\mm} Grün (unterer Ring), Grüne LEDs
