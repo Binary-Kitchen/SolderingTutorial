@@ -5,7 +5,7 @@ images/PXL_20201204_194415170,Solder the potentiometer.;Solder the capacitor.;So
 images/PXL_20201204_194610956,Solder the PNP transistor BC557C (Q4). Attention: Risk of mix-up with the NPN transistors.
 images/PXL_20201204_194852017,Solder the three NPN transistors BC547C (Q1--Q3).
 images/PXL_20201204_195312026,Turn around the board.;Bend the soldering tabs and solder the button to the board. The direction does not matter.
-images/PXL_20201204_195506414,Solder on the speaker.
+images/PXL_20201204_195506414,Now pick up the speaker. On the back you will find a plus and a minus. Now solder the ends of the cables to the holes on the back of the board marked ‘Speaker’; Then stick the speaker to the back of the board. Use double-sided adhesive tape or a relatively large amount of hot glue. There must be no electrical short circuit through the metal of the speaker.
 images/PXL_20201204_195759617,Thread the red and black wire of the battery holder through the holes (not in the picture) above the solder pads and insert the wires into the solder pads. Attention: red is positive{,} black is negative;Solder the wires.
 images/PXL_20201204_200426013,Solder a stiff wire (for example a long cut-off leg of a resistor) at the tip of the stylus in the soldering point;Then bend the wire over the tip and solder it on the long soldering points (back and front) at the tip.; It is not im portant to cover from hole to hole but the wire should bend over the edge.
 images/PXL_20201204_200521315,Thread the flexible wire through the hole at the back-poart of the stylus (not in picture);Solder the wire then to the soldering pint;Thread the other end trough the hole near the connector point on the board.; Solder the wire to the soldering point.
