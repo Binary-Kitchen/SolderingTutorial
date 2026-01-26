@@ -7,7 +7,7 @@ Quantity,Description
 1, Pin header straight (4 pins)
 1,Pin header L-shaped (4 pins)
 1,Potentiometer \SI{2}{\kilo\ohm} blue
-3,Potentiometer \SI{2}{\kilo\ohm} black
+3,Potentiometer \SI{5}{\kilo\ohm} black
 3,Caps for potentiometer
 1,3xAA battery holder
 3,AA rechargeable battery or battery (not included)
