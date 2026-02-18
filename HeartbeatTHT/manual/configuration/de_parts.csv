@@ -1,0 +1,12 @@
+Menge,Name,Beschreibung,Beschriftung/Farbcode
+2,Q1--Q2,BC547 Transistor
+1,Q3,BC557 Transistor
+1,C1,\SI{100}{\mu\farad} Elektrolytkondensator,
+1,C2,\SI{100}{\nano\farad} Keramikkondensator rot,104
+1,D1,LED rot \SI{5}{\mm},
+1,BT1,CR2032 Batteriehalter
+2,R1{,}R6,Widerstand \SI{1}{\mega\ohm},Braun | Schwarz | Schwarz | Gelb | Braun,R1
+1,R2,Widerstand \SI{10}{\mega\ohm},Braun | Schwarz | Schwarz | Grün | Braun,R2
+4,R3--R5{,}R7,Widerstand \SI{10}{\kilo\ohm},Braun | Schwarz | Schwarz | Rot | Braun,R3
+1,,Batterie CR2032 (optional),
+1,,Platine,

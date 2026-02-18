@@ -138,6 +138,13 @@ The Ermer Beeper is a very neat continuity tester or beeper.
 
 - Difficulty: **2/5**
 
+### [Heartbeat](HeartbeatTHT/)
+Small soldering kit with an heart and a beating led in the middle.
+
+<img src="HeartbeatTHT/manual/images/thumbnail.jpg" width=400px alt="Heartbeat DIP">
+
+- Difficulty: **2/5**
+
 ### [Heart DIP](HeartDIP/)
 Small soldering kit with an heart on from https://wiki.blinkenarea.org/index.php/AntiKippenLights-Atmel
 
