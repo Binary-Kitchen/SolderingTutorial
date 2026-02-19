@@ -1,5 +1,5 @@
 # Hearbeat - THT
-Small soldering kit in form of an heart. In the middle a beating heart led.
+Small soldering kit in form of an heart. A flashing (beating) LED is located in the center of the beating heart.
 
 <img src="manual/images/thumbnail.jpg" width=400px alt="Heartbeat THT">
 
