@@ -10,7 +10,7 @@ Quantity,Name,Description,Labelling/Colour code
 24,D3--D26,LED red \SI{3}{\mm},
 1,R1,Resistor \SI{1}{\kilo\ohm},Braun | Schwarz | Schwarz | Braun | Braun,R1
 1,R2,Resistor \SI{100}{\kilo\ohm},Braun | Schwarz | Schwarz | Orange | Braun,R2
-1,R3,Resistor \SI{47}{\ohm},Schwarz | Gelb | Violett | Schwarz | Braun,R3
+1,R3,Resistor \SI{47}{\ohm},Gelb | Violett | Schwarz | Gold | Braun,R3
 1,SW1,Push Button,
 1,SW2,Switch,
 1,,Batterie CR2032 (optional),

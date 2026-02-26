@@ -8,22 +8,23 @@ Small soldering kit with an heart on it from driven by a NE555.
 
 ### Parts List
 
-| Amount | Name   | Description             | Marking |
-|--------|--------|-------------------------|---------|
-| 2      | U2,U3  | CD4017 Counter          | 4017    |
-| 1      | U1     | NE555 Timer             | NE555   |
-| 2      | D1,D2  | Diode 1N4007            | 1N5817  |
-| 1      | RV1    | Potentiometer           |         |
-| 1      | C1     | 10nF Ceramic Capacitor  | 103     |
-| 2      | C2,C3  | 100nF Ceramic Capacitor | 104     |
-| 1      | C4     | 1uF Ceramic Capacitor   | 105     |
-| 1      | BT1    | CR2032 Battery Holder   |         |
-| 24     | D5-D28 | Red 3mm LED 0805        |         |
-| 1      | R1     | 1k Resistor 	    |         |
-| 1      | R2     | 100k Resistor	    |         |
-| 1      | R3     | 47R Resistor	    |         |
-| 1      | SW1    | Push Button             |         |
-| 1      | SW2    | Switch                  |         |
+| Description                   |  Name  | Quantity |
+|-------------------------------|:------:|:--------:|
+| LED 3mm red	                | D3-D26 |    24    |
+| Capacitor 10nF            	|   C1   |     1    |
+| Capacitor 100n            	|  C3-C5 |     3    |
+| Capacitor 1uF			|   C2	 |     1    |
+| Diode 1N4007              	|  D1-D2 |     2    |
+| Resistor 1k          		|   R1   |     1    |
+| Resistor 100k        		|   R2   |     1    |
+| Resistor 47R         		|   R3   |     1    |
+| Resistor Variable   		|   RV1  |     1    |
+| Switch	   		|   SW2  |     1    |
+| Push Button	   		|   SW1  |     1    |
+| NE555                  	|   U1   |     1    |
+| CD4017                 	|  U2-U3 |     2    |
+| CR2032 Battery Holder (THT)   |  BT1   |     1    |
+| CR2032 Battery (not included) |        |     1    |
 
 ### Manual
 You can find the manual and pictures of every step in the manual folder.
