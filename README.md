@@ -61,17 +61,10 @@ The BlinkyTree is a soldering kit for a fantastic soldering Christmas tree. The 
 
 - Difficulty: **2/5**
 
-### [Cat in a Box 1](Cat01/)
-A Cat in a box easy SMD kit. Bright glowing LED-eyes are watching every step! With this soldering kit it is super easy to learn SMD soldering.
-
-<img src="Cat01/manual/images/thumbnail.jpg" width=400px alt="Cat in a Box">
-
-- Difficulty: **3/5**
-
-### [Cat In A Box](CatInABox/)
+### [Pooping Cat](PoopingCat/)
 Can you please turn around? If you stare, the cat will stare back in all colours of the rainbow due to RGB-LEDs on the back. The soldering kit is very simple and easy to assemble.
 
-<img src="CatInABox/manual/images/thumbnail.jpg" width=400px alt="Cat in a Box 2">
+<img src="PoopingCat/manual/images/thumbnail.jpg" width=400px alt="PoopingCat">
 
 - Difficulty: **2/5**
 
@@ -343,6 +336,13 @@ Create a wonderful smart LED-Lamp you can control with you Smartphone.
 <img src="/SmartLED/manual/images/thumbnail.jpg" width=400px alt="SmartLED">
 
 - Difficulty: **4/5**
+
+### [SMD Cat](SMDCat/)
+A Cat in a box easy SMD kit. Bright glowing LED-eyes are watching every step! With this soldering kit it is super easy to learn SMD soldering.
+
+<img src="SMDCat/manual/images/thumbnail.jpg" width=400px alt="SMDCat">
+
+- Difficulty: **3/5**
 
 ### [Solarpunk Synthesizer](SolarpunkSynth/)
 A very simple solarpunk Synthesizer based on a simple Schmitt Trigger. Create crazy sounds with this simple soldering kit.
