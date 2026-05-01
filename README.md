@@ -113,6 +113,7 @@ A soldering kit for a simple 433MHz Yagi antenna designed for the draussenfuchs.
 
 ### [Draussenfuchs Sender](DraussenfuchsSender/)
 A soldering kit for a 433MHz fox sender for the draussenfuchs.de fox hunting game.
+
 <img src="DraussenfuchsSender/manual/images/thumbnail.jpg" width=400px alt="Draussenfuchs Sender">
 
 - Difficulty: **2/5**
@@ -214,6 +215,12 @@ Chirp chirp chirp, chirp chirp! The Motörbörd is a creative soldering kit that
 
 - Difficulty: **2/5**
 
+### [Mushroom Rocket](https://github.com/ventilator/soldering-mushroom-rocket/tree/main)
+A fusion between a rocket and a mushroom
+
+<img src="https://github.com/ventilator/soldering-mushroom-rocket/blob/3e05948e888277324211937ccfb57f17a80331c1/photo-tutorial/solder_tutorial_43.webp" width=400px alt="MushromRocket">
+  
+- Difficulty: **2/5**
 
 ### [NE555 Heart THT](NE555HeartTHT/)
 A wonderful Heart with SMD LEDs. You can choose between full on, follow-LEDs and even can influence the speed of your LEDs.
