@@ -2,7 +2,3 @@
 	path = resources
 	url = https://github.com/Binary-Kitchen/SolderingTutorial-resources.git
 	branch = master
-[submodule "MushroomRocket"]
-	path = MushroomRocket
-	url = https://github.com/ventilator/soldering-mushroom-rocket.git
-	branch = main
