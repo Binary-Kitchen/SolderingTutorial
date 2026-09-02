@@ -1,0 +1,16 @@
+Anzahl,Bezeichnung,Beschreibung,Beschriftung/Farbcode
+,,,
+2,transistor,IRLB8721 Transistor,
+1,led1, LED grün \SI{3}{\mm},
+1,pushbutton, Schalter,
+2, ,LDR Lichtsensor,
+2,motor,Motor,
+1,battery,3xAA Batteriehalter,
+2,resistor,Widerstand \SI{10}{\kilo\ohm},Braun|Schwarz|Schwarz|Rot|Braun,resistor12
+1,resistorled1,Widerstand \SI{1}{\kilo\ohm},Braun|Schwarz|Schwarz|Braun|Braun,resistorled1
+2, ,Kabelbinder,
+2, ,30cm Kabel,
+13, ,Holzteile,
+2, ,Gummiring 58mm,
+1,,Smartphone Robot Platine (PCB),
+1, ,Flaschenkappe (nicht enthalten),

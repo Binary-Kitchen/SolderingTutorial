@@ -403,6 +403,14 @@ Create a wonderful smart LED-Lamp you can control with you Smartphone.
 
 - Difficulty: **4/5**
 
+### [Smartphone Robot](SmartphoneRobot/)
+
+A robot made out of an old smartphone. You can controll it by turning light on and off.
+
+<img src="/SmartphoneRobot/manual/images/thumbnail.jpg" width=400px alt="SmartphoneRobot">
+
+- Difficulty: **2/5**
+
 ### [SMD Cat](SMDCat/)
 
 A Cat in a box easy SMD kit. Bright glowing LED-eyes are watching every step! With this soldering kit it is super easy to learn SMD soldering.
