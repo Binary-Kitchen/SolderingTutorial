@@ -1,0 +1,14 @@
+Quantity,Designation,Description,Label/Color Code
+,,,
+2,RV1-RV2,Potentiometer \SI{500}{\kilo\ohm},
+1,C1,Ceramic capacitor \SI{10}{\nano\farad},103
+1,C2,Ceramic capacitor \SI{100}{\nano\farad},104
+1,C3,Electrolytic capacitor \SI{10}{\micro\farad},
+1,U1-U2,NE555D,
+1,D1, Green LED \SI{5}{\mm},
+1, ,Headphone jack,
+1, ,4xAAA battery holder,
+1,R1,Resistor \SI{47}{\kilo\ohm},Gelb|Lila|Schwarz|Rot|Braun,R1
+2,R2{,}R3,Resistor \SI{750}{\ohm},Lila|Grün|Schwarz|Schwarz|Braun,R2|R3
+1,R4,Resistor \SI{100}{\kilo\ohm},Braun|Schwarz|Schwarz|Orange|Braun,R4
+1,,Atari Punk Console circuit board (PCB),

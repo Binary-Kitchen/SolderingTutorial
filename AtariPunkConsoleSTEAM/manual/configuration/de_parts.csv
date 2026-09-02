@@ -1,0 +1,14 @@
+Anzahl,Bezeichnung,Beschreibung,Beschriftung/Farbcode
+,,,
+2,RV1-RV2,Potentiometer \SI{500}{\kilo\ohm},
+1,C1,Keramikkondensator \SI{10}{\nano\farad},103
+1,C2,Keramikkondensator \SI{100}{\nano\farad},104
+1,C3,Elektrolytkondensator \SI{10}{\micro\farad},
+1,U1-U2,NE555D,
+1,D1, LED grün \SI{5}{\mm},
+1, ,Kopfhöreranschluss,
+1, ,4xAAA Batteriehalter,
+1,R1,Widerstand \SI{47}{\kilo\ohm},Gelb|Lila|Schwarz|Rot|Braun,R1
+2,R2{,}R3,Widerstand \SI{750}{\ohm},Lila|Grün|Schwarz|Schwarz|Braun,R2|R3
+1,R4,Widerstand \SI{100}{\kilo\ohm},Braun|Schwarz|Schwarz|Orange|Braun,R4
+1,,Atari Punk Console Platine (PCB),
