@@ -8,7 +8,7 @@ Anzahl,Bezeichnung,Beschreibung,Beschriftung/Farbcode
 1,D1, LED grün \SI{5}{\mm},
 1, ,Kopfhöreranschluss,
 1, ,4xAAA Batteriehalter,
-1,R1,Widerstand \SI{47}{\kilo\ohm},Gelb|Lila|Schwarz|Rot|Braun,R1
-2,R2{,}R3,Widerstand \SI{750}{\ohm},Lila|Grün|Schwarz|Schwarz|Braun,R2|R3
+1,R1,Widerstand \SI{47}{\kilo\ohm},Gelb|Violett|Schwarz|Rot|Braun,R1
+2,R2{,}R3,Widerstand \SI{750}{\ohm},Violett|Grün|Schwarz|Schwarz|Braun,R2|R3
 1,R4,Widerstand \SI{100}{\kilo\ohm},Braun|Schwarz|Schwarz|Orange|Braun,R4
 1,,Atari Punk Console Platine (PCB),
