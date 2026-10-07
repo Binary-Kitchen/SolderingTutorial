@@ -4,7 +4,7 @@ images/PXL_20230311_194654318,Solder the switch SW1. You have to bend the solder
 images/PXL_20230311_195604008,Solder on the potentiometer RV4.
 images/PXL_20230311_200041041,Solder the switches SW2-SW4.; The tip{,} to solder only one leg is very helpful here.; Then cut off the excess wire legs.
 images/PXL_20230311_200514221,Solder the potentiometers RV1-RV3.;Attention: Take special care{,} that you insert the components from the right side.;Cut off the excess wires.
-images/PXL_20230311_200958418,Now take the flower and solder on the RGB-LED.; One pin is longer than all the others. This one has to go into the hole with the rectangular solder pad (not rounded corners).;Make sure{,} that there are no solder bridges{,} don't use too much solder.
+images/PXL_20261006_130426790,{Now take the flower and solder the RGB LED onto it.; One leg is longer than the others. This one must go into the hole with the rectangular solder pad (not rounded corners).; Bend each leg on the back toward the solder pads and solder them in place; Cut off the excess legs.; Make sure there are no solder bridges; do not use too much solder.}
 images/PXL_20230311_201141329,Solder the straight pin headers to the flower;Put the short side through the flower from the back and solder the legs from the front;
 images/PXL_20230311_201348140,Solder the flower stem to the long side of the pin header from the back;; Again{,} make sure{,} that the labelling of the flower and also the labelling of the flower stem is on the back.
 images/PXL_20230311_201141329,Solder the straight pin headers to the flower; Push the short side through the flower from the back and solder the legs from the front.;
