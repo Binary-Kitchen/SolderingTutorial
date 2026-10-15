@@ -1,0 +1,10 @@
+images/NoseDog_Loetbausatz01,{Check your components.;A CR2032 battery is not included. You can buy one online or at larger electronics stores.}
+images/NoseDog_Loetbausatz02, {Flip the circuit board over; apply solder to the elongated LED pad on the nose that is not marked with a +.}
+images/NoseDog_Loetbausatz03, {The long leg of the LED indicates the positive side.;Bend the legs so that the LED lies flat on the circuit board and the legs also touch the board.;Solder the negative leg (the short one) to the negative pad where you’ve already applied solder.;Make sure the other leg also touches the other pad without solder.}
+images/NoseDog_Loetbausatz04,{Solder the other leg of the LED (anode, positive side) to the circuit board.;Trim off any excess length of the legs, if present.}
+images/NoseDog_Loetbausatz05,{The battery holder has a designated orientation marked by a beveled edge. The same beveled edge is also printed on the circuit board.;Apply solder to one pad of the battery holder;Reheat the pad with solder and slide the battery holder onto the pad from the side.;Make sure that the other leg of the battery holder touches the other pad.; Solder the other leg to the other pad on the circuit board.}
+images/NoseDog_Loetbausatz10,{The pushbutton has no specific orientation.; Apply solder to one of the pushbutton’s pads.;Bend the pushbutton’s legs so that they can touch the surface of the circuit board.;Reheat the pad with solder and slide one leg of the pushbutton onto the pad from the side.;Make sure the other leg of the pushbutton touches the other pad.}
+images/NoseDog_Loetbausatz11,{Solder the other leg of the pushbutton to the circuit board.}
+images/NoseDog_Loetbausatz12,{Insert the battery as shown; the positive terminals must touch the top of the battery. Slide the battery into the battery holder from the left and press down only on the left side.}
+images/NoseDog_Loetbausatz13,{Bend the LED so that it points toward the yellow spot.}
+images/NoseDog_Loetbausatz18,{You’re done!; You can also attach a magnet to the battery to help secure the soldering kit to your clothing.}

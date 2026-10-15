@@ -13,6 +13,7 @@ We have tips how to organise a soldering workshop in the field and how to furthe
 <img src="https://github.com/Binary-Kitchen/SolderingTutorial/wiki/images/festival/unicorn/unicorn.jpg" width=400px alt="Unicorn with glitter">
 
 ## Soldering Kits
+
 ### [50 Ohm Dummy Load](50ohmDummyLoad/)
 
 A simple Dummy Load for 50 Ohm made for every amateur radio operator.
@@ -304,6 +305,14 @@ Very easy soldering Kit using simple Tools and nearly no soldering knowledge is 
 Easy soldering Kit using simple Tools and nearly no soldering knowledge is needed.
 
 <img src="NibblePegDIPSwitch/manual/images/01-DSC06774.JPG" width=400px alt="Nibble Peg DIP with On/Off Switch">
+
+- Difficulty: **2/5**
+
+### [Nose Dog](NoseDog/)
+
+Easy soldering Kit using simple Tools and nearly no soldering knowledge is needed.
+
+<img src="NoseDog/manual/images/thumnbnail.jpg" width=400px alt="Nose Dog">
 
 - Difficulty: **2/5**
 
