@@ -1,5 +1,7 @@
 
 # Cabybara
+![Capybara front](photo/04_ibom_capybara.F.webp)
+
 A simple RBG LED badge
 
 Made by Alex and Clemens, using Alex' [PCB Designer](https://alber.me/miscellaneous/tools/pcb-designer.html), which generated Gerber and KiCAD files
