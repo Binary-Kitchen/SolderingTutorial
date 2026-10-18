@@ -1,0 +1,23 @@
+{
+  "board": {
+    "design_settings": {
+      "rules": {
+        "min_clearance": 0.1,
+        "min_copper_edge_clearance": 0.2,
+        "min_silk_clearance": 0.15,
+        "min_text_thickness": 0.15,
+        "min_through_hole_diameter": 0.15,
+        "min_track_width": 0.1
+      }
+    }
+  },
+  "meta": {
+    "filename": "capybara.kicad_pro",
+    "version": 3
+  },
+  "pcbnew": {
+    "page_layout_descr_file": ""
+  },
+  "sheets": [],
+  "text_variables": {}
+}
