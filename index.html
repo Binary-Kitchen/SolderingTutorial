@@ -14,23 +14,103 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
+    <style>
+        /* Deep links: every project card has its own id, so /#Capybara jumps straight to it. */
+        html {
+            scroll-behavior: smooth;
+        }
+
+        [id].project {
+            scroll-margin-top: .5rem;
+        }
+
+        [id].project:target > .card {
+            outline: 3px solid #17a2b8;
+            outline-offset: 2px;
+            box-shadow: 0 .5rem 1rem rgba(23, 162, 184, .45);
+        }
+
+        .card-img-link {
+            position: relative;
+            display: block;
+        }
+
+        .card-img-link .link-badge {
+            position: absolute;
+            top: .4rem;
+            right: .4rem;
+            padding: .05rem .35rem;
+            border-radius: .25rem;
+            background: rgba(0, 0, 0, .6);
+            color: #fff;
+            font-size: .85rem;
+            line-height: 1.4;
+            opacity: 0;
+            transition: opacity .15s ease-in-out;
+        }
+
+        .card-img-link:hover .link-badge,
+        .card-img-link:focus .link-badge {
+            opacity: 1;
+        }
+
+        .anchor-link {
+            margin-left: .3rem;
+            color: #17a2b8;
+            text-decoration: none;
+            opacity: 0;
+            vertical-align: middle;
+            transition: opacity .15s ease-in-out;
+        }
+
+        .card:hover .anchor-link,
+        .anchor-link:focus {
+            opacity: .8;
+        }
+
+        #copy-toast {
+            position: fixed;
+            left: 50%;
+            bottom: 1.5rem;
+            transform: translateX(-50%) translateY(1rem);
+            padding: .4rem .9rem;
+            border-radius: .3rem;
+            background: rgba(0, 0, 0, .8);
+            color: #fff;
+            font-size: .9rem;
+            opacity: 0;
+            pointer-events: none;
+            transition: opacity .2s ease-in-out, transform .2s ease-in-out;
+        }
+
+        #copy-toast.show {
+            opacity: 1;
+            transform: translateX(-50%) translateY(0);
+        }
+    </style>
+
 </head>
 
 <body>
+    
     <main role="main">
         <div class="container">
             <div class="row">
                 
-                <div class="col-md-6 col-lg-4 col-xl-3 py-2">
+                
+                <div class="col-md-6 col-lg-4 col-xl-3 py-2 project" id="50ohmDummyLoad">
                     <div class="card h-100">
-                        <img class="card-img-top img-fluid" src="50ohmDummyLoad/manual/images/thumbnail.jpg" alt="Card image cap">
+                        <a class="card-img-link" href="#50ohmDummyLoad" title="Link directly to 50ohmDummyLoad">
+                            <img class="card-img-top img-fluid" src="50ohmDummyLoad/manual/images/thumbnail.jpg" alt="50ohmDummyLoad">
+                            <span class="link-badge" aria-hidden="true"><svg class="link-icon" viewBox="0 0 16 16" width="13" height="13" fill="currentColor" aria-hidden="true" focusable="false"><path d="M4.715 6.542 3.343 7.914a3 3 0 1 0 4.243 4.243l1.828-1.829A3 3 0 0 0 8.586 5.5L8 6.086a1.002 1.002 0 0 0-.154.199 2 2 0 0 1 .861 3.337L6.88 11.45a2 2 0 1 1-2.83-2.83l.793-.792a4.018 4.018 0 0 1-.128-1.287z"/><path d="M6.586 4.672A3 3 0 0 0 7.414 9.5l.775-.776a2 2 0 0 1-.896-3.346L9.12 3.55a2 2 0 1 1 2.83 2.83l-.793.792c.112.42.155.855.128 1.287l1.372-1.372a3 3 0 1 0-4.243-4.243L6.586 4.672z"/></svg></span>
+                        </a>
                         <div class="card-body">
-                            <h5 class="card-title">50ohmDummyLoad</h5>
+                            <h5 class="card-title">50ohmDummyLoad<a class="anchor-link" href="#50ohmDummyLoad" title="Link directly to 50ohmDummyLoad" aria-label="Link directly to 50ohmDummyLoad"><svg class="link-icon" viewBox="0 0 16 16" width="13" height="13" fill="currentColor" aria-hidden="true" focusable="false"><path d="M4.715 6.542 3.343 7.914a3 3 0 1 0 4.243 4.243l1.828-1.829A3 3 0 0 0 8.586 5.5L8 6.086a1.002 1.002 0 0 0-.154.199 2 2 0 0 1 .861 3.337L6.88 11.45a2 2 0 1 1-2.83-2.83l.793-.792a4.018 4.018 0 0 1-.128-1.287z"/><path d="M6.586 4.672A3 3 0 0 0 7.414 9.5l.775-.776a2 2 0 0 1-.896-3.346L9.12 3.55a2 2 0 1 1 2.83 2.83l-.793.792c.112.42.155.855.128 1.287l1.372-1.372a3 3 0 1 0-4.243-4.243L6.586 4.672z"/></svg></a></h5>
                             
                                 
-                                <a class="btn btn-info  mb-2" href="50ohmDummyLoad/manual/50ohmDummyLoad_en.pdf" role="button">PDF Manual en</a><br>
-                                
                                 <a class="btn btn-info  mb-2" href="50ohmDummyLoad/manual/50ohmDummyLoad_de.pdf" role="button">PDF Manual de</a><br>
+                                
+                                <a class="btn btn-info  mb-2" href="50ohmDummyLoad/manual/50ohmDummyLoad_en.pdf" role="button">PDF Manual en</a><br>
                                 
                             
                                 
@@ -40,66 +120,15 @@
                     </div>
                 </div>
                 
-                <div class="col-md-6 col-lg-4 col-xl-3 py-2">
-                    <div class="card h-100">
-                        <img class="card-img-top img-fluid" src="AlHackaAlpaka/manual/images/thumbnail.jpg" alt="Card image cap">
-                        <div class="card-body">
-                            <h5 class="card-title">AlHackaAlpaka</h5>
-                            
-                                
-                                <a class="btn btn-info  mb-2" href="AlHackaAlpaka/manual/AlHackaAlpaka_en.pdf" role="button">PDF Manual en</a><br>
-                                
-                                <a class="btn btn-info  mb-2" href="AlHackaAlpaka/manual/AlHackaAlpaka_de.pdf" role="button">PDF Manual de</a><br>
-                                
-                            
-                                
-                                <a class="btn btn-info" href="AlHackaAlpaka/ibom.html" role="button">Interactive Board</a>
-                                
-                        </div>
-                    </div>
-                </div>
                 
-                <div class="col-md-6 col-lg-4 col-xl-3 py-2">
+                <div class="col-md-6 col-lg-4 col-xl-3 py-2 project" id="ATXBreakoutBoardSMD">
                     <div class="card h-100">
-                        <img class="card-img-top img-fluid" src="ArrowSMD/manual/images/thumbnail.jpg" alt="Card image cap">
+                        <a class="card-img-link" href="#ATXBreakoutBoardSMD" title="Link directly to ATXBreakoutBoardSMD">
+                            <img class="card-img-top img-fluid" src="ATXBreakoutBoardSMD/manual/images/thumbnail.jpg" alt="ATXBreakoutBoardSMD">
+                            <span class="link-badge" aria-hidden="true"><svg class="link-icon" viewBox="0 0 16 16" width="13" height="13" fill="currentColor" aria-hidden="true" focusable="false"><path d="M4.715 6.542 3.343 7.914a3 3 0 1 0 4.243 4.243l1.828-1.829A3 3 0 0 0 8.586 5.5L8 6.086a1.002 1.002 0 0 0-.154.199 2 2 0 0 1 .861 3.337L6.88 11.45a2 2 0 1 1-2.83-2.83l.793-.792a4.018 4.018 0 0 1-.128-1.287z"/><path d="M6.586 4.672A3 3 0 0 0 7.414 9.5l.775-.776a2 2 0 0 1-.896-3.346L9.12 3.55a2 2 0 1 1 2.83 2.83l-.793.792c.112.42.155.855.128 1.287l1.372-1.372a3 3 0 1 0-4.243-4.243L6.586 4.672z"/></svg></span>
+                        </a>
                         <div class="card-body">
-                            <h5 class="card-title">ArrowSMD</h5>
-                            
-                                
-                                <a class="btn btn-info  mb-2" href="ArrowSMD/manual/ArrowSMD_en.pdf" role="button">PDF Manual en</a><br>
-                                
-                                <a class="btn btn-info  mb-2" href="ArrowSMD/manual/ArrowSMD_de.pdf" role="button">PDF Manual de</a><br>
-                                
-                            
-                                
-                                <a class="btn btn-info" href="ArrowSMD/ibom.html" role="button">Interactive Board</a>
-                                
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="col-md-6 col-lg-4 col-xl-3 py-2">
-                    <div class="card h-100">
-                        <img class="card-img-top img-fluid" src="AtariPunkConsoleSTEAM/manual/images/thumbnail.jpg" alt="Card image cap">
-                        <div class="card-body">
-                            <h5 class="card-title">AtariPunkConsoleSTEAM</h5>
-                            
-                                
-                                <a class="btn btn-info  mb-2" href="AtariPunkConsoleSTEAM/manual/AtariPunkConsoleSTEAM_en.pdf" role="button">PDF Manual en</a><br>
-                                
-                                <a class="btn btn-info  mb-2" href="AtariPunkConsoleSTEAM/manual/AtariPunkConsoleSTEAM_de.pdf" role="button">PDF Manual de</a><br>
-                                
-                            
-                                
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="col-md-6 col-lg-4 col-xl-3 py-2">
-                    <div class="card h-100">
-                        <img class="card-img-top img-fluid" src="ATXBreakoutBoardSMD/manual/images/thumbnail.jpg" alt="Card image cap">
-                        <div class="card-body">
-                            <h5 class="card-title">ATXBreakoutBoardSMD</h5>
+                            <h5 class="card-title">ATXBreakoutBoardSMD<a class="anchor-link" href="#ATXBreakoutBoardSMD" title="Link directly to ATXBreakoutBoardSMD" aria-label="Link directly to ATXBreakoutBoardSMD"><svg class="link-icon" viewBox="0 0 16 16" width="13" height="13" fill="currentColor" aria-hidden="true" focusable="false"><path d="M4.715 6.542 3.343 7.914a3 3 0 1 0 4.243 4.243l1.828-1.829A3 3 0 0 0 8.586 5.5L8 6.086a1.002 1.002 0 0 0-.154.199 2 2 0 0 1 .861 3.337L6.88 11.45a2 2 0 1 1-2.83-2.83l.793-.792a4.018 4.018 0 0 1-.128-1.287z"/><path d="M6.586 4.672A3 3 0 0 0 7.414 9.5l.775-.776a2 2 0 0 1-.896-3.346L9.12 3.55a2 2 0 1 1 2.83 2.83l-.793.792c.112.42.155.855.128 1.287l1.372-1.372a3 3 0 1 0-4.243-4.243L6.586 4.672z"/></svg></a></h5>
                             
                                 
                                 <a class="btn btn-info  mb-2" href="ATXBreakoutBoardSMD/manual/ATXBreakoutBoardSMD_de.pdf" role="button">PDF Manual de</a><br>
@@ -114,16 +143,87 @@
                     </div>
                 </div>
                 
-                <div class="col-md-6 col-lg-4 col-xl-3 py-2">
+                
+                <div class="col-md-6 col-lg-4 col-xl-3 py-2 project" id="AlHackaAlpaka">
                     <div class="card h-100">
-                        <img class="card-img-top img-fluid" src="AxolotlBadge/manual/images/thumbnail.jpg" alt="Card image cap">
+                        <a class="card-img-link" href="#AlHackaAlpaka" title="Link directly to AlHackaAlpaka">
+                            <img class="card-img-top img-fluid" src="AlHackaAlpaka/manual/images/thumbnail.jpg" alt="AlHackaAlpaka">
+                            <span class="link-badge" aria-hidden="true"><svg class="link-icon" viewBox="0 0 16 16" width="13" height="13" fill="currentColor" aria-hidden="true" focusable="false"><path d="M4.715 6.542 3.343 7.914a3 3 0 1 0 4.243 4.243l1.828-1.829A3 3 0 0 0 8.586 5.5L8 6.086a1.002 1.002 0 0 0-.154.199 2 2 0 0 1 .861 3.337L6.88 11.45a2 2 0 1 1-2.83-2.83l.793-.792a4.018 4.018 0 0 1-.128-1.287z"/><path d="M6.586 4.672A3 3 0 0 0 7.414 9.5l.775-.776a2 2 0 0 1-.896-3.346L9.12 3.55a2 2 0 1 1 2.83 2.83l-.793.792c.112.42.155.855.128 1.287l1.372-1.372a3 3 0 1 0-4.243-4.243L6.586 4.672z"/></svg></span>
+                        </a>
                         <div class="card-body">
-                            <h5 class="card-title">AxolotlBadge</h5>
+                            <h5 class="card-title">AlHackaAlpaka<a class="anchor-link" href="#AlHackaAlpaka" title="Link directly to AlHackaAlpaka" aria-label="Link directly to AlHackaAlpaka"><svg class="link-icon" viewBox="0 0 16 16" width="13" height="13" fill="currentColor" aria-hidden="true" focusable="false"><path d="M4.715 6.542 3.343 7.914a3 3 0 1 0 4.243 4.243l1.828-1.829A3 3 0 0 0 8.586 5.5L8 6.086a1.002 1.002 0 0 0-.154.199 2 2 0 0 1 .861 3.337L6.88 11.45a2 2 0 1 1-2.83-2.83l.793-.792a4.018 4.018 0 0 1-.128-1.287z"/><path d="M6.586 4.672A3 3 0 0 0 7.414 9.5l.775-.776a2 2 0 0 1-.896-3.346L9.12 3.55a2 2 0 1 1 2.83 2.83l-.793.792c.112.42.155.855.128 1.287l1.372-1.372a3 3 0 1 0-4.243-4.243L6.586 4.672z"/></svg></a></h5>
                             
                                 
-                                <a class="btn btn-info  mb-2" href="AxolotlBadge/manual/AxolotlBadge_en.pdf" role="button">PDF Manual en</a><br>
+                                <a class="btn btn-info  mb-2" href="AlHackaAlpaka/manual/AlHackaAlpaka_de.pdf" role="button">PDF Manual de</a><br>
+                                
+                                <a class="btn btn-info  mb-2" href="AlHackaAlpaka/manual/AlHackaAlpaka_en.pdf" role="button">PDF Manual en</a><br>
+                                
+                            
+                                
+                                <a class="btn btn-info" href="AlHackaAlpaka/ibom.html" role="button">Interactive Board</a>
+                                
+                        </div>
+                    </div>
+                </div>
+                
+                
+                <div class="col-md-6 col-lg-4 col-xl-3 py-2 project" id="ArrowSMD">
+                    <div class="card h-100">
+                        <a class="card-img-link" href="#ArrowSMD" title="Link directly to ArrowSMD">
+                            <img class="card-img-top img-fluid" src="ArrowSMD/manual/images/thumbnail.jpg" alt="ArrowSMD">
+                            <span class="link-badge" aria-hidden="true"><svg class="link-icon" viewBox="0 0 16 16" width="13" height="13" fill="currentColor" aria-hidden="true" focusable="false"><path d="M4.715 6.542 3.343 7.914a3 3 0 1 0 4.243 4.243l1.828-1.829A3 3 0 0 0 8.586 5.5L8 6.086a1.002 1.002 0 0 0-.154.199 2 2 0 0 1 .861 3.337L6.88 11.45a2 2 0 1 1-2.83-2.83l.793-.792a4.018 4.018 0 0 1-.128-1.287z"/><path d="M6.586 4.672A3 3 0 0 0 7.414 9.5l.775-.776a2 2 0 0 1-.896-3.346L9.12 3.55a2 2 0 1 1 2.83 2.83l-.793.792c.112.42.155.855.128 1.287l1.372-1.372a3 3 0 1 0-4.243-4.243L6.586 4.672z"/></svg></span>
+                        </a>
+                        <div class="card-body">
+                            <h5 class="card-title">ArrowSMD<a class="anchor-link" href="#ArrowSMD" title="Link directly to ArrowSMD" aria-label="Link directly to ArrowSMD"><svg class="link-icon" viewBox="0 0 16 16" width="13" height="13" fill="currentColor" aria-hidden="true" focusable="false"><path d="M4.715 6.542 3.343 7.914a3 3 0 1 0 4.243 4.243l1.828-1.829A3 3 0 0 0 8.586 5.5L8 6.086a1.002 1.002 0 0 0-.154.199 2 2 0 0 1 .861 3.337L6.88 11.45a2 2 0 1 1-2.83-2.83l.793-.792a4.018 4.018 0 0 1-.128-1.287z"/><path d="M6.586 4.672A3 3 0 0 0 7.414 9.5l.775-.776a2 2 0 0 1-.896-3.346L9.12 3.55a2 2 0 1 1 2.83 2.83l-.793.792c.112.42.155.855.128 1.287l1.372-1.372a3 3 0 1 0-4.243-4.243L6.586 4.672z"/></svg></a></h5>
+                            
+                                
+                                <a class="btn btn-info  mb-2" href="ArrowSMD/manual/ArrowSMD_de.pdf" role="button">PDF Manual de</a><br>
+                                
+                                <a class="btn btn-info  mb-2" href="ArrowSMD/manual/ArrowSMD_en.pdf" role="button">PDF Manual en</a><br>
+                                
+                            
+                                
+                                <a class="btn btn-info" href="ArrowSMD/ibom.html" role="button">Interactive Board</a>
+                                
+                        </div>
+                    </div>
+                </div>
+                
+                
+                <div class="col-md-6 col-lg-4 col-xl-3 py-2 project" id="AtariPunkConsoleSTEAM">
+                    <div class="card h-100">
+                        <a class="card-img-link" href="#AtariPunkConsoleSTEAM" title="Link directly to AtariPunkConsoleSTEAM">
+                            <img class="card-img-top img-fluid" src="AtariPunkConsoleSTEAM/manual/images/thumbnail.jpg" alt="AtariPunkConsoleSTEAM">
+                            <span class="link-badge" aria-hidden="true"><svg class="link-icon" viewBox="0 0 16 16" width="13" height="13" fill="currentColor" aria-hidden="true" focusable="false"><path d="M4.715 6.542 3.343 7.914a3 3 0 1 0 4.243 4.243l1.828-1.829A3 3 0 0 0 8.586 5.5L8 6.086a1.002 1.002 0 0 0-.154.199 2 2 0 0 1 .861 3.337L6.88 11.45a2 2 0 1 1-2.83-2.83l.793-.792a4.018 4.018 0 0 1-.128-1.287z"/><path d="M6.586 4.672A3 3 0 0 0 7.414 9.5l.775-.776a2 2 0 0 1-.896-3.346L9.12 3.55a2 2 0 1 1 2.83 2.83l-.793.792c.112.42.155.855.128 1.287l1.372-1.372a3 3 0 1 0-4.243-4.243L6.586 4.672z"/></svg></span>
+                        </a>
+                        <div class="card-body">
+                            <h5 class="card-title">AtariPunkConsoleSTEAM<a class="anchor-link" href="#AtariPunkConsoleSTEAM" title="Link directly to AtariPunkConsoleSTEAM" aria-label="Link directly to AtariPunkConsoleSTEAM"><svg class="link-icon" viewBox="0 0 16 16" width="13" height="13" fill="currentColor" aria-hidden="true" focusable="false"><path d="M4.715 6.542 3.343 7.914a3 3 0 1 0 4.243 4.243l1.828-1.829A3 3 0 0 0 8.586 5.5L8 6.086a1.002 1.002 0 0 0-.154.199 2 2 0 0 1 .861 3.337L6.88 11.45a2 2 0 1 1-2.83-2.83l.793-.792a4.018 4.018 0 0 1-.128-1.287z"/><path d="M6.586 4.672A3 3 0 0 0 7.414 9.5l.775-.776a2 2 0 0 1-.896-3.346L9.12 3.55a2 2 0 1 1 2.83 2.83l-.793.792c.112.42.155.855.128 1.287l1.372-1.372a3 3 0 1 0-4.243-4.243L6.586 4.672z"/></svg></a></h5>
+                            
+                                
+                                <a class="btn btn-info  mb-2" href="AtariPunkConsoleSTEAM/manual/AtariPunkConsoleSTEAM_de.pdf" role="button">PDF Manual de</a><br>
+                                
+                                <a class="btn btn-info  mb-2" href="AtariPunkConsoleSTEAM/manual/AtariPunkConsoleSTEAM_en.pdf" role="button">PDF Manual en</a><br>
+                                
+                            
+                                
+                        </div>
+                    </div>
+                </div>
+                
+                
+                <div class="col-md-6 col-lg-4 col-xl-3 py-2 project" id="AxolotlBadge">
+                    <div class="card h-100">
+                        <a class="card-img-link" href="#AxolotlBadge" title="Link directly to AxolotlBadge">
+                            <img class="card-img-top img-fluid" src="AxolotlBadge/manual/images/thumbnail.jpg" alt="AxolotlBadge">
+                            <span class="link-badge" aria-hidden="true"><svg class="link-icon" viewBox="0 0 16 16" width="13" height="13" fill="currentColor" aria-hidden="true" focusable="false"><path d="M4.715 6.542 3.343 7.914a3 3 0 1 0 4.243 4.243l1.828-1.829A3 3 0 0 0 8.586 5.5L8 6.086a1.002 1.002 0 0 0-.154.199 2 2 0 0 1 .861 3.337L6.88 11.45a2 2 0 1 1-2.83-2.83l.793-.792a4.018 4.018 0 0 1-.128-1.287z"/><path d="M6.586 4.672A3 3 0 0 0 7.414 9.5l.775-.776a2 2 0 0 1-.896-3.346L9.12 3.55a2 2 0 1 1 2.83 2.83l-.793.792c.112.42.155.855.128 1.287l1.372-1.372a3 3 0 1 0-4.243-4.243L6.586 4.672z"/></svg></span>
+                        </a>
+                        <div class="card-body">
+                            <h5 class="card-title">AxolotlBadge<a class="anchor-link" href="#AxolotlBadge" title="Link directly to AxolotlBadge" aria-label="Link directly to AxolotlBadge"><svg class="link-icon" viewBox="0 0 16 16" width="13" height="13" fill="currentColor" aria-hidden="true" focusable="false"><path d="M4.715 6.542 3.343 7.914a3 3 0 1 0 4.243 4.243l1.828-1.829A3 3 0 0 0 8.586 5.5L8 6.086a1.002 1.002 0 0 0-.154.199 2 2 0 0 1 .861 3.337L6.88 11.45a2 2 0 1 1-2.83-2.83l.793-.792a4.018 4.018 0 0 1-.128-1.287z"/><path d="M6.586 4.672A3 3 0 0 0 7.414 9.5l.775-.776a2 2 0 0 1-.896-3.346L9.12 3.55a2 2 0 1 1 2.83 2.83l-.793.792c.112.42.155.855.128 1.287l1.372-1.372a3 3 0 1 0-4.243-4.243L6.586 4.672z"/></svg></a></h5>
+                            
                                 
                                 <a class="btn btn-info  mb-2" href="AxolotlBadge/manual/AxolotlBadge_de.pdf" role="button">PDF Manual de</a><br>
+                                
+                                <a class="btn btn-info  mb-2" href="AxolotlBadge/manual/AxolotlBadge_en.pdf" role="button">PDF Manual en</a><br>
                                 
                             
                                 
@@ -133,11 +233,15 @@
                     </div>
                 </div>
                 
-                <div class="col-md-6 col-lg-4 col-xl-3 py-2">
+                
+                <div class="col-md-6 col-lg-4 col-xl-3 py-2 project" id="BleepBot">
                     <div class="card h-100">
-                        <img class="card-img-top img-fluid" src="BleepBot/manual/images/thumbnail.jpg" alt="Card image cap">
+                        <a class="card-img-link" href="#BleepBot" title="Link directly to BleepBot">
+                            <img class="card-img-top img-fluid" src="BleepBot/manual/images/thumbnail.jpg" alt="BleepBot">
+                            <span class="link-badge" aria-hidden="true"><svg class="link-icon" viewBox="0 0 16 16" width="13" height="13" fill="currentColor" aria-hidden="true" focusable="false"><path d="M4.715 6.542 3.343 7.914a3 3 0 1 0 4.243 4.243l1.828-1.829A3 3 0 0 0 8.586 5.5L8 6.086a1.002 1.002 0 0 0-.154.199 2 2 0 0 1 .861 3.337L6.88 11.45a2 2 0 1 1-2.83-2.83l.793-.792a4.018 4.018 0 0 1-.128-1.287z"/><path d="M6.586 4.672A3 3 0 0 0 7.414 9.5l.775-.776a2 2 0 0 1-.896-3.346L9.12 3.55a2 2 0 1 1 2.83 2.83l-.793.792c.112.42.155.855.128 1.287l1.372-1.372a3 3 0 1 0-4.243-4.243L6.586 4.672z"/></svg></span>
+                        </a>
                         <div class="card-body">
-                            <h5 class="card-title">BleepBot</h5>
+                            <h5 class="card-title">BleepBot<a class="anchor-link" href="#BleepBot" title="Link directly to BleepBot" aria-label="Link directly to BleepBot"><svg class="link-icon" viewBox="0 0 16 16" width="13" height="13" fill="currentColor" aria-hidden="true" focusable="false"><path d="M4.715 6.542 3.343 7.914a3 3 0 1 0 4.243 4.243l1.828-1.829A3 3 0 0 0 8.586 5.5L8 6.086a1.002 1.002 0 0 0-.154.199 2 2 0 0 1 .861 3.337L6.88 11.45a2 2 0 1 1-2.83-2.83l.793-.792a4.018 4.018 0 0 1-.128-1.287z"/><path d="M6.586 4.672A3 3 0 0 0 7.414 9.5l.775-.776a2 2 0 0 1-.896-3.346L9.12 3.55a2 2 0 1 1 2.83 2.83l-.793.792c.112.42.155.855.128 1.287l1.372-1.372a3 3 0 1 0-4.243-4.243L6.586 4.672z"/></svg></a></h5>
                             
                                 
                                 <a class="btn btn-info  mb-2" href="BleepBot/manual/BleepBot_de.pdf" role="button">PDF Manual de</a><br>
@@ -150,45 +254,76 @@
                     </div>
                 </div>
                 
-                <div class="col-md-6 col-lg-4 col-xl-3 py-2">
+                
+                <div class="col-md-6 col-lg-4 col-xl-3 py-2 project" id="BlinkenrocketMini">
                     <div class="card h-100">
-                        <img class="card-img-top img-fluid" src="BlinkenrocketMini/manual/images/thumbnail.jpg" alt="Card image cap">
+                        <a class="card-img-link" href="#BlinkenrocketMini" title="Link directly to BlinkenrocketMini">
+                            <img class="card-img-top img-fluid" src="BlinkenrocketMini/manual/images/thumbnail.jpg" alt="BlinkenrocketMini">
+                            <span class="link-badge" aria-hidden="true"><svg class="link-icon" viewBox="0 0 16 16" width="13" height="13" fill="currentColor" aria-hidden="true" focusable="false"><path d="M4.715 6.542 3.343 7.914a3 3 0 1 0 4.243 4.243l1.828-1.829A3 3 0 0 0 8.586 5.5L8 6.086a1.002 1.002 0 0 0-.154.199 2 2 0 0 1 .861 3.337L6.88 11.45a2 2 0 1 1-2.83-2.83l.793-.792a4.018 4.018 0 0 1-.128-1.287z"/><path d="M6.586 4.672A3 3 0 0 0 7.414 9.5l.775-.776a2 2 0 0 1-.896-3.346L9.12 3.55a2 2 0 1 1 2.83 2.83l-.793.792c.112.42.155.855.128 1.287l1.372-1.372a3 3 0 1 0-4.243-4.243L6.586 4.672z"/></svg></span>
+                        </a>
                         <div class="card-body">
-                            <h5 class="card-title">BlinkenrocketMini</h5>
+                            <h5 class="card-title">BlinkenrocketMini<a class="anchor-link" href="#BlinkenrocketMini" title="Link directly to BlinkenrocketMini" aria-label="Link directly to BlinkenrocketMini"><svg class="link-icon" viewBox="0 0 16 16" width="13" height="13" fill="currentColor" aria-hidden="true" focusable="false"><path d="M4.715 6.542 3.343 7.914a3 3 0 1 0 4.243 4.243l1.828-1.829A3 3 0 0 0 8.586 5.5L8 6.086a1.002 1.002 0 0 0-.154.199 2 2 0 0 1 .861 3.337L6.88 11.45a2 2 0 1 1-2.83-2.83l.793-.792a4.018 4.018 0 0 1-.128-1.287z"/><path d="M6.586 4.672A3 3 0 0 0 7.414 9.5l.775-.776a2 2 0 0 1-.896-3.346L9.12 3.55a2 2 0 1 1 2.83 2.83l-.793.792c.112.42.155.855.128 1.287l1.372-1.372a3 3 0 1 0-4.243-4.243L6.586 4.672z"/></svg></a></h5>
                             
-                                
-                                <a class="btn btn-info  mb-2" href="BlinkenrocketMini/manual/BlinkenrocketMini_en.pdf" role="button">PDF Manual en</a><br>
                                 
                                 <a class="btn btn-info  mb-2" href="BlinkenrocketMini/manual/BlinkenrocketMini_de.pdf" role="button">PDF Manual de</a><br>
                                 
+                                <a class="btn btn-info  mb-2" href="BlinkenrocketMini/manual/BlinkenrocketMini_en.pdf" role="button">PDF Manual en</a><br>
+                                
                             
                                 
                         </div>
                     </div>
                 </div>
                 
-                <div class="col-md-6 col-lg-4 col-xl-3 py-2">
+                
+                <div class="col-md-6 col-lg-4 col-xl-3 py-2 project" id="BlinkyTree">
                     <div class="card h-100">
-                        <img class="card-img-top img-fluid" src="BlinkyTree/manual/images/thumbnail.jpg" alt="Card image cap">
+                        <a class="card-img-link" href="#BlinkyTree" title="Link directly to BlinkyTree">
+                            <img class="card-img-top img-fluid" src="BlinkyTree/manual/images/thumbnail.jpg" alt="BlinkyTree">
+                            <span class="link-badge" aria-hidden="true"><svg class="link-icon" viewBox="0 0 16 16" width="13" height="13" fill="currentColor" aria-hidden="true" focusable="false"><path d="M4.715 6.542 3.343 7.914a3 3 0 1 0 4.243 4.243l1.828-1.829A3 3 0 0 0 8.586 5.5L8 6.086a1.002 1.002 0 0 0-.154.199 2 2 0 0 1 .861 3.337L6.88 11.45a2 2 0 1 1-2.83-2.83l.793-.792a4.018 4.018 0 0 1-.128-1.287z"/><path d="M6.586 4.672A3 3 0 0 0 7.414 9.5l.775-.776a2 2 0 0 1-.896-3.346L9.12 3.55a2 2 0 1 1 2.83 2.83l-.793.792c.112.42.155.855.128 1.287l1.372-1.372a3 3 0 1 0-4.243-4.243L6.586 4.672z"/></svg></span>
+                        </a>
                         <div class="card-body">
-                            <h5 class="card-title">BlinkyTree</h5>
+                            <h5 class="card-title">BlinkyTree<a class="anchor-link" href="#BlinkyTree" title="Link directly to BlinkyTree" aria-label="Link directly to BlinkyTree"><svg class="link-icon" viewBox="0 0 16 16" width="13" height="13" fill="currentColor" aria-hidden="true" focusable="false"><path d="M4.715 6.542 3.343 7.914a3 3 0 1 0 4.243 4.243l1.828-1.829A3 3 0 0 0 8.586 5.5L8 6.086a1.002 1.002 0 0 0-.154.199 2 2 0 0 1 .861 3.337L6.88 11.45a2 2 0 1 1-2.83-2.83l.793-.792a4.018 4.018 0 0 1-.128-1.287z"/><path d="M6.586 4.672A3 3 0 0 0 7.414 9.5l.775-.776a2 2 0 0 1-.896-3.346L9.12 3.55a2 2 0 1 1 2.83 2.83l-.793.792c.112.42.155.855.128 1.287l1.372-1.372a3 3 0 1 0-4.243-4.243L6.586 4.672z"/></svg></a></h5>
                             
-                                
-                                <a class="btn btn-info  mb-2" href="BlinkyTree/manual/BlinkyTree_en.pdf" role="button">PDF Manual en</a><br>
                                 
                                 <a class="btn btn-info  mb-2" href="BlinkyTree/manual/BlinkyTree_de.pdf" role="button">PDF Manual de</a><br>
                                 
+                                <a class="btn btn-info  mb-2" href="BlinkyTree/manual/BlinkyTree_en.pdf" role="button">PDF Manual en</a><br>
+                                
                             
                                 
                         </div>
                     </div>
                 </div>
                 
-                <div class="col-md-6 col-lg-4 col-xl-3 py-2">
+                
+                <div class="col-md-6 col-lg-4 col-xl-3 py-2 project" id="Capybara">
                     <div class="card h-100">
-                        <img class="card-img-top img-fluid" src="CodeWeekSkulpture/manual/images/thumbnail.jpg" alt="Card image cap">
+                        <a class="card-img-link" href="#Capybara" title="Link directly to Capybara">
+                            <img class="card-img-top img-fluid" src="Capybara/manual/images/thumbnail.jpg" alt="Capybara">
+                            <span class="link-badge" aria-hidden="true"><svg class="link-icon" viewBox="0 0 16 16" width="13" height="13" fill="currentColor" aria-hidden="true" focusable="false"><path d="M4.715 6.542 3.343 7.914a3 3 0 1 0 4.243 4.243l1.828-1.829A3 3 0 0 0 8.586 5.5L8 6.086a1.002 1.002 0 0 0-.154.199 2 2 0 0 1 .861 3.337L6.88 11.45a2 2 0 1 1-2.83-2.83l.793-.792a4.018 4.018 0 0 1-.128-1.287z"/><path d="M6.586 4.672A3 3 0 0 0 7.414 9.5l.775-.776a2 2 0 0 1-.896-3.346L9.12 3.55a2 2 0 1 1 2.83 2.83l-.793.792c.112.42.155.855.128 1.287l1.372-1.372a3 3 0 1 0-4.243-4.243L6.586 4.672z"/></svg></span>
+                        </a>
                         <div class="card-body">
-                            <h5 class="card-title">CodeWeekSkulpture</h5>
+                            <h5 class="card-title">Capybara<a class="anchor-link" href="#Capybara" title="Link directly to Capybara" aria-label="Link directly to Capybara"><svg class="link-icon" viewBox="0 0 16 16" width="13" height="13" fill="currentColor" aria-hidden="true" focusable="false"><path d="M4.715 6.542 3.343 7.914a3 3 0 1 0 4.243 4.243l1.828-1.829A3 3 0 0 0 8.586 5.5L8 6.086a1.002 1.002 0 0 0-.154.199 2 2 0 0 1 .861 3.337L6.88 11.45a2 2 0 1 1-2.83-2.83l.793-.792a4.018 4.018 0 0 1-.128-1.287z"/><path d="M6.586 4.672A3 3 0 0 0 7.414 9.5l.775-.776a2 2 0 0 1-.896-3.346L9.12 3.55a2 2 0 1 1 2.83 2.83l-.793.792c.112.42.155.855.128 1.287l1.372-1.372a3 3 0 1 0-4.243-4.243L6.586 4.672z"/></svg></a></h5>
+                            
+                            <span class="card-text"><small class="text-muted">No manuals yet</small></span>
+                            
+                                
+                                <a class="btn btn-info" href="Capybara/ibom.html" role="button">Interactive Board</a>
+                                
+                        </div>
+                    </div>
+                </div>
+                
+                
+                <div class="col-md-6 col-lg-4 col-xl-3 py-2 project" id="CodeWeekSkulpture">
+                    <div class="card h-100">
+                        <a class="card-img-link" href="#CodeWeekSkulpture" title="Link directly to CodeWeekSkulpture">
+                            <img class="card-img-top img-fluid" src="CodeWeekSkulpture/manual/images/thumbnail.jpg" alt="CodeWeekSkulpture">
+                            <span class="link-badge" aria-hidden="true"><svg class="link-icon" viewBox="0 0 16 16" width="13" height="13" fill="currentColor" aria-hidden="true" focusable="false"><path d="M4.715 6.542 3.343 7.914a3 3 0 1 0 4.243 4.243l1.828-1.829A3 3 0 0 0 8.586 5.5L8 6.086a1.002 1.002 0 0 0-.154.199 2 2 0 0 1 .861 3.337L6.88 11.45a2 2 0 1 1-2.83-2.83l.793-.792a4.018 4.018 0 0 1-.128-1.287z"/><path d="M6.586 4.672A3 3 0 0 0 7.414 9.5l.775-.776a2 2 0 0 1-.896-3.346L9.12 3.55a2 2 0 1 1 2.83 2.83l-.793.792c.112.42.155.855.128 1.287l1.372-1.372a3 3 0 1 0-4.243-4.243L6.586 4.672z"/></svg></span>
+                        </a>
+                        <div class="card-body">
+                            <h5 class="card-title">CodeWeekSkulpture<a class="anchor-link" href="#CodeWeekSkulpture" title="Link directly to CodeWeekSkulpture" aria-label="Link directly to CodeWeekSkulpture"><svg class="link-icon" viewBox="0 0 16 16" width="13" height="13" fill="currentColor" aria-hidden="true" focusable="false"><path d="M4.715 6.542 3.343 7.914a3 3 0 1 0 4.243 4.243l1.828-1.829A3 3 0 0 0 8.586 5.5L8 6.086a1.002 1.002 0 0 0-.154.199 2 2 0 0 1 .861 3.337L6.88 11.45a2 2 0 1 1-2.83-2.83l.793-.792a4.018 4.018 0 0 1-.128-1.287z"/><path d="M6.586 4.672A3 3 0 0 0 7.414 9.5l.775-.776a2 2 0 0 1-.896-3.346L9.12 3.55a2 2 0 1 1 2.83 2.83l-.793.792c.112.42.155.855.128 1.287l1.372-1.372a3 3 0 1 0-4.243-4.243L6.586 4.672z"/></svg></a></h5>
                             
                                 
                                 <a class="btn btn-info  mb-2" href="CodeWeekSkulpture/manual/CodeWeekSkulpture_de.pdf" role="button">PDF Manual de</a><br>
@@ -203,11 +338,15 @@
                     </div>
                 </div>
                 
-                <div class="col-md-6 col-lg-4 col-xl-3 py-2">
+                
+                <div class="col-md-6 col-lg-4 col-xl-3 py-2 project" id="CubeDIP">
                     <div class="card h-100">
-                        <img class="card-img-top img-fluid" src="CubeDIP/manual/images/thumbnail.jpg" alt="Card image cap">
+                        <a class="card-img-link" href="#CubeDIP" title="Link directly to CubeDIP">
+                            <img class="card-img-top img-fluid" src="CubeDIP/manual/images/thumbnail.jpg" alt="CubeDIP">
+                            <span class="link-badge" aria-hidden="true"><svg class="link-icon" viewBox="0 0 16 16" width="13" height="13" fill="currentColor" aria-hidden="true" focusable="false"><path d="M4.715 6.542 3.343 7.914a3 3 0 1 0 4.243 4.243l1.828-1.829A3 3 0 0 0 8.586 5.5L8 6.086a1.002 1.002 0 0 0-.154.199 2 2 0 0 1 .861 3.337L6.88 11.45a2 2 0 1 1-2.83-2.83l.793-.792a4.018 4.018 0 0 1-.128-1.287z"/><path d="M6.586 4.672A3 3 0 0 0 7.414 9.5l.775-.776a2 2 0 0 1-.896-3.346L9.12 3.55a2 2 0 1 1 2.83 2.83l-.793.792c.112.42.155.855.128 1.287l1.372-1.372a3 3 0 1 0-4.243-4.243L6.586 4.672z"/></svg></span>
+                        </a>
                         <div class="card-body">
-                            <h5 class="card-title">CubeDIP</h5>
+                            <h5 class="card-title">CubeDIP<a class="anchor-link" href="#CubeDIP" title="Link directly to CubeDIP" aria-label="Link directly to CubeDIP"><svg class="link-icon" viewBox="0 0 16 16" width="13" height="13" fill="currentColor" aria-hidden="true" focusable="false"><path d="M4.715 6.542 3.343 7.914a3 3 0 1 0 4.243 4.243l1.828-1.829A3 3 0 0 0 8.586 5.5L8 6.086a1.002 1.002 0 0 0-.154.199 2 2 0 0 1 .861 3.337L6.88 11.45a2 2 0 1 1-2.83-2.83l.793-.792a4.018 4.018 0 0 1-.128-1.287z"/><path d="M6.586 4.672A3 3 0 0 0 7.414 9.5l.775-.776a2 2 0 0 1-.896-3.346L9.12 3.55a2 2 0 1 1 2.83 2.83l-.793.792c.112.42.155.855.128 1.287l1.372-1.372a3 3 0 1 0-4.243-4.243L6.586 4.672z"/></svg></a></h5>
                             
                                 
                                 <a class="btn btn-info  mb-2" href="CubeDIP/manual/CubeDIP_de.pdf" role="button">PDF Manual de</a><br>
@@ -220,11 +359,15 @@
                     </div>
                 </div>
                 
-                <div class="col-md-6 col-lg-4 col-xl-3 py-2">
+                
+                <div class="col-md-6 col-lg-4 col-xl-3 py-2 project" id="Daisy_RGB">
                     <div class="card h-100">
-                        <img class="card-img-top img-fluid" src="Daisy_RGB/manual/images/thumbnail.jpg" alt="Card image cap">
+                        <a class="card-img-link" href="#Daisy_RGB" title="Link directly to Daisy_RGB">
+                            <img class="card-img-top img-fluid" src="Daisy_RGB/manual/images/thumbnail.jpg" alt="Daisy_RGB">
+                            <span class="link-badge" aria-hidden="true"><svg class="link-icon" viewBox="0 0 16 16" width="13" height="13" fill="currentColor" aria-hidden="true" focusable="false"><path d="M4.715 6.542 3.343 7.914a3 3 0 1 0 4.243 4.243l1.828-1.829A3 3 0 0 0 8.586 5.5L8 6.086a1.002 1.002 0 0 0-.154.199 2 2 0 0 1 .861 3.337L6.88 11.45a2 2 0 1 1-2.83-2.83l.793-.792a4.018 4.018 0 0 1-.128-1.287z"/><path d="M6.586 4.672A3 3 0 0 0 7.414 9.5l.775-.776a2 2 0 0 1-.896-3.346L9.12 3.55a2 2 0 1 1 2.83 2.83l-.793.792c.112.42.155.855.128 1.287l1.372-1.372a3 3 0 1 0-4.243-4.243L6.586 4.672z"/></svg></span>
+                        </a>
                         <div class="card-body">
-                            <h5 class="card-title">Daisy_RGB</h5>
+                            <h5 class="card-title">Daisy_RGB<a class="anchor-link" href="#Daisy_RGB" title="Link directly to Daisy_RGB" aria-label="Link directly to Daisy_RGB"><svg class="link-icon" viewBox="0 0 16 16" width="13" height="13" fill="currentColor" aria-hidden="true" focusable="false"><path d="M4.715 6.542 3.343 7.914a3 3 0 1 0 4.243 4.243l1.828-1.829A3 3 0 0 0 8.586 5.5L8 6.086a1.002 1.002 0 0 0-.154.199 2 2 0 0 1 .861 3.337L6.88 11.45a2 2 0 1 1-2.83-2.83l.793-.792a4.018 4.018 0 0 1-.128-1.287z"/><path d="M6.586 4.672A3 3 0 0 0 7.414 9.5l.775-.776a2 2 0 0 1-.896-3.346L9.12 3.55a2 2 0 1 1 2.83 2.83l-.793.792c.112.42.155.855.128 1.287l1.372-1.372a3 3 0 1 0-4.243-4.243L6.586 4.672z"/></svg></a></h5>
                             
                                 
                                 <a class="btn btn-info  mb-2" href="Daisy_RGB/manual/Daisy_RGB_de.pdf" role="button">PDF Manual de</a><br>
@@ -239,16 +382,20 @@
                     </div>
                 </div>
                 
-                <div class="col-md-6 col-lg-4 col-xl-3 py-2">
+                
+                <div class="col-md-6 col-lg-4 col-xl-3 py-2 project" id="DiceDIP">
                     <div class="card h-100">
-                        <img class="card-img-top img-fluid" src="DiceDIP/manual/images/thumbnail.jpg" alt="Card image cap">
+                        <a class="card-img-link" href="#DiceDIP" title="Link directly to DiceDIP">
+                            <img class="card-img-top img-fluid" src="DiceDIP/manual/images/thumbnail.jpg" alt="DiceDIP">
+                            <span class="link-badge" aria-hidden="true"><svg class="link-icon" viewBox="0 0 16 16" width="13" height="13" fill="currentColor" aria-hidden="true" focusable="false"><path d="M4.715 6.542 3.343 7.914a3 3 0 1 0 4.243 4.243l1.828-1.829A3 3 0 0 0 8.586 5.5L8 6.086a1.002 1.002 0 0 0-.154.199 2 2 0 0 1 .861 3.337L6.88 11.45a2 2 0 1 1-2.83-2.83l.793-.792a4.018 4.018 0 0 1-.128-1.287z"/><path d="M6.586 4.672A3 3 0 0 0 7.414 9.5l.775-.776a2 2 0 0 1-.896-3.346L9.12 3.55a2 2 0 1 1 2.83 2.83l-.793.792c.112.42.155.855.128 1.287l1.372-1.372a3 3 0 1 0-4.243-4.243L6.586 4.672z"/></svg></span>
+                        </a>
                         <div class="card-body">
-                            <h5 class="card-title">DiceDIP</h5>
+                            <h5 class="card-title">DiceDIP<a class="anchor-link" href="#DiceDIP" title="Link directly to DiceDIP" aria-label="Link directly to DiceDIP"><svg class="link-icon" viewBox="0 0 16 16" width="13" height="13" fill="currentColor" aria-hidden="true" focusable="false"><path d="M4.715 6.542 3.343 7.914a3 3 0 1 0 4.243 4.243l1.828-1.829A3 3 0 0 0 8.586 5.5L8 6.086a1.002 1.002 0 0 0-.154.199 2 2 0 0 1 .861 3.337L6.88 11.45a2 2 0 1 1-2.83-2.83l.793-.792a4.018 4.018 0 0 1-.128-1.287z"/><path d="M6.586 4.672A3 3 0 0 0 7.414 9.5l.775-.776a2 2 0 0 1-.896-3.346L9.12 3.55a2 2 0 1 1 2.83 2.83l-.793.792c.112.42.155.855.128 1.287l1.372-1.372a3 3 0 1 0-4.243-4.243L6.586 4.672z"/></svg></a></h5>
                             
                                 
-                                <a class="btn btn-info  mb-2" href="DiceDIP/manual/DiceDIP_en.pdf" role="button">PDF Manual en</a><br>
-                                
                                 <a class="btn btn-info  mb-2" href="DiceDIP/manual/DiceDIP_de.pdf" role="button">PDF Manual de</a><br>
+                                
+                                <a class="btn btn-info  mb-2" href="DiceDIP/manual/DiceDIP_en.pdf" role="button">PDF Manual en</a><br>
                                 
                             
                                 
@@ -258,16 +405,20 @@
                     </div>
                 </div>
                 
-                <div class="col-md-6 col-lg-4 col-xl-3 py-2">
+                
+                <div class="col-md-6 col-lg-4 col-xl-3 py-2 project" id="DiceMcDIP">
                     <div class="card h-100">
-                        <img class="card-img-top img-fluid" src="DiceMcDIP/manual/images/thumbnail.jpg" alt="Card image cap">
+                        <a class="card-img-link" href="#DiceMcDIP" title="Link directly to DiceMcDIP">
+                            <img class="card-img-top img-fluid" src="DiceMcDIP/manual/images/thumbnail.jpg" alt="DiceMcDIP">
+                            <span class="link-badge" aria-hidden="true"><svg class="link-icon" viewBox="0 0 16 16" width="13" height="13" fill="currentColor" aria-hidden="true" focusable="false"><path d="M4.715 6.542 3.343 7.914a3 3 0 1 0 4.243 4.243l1.828-1.829A3 3 0 0 0 8.586 5.5L8 6.086a1.002 1.002 0 0 0-.154.199 2 2 0 0 1 .861 3.337L6.88 11.45a2 2 0 1 1-2.83-2.83l.793-.792a4.018 4.018 0 0 1-.128-1.287z"/><path d="M6.586 4.672A3 3 0 0 0 7.414 9.5l.775-.776a2 2 0 0 1-.896-3.346L9.12 3.55a2 2 0 1 1 2.83 2.83l-.793.792c.112.42.155.855.128 1.287l1.372-1.372a3 3 0 1 0-4.243-4.243L6.586 4.672z"/></svg></span>
+                        </a>
                         <div class="card-body">
-                            <h5 class="card-title">DiceMcDIP</h5>
+                            <h5 class="card-title">DiceMcDIP<a class="anchor-link" href="#DiceMcDIP" title="Link directly to DiceMcDIP" aria-label="Link directly to DiceMcDIP"><svg class="link-icon" viewBox="0 0 16 16" width="13" height="13" fill="currentColor" aria-hidden="true" focusable="false"><path d="M4.715 6.542 3.343 7.914a3 3 0 1 0 4.243 4.243l1.828-1.829A3 3 0 0 0 8.586 5.5L8 6.086a1.002 1.002 0 0 0-.154.199 2 2 0 0 1 .861 3.337L6.88 11.45a2 2 0 1 1-2.83-2.83l.793-.792a4.018 4.018 0 0 1-.128-1.287z"/><path d="M6.586 4.672A3 3 0 0 0 7.414 9.5l.775-.776a2 2 0 0 1-.896-3.346L9.12 3.55a2 2 0 1 1 2.83 2.83l-.793.792c.112.42.155.855.128 1.287l1.372-1.372a3 3 0 1 0-4.243-4.243L6.586 4.672z"/></svg></a></h5>
                             
                                 
-                                <a class="btn btn-info  mb-2" href="DiceMcDIP/manual/DiceMcDIP_en.pdf" role="button">PDF Manual en</a><br>
-                                
                                 <a class="btn btn-info  mb-2" href="DiceMcDIP/manual/DiceMcDIP_de.pdf" role="button">PDF Manual de</a><br>
+                                
+                                <a class="btn btn-info  mb-2" href="DiceMcDIP/manual/DiceMcDIP_en.pdf" role="button">PDF Manual en</a><br>
                                 
                             
                                 
@@ -277,45 +428,57 @@
                     </div>
                 </div>
                 
-                <div class="col-md-6 col-lg-4 col-xl-3 py-2">
+                
+                <div class="col-md-6 col-lg-4 col-xl-3 py-2 project" id="Dino">
                     <div class="card h-100">
-                        <img class="card-img-top img-fluid" src="Dino/manual/images/thumbnail.jpg" alt="Card image cap">
+                        <a class="card-img-link" href="#Dino" title="Link directly to Dino">
+                            <img class="card-img-top img-fluid" src="Dino/manual/images/thumbnail.jpg" alt="Dino">
+                            <span class="link-badge" aria-hidden="true"><svg class="link-icon" viewBox="0 0 16 16" width="13" height="13" fill="currentColor" aria-hidden="true" focusable="false"><path d="M4.715 6.542 3.343 7.914a3 3 0 1 0 4.243 4.243l1.828-1.829A3 3 0 0 0 8.586 5.5L8 6.086a1.002 1.002 0 0 0-.154.199 2 2 0 0 1 .861 3.337L6.88 11.45a2 2 0 1 1-2.83-2.83l.793-.792a4.018 4.018 0 0 1-.128-1.287z"/><path d="M6.586 4.672A3 3 0 0 0 7.414 9.5l.775-.776a2 2 0 0 1-.896-3.346L9.12 3.55a2 2 0 1 1 2.83 2.83l-.793.792c.112.42.155.855.128 1.287l1.372-1.372a3 3 0 1 0-4.243-4.243L6.586 4.672z"/></svg></span>
+                        </a>
                         <div class="card-body">
-                            <h5 class="card-title">Dino</h5>
+                            <h5 class="card-title">Dino<a class="anchor-link" href="#Dino" title="Link directly to Dino" aria-label="Link directly to Dino"><svg class="link-icon" viewBox="0 0 16 16" width="13" height="13" fill="currentColor" aria-hidden="true" focusable="false"><path d="M4.715 6.542 3.343 7.914a3 3 0 1 0 4.243 4.243l1.828-1.829A3 3 0 0 0 8.586 5.5L8 6.086a1.002 1.002 0 0 0-.154.199 2 2 0 0 1 .861 3.337L6.88 11.45a2 2 0 1 1-2.83-2.83l.793-.792a4.018 4.018 0 0 1-.128-1.287z"/><path d="M6.586 4.672A3 3 0 0 0 7.414 9.5l.775-.776a2 2 0 0 1-.896-3.346L9.12 3.55a2 2 0 1 1 2.83 2.83l-.793.792c.112.42.155.855.128 1.287l1.372-1.372a3 3 0 1 0-4.243-4.243L6.586 4.672z"/></svg></a></h5>
                             
-                                
-                                <a class="btn btn-info  mb-2" href="Dino/manual/Dino_en.pdf" role="button">PDF Manual en</a><br>
                                 
                                 <a class="btn btn-info  mb-2" href="Dino/manual/Dino_de.pdf" role="button">PDF Manual de</a><br>
                                 
+                                <a class="btn btn-info  mb-2" href="Dino/manual/Dino_en.pdf" role="button">PDF Manual en</a><br>
+                                
                             
                                 
                         </div>
                     </div>
                 </div>
                 
-                <div class="col-md-6 col-lg-4 col-xl-3 py-2">
+                
+                <div class="col-md-6 col-lg-4 col-xl-3 py-2 project" id="DraussenfuchsAntenne">
                     <div class="card h-100">
-                        <img class="card-img-top img-fluid" src="DraussenfuchsAntenne/manual/images/thumbnail.jpg" alt="Card image cap">
+                        <a class="card-img-link" href="#DraussenfuchsAntenne" title="Link directly to DraussenfuchsAntenne">
+                            <img class="card-img-top img-fluid" src="DraussenfuchsAntenne/manual/images/thumbnail.jpg" alt="DraussenfuchsAntenne">
+                            <span class="link-badge" aria-hidden="true"><svg class="link-icon" viewBox="0 0 16 16" width="13" height="13" fill="currentColor" aria-hidden="true" focusable="false"><path d="M4.715 6.542 3.343 7.914a3 3 0 1 0 4.243 4.243l1.828-1.829A3 3 0 0 0 8.586 5.5L8 6.086a1.002 1.002 0 0 0-.154.199 2 2 0 0 1 .861 3.337L6.88 11.45a2 2 0 1 1-2.83-2.83l.793-.792a4.018 4.018 0 0 1-.128-1.287z"/><path d="M6.586 4.672A3 3 0 0 0 7.414 9.5l.775-.776a2 2 0 0 1-.896-3.346L9.12 3.55a2 2 0 1 1 2.83 2.83l-.793.792c.112.42.155.855.128 1.287l1.372-1.372a3 3 0 1 0-4.243-4.243L6.586 4.672z"/></svg></span>
+                        </a>
                         <div class="card-body">
-                            <h5 class="card-title">DraussenfuchsAntenne</h5>
+                            <h5 class="card-title">DraussenfuchsAntenne<a class="anchor-link" href="#DraussenfuchsAntenne" title="Link directly to DraussenfuchsAntenne" aria-label="Link directly to DraussenfuchsAntenne"><svg class="link-icon" viewBox="0 0 16 16" width="13" height="13" fill="currentColor" aria-hidden="true" focusable="false"><path d="M4.715 6.542 3.343 7.914a3 3 0 1 0 4.243 4.243l1.828-1.829A3 3 0 0 0 8.586 5.5L8 6.086a1.002 1.002 0 0 0-.154.199 2 2 0 0 1 .861 3.337L6.88 11.45a2 2 0 1 1-2.83-2.83l.793-.792a4.018 4.018 0 0 1-.128-1.287z"/><path d="M6.586 4.672A3 3 0 0 0 7.414 9.5l.775-.776a2 2 0 0 1-.896-3.346L9.12 3.55a2 2 0 1 1 2.83 2.83l-.793.792c.112.42.155.855.128 1.287l1.372-1.372a3 3 0 1 0-4.243-4.243L6.586 4.672z"/></svg></a></h5>
                             
-                                
-                                <a class="btn btn-info  mb-2" href="DraussenfuchsAntenne/manual/DraussenfuchsAntenne_en.pdf" role="button">PDF Manual en</a><br>
                                 
                                 <a class="btn btn-info  mb-2" href="DraussenfuchsAntenne/manual/DraussenfuchsAntenne_de.pdf" role="button">PDF Manual de</a><br>
                                 
+                                <a class="btn btn-info  mb-2" href="DraussenfuchsAntenne/manual/DraussenfuchsAntenne_en.pdf" role="button">PDF Manual en</a><br>
+                                
                             
                                 
                         </div>
                     </div>
                 </div>
                 
-                <div class="col-md-6 col-lg-4 col-xl-3 py-2">
+                
+                <div class="col-md-6 col-lg-4 col-xl-3 py-2 project" id="DraussenfuchsSender">
                     <div class="card h-100">
-                        <img class="card-img-top img-fluid" src="DraussenfuchsSender/manual/images/thumbnail.jpg" alt="Card image cap">
+                        <a class="card-img-link" href="#DraussenfuchsSender" title="Link directly to DraussenfuchsSender">
+                            <img class="card-img-top img-fluid" src="DraussenfuchsSender/manual/images/thumbnail.jpg" alt="DraussenfuchsSender">
+                            <span class="link-badge" aria-hidden="true"><svg class="link-icon" viewBox="0 0 16 16" width="13" height="13" fill="currentColor" aria-hidden="true" focusable="false"><path d="M4.715 6.542 3.343 7.914a3 3 0 1 0 4.243 4.243l1.828-1.829A3 3 0 0 0 8.586 5.5L8 6.086a1.002 1.002 0 0 0-.154.199 2 2 0 0 1 .861 3.337L6.88 11.45a2 2 0 1 1-2.83-2.83l.793-.792a4.018 4.018 0 0 1-.128-1.287z"/><path d="M6.586 4.672A3 3 0 0 0 7.414 9.5l.775-.776a2 2 0 0 1-.896-3.346L9.12 3.55a2 2 0 1 1 2.83 2.83l-.793.792c.112.42.155.855.128 1.287l1.372-1.372a3 3 0 1 0-4.243-4.243L6.586 4.672z"/></svg></span>
+                        </a>
                         <div class="card-body">
-                            <h5 class="card-title">DraussenfuchsSender</h5>
+                            <h5 class="card-title">DraussenfuchsSender<a class="anchor-link" href="#DraussenfuchsSender" title="Link directly to DraussenfuchsSender" aria-label="Link directly to DraussenfuchsSender"><svg class="link-icon" viewBox="0 0 16 16" width="13" height="13" fill="currentColor" aria-hidden="true" focusable="false"><path d="M4.715 6.542 3.343 7.914a3 3 0 1 0 4.243 4.243l1.828-1.829A3 3 0 0 0 8.586 5.5L8 6.086a1.002 1.002 0 0 0-.154.199 2 2 0 0 1 .861 3.337L6.88 11.45a2 2 0 1 1-2.83-2.83l.793-.792a4.018 4.018 0 0 1-.128-1.287z"/><path d="M6.586 4.672A3 3 0 0 0 7.414 9.5l.775-.776a2 2 0 0 1-.896-3.346L9.12 3.55a2 2 0 1 1 2.83 2.83l-.793.792c.112.42.155.855.128 1.287l1.372-1.372a3 3 0 1 0-4.243-4.243L6.586 4.672z"/></svg></a></h5>
                             
                                 
                                 <a class="btn btn-info  mb-2" href="DraussenfuchsSender/manual/DraussenfuchsSender_de.pdf" role="button">PDF Manual de</a><br>
@@ -328,16 +491,20 @@
                     </div>
                 </div>
                 
-                <div class="col-md-6 col-lg-4 col-xl-3 py-2">
+                
+                <div class="col-md-6 col-lg-4 col-xl-3 py-2 project" id="Elefant">
                     <div class="card h-100">
-                        <img class="card-img-top img-fluid" src="Elefant/manual/images/thumbnail.jpg" alt="Card image cap">
+                        <a class="card-img-link" href="#Elefant" title="Link directly to Elefant">
+                            <img class="card-img-top img-fluid" src="Elefant/manual/images/thumbnail.jpg" alt="Elefant">
+                            <span class="link-badge" aria-hidden="true"><svg class="link-icon" viewBox="0 0 16 16" width="13" height="13" fill="currentColor" aria-hidden="true" focusable="false"><path d="M4.715 6.542 3.343 7.914a3 3 0 1 0 4.243 4.243l1.828-1.829A3 3 0 0 0 8.586 5.5L8 6.086a1.002 1.002 0 0 0-.154.199 2 2 0 0 1 .861 3.337L6.88 11.45a2 2 0 1 1-2.83-2.83l.793-.792a4.018 4.018 0 0 1-.128-1.287z"/><path d="M6.586 4.672A3 3 0 0 0 7.414 9.5l.775-.776a2 2 0 0 1-.896-3.346L9.12 3.55a2 2 0 1 1 2.83 2.83l-.793.792c.112.42.155.855.128 1.287l1.372-1.372a3 3 0 1 0-4.243-4.243L6.586 4.672z"/></svg></span>
+                        </a>
                         <div class="card-body">
-                            <h5 class="card-title">Elefant</h5>
+                            <h5 class="card-title">Elefant<a class="anchor-link" href="#Elefant" title="Link directly to Elefant" aria-label="Link directly to Elefant"><svg class="link-icon" viewBox="0 0 16 16" width="13" height="13" fill="currentColor" aria-hidden="true" focusable="false"><path d="M4.715 6.542 3.343 7.914a3 3 0 1 0 4.243 4.243l1.828-1.829A3 3 0 0 0 8.586 5.5L8 6.086a1.002 1.002 0 0 0-.154.199 2 2 0 0 1 .861 3.337L6.88 11.45a2 2 0 1 1-2.83-2.83l.793-.792a4.018 4.018 0 0 1-.128-1.287z"/><path d="M6.586 4.672A3 3 0 0 0 7.414 9.5l.775-.776a2 2 0 0 1-.896-3.346L9.12 3.55a2 2 0 1 1 2.83 2.83l-.793.792c.112.42.155.855.128 1.287l1.372-1.372a3 3 0 1 0-4.243-4.243L6.586 4.672z"/></svg></a></h5>
                             
                                 
-                                <a class="btn btn-info  mb-2" href="Elefant/manual/Elefant_en.pdf" role="button">PDF Manual en</a><br>
-                                
                                 <a class="btn btn-info  mb-2" href="Elefant/manual/Elefant_de.pdf" role="button">PDF Manual de</a><br>
+                                
+                                <a class="btn btn-info  mb-2" href="Elefant/manual/Elefant_en.pdf" role="button">PDF Manual en</a><br>
                                 
                             
                                 
@@ -347,11 +514,15 @@
                     </div>
                 </div>
                 
-                <div class="col-md-6 col-lg-4 col-xl-3 py-2">
+                
+                <div class="col-md-6 col-lg-4 col-xl-3 py-2 project" id="ErmerBeeper">
                     <div class="card h-100">
-                        <img class="card-img-top img-fluid" src="ErmerBeeper/manual/images/thumbnail.jpg" alt="Card image cap">
+                        <a class="card-img-link" href="#ErmerBeeper" title="Link directly to ErmerBeeper">
+                            <img class="card-img-top img-fluid" src="ErmerBeeper/manual/images/thumbnail.jpg" alt="ErmerBeeper">
+                            <span class="link-badge" aria-hidden="true"><svg class="link-icon" viewBox="0 0 16 16" width="13" height="13" fill="currentColor" aria-hidden="true" focusable="false"><path d="M4.715 6.542 3.343 7.914a3 3 0 1 0 4.243 4.243l1.828-1.829A3 3 0 0 0 8.586 5.5L8 6.086a1.002 1.002 0 0 0-.154.199 2 2 0 0 1 .861 3.337L6.88 11.45a2 2 0 1 1-2.83-2.83l.793-.792a4.018 4.018 0 0 1-.128-1.287z"/><path d="M6.586 4.672A3 3 0 0 0 7.414 9.5l.775-.776a2 2 0 0 1-.896-3.346L9.12 3.55a2 2 0 1 1 2.83 2.83l-.793.792c.112.42.155.855.128 1.287l1.372-1.372a3 3 0 1 0-4.243-4.243L6.586 4.672z"/></svg></span>
+                        </a>
                         <div class="card-body">
-                            <h5 class="card-title">ErmerBeeper</h5>
+                            <h5 class="card-title">ErmerBeeper<a class="anchor-link" href="#ErmerBeeper" title="Link directly to ErmerBeeper" aria-label="Link directly to ErmerBeeper"><svg class="link-icon" viewBox="0 0 16 16" width="13" height="13" fill="currentColor" aria-hidden="true" focusable="false"><path d="M4.715 6.542 3.343 7.914a3 3 0 1 0 4.243 4.243l1.828-1.829A3 3 0 0 0 8.586 5.5L8 6.086a1.002 1.002 0 0 0-.154.199 2 2 0 0 1 .861 3.337L6.88 11.45a2 2 0 1 1-2.83-2.83l.793-.792a4.018 4.018 0 0 1-.128-1.287z"/><path d="M6.586 4.672A3 3 0 0 0 7.414 9.5l.775-.776a2 2 0 0 1-.896-3.346L9.12 3.55a2 2 0 1 1 2.83 2.83l-.793.792c.112.42.155.855.128 1.287l1.372-1.372a3 3 0 1 0-4.243-4.243L6.586 4.672z"/></svg></a></h5>
                             
                                 
                                 <a class="btn btn-info  mb-2" href="ErmerBeeper/manual/ErmerBeeper_de.pdf" role="button">PDF Manual de</a><br>
@@ -366,30 +537,61 @@
                     </div>
                 </div>
                 
-                <div class="col-md-6 col-lg-4 col-xl-3 py-2">
+                
+                <div class="col-md-6 col-lg-4 col-xl-3 py-2 project" id="HeartDIP">
                     <div class="card h-100">
-                        <img class="card-img-top img-fluid" src="HaseImKuchen/manual/images/thumbnail.jpg" alt="Card image cap">
+                        <a class="card-img-link" href="#HeartDIP" title="Link directly to HeartDIP">
+                            <img class="card-img-top img-fluid" src="HeartDIP/manual/images/thumbnail.jpg" alt="HeartDIP">
+                            <span class="link-badge" aria-hidden="true"><svg class="link-icon" viewBox="0 0 16 16" width="13" height="13" fill="currentColor" aria-hidden="true" focusable="false"><path d="M4.715 6.542 3.343 7.914a3 3 0 1 0 4.243 4.243l1.828-1.829A3 3 0 0 0 8.586 5.5L8 6.086a1.002 1.002 0 0 0-.154.199 2 2 0 0 1 .861 3.337L6.88 11.45a2 2 0 1 1-2.83-2.83l.793-.792a4.018 4.018 0 0 1-.128-1.287z"/><path d="M6.586 4.672A3 3 0 0 0 7.414 9.5l.775-.776a2 2 0 0 1-.896-3.346L9.12 3.55a2 2 0 1 1 2.83 2.83l-.793.792c.112.42.155.855.128 1.287l1.372-1.372a3 3 0 1 0-4.243-4.243L6.586 4.672z"/></svg></span>
+                        </a>
                         <div class="card-body">
-                            <h5 class="card-title">HaseImKuchen</h5>
+                            <h5 class="card-title">HeartDIP<a class="anchor-link" href="#HeartDIP" title="Link directly to HeartDIP" aria-label="Link directly to HeartDIP"><svg class="link-icon" viewBox="0 0 16 16" width="13" height="13" fill="currentColor" aria-hidden="true" focusable="false"><path d="M4.715 6.542 3.343 7.914a3 3 0 1 0 4.243 4.243l1.828-1.829A3 3 0 0 0 8.586 5.5L8 6.086a1.002 1.002 0 0 0-.154.199 2 2 0 0 1 .861 3.337L6.88 11.45a2 2 0 1 1-2.83-2.83l.793-.792a4.018 4.018 0 0 1-.128-1.287z"/><path d="M6.586 4.672A3 3 0 0 0 7.414 9.5l.775-.776a2 2 0 0 1-.896-3.346L9.12 3.55a2 2 0 1 1 2.83 2.83l-.793.792c.112.42.155.855.128 1.287l1.372-1.372a3 3 0 1 0-4.243-4.243L6.586 4.672z"/></svg></a></h5>
                             
                                 
-                                <a class="btn btn-info  mb-2" href="HaseImKuchen/manual/HaseImKuchen_en.pdf" role="button">PDF Manual en</a><br>
+                                <a class="btn btn-info  mb-2" href="HeartDIP/manual/HeartDIP_de.pdf" role="button">PDF Manual de</a><br>
                                 
-                                <a class="btn btn-info  mb-2" href="HaseImKuchen/manual/HaseImKuchen_de.pdf" role="button">PDF Manual de</a><br>
+                                <a class="btn btn-info  mb-2" href="HeartDIP/manual/HeartDIP_en.pdf" role="button">PDF Manual en</a><br>
                                 
                             
                                 
-                                <a class="btn btn-info" href="HaseImKuchen/ibom.html" role="button">Interactive Board</a>
+                                <a class="btn btn-info" href="HeartDIP/ibom.html" role="button">Interactive Board</a>
                                 
                         </div>
                     </div>
                 </div>
                 
-                <div class="col-md-6 col-lg-4 col-xl-3 py-2">
+                
+                <div class="col-md-6 col-lg-4 col-xl-3 py-2 project" id="HeartSMD">
                     <div class="card h-100">
-                        <img class="card-img-top img-fluid" src="HeartbeatTHT/manual/images/thumbnail.jpg" alt="Card image cap">
+                        <a class="card-img-link" href="#HeartSMD" title="Link directly to HeartSMD">
+                            <img class="card-img-top img-fluid" src="HeartSMD/manual/images/thumbnail.jpg" alt="HeartSMD">
+                            <span class="link-badge" aria-hidden="true"><svg class="link-icon" viewBox="0 0 16 16" width="13" height="13" fill="currentColor" aria-hidden="true" focusable="false"><path d="M4.715 6.542 3.343 7.914a3 3 0 1 0 4.243 4.243l1.828-1.829A3 3 0 0 0 8.586 5.5L8 6.086a1.002 1.002 0 0 0-.154.199 2 2 0 0 1 .861 3.337L6.88 11.45a2 2 0 1 1-2.83-2.83l.793-.792a4.018 4.018 0 0 1-.128-1.287z"/><path d="M6.586 4.672A3 3 0 0 0 7.414 9.5l.775-.776a2 2 0 0 1-.896-3.346L9.12 3.55a2 2 0 1 1 2.83 2.83l-.793.792c.112.42.155.855.128 1.287l1.372-1.372a3 3 0 1 0-4.243-4.243L6.586 4.672z"/></svg></span>
+                        </a>
                         <div class="card-body">
-                            <h5 class="card-title">HeartbeatTHT</h5>
+                            <h5 class="card-title">HeartSMD<a class="anchor-link" href="#HeartSMD" title="Link directly to HeartSMD" aria-label="Link directly to HeartSMD"><svg class="link-icon" viewBox="0 0 16 16" width="13" height="13" fill="currentColor" aria-hidden="true" focusable="false"><path d="M4.715 6.542 3.343 7.914a3 3 0 1 0 4.243 4.243l1.828-1.829A3 3 0 0 0 8.586 5.5L8 6.086a1.002 1.002 0 0 0-.154.199 2 2 0 0 1 .861 3.337L6.88 11.45a2 2 0 1 1-2.83-2.83l.793-.792a4.018 4.018 0 0 1-.128-1.287z"/><path d="M6.586 4.672A3 3 0 0 0 7.414 9.5l.775-.776a2 2 0 0 1-.896-3.346L9.12 3.55a2 2 0 1 1 2.83 2.83l-.793.792c.112.42.155.855.128 1.287l1.372-1.372a3 3 0 1 0-4.243-4.243L6.586 4.672z"/></svg></a></h5>
+                            
+                                
+                                <a class="btn btn-info  mb-2" href="HeartSMD/manual/HeartSMD_de.pdf" role="button">PDF Manual de</a><br>
+                                
+                                <a class="btn btn-info  mb-2" href="HeartSMD/manual/HeartSMD_en.pdf" role="button">PDF Manual en</a><br>
+                                
+                            
+                                
+                                <a class="btn btn-info" href="HeartSMD/ibom.html" role="button">Interactive Board</a>
+                                
+                        </div>
+                    </div>
+                </div>
+                
+                
+                <div class="col-md-6 col-lg-4 col-xl-3 py-2 project" id="HeartbeatTHT">
+                    <div class="card h-100">
+                        <a class="card-img-link" href="#HeartbeatTHT" title="Link directly to HeartbeatTHT">
+                            <img class="card-img-top img-fluid" src="HeartbeatTHT/manual/images/thumbnail.jpg" alt="HeartbeatTHT">
+                            <span class="link-badge" aria-hidden="true"><svg class="link-icon" viewBox="0 0 16 16" width="13" height="13" fill="currentColor" aria-hidden="true" focusable="false"><path d="M4.715 6.542 3.343 7.914a3 3 0 1 0 4.243 4.243l1.828-1.829A3 3 0 0 0 8.586 5.5L8 6.086a1.002 1.002 0 0 0-.154.199 2 2 0 0 1 .861 3.337L6.88 11.45a2 2 0 1 1-2.83-2.83l.793-.792a4.018 4.018 0 0 1-.128-1.287z"/><path d="M6.586 4.672A3 3 0 0 0 7.414 9.5l.775-.776a2 2 0 0 1-.896-3.346L9.12 3.55a2 2 0 1 1 2.83 2.83l-.793.792c.112.42.155.855.128 1.287l1.372-1.372a3 3 0 1 0-4.243-4.243L6.586 4.672z"/></svg></span>
+                        </a>
+                        <div class="card-body">
+                            <h5 class="card-title">HeartbeatTHT<a class="anchor-link" href="#HeartbeatTHT" title="Link directly to HeartbeatTHT" aria-label="Link directly to HeartbeatTHT"><svg class="link-icon" viewBox="0 0 16 16" width="13" height="13" fill="currentColor" aria-hidden="true" focusable="false"><path d="M4.715 6.542 3.343 7.914a3 3 0 1 0 4.243 4.243l1.828-1.829A3 3 0 0 0 8.586 5.5L8 6.086a1.002 1.002 0 0 0-.154.199 2 2 0 0 1 .861 3.337L6.88 11.45a2 2 0 1 1-2.83-2.83l.793-.792a4.018 4.018 0 0 1-.128-1.287z"/><path d="M6.586 4.672A3 3 0 0 0 7.414 9.5l.775-.776a2 2 0 0 1-.896-3.346L9.12 3.55a2 2 0 1 1 2.83 2.83l-.793.792c.112.42.155.855.128 1.287l1.372-1.372a3 3 0 1 0-4.243-4.243L6.586 4.672z"/></svg></a></h5>
                             
                                 
                                 <a class="btn btn-info  mb-2" href="HeartbeatTHT/manual/HeartbeatTHT_de.pdf" role="button">PDF Manual de</a><br>
@@ -404,71 +606,41 @@
                     </div>
                 </div>
                 
-                <div class="col-md-6 col-lg-4 col-xl-3 py-2">
-                    <div class="card h-100">
-                        <img class="card-img-top img-fluid" src="HeartDIP/manual/images/thumbnail.jpg" alt="Card image cap">
-                        <div class="card-body">
-                            <h5 class="card-title">HeartDIP</h5>
-                            
-                                
-                                <a class="btn btn-info  mb-2" href="HeartDIP/manual/HeartDIP_en.pdf" role="button">PDF Manual en</a><br>
-                                
-                                <a class="btn btn-info  mb-2" href="HeartDIP/manual/HeartDIP_de.pdf" role="button">PDF Manual de</a><br>
-                                
-                            
-                                
-                                <a class="btn btn-info" href="HeartDIP/ibom.html" role="button">Interactive Board</a>
-                                
-                        </div>
-                    </div>
-                </div>
                 
-                <div class="col-md-6 col-lg-4 col-xl-3 py-2">
+                <div class="col-md-6 col-lg-4 col-xl-3 py-2 project" id="Humo">
                     <div class="card h-100">
-                        <img class="card-img-top img-fluid" src="HeartSMD/manual/images/thumbnail.jpg" alt="Card image cap">
+                        <a class="card-img-link" href="#Humo" title="Link directly to Humo">
+                            <img class="card-img-top img-fluid" src="Humo/manual/images/thumbnail.jpg" alt="Humo">
+                            <span class="link-badge" aria-hidden="true"><svg class="link-icon" viewBox="0 0 16 16" width="13" height="13" fill="currentColor" aria-hidden="true" focusable="false"><path d="M4.715 6.542 3.343 7.914a3 3 0 1 0 4.243 4.243l1.828-1.829A3 3 0 0 0 8.586 5.5L8 6.086a1.002 1.002 0 0 0-.154.199 2 2 0 0 1 .861 3.337L6.88 11.45a2 2 0 1 1-2.83-2.83l.793-.792a4.018 4.018 0 0 1-.128-1.287z"/><path d="M6.586 4.672A3 3 0 0 0 7.414 9.5l.775-.776a2 2 0 0 1-.896-3.346L9.12 3.55a2 2 0 1 1 2.83 2.83l-.793.792c.112.42.155.855.128 1.287l1.372-1.372a3 3 0 1 0-4.243-4.243L6.586 4.672z"/></svg></span>
+                        </a>
                         <div class="card-body">
-                            <h5 class="card-title">HeartSMD</h5>
+                            <h5 class="card-title">Humo<a class="anchor-link" href="#Humo" title="Link directly to Humo" aria-label="Link directly to Humo"><svg class="link-icon" viewBox="0 0 16 16" width="13" height="13" fill="currentColor" aria-hidden="true" focusable="false"><path d="M4.715 6.542 3.343 7.914a3 3 0 1 0 4.243 4.243l1.828-1.829A3 3 0 0 0 8.586 5.5L8 6.086a1.002 1.002 0 0 0-.154.199 2 2 0 0 1 .861 3.337L6.88 11.45a2 2 0 1 1-2.83-2.83l.793-.792a4.018 4.018 0 0 1-.128-1.287z"/><path d="M6.586 4.672A3 3 0 0 0 7.414 9.5l.775-.776a2 2 0 0 1-.896-3.346L9.12 3.55a2 2 0 1 1 2.83 2.83l-.793.792c.112.42.155.855.128 1.287l1.372-1.372a3 3 0 1 0-4.243-4.243L6.586 4.672z"/></svg></a></h5>
                             
-                                
-                                <a class="btn btn-info  mb-2" href="HeartSMD/manual/HeartSMD_en.pdf" role="button">PDF Manual en</a><br>
-                                
-                                <a class="btn btn-info  mb-2" href="HeartSMD/manual/HeartSMD_de.pdf" role="button">PDF Manual de</a><br>
-                                
-                            
-                                
-                                <a class="btn btn-info" href="HeartSMD/ibom.html" role="button">Interactive Board</a>
-                                
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="col-md-6 col-lg-4 col-xl-3 py-2">
-                    <div class="card h-100">
-                        <img class="card-img-top img-fluid" src="Humo/manual/images/thumbnail.jpg" alt="Card image cap">
-                        <div class="card-body">
-                            <h5 class="card-title">Humo</h5>
-                            
-                                
-                                <a class="btn btn-info  mb-2" href="Humo/manual/Humo_en.pdf" role="button">PDF Manual en</a><br>
                                 
                                 <a class="btn btn-info  mb-2" href="Humo/manual/Humo_de.pdf" role="button">PDF Manual de</a><br>
                                 
+                                <a class="btn btn-info  mb-2" href="Humo/manual/Humo_en.pdf" role="button">PDF Manual en</a><br>
+                                
                             
                                 
                         </div>
                     </div>
                 </div>
                 
-                <div class="col-md-6 col-lg-4 col-xl-3 py-2">
+                
+                <div class="col-md-6 col-lg-4 col-xl-3 py-2 project" id="ICanSolderDIP">
                     <div class="card h-100">
-                        <img class="card-img-top img-fluid" src="ICanSolderDIP/manual/images/thumbnail.jpg" alt="Card image cap">
+                        <a class="card-img-link" href="#ICanSolderDIP" title="Link directly to ICanSolderDIP">
+                            <img class="card-img-top img-fluid" src="ICanSolderDIP/manual/images/thumbnail.jpg" alt="ICanSolderDIP">
+                            <span class="link-badge" aria-hidden="true"><svg class="link-icon" viewBox="0 0 16 16" width="13" height="13" fill="currentColor" aria-hidden="true" focusable="false"><path d="M4.715 6.542 3.343 7.914a3 3 0 1 0 4.243 4.243l1.828-1.829A3 3 0 0 0 8.586 5.5L8 6.086a1.002 1.002 0 0 0-.154.199 2 2 0 0 1 .861 3.337L6.88 11.45a2 2 0 1 1-2.83-2.83l.793-.792a4.018 4.018 0 0 1-.128-1.287z"/><path d="M6.586 4.672A3 3 0 0 0 7.414 9.5l.775-.776a2 2 0 0 1-.896-3.346L9.12 3.55a2 2 0 1 1 2.83 2.83l-.793.792c.112.42.155.855.128 1.287l1.372-1.372a3 3 0 1 0-4.243-4.243L6.586 4.672z"/></svg></span>
+                        </a>
                         <div class="card-body">
-                            <h5 class="card-title">ICanSolderDIP</h5>
+                            <h5 class="card-title">ICanSolderDIP<a class="anchor-link" href="#ICanSolderDIP" title="Link directly to ICanSolderDIP" aria-label="Link directly to ICanSolderDIP"><svg class="link-icon" viewBox="0 0 16 16" width="13" height="13" fill="currentColor" aria-hidden="true" focusable="false"><path d="M4.715 6.542 3.343 7.914a3 3 0 1 0 4.243 4.243l1.828-1.829A3 3 0 0 0 8.586 5.5L8 6.086a1.002 1.002 0 0 0-.154.199 2 2 0 0 1 .861 3.337L6.88 11.45a2 2 0 1 1-2.83-2.83l.793-.792a4.018 4.018 0 0 1-.128-1.287z"/><path d="M6.586 4.672A3 3 0 0 0 7.414 9.5l.775-.776a2 2 0 0 1-.896-3.346L9.12 3.55a2 2 0 1 1 2.83 2.83l-.793.792c.112.42.155.855.128 1.287l1.372-1.372a3 3 0 1 0-4.243-4.243L6.586 4.672z"/></svg></a></h5>
                             
                                 
-                                <a class="btn btn-info  mb-2" href="ICanSolderDIP/manual/ICanSolderDIP_en.pdf" role="button">PDF Manual en</a><br>
-                                
                                 <a class="btn btn-info  mb-2" href="ICanSolderDIP/manual/ICanSolderDIP_de.pdf" role="button">PDF Manual de</a><br>
+                                
+                                <a class="btn btn-info  mb-2" href="ICanSolderDIP/manual/ICanSolderDIP_en.pdf" role="button">PDF Manual en</a><br>
                                 
                             
                                 
@@ -478,16 +650,20 @@
                     </div>
                 </div>
                 
-                <div class="col-md-6 col-lg-4 col-xl-3 py-2">
+                
+                <div class="col-md-6 col-lg-4 col-xl-3 py-2 project" id="KatieTheCat">
                     <div class="card h-100">
-                        <img class="card-img-top img-fluid" src="KatieTheCat/manual/images/thumbnail.jpg" alt="Card image cap">
+                        <a class="card-img-link" href="#KatieTheCat" title="Link directly to KatieTheCat">
+                            <img class="card-img-top img-fluid" src="KatieTheCat/manual/images/thumbnail.jpg" alt="KatieTheCat">
+                            <span class="link-badge" aria-hidden="true"><svg class="link-icon" viewBox="0 0 16 16" width="13" height="13" fill="currentColor" aria-hidden="true" focusable="false"><path d="M4.715 6.542 3.343 7.914a3 3 0 1 0 4.243 4.243l1.828-1.829A3 3 0 0 0 8.586 5.5L8 6.086a1.002 1.002 0 0 0-.154.199 2 2 0 0 1 .861 3.337L6.88 11.45a2 2 0 1 1-2.83-2.83l.793-.792a4.018 4.018 0 0 1-.128-1.287z"/><path d="M6.586 4.672A3 3 0 0 0 7.414 9.5l.775-.776a2 2 0 0 1-.896-3.346L9.12 3.55a2 2 0 1 1 2.83 2.83l-.793.792c.112.42.155.855.128 1.287l1.372-1.372a3 3 0 1 0-4.243-4.243L6.586 4.672z"/></svg></span>
+                        </a>
                         <div class="card-body">
-                            <h5 class="card-title">KatieTheCat</h5>
+                            <h5 class="card-title">KatieTheCat<a class="anchor-link" href="#KatieTheCat" title="Link directly to KatieTheCat" aria-label="Link directly to KatieTheCat"><svg class="link-icon" viewBox="0 0 16 16" width="13" height="13" fill="currentColor" aria-hidden="true" focusable="false"><path d="M4.715 6.542 3.343 7.914a3 3 0 1 0 4.243 4.243l1.828-1.829A3 3 0 0 0 8.586 5.5L8 6.086a1.002 1.002 0 0 0-.154.199 2 2 0 0 1 .861 3.337L6.88 11.45a2 2 0 1 1-2.83-2.83l.793-.792a4.018 4.018 0 0 1-.128-1.287z"/><path d="M6.586 4.672A3 3 0 0 0 7.414 9.5l.775-.776a2 2 0 0 1-.896-3.346L9.12 3.55a2 2 0 1 1 2.83 2.83l-.793.792c.112.42.155.855.128 1.287l1.372-1.372a3 3 0 1 0-4.243-4.243L6.586 4.672z"/></svg></a></h5>
                             
                                 
-                                <a class="btn btn-info  mb-2" href="KatieTheCat/manual/KatieTheCat_en.pdf" role="button">PDF Manual en</a><br>
-                                
                                 <a class="btn btn-info  mb-2" href="KatieTheCat/manual/KatieTheCat_de.pdf" role="button">PDF Manual de</a><br>
+                                
+                                <a class="btn btn-info  mb-2" href="KatieTheCat/manual/KatieTheCat_en.pdf" role="button">PDF Manual en</a><br>
                                 
                             
                                 
@@ -497,16 +673,20 @@
                     </div>
                 </div>
                 
-                <div class="col-md-6 col-lg-4 col-xl-3 py-2">
+                
+                <div class="col-md-6 col-lg-4 col-xl-3 py-2 project" id="KitchenHeadSMD">
                     <div class="card h-100">
-                        <img class="card-img-top img-fluid" src="KitchenHeadSMD/manual/images/thumbnail.jpg" alt="Card image cap">
+                        <a class="card-img-link" href="#KitchenHeadSMD" title="Link directly to KitchenHeadSMD">
+                            <img class="card-img-top img-fluid" src="KitchenHeadSMD/manual/images/thumbnail.jpg" alt="KitchenHeadSMD">
+                            <span class="link-badge" aria-hidden="true"><svg class="link-icon" viewBox="0 0 16 16" width="13" height="13" fill="currentColor" aria-hidden="true" focusable="false"><path d="M4.715 6.542 3.343 7.914a3 3 0 1 0 4.243 4.243l1.828-1.829A3 3 0 0 0 8.586 5.5L8 6.086a1.002 1.002 0 0 0-.154.199 2 2 0 0 1 .861 3.337L6.88 11.45a2 2 0 1 1-2.83-2.83l.793-.792a4.018 4.018 0 0 1-.128-1.287z"/><path d="M6.586 4.672A3 3 0 0 0 7.414 9.5l.775-.776a2 2 0 0 1-.896-3.346L9.12 3.55a2 2 0 1 1 2.83 2.83l-.793.792c.112.42.155.855.128 1.287l1.372-1.372a3 3 0 1 0-4.243-4.243L6.586 4.672z"/></svg></span>
+                        </a>
                         <div class="card-body">
-                            <h5 class="card-title">KitchenHeadSMD</h5>
+                            <h5 class="card-title">KitchenHeadSMD<a class="anchor-link" href="#KitchenHeadSMD" title="Link directly to KitchenHeadSMD" aria-label="Link directly to KitchenHeadSMD"><svg class="link-icon" viewBox="0 0 16 16" width="13" height="13" fill="currentColor" aria-hidden="true" focusable="false"><path d="M4.715 6.542 3.343 7.914a3 3 0 1 0 4.243 4.243l1.828-1.829A3 3 0 0 0 8.586 5.5L8 6.086a1.002 1.002 0 0 0-.154.199 2 2 0 0 1 .861 3.337L6.88 11.45a2 2 0 1 1-2.83-2.83l.793-.792a4.018 4.018 0 0 1-.128-1.287z"/><path d="M6.586 4.672A3 3 0 0 0 7.414 9.5l.775-.776a2 2 0 0 1-.896-3.346L9.12 3.55a2 2 0 1 1 2.83 2.83l-.793.792c.112.42.155.855.128 1.287l1.372-1.372a3 3 0 1 0-4.243-4.243L6.586 4.672z"/></svg></a></h5>
                             
                                 
-                                <a class="btn btn-info  mb-2" href="KitchenHeadSMD/manual/KitchenHeadSMD_en.pdf" role="button">PDF Manual en</a><br>
-                                
                                 <a class="btn btn-info  mb-2" href="KitchenHeadSMD/manual/KitchenHeadSMD_de.pdf" role="button">PDF Manual de</a><br>
+                                
+                                <a class="btn btn-info  mb-2" href="KitchenHeadSMD/manual/KitchenHeadSMD_en.pdf" role="button">PDF Manual en</a><br>
                                 
                             
                                 
@@ -516,11 +696,15 @@
                     </div>
                 </div>
                 
-                <div class="col-md-6 col-lg-4 col-xl-3 py-2">
+                
+                <div class="col-md-6 col-lg-4 col-xl-3 py-2 project" id="LEDSchmuck">
                     <div class="card h-100">
-                        <img class="card-img-top img-fluid" src="LEDSchmuck/manual/images/thumbnail.jpg" alt="Card image cap">
+                        <a class="card-img-link" href="#LEDSchmuck" title="Link directly to LEDSchmuck">
+                            <img class="card-img-top img-fluid" src="LEDSchmuck/manual/images/thumbnail.jpg" alt="LEDSchmuck">
+                            <span class="link-badge" aria-hidden="true"><svg class="link-icon" viewBox="0 0 16 16" width="13" height="13" fill="currentColor" aria-hidden="true" focusable="false"><path d="M4.715 6.542 3.343 7.914a3 3 0 1 0 4.243 4.243l1.828-1.829A3 3 0 0 0 8.586 5.5L8 6.086a1.002 1.002 0 0 0-.154.199 2 2 0 0 1 .861 3.337L6.88 11.45a2 2 0 1 1-2.83-2.83l.793-.792a4.018 4.018 0 0 1-.128-1.287z"/><path d="M6.586 4.672A3 3 0 0 0 7.414 9.5l.775-.776a2 2 0 0 1-.896-3.346L9.12 3.55a2 2 0 1 1 2.83 2.83l-.793.792c.112.42.155.855.128 1.287l1.372-1.372a3 3 0 1 0-4.243-4.243L6.586 4.672z"/></svg></span>
+                        </a>
                         <div class="card-body">
-                            <h5 class="card-title">LEDSchmuck</h5>
+                            <h5 class="card-title">LEDSchmuck<a class="anchor-link" href="#LEDSchmuck" title="Link directly to LEDSchmuck" aria-label="Link directly to LEDSchmuck"><svg class="link-icon" viewBox="0 0 16 16" width="13" height="13" fill="currentColor" aria-hidden="true" focusable="false"><path d="M4.715 6.542 3.343 7.914a3 3 0 1 0 4.243 4.243l1.828-1.829A3 3 0 0 0 8.586 5.5L8 6.086a1.002 1.002 0 0 0-.154.199 2 2 0 0 1 .861 3.337L6.88 11.45a2 2 0 1 1-2.83-2.83l.793-.792a4.018 4.018 0 0 1-.128-1.287z"/><path d="M6.586 4.672A3 3 0 0 0 7.414 9.5l.775-.776a2 2 0 0 1-.896-3.346L9.12 3.55a2 2 0 1 1 2.83 2.83l-.793.792c.112.42.155.855.128 1.287l1.372-1.372a3 3 0 1 0-4.243-4.243L6.586 4.672z"/></svg></a></h5>
                             
                                 
                                 <a class="btn btn-info  mb-2" href="LEDSchmuck/manual/LEDSchmuck_de.pdf" role="button">PDF Manual de</a><br>
@@ -533,16 +717,20 @@
                     </div>
                 </div>
                 
-                <div class="col-md-6 col-lg-4 col-xl-3 py-2">
+                
+                <div class="col-md-6 col-lg-4 col-xl-3 py-2 project" id="LEDWolf">
                     <div class="card h-100">
-                        <img class="card-img-top img-fluid" src="LEDWolf/manual/images/thumbnail.jpg" alt="Card image cap">
+                        <a class="card-img-link" href="#LEDWolf" title="Link directly to LEDWolf">
+                            <img class="card-img-top img-fluid" src="LEDWolf/manual/images/thumbnail.jpg" alt="LEDWolf">
+                            <span class="link-badge" aria-hidden="true"><svg class="link-icon" viewBox="0 0 16 16" width="13" height="13" fill="currentColor" aria-hidden="true" focusable="false"><path d="M4.715 6.542 3.343 7.914a3 3 0 1 0 4.243 4.243l1.828-1.829A3 3 0 0 0 8.586 5.5L8 6.086a1.002 1.002 0 0 0-.154.199 2 2 0 0 1 .861 3.337L6.88 11.45a2 2 0 1 1-2.83-2.83l.793-.792a4.018 4.018 0 0 1-.128-1.287z"/><path d="M6.586 4.672A3 3 0 0 0 7.414 9.5l.775-.776a2 2 0 0 1-.896-3.346L9.12 3.55a2 2 0 1 1 2.83 2.83l-.793.792c.112.42.155.855.128 1.287l1.372-1.372a3 3 0 1 0-4.243-4.243L6.586 4.672z"/></svg></span>
+                        </a>
                         <div class="card-body">
-                            <h5 class="card-title">LEDWolf</h5>
+                            <h5 class="card-title">LEDWolf<a class="anchor-link" href="#LEDWolf" title="Link directly to LEDWolf" aria-label="Link directly to LEDWolf"><svg class="link-icon" viewBox="0 0 16 16" width="13" height="13" fill="currentColor" aria-hidden="true" focusable="false"><path d="M4.715 6.542 3.343 7.914a3 3 0 1 0 4.243 4.243l1.828-1.829A3 3 0 0 0 8.586 5.5L8 6.086a1.002 1.002 0 0 0-.154.199 2 2 0 0 1 .861 3.337L6.88 11.45a2 2 0 1 1-2.83-2.83l.793-.792a4.018 4.018 0 0 1-.128-1.287z"/><path d="M6.586 4.672A3 3 0 0 0 7.414 9.5l.775-.776a2 2 0 0 1-.896-3.346L9.12 3.55a2 2 0 1 1 2.83 2.83l-.793.792c.112.42.155.855.128 1.287l1.372-1.372a3 3 0 1 0-4.243-4.243L6.586 4.672z"/></svg></a></h5>
                             
                                 
-                                <a class="btn btn-info  mb-2" href="LEDWolf/manual/LEDWolf_en.pdf" role="button">PDF Manual en</a><br>
-                                
                                 <a class="btn btn-info  mb-2" href="LEDWolf/manual/LEDWolf_de.pdf" role="button">PDF Manual de</a><br>
+                                
+                                <a class="btn btn-info  mb-2" href="LEDWolf/manual/LEDWolf_en.pdf" role="button">PDF Manual en</a><br>
                                 
                             
                                 
@@ -550,16 +738,20 @@
                     </div>
                 </div>
                 
-                <div class="col-md-6 col-lg-4 col-xl-3 py-2">
+                
+                <div class="col-md-6 col-lg-4 col-xl-3 py-2 project" id="Maus">
                     <div class="card h-100">
-                        <img class="card-img-top img-fluid" src="Maus/manual/images/thumbnail.jpg" alt="Card image cap">
+                        <a class="card-img-link" href="#Maus" title="Link directly to Maus">
+                            <img class="card-img-top img-fluid" src="Maus/manual/images/thumbnail.jpg" alt="Maus">
+                            <span class="link-badge" aria-hidden="true"><svg class="link-icon" viewBox="0 0 16 16" width="13" height="13" fill="currentColor" aria-hidden="true" focusable="false"><path d="M4.715 6.542 3.343 7.914a3 3 0 1 0 4.243 4.243l1.828-1.829A3 3 0 0 0 8.586 5.5L8 6.086a1.002 1.002 0 0 0-.154.199 2 2 0 0 1 .861 3.337L6.88 11.45a2 2 0 1 1-2.83-2.83l.793-.792a4.018 4.018 0 0 1-.128-1.287z"/><path d="M6.586 4.672A3 3 0 0 0 7.414 9.5l.775-.776a2 2 0 0 1-.896-3.346L9.12 3.55a2 2 0 1 1 2.83 2.83l-.793.792c.112.42.155.855.128 1.287l1.372-1.372a3 3 0 1 0-4.243-4.243L6.586 4.672z"/></svg></span>
+                        </a>
                         <div class="card-body">
-                            <h5 class="card-title">Maus</h5>
+                            <h5 class="card-title">Maus<a class="anchor-link" href="#Maus" title="Link directly to Maus" aria-label="Link directly to Maus"><svg class="link-icon" viewBox="0 0 16 16" width="13" height="13" fill="currentColor" aria-hidden="true" focusable="false"><path d="M4.715 6.542 3.343 7.914a3 3 0 1 0 4.243 4.243l1.828-1.829A3 3 0 0 0 8.586 5.5L8 6.086a1.002 1.002 0 0 0-.154.199 2 2 0 0 1 .861 3.337L6.88 11.45a2 2 0 1 1-2.83-2.83l.793-.792a4.018 4.018 0 0 1-.128-1.287z"/><path d="M6.586 4.672A3 3 0 0 0 7.414 9.5l.775-.776a2 2 0 0 1-.896-3.346L9.12 3.55a2 2 0 1 1 2.83 2.83l-.793.792c.112.42.155.855.128 1.287l1.372-1.372a3 3 0 1 0-4.243-4.243L6.586 4.672z"/></svg></a></h5>
                             
                                 
-                                <a class="btn btn-info  mb-2" href="Maus/manual/Maus_en.pdf" role="button">PDF Manual en</a><br>
-                                
                                 <a class="btn btn-info  mb-2" href="Maus/manual/Maus_de.pdf" role="button">PDF Manual de</a><br>
+                                
+                                <a class="btn btn-info  mb-2" href="Maus/manual/Maus_en.pdf" role="button">PDF Manual en</a><br>
                                 
                             
                                 
@@ -569,16 +761,20 @@
                     </div>
                 </div>
                 
-                <div class="col-md-6 col-lg-4 col-xl-3 py-2">
+                
+                <div class="col-md-6 col-lg-4 col-xl-3 py-2 project" id="MoonCat">
                     <div class="card h-100">
-                        <img class="card-img-top img-fluid" src="MoonCat/manual/images/thumbnail.jpg" alt="Card image cap">
+                        <a class="card-img-link" href="#MoonCat" title="Link directly to MoonCat">
+                            <img class="card-img-top img-fluid" src="MoonCat/manual/images/thumbnail.jpg" alt="MoonCat">
+                            <span class="link-badge" aria-hidden="true"><svg class="link-icon" viewBox="0 0 16 16" width="13" height="13" fill="currentColor" aria-hidden="true" focusable="false"><path d="M4.715 6.542 3.343 7.914a3 3 0 1 0 4.243 4.243l1.828-1.829A3 3 0 0 0 8.586 5.5L8 6.086a1.002 1.002 0 0 0-.154.199 2 2 0 0 1 .861 3.337L6.88 11.45a2 2 0 1 1-2.83-2.83l.793-.792a4.018 4.018 0 0 1-.128-1.287z"/><path d="M6.586 4.672A3 3 0 0 0 7.414 9.5l.775-.776a2 2 0 0 1-.896-3.346L9.12 3.55a2 2 0 1 1 2.83 2.83l-.793.792c.112.42.155.855.128 1.287l1.372-1.372a3 3 0 1 0-4.243-4.243L6.586 4.672z"/></svg></span>
+                        </a>
                         <div class="card-body">
-                            <h5 class="card-title">MoonCat</h5>
+                            <h5 class="card-title">MoonCat<a class="anchor-link" href="#MoonCat" title="Link directly to MoonCat" aria-label="Link directly to MoonCat"><svg class="link-icon" viewBox="0 0 16 16" width="13" height="13" fill="currentColor" aria-hidden="true" focusable="false"><path d="M4.715 6.542 3.343 7.914a3 3 0 1 0 4.243 4.243l1.828-1.829A3 3 0 0 0 8.586 5.5L8 6.086a1.002 1.002 0 0 0-.154.199 2 2 0 0 1 .861 3.337L6.88 11.45a2 2 0 1 1-2.83-2.83l.793-.792a4.018 4.018 0 0 1-.128-1.287z"/><path d="M6.586 4.672A3 3 0 0 0 7.414 9.5l.775-.776a2 2 0 0 1-.896-3.346L9.12 3.55a2 2 0 1 1 2.83 2.83l-.793.792c.112.42.155.855.128 1.287l1.372-1.372a3 3 0 1 0-4.243-4.243L6.586 4.672z"/></svg></a></h5>
                             
                                 
-                                <a class="btn btn-info  mb-2" href="MoonCat/manual/MoonCat_en.pdf" role="button">PDF Manual en</a><br>
-                                
                                 <a class="btn btn-info  mb-2" href="MoonCat/manual/MoonCat_de.pdf" role="button">PDF Manual de</a><br>
+                                
+                                <a class="btn btn-info  mb-2" href="MoonCat/manual/MoonCat_en.pdf" role="button">PDF Manual en</a><br>
                                 
                             
                                 
@@ -588,16 +784,20 @@
                     </div>
                 </div>
                 
-                <div class="col-md-6 col-lg-4 col-xl-3 py-2">
+                
+                <div class="col-md-6 col-lg-4 col-xl-3 py-2 project" id="MotoerBoerd">
                     <div class="card h-100">
-                        <img class="card-img-top img-fluid" src="MotoerBoerd/manual/images/thumbnail.jpg" alt="Card image cap">
+                        <a class="card-img-link" href="#MotoerBoerd" title="Link directly to MotoerBoerd">
+                            <img class="card-img-top img-fluid" src="MotoerBoerd/manual/images/thumbnail.jpg" alt="MotoerBoerd">
+                            <span class="link-badge" aria-hidden="true"><svg class="link-icon" viewBox="0 0 16 16" width="13" height="13" fill="currentColor" aria-hidden="true" focusable="false"><path d="M4.715 6.542 3.343 7.914a3 3 0 1 0 4.243 4.243l1.828-1.829A3 3 0 0 0 8.586 5.5L8 6.086a1.002 1.002 0 0 0-.154.199 2 2 0 0 1 .861 3.337L6.88 11.45a2 2 0 1 1-2.83-2.83l.793-.792a4.018 4.018 0 0 1-.128-1.287z"/><path d="M6.586 4.672A3 3 0 0 0 7.414 9.5l.775-.776a2 2 0 0 1-.896-3.346L9.12 3.55a2 2 0 1 1 2.83 2.83l-.793.792c.112.42.155.855.128 1.287l1.372-1.372a3 3 0 1 0-4.243-4.243L6.586 4.672z"/></svg></span>
+                        </a>
                         <div class="card-body">
-                            <h5 class="card-title">MotoerBoerd</h5>
+                            <h5 class="card-title">MotoerBoerd<a class="anchor-link" href="#MotoerBoerd" title="Link directly to MotoerBoerd" aria-label="Link directly to MotoerBoerd"><svg class="link-icon" viewBox="0 0 16 16" width="13" height="13" fill="currentColor" aria-hidden="true" focusable="false"><path d="M4.715 6.542 3.343 7.914a3 3 0 1 0 4.243 4.243l1.828-1.829A3 3 0 0 0 8.586 5.5L8 6.086a1.002 1.002 0 0 0-.154.199 2 2 0 0 1 .861 3.337L6.88 11.45a2 2 0 1 1-2.83-2.83l.793-.792a4.018 4.018 0 0 1-.128-1.287z"/><path d="M6.586 4.672A3 3 0 0 0 7.414 9.5l.775-.776a2 2 0 0 1-.896-3.346L9.12 3.55a2 2 0 1 1 2.83 2.83l-.793.792c.112.42.155.855.128 1.287l1.372-1.372a3 3 0 1 0-4.243-4.243L6.586 4.672z"/></svg></a></h5>
                             
                                 
-                                <a class="btn btn-info  mb-2" href="MotoerBoerd/manual/MotoerBoerd_en.pdf" role="button">PDF Manual en</a><br>
-                                
                                 <a class="btn btn-info  mb-2" href="MotoerBoerd/manual/MotoerBoerd_de.pdf" role="button">PDF Manual de</a><br>
+                                
+                                <a class="btn btn-info  mb-2" href="MotoerBoerd/manual/MotoerBoerd_en.pdf" role="button">PDF Manual en</a><br>
                                 
                             
                                 
@@ -605,11 +805,15 @@
                     </div>
                 </div>
                 
-                <div class="col-md-6 col-lg-4 col-xl-3 py-2">
+                
+                <div class="col-md-6 col-lg-4 col-xl-3 py-2 project" id="NE555HeartSMD">
                     <div class="card h-100">
-                        <img class="card-img-top img-fluid" src="NE555HeartSMD/manual/images/thumbnail.jpg" alt="Card image cap">
+                        <a class="card-img-link" href="#NE555HeartSMD" title="Link directly to NE555HeartSMD">
+                            <img class="card-img-top img-fluid" src="NE555HeartSMD/manual/images/thumbnail.jpg" alt="NE555HeartSMD">
+                            <span class="link-badge" aria-hidden="true"><svg class="link-icon" viewBox="0 0 16 16" width="13" height="13" fill="currentColor" aria-hidden="true" focusable="false"><path d="M4.715 6.542 3.343 7.914a3 3 0 1 0 4.243 4.243l1.828-1.829A3 3 0 0 0 8.586 5.5L8 6.086a1.002 1.002 0 0 0-.154.199 2 2 0 0 1 .861 3.337L6.88 11.45a2 2 0 1 1-2.83-2.83l.793-.792a4.018 4.018 0 0 1-.128-1.287z"/><path d="M6.586 4.672A3 3 0 0 0 7.414 9.5l.775-.776a2 2 0 0 1-.896-3.346L9.12 3.55a2 2 0 1 1 2.83 2.83l-.793.792c.112.42.155.855.128 1.287l1.372-1.372a3 3 0 1 0-4.243-4.243L6.586 4.672z"/></svg></span>
+                        </a>
                         <div class="card-body">
-                            <h5 class="card-title">NE555HeartSMD</h5>
+                            <h5 class="card-title">NE555HeartSMD<a class="anchor-link" href="#NE555HeartSMD" title="Link directly to NE555HeartSMD" aria-label="Link directly to NE555HeartSMD"><svg class="link-icon" viewBox="0 0 16 16" width="13" height="13" fill="currentColor" aria-hidden="true" focusable="false"><path d="M4.715 6.542 3.343 7.914a3 3 0 1 0 4.243 4.243l1.828-1.829A3 3 0 0 0 8.586 5.5L8 6.086a1.002 1.002 0 0 0-.154.199 2 2 0 0 1 .861 3.337L6.88 11.45a2 2 0 1 1-2.83-2.83l.793-.792a4.018 4.018 0 0 1-.128-1.287z"/><path d="M6.586 4.672A3 3 0 0 0 7.414 9.5l.775-.776a2 2 0 0 1-.896-3.346L9.12 3.55a2 2 0 1 1 2.83 2.83l-.793.792c.112.42.155.855.128 1.287l1.372-1.372a3 3 0 1 0-4.243-4.243L6.586 4.672z"/></svg></a></h5>
                             
                                 
                                 <a class="btn btn-info  mb-2" href="NE555HeartSMD/manual/NE555HeartSMD_de.pdf" role="button">PDF Manual de</a><br>
@@ -624,11 +828,15 @@
                     </div>
                 </div>
                 
-                <div class="col-md-6 col-lg-4 col-xl-3 py-2">
+                
+                <div class="col-md-6 col-lg-4 col-xl-3 py-2 project" id="NE555HeartTHT">
                     <div class="card h-100">
-                        <img class="card-img-top img-fluid" src="NE555HeartTHT/manual/images/thumbnail.jpg" alt="Card image cap">
+                        <a class="card-img-link" href="#NE555HeartTHT" title="Link directly to NE555HeartTHT">
+                            <img class="card-img-top img-fluid" src="NE555HeartTHT/manual/images/thumbnail.jpg" alt="NE555HeartTHT">
+                            <span class="link-badge" aria-hidden="true"><svg class="link-icon" viewBox="0 0 16 16" width="13" height="13" fill="currentColor" aria-hidden="true" focusable="false"><path d="M4.715 6.542 3.343 7.914a3 3 0 1 0 4.243 4.243l1.828-1.829A3 3 0 0 0 8.586 5.5L8 6.086a1.002 1.002 0 0 0-.154.199 2 2 0 0 1 .861 3.337L6.88 11.45a2 2 0 1 1-2.83-2.83l.793-.792a4.018 4.018 0 0 1-.128-1.287z"/><path d="M6.586 4.672A3 3 0 0 0 7.414 9.5l.775-.776a2 2 0 0 1-.896-3.346L9.12 3.55a2 2 0 1 1 2.83 2.83l-.793.792c.112.42.155.855.128 1.287l1.372-1.372a3 3 0 1 0-4.243-4.243L6.586 4.672z"/></svg></span>
+                        </a>
                         <div class="card-body">
-                            <h5 class="card-title">NE555HeartTHT</h5>
+                            <h5 class="card-title">NE555HeartTHT<a class="anchor-link" href="#NE555HeartTHT" title="Link directly to NE555HeartTHT" aria-label="Link directly to NE555HeartTHT"><svg class="link-icon" viewBox="0 0 16 16" width="13" height="13" fill="currentColor" aria-hidden="true" focusable="false"><path d="M4.715 6.542 3.343 7.914a3 3 0 1 0 4.243 4.243l1.828-1.829A3 3 0 0 0 8.586 5.5L8 6.086a1.002 1.002 0 0 0-.154.199 2 2 0 0 1 .861 3.337L6.88 11.45a2 2 0 1 1-2.83-2.83l.793-.792a4.018 4.018 0 0 1-.128-1.287z"/><path d="M6.586 4.672A3 3 0 0 0 7.414 9.5l.775-.776a2 2 0 0 1-.896-3.346L9.12 3.55a2 2 0 1 1 2.83 2.83l-.793.792c.112.42.155.855.128 1.287l1.372-1.372a3 3 0 1 0-4.243-4.243L6.586 4.672z"/></svg></a></h5>
                             
                                 
                                 <a class="btn btn-info  mb-2" href="NE555HeartTHT/manual/NE555HeartTHT_de.pdf" role="button">PDF Manual de</a><br>
@@ -643,11 +851,15 @@
                     </div>
                 </div>
                 
-                <div class="col-md-6 col-lg-4 col-xl-3 py-2">
+                
+                <div class="col-md-6 col-lg-4 col-xl-3 py-2 project" id="NE555HeartTHT_v1-3_b-ware">
                     <div class="card h-100">
-                        <img class="card-img-top img-fluid" src="NE555HeartTHT_v1.3_b-ware/manual/images/thumbnail.jpg" alt="Card image cap">
+                        <a class="card-img-link" href="#NE555HeartTHT_v1-3_b-ware" title="Link directly to NE555HeartTHT_v1.3_b-ware">
+                            <img class="card-img-top img-fluid" src="NE555HeartTHT_v1.3_b-ware/manual/images/thumbnail.jpg" alt="NE555HeartTHT_v1.3_b-ware">
+                            <span class="link-badge" aria-hidden="true"><svg class="link-icon" viewBox="0 0 16 16" width="13" height="13" fill="currentColor" aria-hidden="true" focusable="false"><path d="M4.715 6.542 3.343 7.914a3 3 0 1 0 4.243 4.243l1.828-1.829A3 3 0 0 0 8.586 5.5L8 6.086a1.002 1.002 0 0 0-.154.199 2 2 0 0 1 .861 3.337L6.88 11.45a2 2 0 1 1-2.83-2.83l.793-.792a4.018 4.018 0 0 1-.128-1.287z"/><path d="M6.586 4.672A3 3 0 0 0 7.414 9.5l.775-.776a2 2 0 0 1-.896-3.346L9.12 3.55a2 2 0 1 1 2.83 2.83l-.793.792c.112.42.155.855.128 1.287l1.372-1.372a3 3 0 1 0-4.243-4.243L6.586 4.672z"/></svg></span>
+                        </a>
                         <div class="card-body">
-                            <h5 class="card-title">NE555HeartTHT_v1.3_b-ware</h5>
+                            <h5 class="card-title">NE555HeartTHT_v1.3_b-ware<a class="anchor-link" href="#NE555HeartTHT_v1-3_b-ware" title="Link directly to NE555HeartTHT_v1.3_b-ware" aria-label="Link directly to NE555HeartTHT_v1.3_b-ware"><svg class="link-icon" viewBox="0 0 16 16" width="13" height="13" fill="currentColor" aria-hidden="true" focusable="false"><path d="M4.715 6.542 3.343 7.914a3 3 0 1 0 4.243 4.243l1.828-1.829A3 3 0 0 0 8.586 5.5L8 6.086a1.002 1.002 0 0 0-.154.199 2 2 0 0 1 .861 3.337L6.88 11.45a2 2 0 1 1-2.83-2.83l.793-.792a4.018 4.018 0 0 1-.128-1.287z"/><path d="M6.586 4.672A3 3 0 0 0 7.414 9.5l.775-.776a2 2 0 0 1-.896-3.346L9.12 3.55a2 2 0 1 1 2.83 2.83l-.793.792c.112.42.155.855.128 1.287l1.372-1.372a3 3 0 1 0-4.243-4.243L6.586 4.672z"/></svg></a></h5>
                             
                                 
                                 <a class="btn btn-info  mb-2" href="NE555HeartTHT_v1.3_b-ware/manual/NE555HeartTHT_v1.3_b-ware_de.pdf" role="button">PDF Manual de</a><br>
@@ -662,16 +874,20 @@
                     </div>
                 </div>
                 
-                <div class="col-md-6 col-lg-4 col-xl-3 py-2">
+                
+                <div class="col-md-6 col-lg-4 col-xl-3 py-2 project" id="NibblePegDIP">
                     <div class="card h-100">
-                        <img class="card-img-top img-fluid" src="NibblePegDIP/manual/images/thumbnail.jpg" alt="Card image cap">
+                        <a class="card-img-link" href="#NibblePegDIP" title="Link directly to NibblePegDIP">
+                            <img class="card-img-top img-fluid" src="NibblePegDIP/manual/images/thumbnail.jpg" alt="NibblePegDIP">
+                            <span class="link-badge" aria-hidden="true"><svg class="link-icon" viewBox="0 0 16 16" width="13" height="13" fill="currentColor" aria-hidden="true" focusable="false"><path d="M4.715 6.542 3.343 7.914a3 3 0 1 0 4.243 4.243l1.828-1.829A3 3 0 0 0 8.586 5.5L8 6.086a1.002 1.002 0 0 0-.154.199 2 2 0 0 1 .861 3.337L6.88 11.45a2 2 0 1 1-2.83-2.83l.793-.792a4.018 4.018 0 0 1-.128-1.287z"/><path d="M6.586 4.672A3 3 0 0 0 7.414 9.5l.775-.776a2 2 0 0 1-.896-3.346L9.12 3.55a2 2 0 1 1 2.83 2.83l-.793.792c.112.42.155.855.128 1.287l1.372-1.372a3 3 0 1 0-4.243-4.243L6.586 4.672z"/></svg></span>
+                        </a>
                         <div class="card-body">
-                            <h5 class="card-title">NibblePegDIP</h5>
+                            <h5 class="card-title">NibblePegDIP<a class="anchor-link" href="#NibblePegDIP" title="Link directly to NibblePegDIP" aria-label="Link directly to NibblePegDIP"><svg class="link-icon" viewBox="0 0 16 16" width="13" height="13" fill="currentColor" aria-hidden="true" focusable="false"><path d="M4.715 6.542 3.343 7.914a3 3 0 1 0 4.243 4.243l1.828-1.829A3 3 0 0 0 8.586 5.5L8 6.086a1.002 1.002 0 0 0-.154.199 2 2 0 0 1 .861 3.337L6.88 11.45a2 2 0 1 1-2.83-2.83l.793-.792a4.018 4.018 0 0 1-.128-1.287z"/><path d="M6.586 4.672A3 3 0 0 0 7.414 9.5l.775-.776a2 2 0 0 1-.896-3.346L9.12 3.55a2 2 0 1 1 2.83 2.83l-.793.792c.112.42.155.855.128 1.287l1.372-1.372a3 3 0 1 0-4.243-4.243L6.586 4.672z"/></svg></a></h5>
                             
                                 
-                                <a class="btn btn-info  mb-2" href="NibblePegDIP/manual/NibblePegDIP_de.pdf" role="button">PDF Manual de</a><br>
+                                <a class="btn btn-info  mb-2" href="NibblePegDIP/manual/NibblePeg_poster_de.pdf" role="button">PDF Manual de</a><br>
                                 
-                                <a class="btn btn-info  mb-2" href="NibblePegDIP/manual/NibblePegDIP_en.pdf" role="button">PDF Manual en</a><br>
+                                <a class="btn btn-info  mb-2" href="NibblePegDIP/manual/NibblePeg_poster_en.pdf" role="button">PDF Manual en</a><br>
                                 
                                 <a class="btn btn-info  mb-2" href="NibblePegDIP/manual/NibblePeg_A5_Booklet_HowTo_Nibbleklammer_(DE).pdf" role="button">PDF Manual (DE)</a><br>
                                 
@@ -683,11 +899,15 @@
                     </div>
                 </div>
                 
-                <div class="col-md-6 col-lg-4 col-xl-3 py-2">
+                
+                <div class="col-md-6 col-lg-4 col-xl-3 py-2 project" id="NibblePegDIPSwitch">
                     <div class="card h-100">
-                        <img class="card-img-top img-fluid" src="NibblePegDIPSwitch/manual/images/thumbnail.jpg" alt="Card image cap">
+                        <a class="card-img-link" href="#NibblePegDIPSwitch" title="Link directly to NibblePegDIPSwitch">
+                            <img class="card-img-top img-fluid" src="NibblePegDIPSwitch/manual/images/thumbnail.jpg" alt="NibblePegDIPSwitch">
+                            <span class="link-badge" aria-hidden="true"><svg class="link-icon" viewBox="0 0 16 16" width="13" height="13" fill="currentColor" aria-hidden="true" focusable="false"><path d="M4.715 6.542 3.343 7.914a3 3 0 1 0 4.243 4.243l1.828-1.829A3 3 0 0 0 8.586 5.5L8 6.086a1.002 1.002 0 0 0-.154.199 2 2 0 0 1 .861 3.337L6.88 11.45a2 2 0 1 1-2.83-2.83l.793-.792a4.018 4.018 0 0 1-.128-1.287z"/><path d="M6.586 4.672A3 3 0 0 0 7.414 9.5l.775-.776a2 2 0 0 1-.896-3.346L9.12 3.55a2 2 0 1 1 2.83 2.83l-.793.792c.112.42.155.855.128 1.287l1.372-1.372a3 3 0 1 0-4.243-4.243L6.586 4.672z"/></svg></span>
+                        </a>
                         <div class="card-body">
-                            <h5 class="card-title">NibblePegDIPSwitch</h5>
+                            <h5 class="card-title">NibblePegDIPSwitch<a class="anchor-link" href="#NibblePegDIPSwitch" title="Link directly to NibblePegDIPSwitch" aria-label="Link directly to NibblePegDIPSwitch"><svg class="link-icon" viewBox="0 0 16 16" width="13" height="13" fill="currentColor" aria-hidden="true" focusable="false"><path d="M4.715 6.542 3.343 7.914a3 3 0 1 0 4.243 4.243l1.828-1.829A3 3 0 0 0 8.586 5.5L8 6.086a1.002 1.002 0 0 0-.154.199 2 2 0 0 1 .861 3.337L6.88 11.45a2 2 0 1 1-2.83-2.83l.793-.792a4.018 4.018 0 0 1-.128-1.287z"/><path d="M6.586 4.672A3 3 0 0 0 7.414 9.5l.775-.776a2 2 0 0 1-.896-3.346L9.12 3.55a2 2 0 1 1 2.83 2.83l-.793.792c.112.42.155.855.128 1.287l1.372-1.372a3 3 0 1 0-4.243-4.243L6.586 4.672z"/></svg></a></h5>
                             
                                 
                                 <a class="btn btn-info  mb-2" href="NibblePegDIPSwitch/manual/NibblePegDIPSwitch_de.pdf" role="button">PDF Manual de</a><br>
@@ -700,11 +920,15 @@
                     </div>
                 </div>
                 
-                <div class="col-md-6 col-lg-4 col-xl-3 py-2">
+                
+                <div class="col-md-6 col-lg-4 col-xl-3 py-2 project" id="NibblePlusPlusSMD">
                     <div class="card h-100">
-                        <img class="card-img-top img-fluid" src="NibblePlusPlusSMD/manual/images/thumbnail.jpg" alt="Card image cap">
+                        <a class="card-img-link" href="#NibblePlusPlusSMD" title="Link directly to NibblePlusPlusSMD">
+                            <img class="card-img-top img-fluid" src="NibblePlusPlusSMD/manual/images/thumbnail.jpg" alt="NibblePlusPlusSMD">
+                            <span class="link-badge" aria-hidden="true"><svg class="link-icon" viewBox="0 0 16 16" width="13" height="13" fill="currentColor" aria-hidden="true" focusable="false"><path d="M4.715 6.542 3.343 7.914a3 3 0 1 0 4.243 4.243l1.828-1.829A3 3 0 0 0 8.586 5.5L8 6.086a1.002 1.002 0 0 0-.154.199 2 2 0 0 1 .861 3.337L6.88 11.45a2 2 0 1 1-2.83-2.83l.793-.792a4.018 4.018 0 0 1-.128-1.287z"/><path d="M6.586 4.672A3 3 0 0 0 7.414 9.5l.775-.776a2 2 0 0 1-.896-3.346L9.12 3.55a2 2 0 1 1 2.83 2.83l-.793.792c.112.42.155.855.128 1.287l1.372-1.372a3 3 0 1 0-4.243-4.243L6.586 4.672z"/></svg></span>
+                        </a>
                         <div class="card-body">
-                            <h5 class="card-title">NibblePlusPlusSMD</h5>
+                            <h5 class="card-title">NibblePlusPlusSMD<a class="anchor-link" href="#NibblePlusPlusSMD" title="Link directly to NibblePlusPlusSMD" aria-label="Link directly to NibblePlusPlusSMD"><svg class="link-icon" viewBox="0 0 16 16" width="13" height="13" fill="currentColor" aria-hidden="true" focusable="false"><path d="M4.715 6.542 3.343 7.914a3 3 0 1 0 4.243 4.243l1.828-1.829A3 3 0 0 0 8.586 5.5L8 6.086a1.002 1.002 0 0 0-.154.199 2 2 0 0 1 .861 3.337L6.88 11.45a2 2 0 1 1-2.83-2.83l.793-.792a4.018 4.018 0 0 1-.128-1.287z"/><path d="M6.586 4.672A3 3 0 0 0 7.414 9.5l.775-.776a2 2 0 0 1-.896-3.346L9.12 3.55a2 2 0 1 1 2.83 2.83l-.793.792c.112.42.155.855.128 1.287l1.372-1.372a3 3 0 1 0-4.243-4.243L6.586 4.672z"/></svg></a></h5>
                             
                                 
                                 <a class="btn btn-info  mb-2" href="NibblePlusPlusSMD/manual/NibblePlusPlusSMD_de.pdf" role="button">PDF Manual de</a><br>
@@ -719,11 +943,15 @@
                     </div>
                 </div>
                 
-                <div class="col-md-6 col-lg-4 col-xl-3 py-2">
+                
+                <div class="col-md-6 col-lg-4 col-xl-3 py-2 project" id="NoseDog">
                     <div class="card h-100">
-                        <img class="card-img-top img-fluid" src="NoseDog/manual/images/thumbnail.jpg" alt="Card image cap">
+                        <a class="card-img-link" href="#NoseDog" title="Link directly to NoseDog">
+                            <img class="card-img-top img-fluid" src="NoseDog/manual/images/thumbnail.jpg" alt="NoseDog">
+                            <span class="link-badge" aria-hidden="true"><svg class="link-icon" viewBox="0 0 16 16" width="13" height="13" fill="currentColor" aria-hidden="true" focusable="false"><path d="M4.715 6.542 3.343 7.914a3 3 0 1 0 4.243 4.243l1.828-1.829A3 3 0 0 0 8.586 5.5L8 6.086a1.002 1.002 0 0 0-.154.199 2 2 0 0 1 .861 3.337L6.88 11.45a2 2 0 1 1-2.83-2.83l.793-.792a4.018 4.018 0 0 1-.128-1.287z"/><path d="M6.586 4.672A3 3 0 0 0 7.414 9.5l.775-.776a2 2 0 0 1-.896-3.346L9.12 3.55a2 2 0 1 1 2.83 2.83l-.793.792c.112.42.155.855.128 1.287l1.372-1.372a3 3 0 1 0-4.243-4.243L6.586 4.672z"/></svg></span>
+                        </a>
                         <div class="card-body">
-                            <h5 class="card-title">NoseDog</h5>
+                            <h5 class="card-title">NoseDog<a class="anchor-link" href="#NoseDog" title="Link directly to NoseDog" aria-label="Link directly to NoseDog"><svg class="link-icon" viewBox="0 0 16 16" width="13" height="13" fill="currentColor" aria-hidden="true" focusable="false"><path d="M4.715 6.542 3.343 7.914a3 3 0 1 0 4.243 4.243l1.828-1.829A3 3 0 0 0 8.586 5.5L8 6.086a1.002 1.002 0 0 0-.154.199 2 2 0 0 1 .861 3.337L6.88 11.45a2 2 0 1 1-2.83-2.83l.793-.792a4.018 4.018 0 0 1-.128-1.287z"/><path d="M6.586 4.672A3 3 0 0 0 7.414 9.5l.775-.776a2 2 0 0 1-.896-3.346L9.12 3.55a2 2 0 1 1 2.83 2.83l-.793.792c.112.42.155.855.128 1.287l1.372-1.372a3 3 0 1 0-4.243-4.243L6.586 4.672z"/></svg></a></h5>
                             
                                 
                                 <a class="btn btn-info  mb-2" href="NoseDog/manual/NoseDog_de.pdf" role="button">PDF Manual de</a><br>
@@ -738,16 +966,20 @@
                     </div>
                 </div>
                 
-                <div class="col-md-6 col-lg-4 col-xl-3 py-2">
+                
+                <div class="col-md-6 col-lg-4 col-xl-3 py-2 project" id="OpenDTU_Breakout">
                     <div class="card h-100">
-                        <img class="card-img-top img-fluid" src="OpenDTU_Breakout/manual/images/thumbnail.jpg" alt="Card image cap">
+                        <a class="card-img-link" href="#OpenDTU_Breakout" title="Link directly to OpenDTU_Breakout">
+                            <img class="card-img-top img-fluid" src="OpenDTU_Breakout/manual/images/thumbnail.jpg" alt="OpenDTU_Breakout">
+                            <span class="link-badge" aria-hidden="true"><svg class="link-icon" viewBox="0 0 16 16" width="13" height="13" fill="currentColor" aria-hidden="true" focusable="false"><path d="M4.715 6.542 3.343 7.914a3 3 0 1 0 4.243 4.243l1.828-1.829A3 3 0 0 0 8.586 5.5L8 6.086a1.002 1.002 0 0 0-.154.199 2 2 0 0 1 .861 3.337L6.88 11.45a2 2 0 1 1-2.83-2.83l.793-.792a4.018 4.018 0 0 1-.128-1.287z"/><path d="M6.586 4.672A3 3 0 0 0 7.414 9.5l.775-.776a2 2 0 0 1-.896-3.346L9.12 3.55a2 2 0 1 1 2.83 2.83l-.793.792c.112.42.155.855.128 1.287l1.372-1.372a3 3 0 1 0-4.243-4.243L6.586 4.672z"/></svg></span>
+                        </a>
                         <div class="card-body">
-                            <h5 class="card-title">OpenDTU_Breakout</h5>
+                            <h5 class="card-title">OpenDTU_Breakout<a class="anchor-link" href="#OpenDTU_Breakout" title="Link directly to OpenDTU_Breakout" aria-label="Link directly to OpenDTU_Breakout"><svg class="link-icon" viewBox="0 0 16 16" width="13" height="13" fill="currentColor" aria-hidden="true" focusable="false"><path d="M4.715 6.542 3.343 7.914a3 3 0 1 0 4.243 4.243l1.828-1.829A3 3 0 0 0 8.586 5.5L8 6.086a1.002 1.002 0 0 0-.154.199 2 2 0 0 1 .861 3.337L6.88 11.45a2 2 0 1 1-2.83-2.83l.793-.792a4.018 4.018 0 0 1-.128-1.287z"/><path d="M6.586 4.672A3 3 0 0 0 7.414 9.5l.775-.776a2 2 0 0 1-.896-3.346L9.12 3.55a2 2 0 1 1 2.83 2.83l-.793.792c.112.42.155.855.128 1.287l1.372-1.372a3 3 0 1 0-4.243-4.243L6.586 4.672z"/></svg></a></h5>
                             
                                 
-                                <a class="btn btn-info  mb-2" href="OpenDTU_Breakout/manual/OpenDTU_Breakout_en.pdf" role="button">PDF Manual en</a><br>
-                                
                                 <a class="btn btn-info  mb-2" href="OpenDTU_Breakout/manual/OpenDTU_Breakout_de.pdf" role="button">PDF Manual de</a><br>
+                                
+                                <a class="btn btn-info  mb-2" href="OpenDTU_Breakout/manual/OpenDTU_Breakout_en.pdf" role="button">PDF Manual en</a><br>
                                 
                             
                                 
@@ -757,16 +989,20 @@
                     </div>
                 </div>
                 
-                <div class="col-md-6 col-lg-4 col-xl-3 py-2">
+                
+                <div class="col-md-6 col-lg-4 col-xl-3 py-2 project" id="OwlThiefDIP">
                     <div class="card h-100">
-                        <img class="card-img-top img-fluid" src="OwlThiefDIP/manual/images/thumbnail.jpg" alt="Card image cap">
+                        <a class="card-img-link" href="#OwlThiefDIP" title="Link directly to OwlThiefDIP">
+                            <img class="card-img-top img-fluid" src="OwlThiefDIP/manual/images/thumbnail.jpg" alt="OwlThiefDIP">
+                            <span class="link-badge" aria-hidden="true"><svg class="link-icon" viewBox="0 0 16 16" width="13" height="13" fill="currentColor" aria-hidden="true" focusable="false"><path d="M4.715 6.542 3.343 7.914a3 3 0 1 0 4.243 4.243l1.828-1.829A3 3 0 0 0 8.586 5.5L8 6.086a1.002 1.002 0 0 0-.154.199 2 2 0 0 1 .861 3.337L6.88 11.45a2 2 0 1 1-2.83-2.83l.793-.792a4.018 4.018 0 0 1-.128-1.287z"/><path d="M6.586 4.672A3 3 0 0 0 7.414 9.5l.775-.776a2 2 0 0 1-.896-3.346L9.12 3.55a2 2 0 1 1 2.83 2.83l-.793.792c.112.42.155.855.128 1.287l1.372-1.372a3 3 0 1 0-4.243-4.243L6.586 4.672z"/></svg></span>
+                        </a>
                         <div class="card-body">
-                            <h5 class="card-title">OwlThiefDIP</h5>
+                            <h5 class="card-title">OwlThiefDIP<a class="anchor-link" href="#OwlThiefDIP" title="Link directly to OwlThiefDIP" aria-label="Link directly to OwlThiefDIP"><svg class="link-icon" viewBox="0 0 16 16" width="13" height="13" fill="currentColor" aria-hidden="true" focusable="false"><path d="M4.715 6.542 3.343 7.914a3 3 0 1 0 4.243 4.243l1.828-1.829A3 3 0 0 0 8.586 5.5L8 6.086a1.002 1.002 0 0 0-.154.199 2 2 0 0 1 .861 3.337L6.88 11.45a2 2 0 1 1-2.83-2.83l.793-.792a4.018 4.018 0 0 1-.128-1.287z"/><path d="M6.586 4.672A3 3 0 0 0 7.414 9.5l.775-.776a2 2 0 0 1-.896-3.346L9.12 3.55a2 2 0 1 1 2.83 2.83l-.793.792c.112.42.155.855.128 1.287l1.372-1.372a3 3 0 1 0-4.243-4.243L6.586 4.672z"/></svg></a></h5>
                             
                                 
-                                <a class="btn btn-info  mb-2" href="OwlThiefDIP/manual/OwlThiefDIP_en.pdf" role="button">PDF Manual en</a><br>
-                                
                                 <a class="btn btn-info  mb-2" href="OwlThiefDIP/manual/OwlThiefDIP_de.pdf" role="button">PDF Manual de</a><br>
+                                
+                                <a class="btn btn-info  mb-2" href="OwlThiefDIP/manual/OwlThiefDIP_en.pdf" role="button">PDF Manual en</a><br>
                                 
                             
                                 
@@ -776,11 +1012,15 @@
                     </div>
                 </div>
                 
-                <div class="col-md-6 col-lg-4 col-xl-3 py-2">
+                
+                <div class="col-md-6 col-lg-4 col-xl-3 py-2 project" id="Pinecil_Case">
                     <div class="card h-100">
-                        <img class="card-img-top img-fluid" src="Pinecil_Case/manual/images/thumbnail.jpg" alt="Card image cap">
+                        <a class="card-img-link" href="#Pinecil_Case" title="Link directly to Pinecil_Case">
+                            <img class="card-img-top img-fluid" src="Pinecil_Case/manual/images/thumbnail.jpg" alt="Pinecil_Case">
+                            <span class="link-badge" aria-hidden="true"><svg class="link-icon" viewBox="0 0 16 16" width="13" height="13" fill="currentColor" aria-hidden="true" focusable="false"><path d="M4.715 6.542 3.343 7.914a3 3 0 1 0 4.243 4.243l1.828-1.829A3 3 0 0 0 8.586 5.5L8 6.086a1.002 1.002 0 0 0-.154.199 2 2 0 0 1 .861 3.337L6.88 11.45a2 2 0 1 1-2.83-2.83l.793-.792a4.018 4.018 0 0 1-.128-1.287z"/><path d="M6.586 4.672A3 3 0 0 0 7.414 9.5l.775-.776a2 2 0 0 1-.896-3.346L9.12 3.55a2 2 0 1 1 2.83 2.83l-.793.792c.112.42.155.855.128 1.287l1.372-1.372a3 3 0 1 0-4.243-4.243L6.586 4.672z"/></svg></span>
+                        </a>
                         <div class="card-body">
-                            <h5 class="card-title">Pinecil_Case</h5>
+                            <h5 class="card-title">Pinecil_Case<a class="anchor-link" href="#Pinecil_Case" title="Link directly to Pinecil_Case" aria-label="Link directly to Pinecil_Case"><svg class="link-icon" viewBox="0 0 16 16" width="13" height="13" fill="currentColor" aria-hidden="true" focusable="false"><path d="M4.715 6.542 3.343 7.914a3 3 0 1 0 4.243 4.243l1.828-1.829A3 3 0 0 0 8.586 5.5L8 6.086a1.002 1.002 0 0 0-.154.199 2 2 0 0 1 .861 3.337L6.88 11.45a2 2 0 1 1-2.83-2.83l.793-.792a4.018 4.018 0 0 1-.128-1.287z"/><path d="M6.586 4.672A3 3 0 0 0 7.414 9.5l.775-.776a2 2 0 0 1-.896-3.346L9.12 3.55a2 2 0 1 1 2.83 2.83l-.793.792c.112.42.155.855.128 1.287l1.372-1.372a3 3 0 1 0-4.243-4.243L6.586 4.672z"/></svg></a></h5>
                             
                                 
                                 <a class="btn btn-info  mb-2" href="Pinecil_Case/manual/Pinecil_Case_de.pdf" role="button">PDF Manual de</a><br>
@@ -793,16 +1033,20 @@
                     </div>
                 </div>
                 
-                <div class="col-md-6 col-lg-4 col-xl-3 py-2">
+                
+                <div class="col-md-6 col-lg-4 col-xl-3 py-2 project" id="PoopingCat">
                     <div class="card h-100">
-                        <img class="card-img-top img-fluid" src="PoopingCat/manual/images/thumbnail.jpg" alt="Card image cap">
+                        <a class="card-img-link" href="#PoopingCat" title="Link directly to PoopingCat">
+                            <img class="card-img-top img-fluid" src="PoopingCat/manual/images/thumbnail.jpg" alt="PoopingCat">
+                            <span class="link-badge" aria-hidden="true"><svg class="link-icon" viewBox="0 0 16 16" width="13" height="13" fill="currentColor" aria-hidden="true" focusable="false"><path d="M4.715 6.542 3.343 7.914a3 3 0 1 0 4.243 4.243l1.828-1.829A3 3 0 0 0 8.586 5.5L8 6.086a1.002 1.002 0 0 0-.154.199 2 2 0 0 1 .861 3.337L6.88 11.45a2 2 0 1 1-2.83-2.83l.793-.792a4.018 4.018 0 0 1-.128-1.287z"/><path d="M6.586 4.672A3 3 0 0 0 7.414 9.5l.775-.776a2 2 0 0 1-.896-3.346L9.12 3.55a2 2 0 1 1 2.83 2.83l-.793.792c.112.42.155.855.128 1.287l1.372-1.372a3 3 0 1 0-4.243-4.243L6.586 4.672z"/></svg></span>
+                        </a>
                         <div class="card-body">
-                            <h5 class="card-title">PoopingCat</h5>
+                            <h5 class="card-title">PoopingCat<a class="anchor-link" href="#PoopingCat" title="Link directly to PoopingCat" aria-label="Link directly to PoopingCat"><svg class="link-icon" viewBox="0 0 16 16" width="13" height="13" fill="currentColor" aria-hidden="true" focusable="false"><path d="M4.715 6.542 3.343 7.914a3 3 0 1 0 4.243 4.243l1.828-1.829A3 3 0 0 0 8.586 5.5L8 6.086a1.002 1.002 0 0 0-.154.199 2 2 0 0 1 .861 3.337L6.88 11.45a2 2 0 1 1-2.83-2.83l.793-.792a4.018 4.018 0 0 1-.128-1.287z"/><path d="M6.586 4.672A3 3 0 0 0 7.414 9.5l.775-.776a2 2 0 0 1-.896-3.346L9.12 3.55a2 2 0 1 1 2.83 2.83l-.793.792c.112.42.155.855.128 1.287l1.372-1.372a3 3 0 1 0-4.243-4.243L6.586 4.672z"/></svg></a></h5>
                             
                                 
-                                <a class="btn btn-info  mb-2" href="PoopingCat/manual/PoopingCat_en.pdf" role="button">PDF Manual en</a><br>
-                                
                                 <a class="btn btn-info  mb-2" href="PoopingCat/manual/PoopingCat_de.pdf" role="button">PDF Manual de</a><br>
+                                
+                                <a class="btn btn-info  mb-2" href="PoopingCat/manual/PoopingCat_en.pdf" role="button">PDF Manual en</a><br>
                                 
                             
                                 
@@ -812,11 +1056,15 @@
                     </div>
                 </div>
                 
-                <div class="col-md-6 col-lg-4 col-xl-3 py-2">
+                
+                <div class="col-md-6 col-lg-4 col-xl-3 py-2 project" id="PushItDIP">
                     <div class="card h-100">
-                        <img class="card-img-top img-fluid" src="PushItDIP/manual/images/thumbnail.jpg" alt="Card image cap">
+                        <a class="card-img-link" href="#PushItDIP" title="Link directly to PushItDIP">
+                            <img class="card-img-top img-fluid" src="PushItDIP/manual/images/thumbnail.jpg" alt="PushItDIP">
+                            <span class="link-badge" aria-hidden="true"><svg class="link-icon" viewBox="0 0 16 16" width="13" height="13" fill="currentColor" aria-hidden="true" focusable="false"><path d="M4.715 6.542 3.343 7.914a3 3 0 1 0 4.243 4.243l1.828-1.829A3 3 0 0 0 8.586 5.5L8 6.086a1.002 1.002 0 0 0-.154.199 2 2 0 0 1 .861 3.337L6.88 11.45a2 2 0 1 1-2.83-2.83l.793-.792a4.018 4.018 0 0 1-.128-1.287z"/><path d="M6.586 4.672A3 3 0 0 0 7.414 9.5l.775-.776a2 2 0 0 1-.896-3.346L9.12 3.55a2 2 0 1 1 2.83 2.83l-.793.792c.112.42.155.855.128 1.287l1.372-1.372a3 3 0 1 0-4.243-4.243L6.586 4.672z"/></svg></span>
+                        </a>
                         <div class="card-body">
-                            <h5 class="card-title">PushItDIP</h5>
+                            <h5 class="card-title">PushItDIP<a class="anchor-link" href="#PushItDIP" title="Link directly to PushItDIP" aria-label="Link directly to PushItDIP"><svg class="link-icon" viewBox="0 0 16 16" width="13" height="13" fill="currentColor" aria-hidden="true" focusable="false"><path d="M4.715 6.542 3.343 7.914a3 3 0 1 0 4.243 4.243l1.828-1.829A3 3 0 0 0 8.586 5.5L8 6.086a1.002 1.002 0 0 0-.154.199 2 2 0 0 1 .861 3.337L6.88 11.45a2 2 0 1 1-2.83-2.83l.793-.792a4.018 4.018 0 0 1-.128-1.287z"/><path d="M6.586 4.672A3 3 0 0 0 7.414 9.5l.775-.776a2 2 0 0 1-.896-3.346L9.12 3.55a2 2 0 1 1 2.83 2.83l-.793.792c.112.42.155.855.128 1.287l1.372-1.372a3 3 0 1 0-4.243-4.243L6.586 4.672z"/></svg></a></h5>
                             
                                 
                                 <a class="btn btn-info  mb-2" href="PushItDIP/manual/PushItDIP_de.pdf" role="button">PDF Manual de</a><br>
@@ -831,11 +1079,15 @@
                     </div>
                 </div>
                 
-                <div class="col-md-6 col-lg-4 col-xl-3 py-2">
+                
+                <div class="col-md-6 col-lg-4 col-xl-3 py-2 project" id="RainbowButterfly">
                     <div class="card h-100">
-                        <img class="card-img-top img-fluid" src="RainbowButterfly/manual/images/thumbnail.jpg" alt="Card image cap">
+                        <a class="card-img-link" href="#RainbowButterfly" title="Link directly to RainbowButterfly">
+                            <img class="card-img-top img-fluid" src="RainbowButterfly/manual/images/thumbnail.jpg" alt="RainbowButterfly">
+                            <span class="link-badge" aria-hidden="true"><svg class="link-icon" viewBox="0 0 16 16" width="13" height="13" fill="currentColor" aria-hidden="true" focusable="false"><path d="M4.715 6.542 3.343 7.914a3 3 0 1 0 4.243 4.243l1.828-1.829A3 3 0 0 0 8.586 5.5L8 6.086a1.002 1.002 0 0 0-.154.199 2 2 0 0 1 .861 3.337L6.88 11.45a2 2 0 1 1-2.83-2.83l.793-.792a4.018 4.018 0 0 1-.128-1.287z"/><path d="M6.586 4.672A3 3 0 0 0 7.414 9.5l.775-.776a2 2 0 0 1-.896-3.346L9.12 3.55a2 2 0 1 1 2.83 2.83l-.793.792c.112.42.155.855.128 1.287l1.372-1.372a3 3 0 1 0-4.243-4.243L6.586 4.672z"/></svg></span>
+                        </a>
                         <div class="card-body">
-                            <h5 class="card-title">RainbowButterfly</h5>
+                            <h5 class="card-title">RainbowButterfly<a class="anchor-link" href="#RainbowButterfly" title="Link directly to RainbowButterfly" aria-label="Link directly to RainbowButterfly"><svg class="link-icon" viewBox="0 0 16 16" width="13" height="13" fill="currentColor" aria-hidden="true" focusable="false"><path d="M4.715 6.542 3.343 7.914a3 3 0 1 0 4.243 4.243l1.828-1.829A3 3 0 0 0 8.586 5.5L8 6.086a1.002 1.002 0 0 0-.154.199 2 2 0 0 1 .861 3.337L6.88 11.45a2 2 0 1 1-2.83-2.83l.793-.792a4.018 4.018 0 0 1-.128-1.287z"/><path d="M6.586 4.672A3 3 0 0 0 7.414 9.5l.775-.776a2 2 0 0 1-.896-3.346L9.12 3.55a2 2 0 1 1 2.83 2.83l-.793.792c.112.42.155.855.128 1.287l1.372-1.372a3 3 0 1 0-4.243-4.243L6.586 4.672z"/></svg></a></h5>
                             
                                 
                                 <a class="btn btn-info  mb-2" href="RainbowButterfly/manual/RainbowButterfly_de.pdf" role="button">PDF Manual de</a><br>
@@ -850,16 +1102,20 @@
                     </div>
                 </div>
                 
-                <div class="col-md-6 col-lg-4 col-xl-3 py-2">
+                
+                <div class="col-md-6 col-lg-4 col-xl-3 py-2 project" id="RainbowUnicorn01">
                     <div class="card h-100">
-                        <img class="card-img-top img-fluid" src="RainbowUnicorn01/manual/images/thumbnail.jpg" alt="Card image cap">
+                        <a class="card-img-link" href="#RainbowUnicorn01" title="Link directly to RainbowUnicorn01">
+                            <img class="card-img-top img-fluid" src="RainbowUnicorn01/manual/images/thumbnail.jpg" alt="RainbowUnicorn01">
+                            <span class="link-badge" aria-hidden="true"><svg class="link-icon" viewBox="0 0 16 16" width="13" height="13" fill="currentColor" aria-hidden="true" focusable="false"><path d="M4.715 6.542 3.343 7.914a3 3 0 1 0 4.243 4.243l1.828-1.829A3 3 0 0 0 8.586 5.5L8 6.086a1.002 1.002 0 0 0-.154.199 2 2 0 0 1 .861 3.337L6.88 11.45a2 2 0 1 1-2.83-2.83l.793-.792a4.018 4.018 0 0 1-.128-1.287z"/><path d="M6.586 4.672A3 3 0 0 0 7.414 9.5l.775-.776a2 2 0 0 1-.896-3.346L9.12 3.55a2 2 0 1 1 2.83 2.83l-.793.792c.112.42.155.855.128 1.287l1.372-1.372a3 3 0 1 0-4.243-4.243L6.586 4.672z"/></svg></span>
+                        </a>
                         <div class="card-body">
-                            <h5 class="card-title">RainbowUnicorn01</h5>
+                            <h5 class="card-title">RainbowUnicorn01<a class="anchor-link" href="#RainbowUnicorn01" title="Link directly to RainbowUnicorn01" aria-label="Link directly to RainbowUnicorn01"><svg class="link-icon" viewBox="0 0 16 16" width="13" height="13" fill="currentColor" aria-hidden="true" focusable="false"><path d="M4.715 6.542 3.343 7.914a3 3 0 1 0 4.243 4.243l1.828-1.829A3 3 0 0 0 8.586 5.5L8 6.086a1.002 1.002 0 0 0-.154.199 2 2 0 0 1 .861 3.337L6.88 11.45a2 2 0 1 1-2.83-2.83l.793-.792a4.018 4.018 0 0 1-.128-1.287z"/><path d="M6.586 4.672A3 3 0 0 0 7.414 9.5l.775-.776a2 2 0 0 1-.896-3.346L9.12 3.55a2 2 0 1 1 2.83 2.83l-.793.792c.112.42.155.855.128 1.287l1.372-1.372a3 3 0 1 0-4.243-4.243L6.586 4.672z"/></svg></a></h5>
                             
                                 
-                                <a class="btn btn-info  mb-2" href="RainbowUnicorn01/manual/RainbowUnicorn01_en.pdf" role="button">PDF Manual en</a><br>
-                                
                                 <a class="btn btn-info  mb-2" href="RainbowUnicorn01/manual/RainbowUnicorn01_de.pdf" role="button">PDF Manual de</a><br>
+                                
+                                <a class="btn btn-info  mb-2" href="RainbowUnicorn01/manual/RainbowUnicorn01_en.pdf" role="button">PDF Manual en</a><br>
                                 
                             
                                 
@@ -869,16 +1125,20 @@
                     </div>
                 </div>
                 
-                <div class="col-md-6 col-lg-4 col-xl-3 py-2">
+                
+                <div class="col-md-6 col-lg-4 col-xl-3 py-2 project" id="RingLightSMD">
                     <div class="card h-100">
-                        <img class="card-img-top img-fluid" src="RingLightSMD/manual/images/thumbnail.jpg" alt="Card image cap">
+                        <a class="card-img-link" href="#RingLightSMD" title="Link directly to RingLightSMD">
+                            <img class="card-img-top img-fluid" src="RingLightSMD/manual/images/thumbnail.jpg" alt="RingLightSMD">
+                            <span class="link-badge" aria-hidden="true"><svg class="link-icon" viewBox="0 0 16 16" width="13" height="13" fill="currentColor" aria-hidden="true" focusable="false"><path d="M4.715 6.542 3.343 7.914a3 3 0 1 0 4.243 4.243l1.828-1.829A3 3 0 0 0 8.586 5.5L8 6.086a1.002 1.002 0 0 0-.154.199 2 2 0 0 1 .861 3.337L6.88 11.45a2 2 0 1 1-2.83-2.83l.793-.792a4.018 4.018 0 0 1-.128-1.287z"/><path d="M6.586 4.672A3 3 0 0 0 7.414 9.5l.775-.776a2 2 0 0 1-.896-3.346L9.12 3.55a2 2 0 1 1 2.83 2.83l-.793.792c.112.42.155.855.128 1.287l1.372-1.372a3 3 0 1 0-4.243-4.243L6.586 4.672z"/></svg></span>
+                        </a>
                         <div class="card-body">
-                            <h5 class="card-title">RingLightSMD</h5>
+                            <h5 class="card-title">RingLightSMD<a class="anchor-link" href="#RingLightSMD" title="Link directly to RingLightSMD" aria-label="Link directly to RingLightSMD"><svg class="link-icon" viewBox="0 0 16 16" width="13" height="13" fill="currentColor" aria-hidden="true" focusable="false"><path d="M4.715 6.542 3.343 7.914a3 3 0 1 0 4.243 4.243l1.828-1.829A3 3 0 0 0 8.586 5.5L8 6.086a1.002 1.002 0 0 0-.154.199 2 2 0 0 1 .861 3.337L6.88 11.45a2 2 0 1 1-2.83-2.83l.793-.792a4.018 4.018 0 0 1-.128-1.287z"/><path d="M6.586 4.672A3 3 0 0 0 7.414 9.5l.775-.776a2 2 0 0 1-.896-3.346L9.12 3.55a2 2 0 1 1 2.83 2.83l-.793.792c.112.42.155.855.128 1.287l1.372-1.372a3 3 0 1 0-4.243-4.243L6.586 4.672z"/></svg></a></h5>
                             
                                 
-                                <a class="btn btn-info  mb-2" href="RingLightSMD/manual/RingLightSMD_en.pdf" role="button">PDF Manual en</a><br>
-                                
                                 <a class="btn btn-info  mb-2" href="RingLightSMD/manual/RingLightSMD_de.pdf" role="button">PDF Manual de</a><br>
+                                
+                                <a class="btn btn-info  mb-2" href="RingLightSMD/manual/RingLightSMD_en.pdf" role="button">PDF Manual en</a><br>
                                 
                             
                                 
@@ -888,11 +1148,15 @@
                     </div>
                 </div>
                 
-                <div class="col-md-6 col-lg-4 col-xl-3 py-2">
+                
+                <div class="col-md-6 col-lg-4 col-xl-3 py-2 project" id="RoboRobin">
                     <div class="card h-100">
-                        <img class="card-img-top img-fluid" src="RoboRobin/manual/images/thumbnail.jpg" alt="Card image cap">
+                        <a class="card-img-link" href="#RoboRobin" title="Link directly to RoboRobin">
+                            <img class="card-img-top img-fluid" src="RoboRobin/manual/images/thumbnail.jpg" alt="RoboRobin">
+                            <span class="link-badge" aria-hidden="true"><svg class="link-icon" viewBox="0 0 16 16" width="13" height="13" fill="currentColor" aria-hidden="true" focusable="false"><path d="M4.715 6.542 3.343 7.914a3 3 0 1 0 4.243 4.243l1.828-1.829A3 3 0 0 0 8.586 5.5L8 6.086a1.002 1.002 0 0 0-.154.199 2 2 0 0 1 .861 3.337L6.88 11.45a2 2 0 1 1-2.83-2.83l.793-.792a4.018 4.018 0 0 1-.128-1.287z"/><path d="M6.586 4.672A3 3 0 0 0 7.414 9.5l.775-.776a2 2 0 0 1-.896-3.346L9.12 3.55a2 2 0 1 1 2.83 2.83l-.793.792c.112.42.155.855.128 1.287l1.372-1.372a3 3 0 1 0-4.243-4.243L6.586 4.672z"/></svg></span>
+                        </a>
                         <div class="card-body">
-                            <h5 class="card-title">RoboRobin</h5>
+                            <h5 class="card-title">RoboRobin<a class="anchor-link" href="#RoboRobin" title="Link directly to RoboRobin" aria-label="Link directly to RoboRobin"><svg class="link-icon" viewBox="0 0 16 16" width="13" height="13" fill="currentColor" aria-hidden="true" focusable="false"><path d="M4.715 6.542 3.343 7.914a3 3 0 1 0 4.243 4.243l1.828-1.829A3 3 0 0 0 8.586 5.5L8 6.086a1.002 1.002 0 0 0-.154.199 2 2 0 0 1 .861 3.337L6.88 11.45a2 2 0 1 1-2.83-2.83l.793-.792a4.018 4.018 0 0 1-.128-1.287z"/><path d="M6.586 4.672A3 3 0 0 0 7.414 9.5l.775-.776a2 2 0 0 1-.896-3.346L9.12 3.55a2 2 0 1 1 2.83 2.83l-.793.792c.112.42.155.855.128 1.287l1.372-1.372a3 3 0 1 0-4.243-4.243L6.586 4.672z"/></svg></a></h5>
                             
                                 
                                 <a class="btn btn-info  mb-2" href="RoboRobin/manual/RoboRobin_de.pdf" role="button">PDF Manual de</a><br>
@@ -907,16 +1171,20 @@
                     </div>
                 </div>
                 
-                <div class="col-md-6 col-lg-4 col-xl-3 py-2">
+                
+                <div class="col-md-6 col-lg-4 col-xl-3 py-2 project" id="RocketBadge">
                     <div class="card h-100">
-                        <img class="card-img-top img-fluid" src="RocketBadge/manual/images/thumbnail.jpg" alt="Card image cap">
+                        <a class="card-img-link" href="#RocketBadge" title="Link directly to RocketBadge">
+                            <img class="card-img-top img-fluid" src="RocketBadge/manual/images/thumbnail.jpg" alt="RocketBadge">
+                            <span class="link-badge" aria-hidden="true"><svg class="link-icon" viewBox="0 0 16 16" width="13" height="13" fill="currentColor" aria-hidden="true" focusable="false"><path d="M4.715 6.542 3.343 7.914a3 3 0 1 0 4.243 4.243l1.828-1.829A3 3 0 0 0 8.586 5.5L8 6.086a1.002 1.002 0 0 0-.154.199 2 2 0 0 1 .861 3.337L6.88 11.45a2 2 0 1 1-2.83-2.83l.793-.792a4.018 4.018 0 0 1-.128-1.287z"/><path d="M6.586 4.672A3 3 0 0 0 7.414 9.5l.775-.776a2 2 0 0 1-.896-3.346L9.12 3.55a2 2 0 1 1 2.83 2.83l-.793.792c.112.42.155.855.128 1.287l1.372-1.372a3 3 0 1 0-4.243-4.243L6.586 4.672z"/></svg></span>
+                        </a>
                         <div class="card-body">
-                            <h5 class="card-title">RocketBadge</h5>
+                            <h5 class="card-title">RocketBadge<a class="anchor-link" href="#RocketBadge" title="Link directly to RocketBadge" aria-label="Link directly to RocketBadge"><svg class="link-icon" viewBox="0 0 16 16" width="13" height="13" fill="currentColor" aria-hidden="true" focusable="false"><path d="M4.715 6.542 3.343 7.914a3 3 0 1 0 4.243 4.243l1.828-1.829A3 3 0 0 0 8.586 5.5L8 6.086a1.002 1.002 0 0 0-.154.199 2 2 0 0 1 .861 3.337L6.88 11.45a2 2 0 1 1-2.83-2.83l.793-.792a4.018 4.018 0 0 1-.128-1.287z"/><path d="M6.586 4.672A3 3 0 0 0 7.414 9.5l.775-.776a2 2 0 0 1-.896-3.346L9.12 3.55a2 2 0 1 1 2.83 2.83l-.793.792c.112.42.155.855.128 1.287l1.372-1.372a3 3 0 1 0-4.243-4.243L6.586 4.672z"/></svg></a></h5>
                             
                                 
-                                <a class="btn btn-info  mb-2" href="RocketBadge/manual/RocketBadge_en.pdf" role="button">PDF Manual en</a><br>
-                                
                                 <a class="btn btn-info  mb-2" href="RocketBadge/manual/RocketBadge_de.pdf" role="button">PDF Manual de</a><br>
+                                
+                                <a class="btn btn-info  mb-2" href="RocketBadge/manual/RocketBadge_en.pdf" role="button">PDF Manual en</a><br>
                                 
                             
                                 
@@ -926,100 +1194,15 @@
                     </div>
                 </div>
                 
-                <div class="col-md-6 col-lg-4 col-xl-3 py-2">
-                    <div class="card h-100">
-                        <img class="card-img-top img-fluid" src="SawToothOrganDIP/manual/images/thumbnail.jpg" alt="Card image cap">
-                        <div class="card-body">
-                            <h5 class="card-title">SawToothOrganDIP</h5>
-                            
-                                
-                                <a class="btn btn-info  mb-2" href="SawToothOrganDIP/manual/SawToothOrganDIP_en.pdf" role="button">PDF Manual en</a><br>
-                                
-                                <a class="btn btn-info  mb-2" href="SawToothOrganDIP/manual/SawToothOrganDIP_de.pdf" role="button">PDF Manual de</a><br>
-                                
-                            
-                                
-                                <a class="btn btn-info" href="SawToothOrganDIP/ibom.html" role="button">Interactive Board</a>
-                                
-                        </div>
-                    </div>
-                </div>
                 
-                <div class="col-md-6 col-lg-4 col-xl-3 py-2">
+                <div class="col-md-6 col-lg-4 col-xl-3 py-2 project" id="SMDCat">
                     <div class="card h-100">
-                        <img class="card-img-top img-fluid" src="ShittyRobots/manual/images/thumbnail.jpg" alt="Card image cap">
+                        <a class="card-img-link" href="#SMDCat" title="Link directly to SMDCat">
+                            <img class="card-img-top img-fluid" src="SMDCat/manual/images/thumbnail.jpg" alt="SMDCat">
+                            <span class="link-badge" aria-hidden="true"><svg class="link-icon" viewBox="0 0 16 16" width="13" height="13" fill="currentColor" aria-hidden="true" focusable="false"><path d="M4.715 6.542 3.343 7.914a3 3 0 1 0 4.243 4.243l1.828-1.829A3 3 0 0 0 8.586 5.5L8 6.086a1.002 1.002 0 0 0-.154.199 2 2 0 0 1 .861 3.337L6.88 11.45a2 2 0 1 1-2.83-2.83l.793-.792a4.018 4.018 0 0 1-.128-1.287z"/><path d="M6.586 4.672A3 3 0 0 0 7.414 9.5l.775-.776a2 2 0 0 1-.896-3.346L9.12 3.55a2 2 0 1 1 2.83 2.83l-.793.792c.112.42.155.855.128 1.287l1.372-1.372a3 3 0 1 0-4.243-4.243L6.586 4.672z"/></svg></span>
+                        </a>
                         <div class="card-body">
-                            <h5 class="card-title">ShittyRobots</h5>
-                            
-                                
-                                <a class="btn btn-info  mb-2" href="ShittyRobots/manual/ShittyRobots_poster_de.pdf" role="button">PDF Manual de</a><br>
-                                
-                                <a class="btn btn-info  mb-2" href="ShittyRobots/manual/ShittyRobots_en.pdf" role="button">PDF Manual en</a><br>
-                                
-                            
-                                
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="col-md-6 col-lg-4 col-xl-3 py-2">
-                    <div class="card h-100">
-                        <img class="card-img-top img-fluid" src="Shrocket/manual/images/thumbnail.jpg" alt="Card image cap">
-                        <div class="card-body">
-                            <h5 class="card-title">Shrocket</h5>
-                            
-                                
-                                <a class="btn btn-info  mb-2" href="Shrocket/manual/Shrocket_en.pdf" role="button">PDF Manual en</a><br>
-                                
-                                <a class="btn btn-info  mb-2" href="Shrocket/manual/Shrocket_de.pdf" role="button">PDF Manual de</a><br>
-                                
-                            
-                                
-                                <a class="btn btn-info" href="Shrocket/ibom.html" role="button">Interactive Board</a>
-                                
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="col-md-6 col-lg-4 col-xl-3 py-2">
-                    <div class="card h-100">
-                        <img class="card-img-top img-fluid" src="SmartLED/manual/images/thumbnail.jpg" alt="Card image cap">
-                        <div class="card-body">
-                            <h5 class="card-title">SmartLED</h5>
-                            
-                                
-                                <a class="btn btn-info  mb-2" href="SmartLED/manual/SmartLED_en.pdf" role="button">PDF Manual en</a><br>
-                                
-                                <a class="btn btn-info  mb-2" href="SmartLED/manual/SmartLED_de.pdf" role="button">PDF Manual de</a><br>
-                                
-                            
-                                
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="col-md-6 col-lg-4 col-xl-3 py-2">
-                    <div class="card h-100">
-                        <img class="card-img-top img-fluid" src="SmartphoneRobot/manual/images/thumbnail.jpg" alt="Card image cap">
-                        <div class="card-body">
-                            <h5 class="card-title">SmartphoneRobot</h5>
-                            
-                                
-                                <a class="btn btn-info  mb-2" href="SmartphoneRobot/manual/SmartphoneRobot_de.pdf" role="button">PDF Manual de</a><br>
-                                
-                                <a class="btn btn-info  mb-2" href="SmartphoneRobot/manual/SmartphoneRobot_en.pdf" role="button">PDF Manual en</a><br>
-                                
-                            
-                                
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="col-md-6 col-lg-4 col-xl-3 py-2">
-                    <div class="card h-100">
-                        <img class="card-img-top img-fluid" src="SMDCat/manual/images/thumbnail.jpg" alt="Card image cap">
-                        <div class="card-body">
-                            <h5 class="card-title">SMDCat</h5>
+                            <h5 class="card-title">SMDCat<a class="anchor-link" href="#SMDCat" title="Link directly to SMDCat" aria-label="Link directly to SMDCat"><svg class="link-icon" viewBox="0 0 16 16" width="13" height="13" fill="currentColor" aria-hidden="true" focusable="false"><path d="M4.715 6.542 3.343 7.914a3 3 0 1 0 4.243 4.243l1.828-1.829A3 3 0 0 0 8.586 5.5L8 6.086a1.002 1.002 0 0 0-.154.199 2 2 0 0 1 .861 3.337L6.88 11.45a2 2 0 1 1-2.83-2.83l.793-.792a4.018 4.018 0 0 1-.128-1.287z"/><path d="M6.586 4.672A3 3 0 0 0 7.414 9.5l.775-.776a2 2 0 0 1-.896-3.346L9.12 3.55a2 2 0 1 1 2.83 2.83l-.793.792c.112.42.155.855.128 1.287l1.372-1.372a3 3 0 1 0-4.243-4.243L6.586 4.672z"/></svg></a></h5>
                             
                                 
                                 <a class="btn btn-info  mb-2" href="SMDCat/manual/SMDCat_de.pdf" role="button">PDF Manual de</a><br>
@@ -1034,16 +1217,129 @@
                     </div>
                 </div>
                 
-                <div class="col-md-6 col-lg-4 col-xl-3 py-2">
+                
+                <div class="col-md-6 col-lg-4 col-xl-3 py-2 project" id="SawToothOrganDIP">
                     <div class="card h-100">
-                        <img class="card-img-top img-fluid" src="SolarpunkSynth/manual/images/thumbnail.jpg" alt="Card image cap">
+                        <a class="card-img-link" href="#SawToothOrganDIP" title="Link directly to SawToothOrganDIP">
+                            <img class="card-img-top img-fluid" src="SawToothOrganDIP/manual/images/thumbnail.jpg" alt="SawToothOrganDIP">
+                            <span class="link-badge" aria-hidden="true"><svg class="link-icon" viewBox="0 0 16 16" width="13" height="13" fill="currentColor" aria-hidden="true" focusable="false"><path d="M4.715 6.542 3.343 7.914a3 3 0 1 0 4.243 4.243l1.828-1.829A3 3 0 0 0 8.586 5.5L8 6.086a1.002 1.002 0 0 0-.154.199 2 2 0 0 1 .861 3.337L6.88 11.45a2 2 0 1 1-2.83-2.83l.793-.792a4.018 4.018 0 0 1-.128-1.287z"/><path d="M6.586 4.672A3 3 0 0 0 7.414 9.5l.775-.776a2 2 0 0 1-.896-3.346L9.12 3.55a2 2 0 1 1 2.83 2.83l-.793.792c.112.42.155.855.128 1.287l1.372-1.372a3 3 0 1 0-4.243-4.243L6.586 4.672z"/></svg></span>
+                        </a>
                         <div class="card-body">
-                            <h5 class="card-title">SolarpunkSynth</h5>
+                            <h5 class="card-title">SawToothOrganDIP<a class="anchor-link" href="#SawToothOrganDIP" title="Link directly to SawToothOrganDIP" aria-label="Link directly to SawToothOrganDIP"><svg class="link-icon" viewBox="0 0 16 16" width="13" height="13" fill="currentColor" aria-hidden="true" focusable="false"><path d="M4.715 6.542 3.343 7.914a3 3 0 1 0 4.243 4.243l1.828-1.829A3 3 0 0 0 8.586 5.5L8 6.086a1.002 1.002 0 0 0-.154.199 2 2 0 0 1 .861 3.337L6.88 11.45a2 2 0 1 1-2.83-2.83l.793-.792a4.018 4.018 0 0 1-.128-1.287z"/><path d="M6.586 4.672A3 3 0 0 0 7.414 9.5l.775-.776a2 2 0 0 1-.896-3.346L9.12 3.55a2 2 0 1 1 2.83 2.83l-.793.792c.112.42.155.855.128 1.287l1.372-1.372a3 3 0 1 0-4.243-4.243L6.586 4.672z"/></svg></a></h5>
                             
                                 
-                                <a class="btn btn-info  mb-2" href="SolarpunkSynth/manual/SolarpunkSynth_en.pdf" role="button">PDF Manual en</a><br>
+                                <a class="btn btn-info  mb-2" href="SawToothOrganDIP/manual/SawToothOrganDIP_de.pdf" role="button">PDF Manual de</a><br>
+                                
+                                <a class="btn btn-info  mb-2" href="SawToothOrganDIP/manual/SawToothOrganDIP_en.pdf" role="button">PDF Manual en</a><br>
+                                
+                            
+                                
+                                <a class="btn btn-info" href="SawToothOrganDIP/ibom.html" role="button">Interactive Board</a>
+                                
+                        </div>
+                    </div>
+                </div>
+                
+                
+                <div class="col-md-6 col-lg-4 col-xl-3 py-2 project" id="ShittyRobots">
+                    <div class="card h-100">
+                        <a class="card-img-link" href="#ShittyRobots" title="Link directly to ShittyRobots">
+                            <img class="card-img-top img-fluid" src="ShittyRobots/manual/images/thumbnail.jpg" alt="ShittyRobots">
+                            <span class="link-badge" aria-hidden="true"><svg class="link-icon" viewBox="0 0 16 16" width="13" height="13" fill="currentColor" aria-hidden="true" focusable="false"><path d="M4.715 6.542 3.343 7.914a3 3 0 1 0 4.243 4.243l1.828-1.829A3 3 0 0 0 8.586 5.5L8 6.086a1.002 1.002 0 0 0-.154.199 2 2 0 0 1 .861 3.337L6.88 11.45a2 2 0 1 1-2.83-2.83l.793-.792a4.018 4.018 0 0 1-.128-1.287z"/><path d="M6.586 4.672A3 3 0 0 0 7.414 9.5l.775-.776a2 2 0 0 1-.896-3.346L9.12 3.55a2 2 0 1 1 2.83 2.83l-.793.792c.112.42.155.855.128 1.287l1.372-1.372a3 3 0 1 0-4.243-4.243L6.586 4.672z"/></svg></span>
+                        </a>
+                        <div class="card-body">
+                            <h5 class="card-title">ShittyRobots<a class="anchor-link" href="#ShittyRobots" title="Link directly to ShittyRobots" aria-label="Link directly to ShittyRobots"><svg class="link-icon" viewBox="0 0 16 16" width="13" height="13" fill="currentColor" aria-hidden="true" focusable="false"><path d="M4.715 6.542 3.343 7.914a3 3 0 1 0 4.243 4.243l1.828-1.829A3 3 0 0 0 8.586 5.5L8 6.086a1.002 1.002 0 0 0-.154.199 2 2 0 0 1 .861 3.337L6.88 11.45a2 2 0 1 1-2.83-2.83l.793-.792a4.018 4.018 0 0 1-.128-1.287z"/><path d="M6.586 4.672A3 3 0 0 0 7.414 9.5l.775-.776a2 2 0 0 1-.896-3.346L9.12 3.55a2 2 0 1 1 2.83 2.83l-.793.792c.112.42.155.855.128 1.287l1.372-1.372a3 3 0 1 0-4.243-4.243L6.586 4.672z"/></svg></a></h5>
+                            
+                                
+                                <a class="btn btn-info  mb-2" href="ShittyRobots/manual/ShittyRobots_poster_de.pdf" role="button">PDF Manual de</a><br>
+                                
+                                <a class="btn btn-info  mb-2" href="ShittyRobots/manual/ShittyRobots_poster_en.pdf" role="button">PDF Manual en</a><br>
+                                
+                            
+                                
+                        </div>
+                    </div>
+                </div>
+                
+                
+                <div class="col-md-6 col-lg-4 col-xl-3 py-2 project" id="Shrocket">
+                    <div class="card h-100">
+                        <a class="card-img-link" href="#Shrocket" title="Link directly to Shrocket">
+                            <img class="card-img-top img-fluid" src="Shrocket/manual/images/thumbnail.jpg" alt="Shrocket">
+                            <span class="link-badge" aria-hidden="true"><svg class="link-icon" viewBox="0 0 16 16" width="13" height="13" fill="currentColor" aria-hidden="true" focusable="false"><path d="M4.715 6.542 3.343 7.914a3 3 0 1 0 4.243 4.243l1.828-1.829A3 3 0 0 0 8.586 5.5L8 6.086a1.002 1.002 0 0 0-.154.199 2 2 0 0 1 .861 3.337L6.88 11.45a2 2 0 1 1-2.83-2.83l.793-.792a4.018 4.018 0 0 1-.128-1.287z"/><path d="M6.586 4.672A3 3 0 0 0 7.414 9.5l.775-.776a2 2 0 0 1-.896-3.346L9.12 3.55a2 2 0 1 1 2.83 2.83l-.793.792c.112.42.155.855.128 1.287l1.372-1.372a3 3 0 1 0-4.243-4.243L6.586 4.672z"/></svg></span>
+                        </a>
+                        <div class="card-body">
+                            <h5 class="card-title">Shrocket<a class="anchor-link" href="#Shrocket" title="Link directly to Shrocket" aria-label="Link directly to Shrocket"><svg class="link-icon" viewBox="0 0 16 16" width="13" height="13" fill="currentColor" aria-hidden="true" focusable="false"><path d="M4.715 6.542 3.343 7.914a3 3 0 1 0 4.243 4.243l1.828-1.829A3 3 0 0 0 8.586 5.5L8 6.086a1.002 1.002 0 0 0-.154.199 2 2 0 0 1 .861 3.337L6.88 11.45a2 2 0 1 1-2.83-2.83l.793-.792a4.018 4.018 0 0 1-.128-1.287z"/><path d="M6.586 4.672A3 3 0 0 0 7.414 9.5l.775-.776a2 2 0 0 1-.896-3.346L9.12 3.55a2 2 0 1 1 2.83 2.83l-.793.792c.112.42.155.855.128 1.287l1.372-1.372a3 3 0 1 0-4.243-4.243L6.586 4.672z"/></svg></a></h5>
+                            
+                                
+                                <a class="btn btn-info  mb-2" href="Shrocket/manual/Shrocket_de.pdf" role="button">PDF Manual de</a><br>
+                                
+                                <a class="btn btn-info  mb-2" href="Shrocket/manual/Shrocket_en.pdf" role="button">PDF Manual en</a><br>
+                                
+                            
+                                
+                                <a class="btn btn-info" href="Shrocket/ibom.html" role="button">Interactive Board</a>
+                                
+                        </div>
+                    </div>
+                </div>
+                
+                
+                <div class="col-md-6 col-lg-4 col-xl-3 py-2 project" id="SmartLED">
+                    <div class="card h-100">
+                        <a class="card-img-link" href="#SmartLED" title="Link directly to SmartLED">
+                            <img class="card-img-top img-fluid" src="SmartLED/manual/images/thumbnail.jpg" alt="SmartLED">
+                            <span class="link-badge" aria-hidden="true"><svg class="link-icon" viewBox="0 0 16 16" width="13" height="13" fill="currentColor" aria-hidden="true" focusable="false"><path d="M4.715 6.542 3.343 7.914a3 3 0 1 0 4.243 4.243l1.828-1.829A3 3 0 0 0 8.586 5.5L8 6.086a1.002 1.002 0 0 0-.154.199 2 2 0 0 1 .861 3.337L6.88 11.45a2 2 0 1 1-2.83-2.83l.793-.792a4.018 4.018 0 0 1-.128-1.287z"/><path d="M6.586 4.672A3 3 0 0 0 7.414 9.5l.775-.776a2 2 0 0 1-.896-3.346L9.12 3.55a2 2 0 1 1 2.83 2.83l-.793.792c.112.42.155.855.128 1.287l1.372-1.372a3 3 0 1 0-4.243-4.243L6.586 4.672z"/></svg></span>
+                        </a>
+                        <div class="card-body">
+                            <h5 class="card-title">SmartLED<a class="anchor-link" href="#SmartLED" title="Link directly to SmartLED" aria-label="Link directly to SmartLED"><svg class="link-icon" viewBox="0 0 16 16" width="13" height="13" fill="currentColor" aria-hidden="true" focusable="false"><path d="M4.715 6.542 3.343 7.914a3 3 0 1 0 4.243 4.243l1.828-1.829A3 3 0 0 0 8.586 5.5L8 6.086a1.002 1.002 0 0 0-.154.199 2 2 0 0 1 .861 3.337L6.88 11.45a2 2 0 1 1-2.83-2.83l.793-.792a4.018 4.018 0 0 1-.128-1.287z"/><path d="M6.586 4.672A3 3 0 0 0 7.414 9.5l.775-.776a2 2 0 0 1-.896-3.346L9.12 3.55a2 2 0 1 1 2.83 2.83l-.793.792c.112.42.155.855.128 1.287l1.372-1.372a3 3 0 1 0-4.243-4.243L6.586 4.672z"/></svg></a></h5>
+                            
+                                
+                                <a class="btn btn-info  mb-2" href="SmartLED/manual/SmartLED_de.pdf" role="button">PDF Manual de</a><br>
+                                
+                                <a class="btn btn-info  mb-2" href="SmartLED/manual/SmartLED_en.pdf" role="button">PDF Manual en</a><br>
+                                
+                            
+                                
+                        </div>
+                    </div>
+                </div>
+                
+                
+                <div class="col-md-6 col-lg-4 col-xl-3 py-2 project" id="SmartphoneRobot">
+                    <div class="card h-100">
+                        <a class="card-img-link" href="#SmartphoneRobot" title="Link directly to SmartphoneRobot">
+                            <img class="card-img-top img-fluid" src="SmartphoneRobot/manual/images/thumbnail.jpg" alt="SmartphoneRobot">
+                            <span class="link-badge" aria-hidden="true"><svg class="link-icon" viewBox="0 0 16 16" width="13" height="13" fill="currentColor" aria-hidden="true" focusable="false"><path d="M4.715 6.542 3.343 7.914a3 3 0 1 0 4.243 4.243l1.828-1.829A3 3 0 0 0 8.586 5.5L8 6.086a1.002 1.002 0 0 0-.154.199 2 2 0 0 1 .861 3.337L6.88 11.45a2 2 0 1 1-2.83-2.83l.793-.792a4.018 4.018 0 0 1-.128-1.287z"/><path d="M6.586 4.672A3 3 0 0 0 7.414 9.5l.775-.776a2 2 0 0 1-.896-3.346L9.12 3.55a2 2 0 1 1 2.83 2.83l-.793.792c.112.42.155.855.128 1.287l1.372-1.372a3 3 0 1 0-4.243-4.243L6.586 4.672z"/></svg></span>
+                        </a>
+                        <div class="card-body">
+                            <h5 class="card-title">SmartphoneRobot<a class="anchor-link" href="#SmartphoneRobot" title="Link directly to SmartphoneRobot" aria-label="Link directly to SmartphoneRobot"><svg class="link-icon" viewBox="0 0 16 16" width="13" height="13" fill="currentColor" aria-hidden="true" focusable="false"><path d="M4.715 6.542 3.343 7.914a3 3 0 1 0 4.243 4.243l1.828-1.829A3 3 0 0 0 8.586 5.5L8 6.086a1.002 1.002 0 0 0-.154.199 2 2 0 0 1 .861 3.337L6.88 11.45a2 2 0 1 1-2.83-2.83l.793-.792a4.018 4.018 0 0 1-.128-1.287z"/><path d="M6.586 4.672A3 3 0 0 0 7.414 9.5l.775-.776a2 2 0 0 1-.896-3.346L9.12 3.55a2 2 0 1 1 2.83 2.83l-.793.792c.112.42.155.855.128 1.287l1.372-1.372a3 3 0 1 0-4.243-4.243L6.586 4.672z"/></svg></a></h5>
+                            
+                                
+                                <a class="btn btn-info  mb-2" href="SmartphoneRobot/manual/SmartphoneRobot_de.pdf" role="button">PDF Manual de</a><br>
+                                
+                                <a class="btn btn-info  mb-2" href="SmartphoneRobot/manual/SmartphoneRobot_en.pdf" role="button">PDF Manual en</a><br>
+                                
+                            
+                                
+                        </div>
+                    </div>
+                </div>
+                
+                
+                <div class="col-md-6 col-lg-4 col-xl-3 py-2 project" id="SolarpunkSynth">
+                    <div class="card h-100">
+                        <a class="card-img-link" href="#SolarpunkSynth" title="Link directly to SolarpunkSynth">
+                            <img class="card-img-top img-fluid" src="SolarpunkSynth/manual/images/thumbnail.jpg" alt="SolarpunkSynth">
+                            <span class="link-badge" aria-hidden="true"><svg class="link-icon" viewBox="0 0 16 16" width="13" height="13" fill="currentColor" aria-hidden="true" focusable="false"><path d="M4.715 6.542 3.343 7.914a3 3 0 1 0 4.243 4.243l1.828-1.829A3 3 0 0 0 8.586 5.5L8 6.086a1.002 1.002 0 0 0-.154.199 2 2 0 0 1 .861 3.337L6.88 11.45a2 2 0 1 1-2.83-2.83l.793-.792a4.018 4.018 0 0 1-.128-1.287z"/><path d="M6.586 4.672A3 3 0 0 0 7.414 9.5l.775-.776a2 2 0 0 1-.896-3.346L9.12 3.55a2 2 0 1 1 2.83 2.83l-.793.792c.112.42.155.855.128 1.287l1.372-1.372a3 3 0 1 0-4.243-4.243L6.586 4.672z"/></svg></span>
+                        </a>
+                        <div class="card-body">
+                            <h5 class="card-title">SolarpunkSynth<a class="anchor-link" href="#SolarpunkSynth" title="Link directly to SolarpunkSynth" aria-label="Link directly to SolarpunkSynth"><svg class="link-icon" viewBox="0 0 16 16" width="13" height="13" fill="currentColor" aria-hidden="true" focusable="false"><path d="M4.715 6.542 3.343 7.914a3 3 0 1 0 4.243 4.243l1.828-1.829A3 3 0 0 0 8.586 5.5L8 6.086a1.002 1.002 0 0 0-.154.199 2 2 0 0 1 .861 3.337L6.88 11.45a2 2 0 1 1-2.83-2.83l.793-.792a4.018 4.018 0 0 1-.128-1.287z"/><path d="M6.586 4.672A3 3 0 0 0 7.414 9.5l.775-.776a2 2 0 0 1-.896-3.346L9.12 3.55a2 2 0 1 1 2.83 2.83l-.793.792c.112.42.155.855.128 1.287l1.372-1.372a3 3 0 1 0-4.243-4.243L6.586 4.672z"/></svg></a></h5>
+                            
                                 
                                 <a class="btn btn-info  mb-2" href="SolarpunkSynth/manual/SolarpunkSynth_de.pdf" role="button">PDF Manual de</a><br>
+                                
+                                <a class="btn btn-info  mb-2" href="SolarpunkSynth/manual/SolarpunkSynth_en.pdf" role="button">PDF Manual en</a><br>
                                 
                             
                                 
@@ -1053,16 +1349,20 @@
                     </div>
                 </div>
                 
-                <div class="col-md-6 col-lg-4 col-xl-3 py-2">
+                
+                <div class="col-md-6 col-lg-4 col-xl-3 py-2 project" id="SolderBox">
                     <div class="card h-100">
-                        <img class="card-img-top img-fluid" src="SolderBox/manual/images/thumbnail.jpg" alt="Card image cap">
+                        <a class="card-img-link" href="#SolderBox" title="Link directly to SolderBox">
+                            <img class="card-img-top img-fluid" src="SolderBox/manual/images/thumbnail.jpg" alt="SolderBox">
+                            <span class="link-badge" aria-hidden="true"><svg class="link-icon" viewBox="0 0 16 16" width="13" height="13" fill="currentColor" aria-hidden="true" focusable="false"><path d="M4.715 6.542 3.343 7.914a3 3 0 1 0 4.243 4.243l1.828-1.829A3 3 0 0 0 8.586 5.5L8 6.086a1.002 1.002 0 0 0-.154.199 2 2 0 0 1 .861 3.337L6.88 11.45a2 2 0 1 1-2.83-2.83l.793-.792a4.018 4.018 0 0 1-.128-1.287z"/><path d="M6.586 4.672A3 3 0 0 0 7.414 9.5l.775-.776a2 2 0 0 1-.896-3.346L9.12 3.55a2 2 0 1 1 2.83 2.83l-.793.792c.112.42.155.855.128 1.287l1.372-1.372a3 3 0 1 0-4.243-4.243L6.586 4.672z"/></svg></span>
+                        </a>
                         <div class="card-body">
-                            <h5 class="card-title">SolderBox</h5>
+                            <h5 class="card-title">SolderBox<a class="anchor-link" href="#SolderBox" title="Link directly to SolderBox" aria-label="Link directly to SolderBox"><svg class="link-icon" viewBox="0 0 16 16" width="13" height="13" fill="currentColor" aria-hidden="true" focusable="false"><path d="M4.715 6.542 3.343 7.914a3 3 0 1 0 4.243 4.243l1.828-1.829A3 3 0 0 0 8.586 5.5L8 6.086a1.002 1.002 0 0 0-.154.199 2 2 0 0 1 .861 3.337L6.88 11.45a2 2 0 1 1-2.83-2.83l.793-.792a4.018 4.018 0 0 1-.128-1.287z"/><path d="M6.586 4.672A3 3 0 0 0 7.414 9.5l.775-.776a2 2 0 0 1-.896-3.346L9.12 3.55a2 2 0 1 1 2.83 2.83l-.793.792c.112.42.155.855.128 1.287l1.372-1.372a3 3 0 1 0-4.243-4.243L6.586 4.672z"/></svg></a></h5>
                             
                                 
-                                <a class="btn btn-info  mb-2" href="SolderBox/manual/SolderBox_en.pdf" role="button">PDF Manual en</a><br>
-                                
                                 <a class="btn btn-info  mb-2" href="SolderBox/manual/SolderBox_de.pdf" role="button">PDF Manual de</a><br>
+                                
+                                <a class="btn btn-info  mb-2" href="SolderBox/manual/SolderBox_en.pdf" role="button">PDF Manual en</a><br>
                                 
                             
                                 
@@ -1070,16 +1370,20 @@
                     </div>
                 </div>
                 
-                <div class="col-md-6 col-lg-4 col-xl-3 py-2">
+                
+                <div class="col-md-6 col-lg-4 col-xl-3 py-2 project" id="SpaceEggs">
                     <div class="card h-100">
-                        <img class="card-img-top img-fluid" src="SpaceEggs/manual/images/thumbnail.jpg" alt="Card image cap">
+                        <a class="card-img-link" href="#SpaceEggs" title="Link directly to SpaceEggs">
+                            <img class="card-img-top img-fluid" src="SpaceEggs/manual/images/thumbnail.jpg" alt="SpaceEggs">
+                            <span class="link-badge" aria-hidden="true"><svg class="link-icon" viewBox="0 0 16 16" width="13" height="13" fill="currentColor" aria-hidden="true" focusable="false"><path d="M4.715 6.542 3.343 7.914a3 3 0 1 0 4.243 4.243l1.828-1.829A3 3 0 0 0 8.586 5.5L8 6.086a1.002 1.002 0 0 0-.154.199 2 2 0 0 1 .861 3.337L6.88 11.45a2 2 0 1 1-2.83-2.83l.793-.792a4.018 4.018 0 0 1-.128-1.287z"/><path d="M6.586 4.672A3 3 0 0 0 7.414 9.5l.775-.776a2 2 0 0 1-.896-3.346L9.12 3.55a2 2 0 1 1 2.83 2.83l-.793.792c.112.42.155.855.128 1.287l1.372-1.372a3 3 0 1 0-4.243-4.243L6.586 4.672z"/></svg></span>
+                        </a>
                         <div class="card-body">
-                            <h5 class="card-title">SpaceEggs</h5>
+                            <h5 class="card-title">SpaceEggs<a class="anchor-link" href="#SpaceEggs" title="Link directly to SpaceEggs" aria-label="Link directly to SpaceEggs"><svg class="link-icon" viewBox="0 0 16 16" width="13" height="13" fill="currentColor" aria-hidden="true" focusable="false"><path d="M4.715 6.542 3.343 7.914a3 3 0 1 0 4.243 4.243l1.828-1.829A3 3 0 0 0 8.586 5.5L8 6.086a1.002 1.002 0 0 0-.154.199 2 2 0 0 1 .861 3.337L6.88 11.45a2 2 0 1 1-2.83-2.83l.793-.792a4.018 4.018 0 0 1-.128-1.287z"/><path d="M6.586 4.672A3 3 0 0 0 7.414 9.5l.775-.776a2 2 0 0 1-.896-3.346L9.12 3.55a2 2 0 1 1 2.83 2.83l-.793.792c.112.42.155.855.128 1.287l1.372-1.372a3 3 0 1 0-4.243-4.243L6.586 4.672z"/></svg></a></h5>
                             
                                 
-                                <a class="btn btn-info  mb-2" href="SpaceEggs/manual/SpaceEggs_en.pdf" role="button">PDF Manual en</a><br>
-                                
                                 <a class="btn btn-info  mb-2" href="SpaceEggs/manual/SpaceEggs_de.pdf" role="button">PDF Manual de</a><br>
+                                
+                                <a class="btn btn-info  mb-2" href="SpaceEggs/manual/SpaceEggs_en.pdf" role="button">PDF Manual en</a><br>
                                 
                             
                                 
@@ -1089,11 +1393,15 @@
                     </div>
                 </div>
                 
-                <div class="col-md-6 col-lg-4 col-xl-3 py-2">
+                
+                <div class="col-md-6 col-lg-4 col-xl-3 py-2 project" id="WeevilEye">
                     <div class="card h-100">
-                        <img class="card-img-top img-fluid" src="WeevilEye/manual/images/thumbnail.jpg" alt="Card image cap">
+                        <a class="card-img-link" href="#WeevilEye" title="Link directly to WeevilEye">
+                            <img class="card-img-top img-fluid" src="WeevilEye/manual/images/thumbnail.jpg" alt="WeevilEye">
+                            <span class="link-badge" aria-hidden="true"><svg class="link-icon" viewBox="0 0 16 16" width="13" height="13" fill="currentColor" aria-hidden="true" focusable="false"><path d="M4.715 6.542 3.343 7.914a3 3 0 1 0 4.243 4.243l1.828-1.829A3 3 0 0 0 8.586 5.5L8 6.086a1.002 1.002 0 0 0-.154.199 2 2 0 0 1 .861 3.337L6.88 11.45a2 2 0 1 1-2.83-2.83l.793-.792a4.018 4.018 0 0 1-.128-1.287z"/><path d="M6.586 4.672A3 3 0 0 0 7.414 9.5l.775-.776a2 2 0 0 1-.896-3.346L9.12 3.55a2 2 0 1 1 2.83 2.83l-.793.792c.112.42.155.855.128 1.287l1.372-1.372a3 3 0 1 0-4.243-4.243L6.586 4.672z"/></svg></span>
+                        </a>
                         <div class="card-body">
-                            <h5 class="card-title">WeevilEye</h5>
+                            <h5 class="card-title">WeevilEye<a class="anchor-link" href="#WeevilEye" title="Link directly to WeevilEye" aria-label="Link directly to WeevilEye"><svg class="link-icon" viewBox="0 0 16 16" width="13" height="13" fill="currentColor" aria-hidden="true" focusable="false"><path d="M4.715 6.542 3.343 7.914a3 3 0 1 0 4.243 4.243l1.828-1.829A3 3 0 0 0 8.586 5.5L8 6.086a1.002 1.002 0 0 0-.154.199 2 2 0 0 1 .861 3.337L6.88 11.45a2 2 0 1 1-2.83-2.83l.793-.792a4.018 4.018 0 0 1-.128-1.287z"/><path d="M6.586 4.672A3 3 0 0 0 7.414 9.5l.775-.776a2 2 0 0 1-.896-3.346L9.12 3.55a2 2 0 1 1 2.83 2.83l-.793.792c.112.42.155.855.128 1.287l1.372-1.372a3 3 0 1 0-4.243-4.243L6.586 4.672z"/></svg></a></h5>
                             
                                 
                                 <a class="btn btn-info  mb-2" href="WeevilEye/manual/WeevilEye_de.pdf" role="button">PDF Manual de</a><br>
@@ -1111,6 +1419,83 @@
             </div>
         </div>
     </main>
+    <div id="copy-toast" role="status" aria-live="polite">Link copied</div>
+    <script>
+        (function () {
+            // Scroll to the card addressed by the URL hash. Images have no fixed
+            // height in the markup, so we repeat the jump once they are loaded and
+            // the page no longer changes height underneath us.
+            function jumpToHash(smooth) {
+                var hash = decodeURIComponent(window.location.hash.slice(1));
+                if (!hash) return;
+                var el = document.getElementById(hash);
+                if (!el) return;
+                el.scrollIntoView({ behavior: smooth ? 'smooth' : 'auto', block: 'start' });
+            }
+
+            window.addEventListener('load', function () {
+                jumpToHash(false);
+                window.setTimeout(function () { jumpToHash(false); }, 150);
+            });
+
+            // A hash typed in or pasted into an already open page only fires hashchange.
+            window.addEventListener('hashchange', function () { jumpToHash(true); });
+
+            var toast = document.getElementById('copy-toast');
+            var toastTimer = null;
+
+            function showToast(text) {
+                toast.textContent = text;
+                toast.classList.add('show');
+                window.clearTimeout(toastTimer);
+                toastTimer = window.setTimeout(function () { toast.classList.remove('show'); }, 1600);
+            }
+
+            // Copies text to the clipboard, falling back to execCommand so it also
+            // works on a plain file:// or http:// page without clipboard permission.
+            function copyText(text) {
+                if (navigator.clipboard && window.isSecureContext) {
+                    return navigator.clipboard.writeText(text).then(function () {
+                        return true;
+                    }, function () {
+                        return legacyCopy(text);
+                    });
+                }
+                return Promise.resolve(legacyCopy(text));
+            }
+
+            function legacyCopy(text) {
+                var ta = document.createElement('textarea');
+                ta.value = text;
+                ta.setAttribute('readonly', '');
+                ta.style.position = 'fixed';
+                ta.style.top = '-1000px';
+                document.body.appendChild(ta);
+                ta.select();
+                var ok = false;
+                try {
+                    ok = document.execCommand('copy');
+                } catch (e) {
+                    ok = false;
+                }
+                document.body.removeChild(ta);
+                return ok;
+            }
+
+            // Clicking the tiny link badge / hash copies the deep link for sharing.
+            document.querySelectorAll('.card-img-link, .anchor-link').forEach(function (link) {
+                link.addEventListener('click', function (ev) {
+                    ev.preventDefault();
+                    var url = link.href;
+                    history.replaceState(null, '', link.getAttribute('href'));
+                    jumpToHash(true);
+                    copyText(url).then(function (ok) {
+                        showToast(ok ? 'Link copied' : url);
+                    });
+                });
+            });
+        })();
+    </script>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
         integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
         crossorigin="anonymous"></script>

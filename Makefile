@@ -56,5 +56,5 @@ $(BOXLABELS):
 	latexmk -lualatex --jobname=$@ "LaTeX_config/solderingBoxLabels"
 
 index.html:
-	python build_landingpage.py "$(FOLDERS)"
+	python build_landingpage.py
 

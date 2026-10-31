@@ -6,6 +6,16 @@ We've tried to collect and create tutorials with different difficulties and are 
 
 For an overview of all kits with manuals and interactive pcb views go to: https://binary-kitchen.github.io/SolderingTutorial
 
+### Linking directly to a kit
+
+Every kit on the overview page has its own anchor, so you can link straight to its picture:
+`https://binary-kitchen.github.io/SolderingTutorial/#Capybara` opens the page scrolled to the Capybara card and highlights it.
+Clicking the small link icon on a card copies that deep link to your clipboard.
+
+The overview page is generated from the project folders — `make landing_page`, i.e. `python build_landingpage.py`.
+Every folder that contains a card image at `manual/images/thumbnail.{jpg,jpeg,png,gif,webp}` shows up automatically,
+so a new kit only needs such a thumbnail to appear on the page.
+
 If you want to buy soldering Kits you can find some here: [shop.blinkyparts.com](https://shop.blinkyparts.com)
 
 We have tips how to organise a soldering workshop in the field and how to further decorate the kits: [Wiki: Festival Setup](https://github.com/Binary-Kitchen/SolderingTutorial/wiki/Festival-Setup)

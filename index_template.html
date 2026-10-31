@@ -14,18 +14,100 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
+    <style>
+        /* Deep links: every project card has its own id, so /#Capybara jumps straight to it. */
+        html {
+            scroll-behavior: smooth;
+        }
+
+        [id].project {
+            scroll-margin-top: .5rem;
+        }
+
+        [id].project:target > .card {
+            outline: 3px solid #17a2b8;
+            outline-offset: 2px;
+            box-shadow: 0 .5rem 1rem rgba(23, 162, 184, .45);
+        }
+
+        .card-img-link {
+            position: relative;
+            display: block;
+        }
+
+        .card-img-link .link-badge {
+            position: absolute;
+            top: .4rem;
+            right: .4rem;
+            padding: .05rem .35rem;
+            border-radius: .25rem;
+            background: rgba(0, 0, 0, .6);
+            color: #fff;
+            font-size: .85rem;
+            line-height: 1.4;
+            opacity: 0;
+            transition: opacity .15s ease-in-out;
+        }
+
+        .card-img-link:hover .link-badge,
+        .card-img-link:focus .link-badge {
+            opacity: 1;
+        }
+
+        .anchor-link {
+            margin-left: .3rem;
+            color: #17a2b8;
+            text-decoration: none;
+            opacity: 0;
+            vertical-align: middle;
+            transition: opacity .15s ease-in-out;
+        }
+
+        .card:hover .anchor-link,
+        .anchor-link:focus {
+            opacity: .8;
+        }
+
+        #copy-toast {
+            position: fixed;
+            left: 50%;
+            bottom: 1.5rem;
+            transform: translateX(-50%) translateY(1rem);
+            padding: .4rem .9rem;
+            border-radius: .3rem;
+            background: rgba(0, 0, 0, .8);
+            color: #fff;
+            font-size: .9rem;
+            opacity: 0;
+            pointer-events: none;
+            transition: opacity .2s ease-in-out, transform .2s ease-in-out;
+        }
+
+        #copy-toast.show {
+            opacity: 1;
+            transform: translateX(-50%) translateY(0);
+        }
+    </style>
+
 </head>
 
 <body>
+    {% macro link_icon(cls) -%}
+    <svg class="{{ cls }}" viewBox="0 0 16 16" width="13" height="13" fill="currentColor" aria-hidden="true" focusable="false"><path d="M4.715 6.542 3.343 7.914a3 3 0 1 0 4.243 4.243l1.828-1.829A3 3 0 0 0 8.586 5.5L8 6.086a1.002 1.002 0 0 0-.154.199 2 2 0 0 1 .861 3.337L6.88 11.45a2 2 0 1 1-2.83-2.83l.793-.792a4.018 4.018 0 0 1-.128-1.287z"/><path d="M6.586 4.672A3 3 0 0 0 7.414 9.5l.775-.776a2 2 0 0 1-.896-3.346L9.12 3.55a2 2 0 1 1 2.83 2.83l-.793.792c.112.42.155.855.128 1.287l1.372-1.372a3 3 0 1 0-4.243-4.243L6.586 4.672z"/></svg>
+    {%- endmacro %}
     <main role="main">
         <div class="container">
             <div class="row">
                 {% for (name, project) in projects.items() %}
-                <div class="col-md-6 col-lg-4 col-xl-3 py-2">
+                {% set a = project["anchor"] %}
+                <div class="col-md-6 col-lg-4 col-xl-3 py-2 project" id="{{ a }}">
                     <div class="card h-100">
-                        <img class="card-img-top img-fluid" src="{{ project["thumbnail"] }}" alt="Card image cap">
+                        <a class="card-img-link" href="#{{ a }}" title="Link directly to {{ name }}">
+                            <img class="card-img-top img-fluid" src="{{ project["thumbnail"] }}" alt="{{ name }}">
+                            <span class="link-badge" aria-hidden="true">{{ link_icon("link-icon") }}</span>
+                        </a>
                         <div class="card-body">
-                            <h5 class="card-title">{{name}}</h5>
+                            <h5 class="card-title">{{name}}<a class="anchor-link" href="#{{ a }}" title="Link directly to {{ name }}" aria-label="Link directly to {{ name }}">{{ link_icon("link-icon") }}</a></h5>
                             {% if not project["manuals"] %}
                             <span class="card-text"><small class="text-muted">No manuals yet</small></span>
                             {% else %}
@@ -43,6 +125,83 @@
             </div>
         </div>
     </main>
+    <div id="copy-toast" role="status" aria-live="polite">Link copied</div>
+    <script>
+        (function () {
+            // Scroll to the card addressed by the URL hash. Images have no fixed
+            // height in the markup, so we repeat the jump once they are loaded and
+            // the page no longer changes height underneath us.
+            function jumpToHash(smooth) {
+                var hash = decodeURIComponent(window.location.hash.slice(1));
+                if (!hash) return;
+                var el = document.getElementById(hash);
+                if (!el) return;
+                el.scrollIntoView({ behavior: smooth ? 'smooth' : 'auto', block: 'start' });
+            }
+
+            window.addEventListener('load', function () {
+                jumpToHash(false);
+                window.setTimeout(function () { jumpToHash(false); }, 150);
+            });
+
+            // A hash typed in or pasted into an already open page only fires hashchange.
+            window.addEventListener('hashchange', function () { jumpToHash(true); });
+
+            var toast = document.getElementById('copy-toast');
+            var toastTimer = null;
+
+            function showToast(text) {
+                toast.textContent = text;
+                toast.classList.add('show');
+                window.clearTimeout(toastTimer);
+                toastTimer = window.setTimeout(function () { toast.classList.remove('show'); }, 1600);
+            }
+
+            // Copies text to the clipboard, falling back to execCommand so it also
+            // works on a plain file:// or http:// page without clipboard permission.
+            function copyText(text) {
+                if (navigator.clipboard && window.isSecureContext) {
+                    return navigator.clipboard.writeText(text).then(function () {
+                        return true;
+                    }, function () {
+                        return legacyCopy(text);
+                    });
+                }
+                return Promise.resolve(legacyCopy(text));
+            }
+
+            function legacyCopy(text) {
+                var ta = document.createElement('textarea');
+                ta.value = text;
+                ta.setAttribute('readonly', '');
+                ta.style.position = 'fixed';
+                ta.style.top = '-1000px';
+                document.body.appendChild(ta);
+                ta.select();
+                var ok = false;
+                try {
+                    ok = document.execCommand('copy');
+                } catch (e) {
+                    ok = false;
+                }
+                document.body.removeChild(ta);
+                return ok;
+            }
+
+            // Clicking the tiny link badge / hash copies the deep link for sharing.
+            document.querySelectorAll('.card-img-link, .anchor-link').forEach(function (link) {
+                link.addEventListener('click', function (ev) {
+                    ev.preventDefault();
+                    var url = link.href;
+                    history.replaceState(null, '', link.getAttribute('href'));
+                    jumpToHash(true);
+                    copyText(url).then(function (ok) {
+                        showToast(ok ? 'Link copied' : url);
+                    });
+                });
+            });
+        })();
+    </script>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
         integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
         crossorigin="anonymous"></script>
