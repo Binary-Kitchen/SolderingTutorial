@@ -25,3 +25,4 @@
 *.lck
 *.b#*
 *~lock~
+__pycache__/
