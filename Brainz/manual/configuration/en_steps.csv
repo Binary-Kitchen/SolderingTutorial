@@ -1,0 +1,10 @@
+images/frontside,Check your components;A CR2032 battery is not included. You can buy them online or at major electronics stores.
+images/backside,Turn the PCB over;You will find the LED pads D1{,} D2{,} D3 and D4 on the back. One of the pads is longer and marked with a plus sign (+).;Add solder to the longer LED pad marked with a plus sign (+).
+images/finished,The long leg of the LED marks the positive side. Solder the positive leg (the long one) to the plus pad{,} to which you have already applied solder.;Make sure{,} that the second leg also touches the other pad without solder.
+images/finished,Solder the other leg of the LED (cathode{,} negative side) to the circuit board.
+images/finished,Repeat the last two steps for the LEDs D2{,} D3 and D4;Watch the direction here as well: the long leg belongs on the pad marked with a plus sign (+).;You can still correct the height of the LEDs while the solder is hot.
+images/finished,The button SW1 has no direction.;Put solder on one of the pads of the button.;Bend the legs of the button so{,} that the legs can touch the surface of the board.;Heat the pad with solder again and push one leg of the button from the side onto the pad.;Make sure{,} that the other leg of the button touches the other pad.
+images/finished,Solder the other leg of the button to the board.
+images/finished,The battery holder BT1 has a direction{,} which is marked with a bevelled edge. The same bevelled edge is also printed on the circuit board.;Put solder on one pad of the battery holder.;Heat the pad with solder again and push the battery holder onto the pad from the side.;Make sure that the other leg of the battery holder touches the other pad.;Solder the other leg onto the other pad on the circuit board.
+images/finished,Insert the battery as shown;The terminals on the positive side must touch the top of the battery. Slide the battery into the battery holder from the left and press only the left side down.
+images/overview,You're done!;Press the button and the four LEDs start to light up.
